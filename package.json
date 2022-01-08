@@ -1,7 +1,12 @@
 {
   "name": "element-plus-react",
   "version": "0.0.1-alpha.0",
-  "bugs": {
+  "scripts": {
+    "start:docs": "dumi dev",
+    "build:docs": "dumi build",
+    "publish:docs": "node_modules/.bin/gh-pages -d dist"
+  },
+  "bugs": { 
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
   },
   "repository": {
@@ -9,6 +14,42 @@
     "url": "https://github.com/element-plus-react/element-plus-react"
   },
   "dependencies": {
-
+    "@types/lodash": "^4.14.178",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dumi": "^1.1.38",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb": "^19.0.0",
+    "eslint-config-prettier": "^8.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-compat": "^4.0.0",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-jest": "^25.0.1",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-markdown": "^2.0.0",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.2",
+    "eslint-plugin-unicorn": "^40.0.0",
+    "gh-pages": "^3.2.3",
+    "husky": "^7.0.4",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.2.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^24.0.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
+    "stylelint-order": "^5.0.0",
+    "typescript": "^4.5.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
   }
 }

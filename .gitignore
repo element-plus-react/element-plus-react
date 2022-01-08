@@ -13,3 +13,8 @@ coverage
 
 # local env files
 *.local
+
+.umi
+.umi-production
+yarn.lock
+
