@@ -1,10 +1,10 @@
 {
   "name": "element-plus-react",
   "version": "0.0.1-alpha.0",
-  "scripts": {
+  "scripts": { 
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
-    "publish:docs": "node_modules/.bin/gh-pages -d dist"
+    "publish:docs": "gh-pages -d dist"
   },
   "bugs": { 
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
