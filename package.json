@@ -1,0 +1,14 @@
+{
+  "name": "element-plus-react",
+  "version": "0.0.1-alpha.0",
+  "bugs": {
+    "url": "https://github.com/element-plus-react/element-plus-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/element-plus-react/element-plus-react"
+  },
+  "dependencies": {
+
+  }
+}
