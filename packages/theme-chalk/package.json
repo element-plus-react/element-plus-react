@@ -1,0 +1,10 @@
+{
+  "name": "@element-plus/theme-chalk",
+  "version": "0.0.1-alpha.0",
+  "description": "Element component chalk theme.",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "gulp --require sucrase/register/ts"
+  },
+  "devDependencies": { }
+}

@@ -10,8 +10,9 @@
 
 <p align="center">Element Plus React - A React UI library</p>
 
-- 😈 个人项目，请不要用于生产环境！
-- 😈 Personal project, please do not use it in production environment!
+- 😈 个人项目，请不要用于生产环境！如果有开发需要，请使用[Element Plus](https://github.com/element-plus/element-plus) 或者 [antd](https://github.com/ant-design/ant-design)
+- 😈 Personal project, please do not use it in production environment!If there is a development need, please use[Element Plus](https://github.com/element-plus/element-plus) or [antd](https://github.com/ant-design/ant-design)
+
 - 🔥 Written in TypeScript
 
 ---

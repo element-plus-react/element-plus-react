@@ -1,12 +1,21 @@
 {
-  "name": "element-plus-react",
+  "name": "element-plus-react-docs",
+  "private": true,
   "version": "0.0.1-alpha.0",
-  "scripts": { 
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "start:play": "yarn workspace play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
-    "publish:docs": "gh-pages -d dist"
+    "publish:docs": "gh-pages -d dist",
+    "build": "yarn run gulp",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
+    "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
-  "bugs": { 
+  "bugs": {
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
   },
   "repository": {
@@ -14,16 +23,33 @@
     "url": "https://github.com/element-plus-react/element-plus-react"
   },
   "dependencies": {
-    "@types/lodash": "^4.14.178",
-    "@types/react": "^17.0.38",
-    "@types/react-dom": "^17.0.11",
+    "classnames": "^2.3.1",
     "dayjs": "^1.10.7",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.7",
+    "@babel/core": "^7.16.7",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@ctrl/tinycolor": "^3.4.0",
+    "@element-plus/components": "./packages/components",
+    "@element-plus/hooks": "./packages/hooks",
+    "@element-plus/theme-chalk": "./packages/theme-chalk",
+    "@types/gulp": "^4.0.9",
+    "@types/lodash": "^4.14.178",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "@types/sass": "^1.43.1",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "@umijs/plugin-sass": "^1.1.1",
     "cross-env": "^7.0.3",
+    "del": "^6.0.0",
     "dumi": "^1.1.38",
     "eslint": "^8.0.0",
     "eslint-config-airbnb": "^19.0.0",
@@ -38,18 +64,30 @@
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-unicorn": "^40.0.0",
     "gh-pages": "^3.2.3",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-replace": "^1.1.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
+    "sass": "^1.47.0",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
     "stylelint-order": "^5.0.0",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.4",
+    "webpack-stream": "^7.0.0"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": "eslint --fix"
   }
 }

@@ -1,0 +1,49 @@
+{
+  "name": "element-plus-react",
+  "private": true,
+  "version": "0.0.1-alpha.0",
+  "description": "A Component Library for react",
+  "homepage": "https://element-plus-react.github.io/",
+  "keywords": [
+    "element-plus",
+    "element",
+    "component library",
+    "ui framework",
+    "ui",
+    "react"
+  ],
+  "bugs": {
+    "url": "https://github.com/element-plus-react/element-plus-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/element-plus-react/element-plus-react"
+  },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.mjs"
+    },
+    "./es": "./es/index.mjs",
+    "./lib": "./lib/index.js",
+    "./*": "./*"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "style": "dist/index.css",
+  "unpkg": "dist/index.full.js",
+  "jsdelivr": "dist/index.full.js",
+  "dependencies": {
+    "@ctrl/tinycolor": "^3.4.0",
+    "classnames": "^2.3.1",
+    "dayjs": "^1.10.7",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    
+  },
+  "peerDependencies": {
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0"
+  }
+} 

@@ -7,8 +7,11 @@ export default defineConfig({
   base: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   publicPath: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   outputPath: 'dist',
-  resolve:{
-    includes: ['docs','components']
+  resolve: {
+    includes: ['docs', 'packages/components'],
+  },
+  sass: {
+    sassOptions: {},
   },
   navs: [
     null,
