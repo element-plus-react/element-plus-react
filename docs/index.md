@@ -1,8 +1,8 @@
 ---
 hero:
-  title: Element Plus React
-  desc: 🎉 A React UI Library
-  actions: 
+  title: 网站快速成型工具
+  desc: Element Plus，一套为开发者、设计师和产品经理准备的基于 Vue 3 的桌面端组件库
+  actions:
     - text: 快速开始
       link: /components/button
 features:
@@ -17,3 +17,8 @@ features:
     desc: 下载相关资源，用其快速搭建页面原型或高保真视觉稿，提升产品设计效率。
 footer: Open-source MIT Licensed | Copyright  2022<br />Powered by Element Plus React
 ---
+
+
+<div class="image-wrapper">
+<img src="./images/theme-index-blue.png" alt="一级类目">
+</div>

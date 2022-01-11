@@ -1,8 +1,9 @@
-import React, { useMemo } from "react";
+import React, { useMemo,useContext } from "react";
 import classnames from 'classnames'
 import { TinyColor } from '@ctrl/tinycolor'
 import {isFunction} from 'lodash'
-import {getCssVar} from '../_utils/index'
+import {Loading} from '@element-plus/icons-react'
+import {getCssVar,GlobalConfig} from '../_utils/index'
 
 export interface ButtonProps {
   size?: "large" | "default" | "small"
@@ -20,23 +21,25 @@ export interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = (props) => {
-  const { disabled, autofocus, nativeType, loading, size: buttonSize='', type: buttonType='', plain, round, circle, autoInsertSpace } = props
+  const { disabled, autofocus, nativeType, loading, type: buttonType='', plain, round, circle } = props
+  const globalConfig = useContext(GlobalConfig)
+  const autoInsertSpace = useMemo(() => props.autoInsertSpace ?? globalConfig?.autoInsertSpace ?? false,[props.autoInsertSpace,globalConfig.autoInsertSpace])
+  const buttonSize = useMemo(()=> props.size ?? globalConfig?.size,[props.size,globalConfig.size])
   // add space between two characters in Chinese
   const shouldAddSpace = useMemo(() => {
     const defaultSlot = props.children
-    if (autoInsertSpace && defaultSlot?.length === 1) {
+    if (autoInsertSpace && defaultSlot?.length === 2) {
       return true
     }
     return false
-  }, [])
+  }, [autoInsertSpace])
 
-  const typeColor = useMemo(()=> getCssVar(`--el-color-${buttonType}`),[buttonType]) 
+  const typeColor = useMemo(()=> getCssVar(`--el-color-${buttonType}`),[buttonType])
   // calculate hover & active color by color
   const buttonStyle = useMemo(() => {
     let styles = {}
 
     const buttonColor = props.color || typeColor
-    console.log(plain, buttonColor,props.color,typeColor)
     if (buttonColor) {
       const shadeBgColor = new TinyColor(buttonColor).shade(10).toString()
 
@@ -102,6 +105,7 @@ const Button: React.FC<ButtonProps> = (props) => {
     style={buttonStyle}
     onClick={handleClick}
   >
+    {/* {loading? <span className="is-loading"><Loading /></span> : props.icon} */}
     <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >
       {props.children}
     </span>
