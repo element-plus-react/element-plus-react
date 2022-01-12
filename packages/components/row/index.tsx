@@ -7,6 +7,7 @@ export interface RowProps {
   gutter?: number,
   justify?: 'start' | 'center' | 'end' | 'space-around' | 'space-between',
   align?: 'top' | 'middle' | 'bottom'
+  className?: string
 }
 
 const Row: React.FC<RowProps> = (props) => {
@@ -24,7 +25,7 @@ const Row: React.FC<RowProps> = (props) => {
     return ret
   }, [gutter])
   const className = classnames('el-row', justify !== 'start' ? `is-justify-${justify}` : '',
-    align !== 'top' ? `is-align-${align}` : '')
+    align !== 'top' ? `is-align-${align}` : '',props.className)
 
   return <div style={style} className={className}>{props.children}</div>
 }

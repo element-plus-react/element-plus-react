@@ -1,9 +1,11 @@
 {
   "name": "element-plus-react",
-  "private": true,
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.1-alpha.1",
   "description": "A Component Library for react",
   "homepage": "https://element-plus-react.github.io/",
+  "scripts": {
+    "build": "rollup -c"
+  },
   "keywords": [
     "element-plus",
     "element",
@@ -40,10 +42,18 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
-    
+
   },
   "peerDependencies": {
     "react": ">=16.9.0",
     "react-dom": ">=16.9.0"
-  }
-} 
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+}
