@@ -4,6 +4,7 @@ export default defineConfig({
   title: 'Element Plus React',
   mode: 'site',
   hash: true,
+  dynamicImport: {},
   base: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   publicPath: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   outputPath: 'dist',

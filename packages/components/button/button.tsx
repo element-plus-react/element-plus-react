@@ -2,8 +2,9 @@ import React, { useMemo,useContext } from "react";
 import classnames from 'classnames'
 import { TinyColor } from '@ctrl/tinycolor'
 import {isFunction} from 'lodash'
-import {Loading} from '@element-plus/icons-react'
+import {LoadingOutlined } from '@element-plus/icons-react'
 import {getCssVar,GlobalConfig} from '../_utils/index'
+import ButtonGroup from "./button-group";
 
 export interface ButtonProps {
   size?: "large" | "default" | "small"
@@ -18,17 +19,21 @@ export interface ButtonProps {
   circle?: boolean,
   color?: string,
   autoInsertSpace?: boolean
+  className?: string
+  onClick?: React.MouseEventHandler<HTMLElement>;
+  children?: React.ReactNode;
 }
 
-const Button: React.FC<ButtonProps> = (props) => {
+const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (props,ref) => {
   const { disabled, autofocus, nativeType, loading, type: buttonType='', plain, round, circle } = props
   const globalConfig = useContext(GlobalConfig)
+  const buttonRef = (ref as any) || React.createRef<HTMLElement>();
   const autoInsertSpace = useMemo(() => props.autoInsertSpace ?? globalConfig?.autoInsertSpace ?? false,[props.autoInsertSpace,globalConfig.autoInsertSpace])
   const buttonSize = useMemo(()=> props.size ?? globalConfig?.size,[props.size,globalConfig.size])
   // add space between two characters in Chinese
   const shouldAddSpace = useMemo(() => {
     const defaultSlot = props.children
-    if (autoInsertSpace && defaultSlot?.length === 2) {
+    if (autoInsertSpace && typeof defaultSlot === 'string' && defaultSlot?.length === 2) {
       return true
     }
     return false
@@ -95,7 +100,15 @@ const Button: React.FC<ButtonProps> = (props) => {
       'is-round': round,
       'is-circle': circle,
     },
+    props.className,
   )
+  const renderIcon = loading ?
+        (<span className="el-icon is-loading"><LoadingOutlined /></span> )
+    : props.icon
+      ?
+     (<span className="el-icon">{props.icon}</span>)
+    : null
+  const kids = props.children?  <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >{props.children}</span>: null
 
   return (<button
     className={className}
@@ -104,12 +117,20 @@ const Button: React.FC<ButtonProps> = (props) => {
     type={nativeType}
     style={buttonStyle}
     onClick={handleClick}
+    ref={buttonRef}
   >
-    {/* {loading? <span className="is-loading"><Loading /></span> : props.icon} */}
-    <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >
-      {props.children}
-    </span>
+    {renderIcon}
+    {kids}
   </button>)
 }
+
+interface CompoundedComponent
+  extends React.ForwardRefExoticComponent<ButtonProps & React.RefAttributes<HTMLElement>> {
+  Group: typeof ButtonGroup;
+}
+
+const Button = React.forwardRef<unknown, ButtonProps>(InternalButton) as CompoundedComponent;
+
+Button.Group = ButtonGroup
 
 export default Button
