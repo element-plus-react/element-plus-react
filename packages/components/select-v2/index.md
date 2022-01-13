@@ -4,8 +4,8 @@ nav:
   title: 组件
   path: /components
 group:
-  title: Basic 基础组件
-  order: 1
+  title: TODO 待办
+  order: 99
 ---
 # <ElBadge value="beta">Select V2 虚拟列表选择器</ElBadge>
 
