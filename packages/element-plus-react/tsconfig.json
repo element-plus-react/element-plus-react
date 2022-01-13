@@ -16,7 +16,10 @@
     "target": "es6",
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
-    "rootDir": "./packages"
+    "rootDir": "./"
   },
+  "include": [
+    "./"
+  ],
   "exclude": ["node_modules", "lib", "es"]
 }

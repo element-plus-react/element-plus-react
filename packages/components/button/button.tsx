@@ -4,7 +4,7 @@ import { TinyColor } from '@ctrl/tinycolor'
 import {isFunction} from 'lodash'
 import {LoadingOutlined } from '@element-plus/icons-react'
 import {getCssVar,GlobalConfig} from '../_utils/index'
-import ButtonGroup from "./button-group";
+import ButtonGroup,{ButtonGroupContext} from "./button-group";
 
 export interface ButtonProps {
   size?: "large" | "default" | "small"
@@ -22,14 +22,18 @@ export interface ButtonProps {
   className?: string
   onClick?: React.MouseEventHandler<HTMLElement>;
   children?: React.ReactNode;
+  style?: React.CSSProperties | string
 }
 
 const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (props,ref) => {
-  const { disabled, autofocus, nativeType, loading, type: buttonType='', plain, round, circle } = props
+  const { disabled, autofocus, nativeType, loading, plain, round, circle } = props
   const globalConfig = useContext(GlobalConfig)
+  const buttonGroupContext = useContext(ButtonGroupContext)
   const buttonRef = (ref as any) || React.createRef<HTMLElement>();
   const autoInsertSpace = useMemo(() => props.autoInsertSpace ?? globalConfig?.autoInsertSpace ?? false,[props.autoInsertSpace,globalConfig.autoInsertSpace])
-  const buttonSize = useMemo(()=> props.size ?? globalConfig?.size,[props.size,globalConfig.size])
+  const buttonSize = useMemo(()=> props.size ??buttonGroupContext?.size ?? globalConfig?.size,[props.size,globalConfig.size,buttonGroupContext?.size])
+  const buttonType = useMemo(()=> props.type ??buttonGroupContext?.type ?? '',[props.type,buttonGroupContext?.type])
+
   // add space between two characters in Chinese
   const shouldAddSpace = useMemo(() => {
     const defaultSlot = props.children
@@ -42,7 +46,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (pro
   const typeColor = useMemo(()=> getCssVar(`--el-color-${buttonType}`),[buttonType])
   // calculate hover & active color by color
   const buttonStyle = useMemo(() => {
-    let styles = {}
+    let styles = {};
 
     const buttonColor = props.color || typeColor
     if (buttonColor) {
@@ -82,8 +86,11 @@ const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (pro
       }
     }
 
+    if(typeof props?.style ==='object'){
+      styles = { ...styles,...props.style }
+    }
     return styles
-  }, [plain])
+  }, [plain,props.style])
 
   const handleClick = (event: MouseEvent) => {
     isFunction(props?.onClick) && props?.onClick(event)

@@ -66,7 +66,7 @@ const getValue = (type: string) => {
 .demo-radius .radius {
   height: 40px;
   width: 70%;
-  border: 1px solid var(--el-border-color-base);
+  border: 99px solid var(--el-border-color-base);
   border-radius: 0;
   margin-top: 20px;
 }
