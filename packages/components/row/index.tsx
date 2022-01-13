@@ -3,9 +3,9 @@ import classnames from "classnames";
 import './style'
 
 export interface RowProps {
-  tag?: string,
-  gutter?: number,
-  justify?: 'start' | 'center' | 'end' | 'space-around' | 'space-between',
+  tag?: string
+  gutter?: number
+  justify?: 'start' | 'center' | 'end' | 'space-around' | 'space-between'
   align?: 'top' | 'middle' | 'bottom'
   className?: string
 }
