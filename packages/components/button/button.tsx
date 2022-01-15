@@ -1,10 +1,10 @@
-import React, { useMemo,useContext } from "react";
+import React, { useMemo, useContext } from "react";
 import classnames from 'classnames'
 import { TinyColor } from '@ctrl/tinycolor'
-import {isFunction} from 'lodash'
-import {LoadingOutlined } from '@element-plus/icons-react'
-import {getCssVar,GlobalConfig} from '../_utils/index'
-import ButtonGroup,{ButtonGroupContext} from "./button-group";
+import { isFunction } from 'lodash'
+import { LoadingOutlined } from '@element-plus/icons-react'
+import { getCssVar, GlobalConfig, css2object } from '../_utils/index'
+import ButtonGroup, { ButtonGroupContext } from "./button-group";
 
 export interface ButtonProps {
   size?: "large" | "default" | "small"
@@ -25,14 +25,14 @@ export interface ButtonProps {
   style?: React.CSSProperties | string
 }
 
-const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (props,ref) => {
+const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
   const { disabled, autofocus, nativeType, loading, plain, round, circle } = props
   const globalConfig = useContext(GlobalConfig)
   const buttonGroupContext = useContext(ButtonGroupContext)
   const buttonRef = (ref as any) || React.createRef<HTMLElement>();
-  const autoInsertSpace = useMemo(() => props.autoInsertSpace ?? globalConfig?.autoInsertSpace ?? false,[props.autoInsertSpace,globalConfig.autoInsertSpace])
-  const buttonSize = useMemo(()=> props.size ??buttonGroupContext?.size ?? globalConfig?.size,[props.size,globalConfig.size,buttonGroupContext?.size])
-  const buttonType = useMemo(()=> props.type ??buttonGroupContext?.type ?? '',[props.type,buttonGroupContext?.type])
+  const autoInsertSpace = useMemo(() => props.autoInsertSpace ?? globalConfig?.autoInsertSpace ?? false, [props.autoInsertSpace, globalConfig.autoInsertSpace])
+  const buttonSize = useMemo(() => props.size ?? buttonGroupContext?.size ?? globalConfig?.size, [props.size, globalConfig.size, buttonGroupContext?.size])
+  const buttonType = useMemo(() => props.type ?? buttonGroupContext?.type ?? '', [props.type, buttonGroupContext?.type])
 
   // add space between two characters in Chinese
   const shouldAddSpace = useMemo(() => {
@@ -43,10 +43,10 @@ const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (pro
     return false
   }, [autoInsertSpace])
 
-  const typeColor = useMemo(()=> getCssVar(`--el-color-${buttonType}`),[buttonType])
+  const typeColor = useMemo(() => getCssVar(`--el-color-${buttonType}`), [buttonType])
   // calculate hover & active color by color
   const buttonStyle = useMemo(() => {
-    let styles = {};
+    let styles: any = {};
 
     const buttonColor = props.color || typeColor
     if (buttonColor) {
@@ -86,14 +86,22 @@ const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (pro
       }
     }
 
-    if(typeof props?.style ==='object'){
-      styles = { ...styles,...props.style }
+    if (typeof props?.style === 'object') {
+      styles = { ...styles, ...props.style }
+    } else if (typeof props?.style === 'string') {
+      const customStyle = css2object(props?.style)
+      console.log(customStyle)
+      styles = { ...styles, ...customStyle }
     }
+    console.log(styles)
     return styles
-  }, [plain,props.style])
+  }, [plain, props.style])
 
   const handleClick = (event: MouseEvent) => {
-    isFunction(props?.onClick) && props?.onClick(event)
+    if (isFunction(props?.onClick)){
+      // @ts-ignore
+      props?.onClick(event)
+    }
   }
 
   const className = classnames(
@@ -110,12 +118,12 @@ const InternalButton: React.ForwardRefRenderFunction<unknown,ButtonProps> = (pro
     props.className,
   )
   const renderIcon = loading ?
-        (<span className="el-icon is-loading"><LoadingOutlined /></span> )
+    (<span className="el-icon is-loading"><LoadingOutlined /></span>)
     : props.icon
       ?
-     (<span className="el-icon">{props.icon}</span>)
-    : null
-  const kids = props.children?  <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >{props.children}</span>: null
+      (<span className="el-icon">{props.icon}</span>)
+      : null
+  const kids = props.children ? <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >{props.children}</span> : null
 
   return (<button
     className={className}

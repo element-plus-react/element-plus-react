@@ -1,3 +1,5 @@
 cjs
 es
 umd
+lib
+./README.md

@@ -31,10 +31,9 @@
     "./*": "./*"
   },
   "main": "lib/index.js",
-  "module": "es/index.mjs",
+  "module": "es/index.js",
   "style": "dist/index.css",
-  "unpkg": "dist/index.full.js",
-  "jsdelivr": "dist/index.full.js",
+  "types": "types/index.d.ts",
   "dependencies": {
     "@ctrl/tinycolor": "^3.4.0",
     "classnames": "^2.3.1",
