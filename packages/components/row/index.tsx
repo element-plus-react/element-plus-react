@@ -11,7 +11,7 @@ export interface RowProps {
 }
 
 const Row: React.FC<RowProps> = (props) => {
-  const { tag = 'div', gutter = 0, justify = 'start', align = 'top' } = props
+  const { gutter = 0, justify = 'start', align = 'top' } = props
 
   const style = useMemo(() => {
     const ret = {
