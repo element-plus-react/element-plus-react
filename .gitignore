@@ -16,5 +16,5 @@ coverage
 
 .umi
 .umi-production
-yarn.lock
+#yarn.lock
 
