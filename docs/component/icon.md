@@ -4,7 +4,7 @@ nav:
   title: 组件
   path: /components
 group:
-  title: Basic 基础组件
+  title: TODO 待办
   order: 1
 ---
 

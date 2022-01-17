@@ -18,3 +18,8 @@ coverage
 .umi-production
 #yarn.lock
 
+cjs
+es
+umd
+lib
+

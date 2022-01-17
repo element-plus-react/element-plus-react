@@ -1,16 +1,13 @@
 {
-  "name": "element-plus-react-docs",
+  "name": "element-plus-react",
   "private": true,
-  "version": "0.0.1-alpha.0",
-  "workspaces": [
-    "./packages/*"
-  ],
+  "version": "0.0.1-alpha.2",
   "scripts": {
     "start:play": "yarn workspace play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
     "publish:docs": "gh-pages -d dist",
-    "build": "yarn workspace element-plus-react run build",
+    "build": "rollup -c",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
@@ -22,9 +19,25 @@
     "type": "git",
     "url": "https://github.com/element-plus-react/element-plus-react"
   },
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./es/index.js"
+    },
+    "./es": "./es/index.js",
+    "./lib": "./lib/index.js",
+    "./*": "./*"
+  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "style": "dist/index.css",
+  "types": "types/index.d.ts",
   "dependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ctrl/tinycolor": "^3.4.0",
     "classnames": "^2.3.1",
     "dayjs": "^1.10.7",
+    "element-plus": "^1.3.0-beta.5",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
@@ -90,5 +103,13 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie < 8",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
 }
