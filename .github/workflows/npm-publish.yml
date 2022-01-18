@@ -4,7 +4,8 @@ name: Push Release
 # 当代码合并到master分支的时候，执行下列脚本
 on:
   push:
-    branches: [ master ]
+    tags:
+      - 'v*'
 
 # 任务
 jobs:
@@ -12,41 +13,27 @@ jobs:
   publish-npm:
     # 在ubuntu最新版本的虚拟机执行
     runs-on: ubuntu-latest
-    # 设置变量
-    strategy:
-      matrix:
-        node-version: [ 12.x ]
     steps:
       # 检查并切换到master分支
       - name: 检查master分支
         # 使用actions/checkout插件
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
 
       # 安装node
       - name: 设置Node.js
         # 使用actions/setup-node插件
-        uses: actions/setup-node@master
+        uses: actions/setup-node@v2
         with:
           # node版本
-          node-version: ${{ matrix.node-version }}
+          node-version: '14'
+          cache: 'yarn'
 
-      # 初始化缓存
-      - name:  缓存
-        uses: actions/cache@v2
-        id: cache-dependencies
-        with:
-          path: node_modules
-          key: ${{runner.OS}}-${{hashFiles('**/yarn.lock')}}
-
-      # 读取当前版本号
-      - name: 读取当前版本号
-        id: version
-        uses: ashley-taylor/read-json-property-action@v1.0
-        with:
-          # 读取dist/package.json的，而不是根路径下的package.json
-          path: ./package.json
-          property: version
-
+      - name: Run npm scripts
+        run: |
+          node -v
+          yarn -v
+          yarn install
+          yarn run build
       # 发布NPM包
       - name: 发布NPM包
         # 执行发布代码
@@ -56,39 +43,3 @@ jobs:
         env:
           # 配置 npm access token 环境变量
           NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
-
-      # 创建GitHub Release
-      - name: 创建GitHub Release
-        id: create_release
-        uses: actions/create-release@latest
-        env:
-          # 配置github token （这个无需去github配置，默认存在的）
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          # 标签名
-          tag_name: v${{steps.version.outputs.value}}
-          # release名
-          release_name: v${{steps.version.outputs.value}}
-          # 是否为草稿
-          draft: false
-          # 是否为预发布
-          prerelease: false
-
-      # 上传Release Asset
-      - name: 上传Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          # 上传URL为创建GitHub Release步骤的输出值，可通过配置的id获取
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          # 上传文件信息
-          asset_path: ./dist/index.js
-          asset_name: index.js
-          asset_content_type: application/js
-
-      # 刷新缓存
-      - name: 刷新缓存
-        run: |
-          curl https://purge.jsdelivr.net/npm/iemotion-pic@latest/dist/name.json
