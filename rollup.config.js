@@ -13,22 +13,25 @@ import { terser } from 'rollup-plugin-terser'
 
 import pkg from './package.json'
 
+const extensions = ['js','ts','tsx','json']
 
 export default {
   input: "./src/index.ts",
   output: [
+    // {
+    //   file: pkg.main,
+    //   format: 'umd',
+    //   name: 'ElementPlusReact',
+    //   global: {
+    //     react: 'React',
+    //     lodash: '_',
+    //   },
+    // },
     {
-      file: pkg.main,
-      format: 'umd',
-      name: 'ElementPlusReact',
-      global: {
-        react: 'React',
-        lodash: '_',
-      },
-    },
-    {
-      file: pkg.module,
+      dir: 'es',
       format: 'es',
+      preserveModules: true,
+      exports: 'named',
     },
   ],
   acornInjectPlugins: [jsx()],
@@ -47,7 +50,7 @@ export default {
     typescript({
       jsx: 'preserve' ,
       check: false,
-      exclude: ["node_modules", "lib", "es","*/demos/*"]
+      exclude: ["node_modules", "lib", "es","*/demos/*"],
     }),
     resolve(),
     commonjs(),
@@ -55,6 +58,7 @@ export default {
       presets: ['@babel/preset-react'],
       babelHelpers: 'bundled',
       exclude: '**/node_modules/**',
+      extensions,
     }),
     postcss({
       plugins: [
@@ -70,5 +74,6 @@ export default {
     'lodash',
     'classnames',
     "@ctrl/tinycolor",
+    "@ant-design/icons",
   ],
 }

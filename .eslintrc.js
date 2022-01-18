@@ -3,7 +3,6 @@ module.exports = {
       'airbnb',
       'prettier',
       'plugin:compat/recommended',
-      'plugin:jest/recommended',
       'plugin:react/recommended',
       'plugin:import/typescript',
       'plugin:markdown/recommended',
@@ -22,7 +21,7 @@ module.exports = {
       polyfills: ['Promise', 'URL'],
     },
     parser: '@typescript-eslint/parser',
-    plugins: ['react', 'babel', 'jest', '@typescript-eslint', 'react-hooks', 'unicorn', 'markdown'],
+    plugins: ['react', 'babel', '@typescript-eslint', 'react-hooks', 'unicorn', 'markdown'],
     // https://github.com/typescript-eslint/typescript-eslint/issues/46#issuecomment-470486034
     overrides: [
       {
