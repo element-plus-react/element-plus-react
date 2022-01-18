@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "element-plus-react/*": ["src/*"]
+      "element-plus-react": ["src/index.ts"]
     },
     "strictNullChecks": true,
     "module": "esnext",
@@ -16,12 +16,12 @@
     "target": "es6",
     "lib": ["dom", "es2017"],
     "skipLibCheck": true,
-    "rootDir": "./",
+    "rootDir": "src",
     "declaration": true,
     "declarationDir": "typings",
     "outDir": "./",
     "sourceMap": true
   },
-  "include": ["src/*"],
+  "include": ["src"],
   "exclude": ["node_modules", "lib", "es"]
 }

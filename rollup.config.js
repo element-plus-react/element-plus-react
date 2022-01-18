@@ -1,5 +1,5 @@
 import clear from 'rollup-plugin-clear'
-import copy from 'rollup-plugin-copy'
+// import copy from 'rollup-plugin-copy'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import jsx from 'acorn-jsx';
@@ -9,26 +9,29 @@ import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 
-import { terser } from 'rollup-plugin-terser'
+// import { terser } from 'rollup-plugin-terser'
 
-import pkg from './package.json'
+// import pkg from './package.json'
 
+const extensions = ['js','ts','tsx','json']
 
 export default {
   input: "./src/index.ts",
   output: [
+    // {
+    //   file: pkg.main,
+    //   format: 'umd',
+    //   name: 'ElementPlusReact',
+    //   global: {
+    //     react: 'React',
+    //     lodash: '_',
+    //   },
+    // },
     {
-      file: pkg.main,
-      format: 'umd',
-      name: 'ElementPlusReact',
-      global: {
-        react: 'React',
-        lodash: '_',
-      },
-    },
-    {
-      file: pkg.module,
+      dir: 'es',
       format: 'es',
+      preserveModules: true,
+      exports: 'named',
     },
   ],
   acornInjectPlugins: [jsx()],
@@ -47,7 +50,7 @@ export default {
     typescript({
       jsx: 'preserve' ,
       check: false,
-      exclude: ["node_modules", "lib", "es","*/demos/*"]
+      exclude: ["node_modules", "lib", "es","*/demos/*"],
     }),
     resolve(),
     commonjs(),
@@ -55,13 +58,14 @@ export default {
       presets: ['@babel/preset-react'],
       babelHelpers: 'bundled',
       exclude: '**/node_modules/**',
+      extensions,
     }),
     postcss({
       plugins: [
         autoprefixer(),
         cssnano(),
       ],
-      extract: pkg.style,
+      extract: true,
     }),
     // terser(),
   ],
@@ -70,5 +74,6 @@ export default {
     'lodash',
     'classnames',
     "@ctrl/tinycolor",
+    "@ant-design/icons",
   ],
 }
