@@ -21,17 +21,18 @@
   },
   "exports": {
     ".": {
-      "require": "./es/index.js",
+      "require": "./lib/index.js",
       "import": "./es/index.js"
     },
     "./es": "./es/index.js",
-    "./lib": "./es/index.js",
+    "./lib": "./lib/index.js",
     "./*": "./*"
   },
   "files": [
-    "es"
+    "es",
+    "lib"
   ],
-  "main": "es/index.js",
+  "main": "lib/index.js",
   "module": "es/index.js",
   "style": "es/index.css",
   "types": "es/index.d.ts",

@@ -18,15 +18,17 @@ const extensions = ['js','ts','tsx','json']
 export default {
   input: "./src/index.ts",
   output: [
-    // {
-    //   file: pkg.main,
-    //   format: 'umd',
-    //   name: 'ElementPlusReact',
-    //   global: {
-    //     react: 'React',
-    //     lodash: '_',
-    //   },
-    // },
+    {
+      dir: 'lib',
+      format: 'cjs',
+      name: 'ElementPlusReact',
+      preserveModules: true,
+      exports: 'named',
+      global: {
+        react: 'React',
+        lodash: '_',
+      },
+    },
     {
       dir: 'es',
       format: 'es',
