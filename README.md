@@ -17,6 +17,35 @@
 
 ---
 
+## 📦 安装
+
+```bash
+npm install element-plus-react --save
+```
+
+```bash
+yarn add element-plus-react
+```
+
+## 🔨 示例
+
+```jsx
+import { Button } from 'element-plus-react';
+
+const App = () => (
+  <>
+    <Button type="primary">PRESS ME</Button>
+  </>
+);
+```
+
+引入样式：
+
+```jsx
+import 'element-plus-react/es/index.css';
+```
+
+---
 ## Contributors
 
 This project exists thanks to all the people who contribute.
