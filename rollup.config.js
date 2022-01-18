@@ -1,5 +1,5 @@
 import clear from 'rollup-plugin-clear'
-import copy from 'rollup-plugin-copy'
+// import copy from 'rollup-plugin-copy'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import jsx from 'acorn-jsx';
@@ -9,9 +9,9 @@ import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 import cssnano from 'cssnano'
 
-import { terser } from 'rollup-plugin-terser'
+// import { terser } from 'rollup-plugin-terser'
 
-import pkg from './package.json'
+// import pkg from './package.json'
 
 const extensions = ['js','ts','tsx','json']
 
@@ -65,7 +65,7 @@ export default {
         autoprefixer(),
         cssnano(),
       ],
-      extract: pkg.style,
+      extract: true,
     }),
     // terser(),
   ],

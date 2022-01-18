@@ -2,8 +2,9 @@
   "name": "element-plus-react",
   "private": true,
   "version": "0.0.1-alpha.3",
+  "homepage": "https://element-plus-react.github.io/",
   "scripts": {
-    "start:play": "yarn workspace play run start",
+    "start:play": "cd play && yarn run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
     "publish:docs": "gh-pages -d dist",
@@ -21,17 +22,20 @@
   },
   "exports": {
     ".": {
-      "require": "./lib/index.js",
+      "require": "./es/index.js",
       "import": "./es/index.js"
     },
     "./es": "./es/index.js",
-    "./lib": "./lib/index.js",
+    "./lib": "./es/index.js",
     "./*": "./*"
   },
-  "main": "lib/index.js",
+  "files": [
+    "es"
+  ],
+  "main": "es/index.js",
   "module": "es/index.js",
-  "style": "dist/index.css",
-  "types": "types/index.d.ts",
+  "style": "es/index.css",
+  "types": "es/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ctrl/tinycolor": "^3.4.0",
