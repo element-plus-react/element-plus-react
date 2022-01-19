@@ -1,5 +1,6 @@
 ---
 title: Color 色彩
+order: 3
 nav:
   title: 组件
   path: /components
