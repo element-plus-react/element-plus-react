@@ -126,7 +126,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     },
     props.className,
   )
-  const iconNode = props.icon && !loading ? (<span className="el-icon">{props.icon}</span>) : (<span className="el-icon is-loading"><LoadingOutlined /></span>)
+  const iconNode = props.icon && !loading ? (<span className="el-icon">{props.icon}</span>) : ( loading?<span className="el-icon is-loading"><LoadingOutlined /></span> : null)
   const kids = props.children ? <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >{props.children}</span> : null
 
   return (<button
