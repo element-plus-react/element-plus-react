@@ -1,11 +1,12 @@
 ---
 title: Border 边框
+order: 2
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Basic 基础组件
+  order: 1
 ---
 # Border 边框
 
@@ -15,28 +16,16 @@ group:
 
 我们提供了以下几种边框样式，以供选择。
 
-:::demo
-
-border/border
-
-:::
+<code src="./demos/border.tsx" ></code>
 
 ## 圆角
 
 我们提供了以下几种圆角样式，以供选择。
 
-:::demo
-
-border/radius
-
-:::
+<code src="./demos/radius.tsx" ></code>
 
 ## 阴影
 
 我们提供了以下几种投影样式，以供选择。
 
-:::demo
-
-border/shadow
-
-:::
+<code src="./demos/shadow.tsx" ></code>
