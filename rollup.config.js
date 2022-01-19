@@ -1,5 +1,5 @@
-import clear from 'rollup-plugin-clear'
-// import copy from 'rollup-plugin-copy'
+import clear from 'rollup-plugin-delete'
+import copy from 'rollup-plugin-copy'
 import babel from '@rollup/plugin-babel'
 import commonjs from '@rollup/plugin-commonjs'
 import jsx from 'acorn-jsx';
@@ -39,16 +39,6 @@ export default {
   acornInjectPlugins: [jsx()],
   plugins: [
     clear({ targets: ["lib", "es", "dist"] }),
-    // copy({
-    //   targets: [
-    //     {
-    //       src: '../../README.md',
-    //       dest: './',
-    //     },
-    //   ],
-    //   hook: 'writeBundle',
-    //   verbose: true,
-    // }),
     typescript({
       jsx: 'preserve' ,
       check: false,
@@ -70,6 +60,21 @@ export default {
       extract: true,
     }),
     // terser(),
+    copy({
+      targets: [
+        {
+          src: 'es/index.css',
+          dest: 'dist',
+        },
+      ],
+      hook: 'writeBundle',
+      verbose: true,
+    }),
+    clear({
+      targets: ['lib/index.css','es/index.css'],
+      hook: 'closeBundle',
+      verbose: true,
+    }),
   ],
   external: [
     'react',

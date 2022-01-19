@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { createContext, useMemo } from 'react'
 import classnames from "classnames";
 import './style'
 
@@ -10,8 +10,10 @@ export interface RowProps {
   className?: string
 }
 
+export const RowContext = createContext<Pick<RowProps,'gutter'>>({})
+
 const Row: React.FC<RowProps> = (props) => {
-  const { gutter = 0, justify = 'start', align = 'top' } = props
+  const {tag='div', gutter = 0, justify = 'start', align = 'top' } = props
 
   const style = useMemo(() => {
     const ret = {
@@ -24,10 +26,13 @@ const Row: React.FC<RowProps> = (props) => {
     }
     return ret
   }, [gutter])
+  const Tag = `${tag}`
   const className = classnames('el-row', justify !== 'start' ? `is-justify-${justify}` : '',
     align !== 'top' ? `is-align-${align}` : '',props.className)
-
-  return <div style={style} className={className}>{props.children}</div>
+  const state = useMemo(()=>({gutter:props.gutter}),[props.gutter])
+  return (<RowContext.Provider value={state}>
+    <Tag style={style} className={className}>{props.children}</Tag>
+  </RowContext.Provider>)
 }
 
 export default Row
