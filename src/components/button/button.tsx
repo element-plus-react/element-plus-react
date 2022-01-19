@@ -4,14 +4,18 @@ import { TinyColor } from '@ctrl/tinycolor'
 import { isFunction } from 'lodash'
 import { LoadingOutlined } from '@ant-design/icons'
 import { getCssVar, GlobalConfig, css2object } from '../_utils/index'
+import { tuple } from '../_utils/type'
 import ButtonGroup, { ButtonGroupContext } from "./button-group";
 
+
+const ButtonHTMLTypes = tuple('submit', 'button', 'reset');
+export type ButtonHTMLType = typeof ButtonHTMLTypes[number];
 export interface ButtonProps {
   size?: "large" | "default" | "small"
   disabled?: boolean,
   type?: 'default' | 'primary' | 'success' | 'warning' | 'info' | 'danger' | 'text'
   icon?: any
-  nativeType?: 'button' | 'submit' | 'reset'
+  nativeType?: ButtonHTMLType
   loading?: boolean,
   plain?: boolean,
   autofocus?: boolean,
@@ -26,7 +30,15 @@ export interface ButtonProps {
 }
 
 const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (props, ref) => {
-  const { disabled, autofocus, nativeType, loading, plain, round, circle } = props
+  const {
+    disabled,
+    autofocus,
+    nativeType = 'button' as ButtonProps['nativeType'],
+    loading,
+    plain,
+    round,
+    circle,
+  } = props
   const globalConfig = useContext(GlobalConfig)
   const buttonGroupContext = useContext(ButtonGroupContext)
   const buttonRef = (ref as any) || React.createRef<HTMLElement>();
@@ -41,7 +53,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
       return true
     }
     return false
-  }, [autoInsertSpace])
+  }, [autoInsertSpace, props.children])
 
   const typeColor = useMemo(() => getCssVar(`--el-color-${buttonType}`), [buttonType])
   // calculate hover & active color by color
@@ -90,16 +102,13 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
       styles = { ...styles, ...props.style }
     } else if (typeof props?.style === 'string') {
       const customStyle = css2object(props?.style)
-      console.log(customStyle)
       styles = { ...styles, ...customStyle }
     }
-    console.log(styles)
     return styles
-  }, [plain, props.style])
+  }, [disabled, plain, props.color, props.style, typeColor])
 
-  const handleClick = (event: MouseEvent) => {
-    if (isFunction(props?.onClick)){
-      // @ts-ignore
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>) => {
+    if (isFunction(props?.onClick)) {
       props?.onClick(event)
     }
   }
@@ -117,12 +126,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     },
     props.className,
   )
-  const renderIcon = loading ?
-    (<span className="el-icon is-loading"><LoadingOutlined /></span>)
-    : props.icon
-      ?
-      (<span className="el-icon">{props.icon}</span>)
-      : null
+  const iconNode = props.icon && !loading ? (<span className="el-icon">{props.icon}</span>) : (<span className="el-icon is-loading"><LoadingOutlined /></span>)
   const kids = props.children ? <span className={shouldAddSpace ? 'el-button__text--expand' : ''} >{props.children}</span> : null
 
   return (<button
@@ -134,7 +138,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     onClick={handleClick}
     ref={buttonRef}
   >
-    {renderIcon}
+    {iconNode}
     {kids}
   </button>)
 }
