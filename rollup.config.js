@@ -77,10 +77,12 @@ export default {
     }),
   ],
   external: [
+    "@ant-design/icons",
+    "@ctrl/tinycolor",
+    'ahooks',
+    'classnames',
+    "dayjs",
     'react',
     'lodash',
-    'classnames',
-    "@ctrl/tinycolor",
-    "@ant-design/icons",
   ],
 }

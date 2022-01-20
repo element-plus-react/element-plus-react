@@ -1,6 +1,6 @@
 {
   "name": "element-plus-react",
-  "version": "0.0.1-alpha.6",
+  "version": "0.0.1-alpha.7",
   "homepage": "https://element-plus-react.github.io/",
   "scripts": {
     "start:play": "cd play && yarn run start",
@@ -30,7 +30,8 @@
   },
   "files": [
     "es",
-    "lib"
+    "lib",
+    "dist"
   ],
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -39,6 +40,7 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ctrl/tinycolor": "^3.4.0",
+    "ahooks": "^3.1.7",
     "classnames": "^2.3.1",
     "dayjs": "^1.10.7",
     "lodash": "^4.17.21"
