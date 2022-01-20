@@ -42,7 +42,7 @@ const App = () => (
 引入样式：
 
 ```jsx
-import 'element-plus-react/es/index.css';
+import 'element-plus-react/dist/index.css';
 ```
 
 ---
@@ -55,3 +55,80 @@ And thank you to all our backers! 🙏
 <a href="https://github.com/element-plus-react/element-plus-react/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=element-plus-react/element-plus-react" />
 </a>
+
+---
+## Components
+
+- [ ] Affix
+- [ ] Alert
+- [ ] Aside
+- [ ] Autocomplete
+- [ ] Avatar
+- [ ] Backtop
+- [ ] Badge
+- [ ] Breadcrumb
+- [x] Button
+- [ ] Calendar
+- [ ] Card
+- [ ] Carousel
+- [ ] Cascader
+- [ ] CheckTag
+- [ ] Checkbox
+- [x] Col
+- [ ] Collapse
+- [ ] ColorPicker
+- [ ] Container
+- [ ] DatePicker
+- [ ] Descriptions
+- [ ] Directives
+- [ ] Dialog
+- [ ] Divider
+- [ ] Drawer
+- [ ] Dropdown
+- [ ] Empty
+- [ ] Footer
+- [ ] Form
+- [ ] Header
+- [x] Icon
+- [ ] Image
+- [ ] ImageViewer
+- [ ] InfiniteScroll
+- [ ] Input
+- [ ] InputNumber
+- [ ] Link
+- [ ] Loading
+- [ ] Main
+- [ ] Menu
+- [ ] Message
+- [ ] Notification
+- [ ] Option
+- [ ] Overlay
+- [ ] PageHeader
+- [ ] Pagination
+- [ ] Popconfirm
+- [ ] Popover
+- [ ] Popper
+- [ ] Progress
+- [ ] Radio
+- [ ] Rate
+- [ ] Result
+- [x] Row
+- [ ] Scrollbar
+- [ ] Select
+- [ ] Skeleton
+- [ ] Slider
+- [ ] Space
+- [ ] Steps
+- [ ] Submenu
+- [ ] Switch
+- [ ] Table
+- [ ] Tabs
+- [ ] Tag
+- [ ] TimePicker
+- [ ] TimeSelect
+- [ ] Timeline
+- [ ] ToolTip
+- [ ] Transfer
+- [ ] Tree
+- [ ] Upload
+- [ ] VirtualList
