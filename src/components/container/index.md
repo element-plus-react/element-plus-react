@@ -1,11 +1,12 @@
 ---
 title: Container 布局容器
+order: 4
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Basic 基础组件
+  order: 1
 ---
 # Container 布局容器
 
@@ -21,19 +22,13 @@ group:
 
 `<el-footer>`：底栏容器。
 
-:::tip
-
-以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。 此外， `<el-container>`的直接子元素必须是后四个组件中的一个或多个。 后四个组件的亲元素必须是一个 `<el-container>`
-
-:::
+<Alert type="info">
+ 以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。 此外，`el-container`的直接子元素必须是后四个组件中的一个或多个。 后四个组件的亲元素必须是一个 `el-container`
+</Alert>
 
 ## 常见页面布局
 
-:::demo
-
-container/basic
-
-:::
+<code src="./demos/basic.tsx" ></code>
 
 ## 例子
 

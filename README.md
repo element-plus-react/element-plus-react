@@ -77,7 +77,7 @@ And thank you to all our backers! 🙏
 - [x] Col
 - [ ] Collapse
 - [ ] ColorPicker
-- [ ] Container
+- [x] Container
 - [ ] DatePicker
 - [ ] Descriptions
 - [ ] Directives
