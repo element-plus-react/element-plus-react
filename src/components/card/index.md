@@ -1,11 +1,12 @@
 ---
 title: Card 卡片
+order: 4
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Card 卡片
 
@@ -15,41 +16,25 @@ group:
 
 卡片包含标题，内容以及操作区域。
 
-:::demo Card 组件由 `header` 和 `body` 组成。 `header` 是可选的，其内容取决于一个具名的 slot。
-
-card/basic
-
-:::
+<code src="./demos/basic.tsx" desc="Card 组件由 `header` 和 `body` 组成。 `header` 是可选的，其内容取决于一个具名的 slot。"></code>
 
 ## 简单卡片
 
 卡片可以只有内容区域。
 
-:::demo
-
-card/simple
-
-:::
+<code src="./demos/simple.tsx"></code>
 
 ## 有图片内容的卡片
 
 可配置定义更丰富的内容展示。
 
-:::demo 配置`body-style`属性来自定义`body`部分的样式。 在这个例子中我们还使用了 `el-col` 组件来布局。
-
-card/with-images
-
-:::
+<code src="./demos/with-images.tsx" desc="配置`body-style`属性来自定义`body`部分的样式。 在这个例子中我们还使用了 `el-col` 组件来布局。"></code>
 
 ## 带有阴影效果的卡片
 
 你可以定义什么时候展示卡片的阴影效果。
 
-:::demo 通过 `shadow` 属性设置卡片阴影出现的时机。 该属性的值可以是：`always`、`hover`或`never`。
-
-card/shadow
-
-:::
+<code src="./demos/shadow.tsx" desc="通过 `shadow` 属性设置卡片阴影出现的时机。 该属性的值可以是：`always`、`hover`或`never`。"></code>
 
 ## 属性
 
