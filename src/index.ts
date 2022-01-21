@@ -6,6 +6,7 @@ import Card from './components/card'
 import Col  from './components/layout/col';
 import ConfigProvider from './components/config-provider';
 import Container from './components/container';
+import Divider from './components/divider'
 import Row  from './components/layout/row';
 
 export{
@@ -17,5 +18,6 @@ export{
   ConfigProvider,
   Col,
   Container,
+  Divider,
   Row,
 }
