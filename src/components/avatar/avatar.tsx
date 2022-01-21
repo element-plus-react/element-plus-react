@@ -5,7 +5,7 @@ interface AvatarProps {
   size?: number | 'large' | 'default' | 'small'
   shape?: 'circle' | 'square'
   icon?: React.ReactNode,
-  src: string,
+  src?: string,
   alt?: string,
   srcSet?: string,
   fit?: 'fill' | 'contain' | 'cover' | 'none' | 'scale-down'
@@ -26,7 +26,7 @@ const Avatar: React.FC<AvatarProps> = (props) => {
     if (size && typeof size === 'string') classList.push(`el-avatar--${size}`)
     if (icon) classList.push('el-avatar--icon')
     if (shape) classList.push(`el-avatar--${shape}`)
-    return classList
+    return classList.join(' ')
   }, [icon, shape, size])
 
   const sizeStyle = useMemo<React.CSSProperties>(() => typeof size === 'number'
