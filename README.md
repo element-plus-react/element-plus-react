@@ -68,7 +68,7 @@ And thank you to all our backers! 🙏
 - [ ] Breadcrumb
 - [x] Button
 - [ ] Calendar
-- [ ] Card
+- [x] Card
 - [ ] Carousel
 - [ ] Cascader
 - [ ] CheckTag
