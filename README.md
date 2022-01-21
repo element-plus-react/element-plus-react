@@ -59,9 +59,8 @@ And thank you to all our backers! 🙏
 ---
 ## Components
 
-- [ ] Affix
-- [ ] Alert
-- [ ] Aside
+- [x] Affix
+- [x] Alert
 - [ ] Autocomplete
 - [ ] Avatar
 - [ ] Backtop
@@ -82,13 +81,11 @@ And thank you to all our backers! 🙏
 - [ ] Descriptions
 - [ ] Directives
 - [ ] Dialog
-- [ ] Divider
+- [x] Divider
 - [ ] Drawer
 - [ ] Dropdown
 - [ ] Empty
-- [ ] Footer
 - [ ] Form
-- [ ] Header
 - [x] Icon
 - [ ] Image
 - [ ] ImageViewer
@@ -97,7 +94,6 @@ And thank you to all our backers! 🙏
 - [ ] InputNumber
 - [ ] Link
 - [ ] Loading
-- [ ] Main
 - [ ] Menu
 - [ ] Message
 - [ ] Notification
@@ -116,7 +112,6 @@ And thank you to all our backers! 🙏
 - [ ] Scrollbar
 - [ ] Select
 - [ ] Skeleton
-- [ ] Slider
 - [ ] Space
 - [ ] Steps
 - [ ] Submenu
