@@ -1,11 +1,12 @@
 ---
 title: Avatar 头像
+order: 1
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Avatar 头像
 
@@ -15,41 +16,25 @@ Avatar 组件可以用来代表人物或对象， 支持使用图片，图标或
 
 使用 `shape` 和 `size` 属性来控制 Avatar 的形状和大小。
 
-:::demo
-
-avatar/basic
-
-:::
+<code src="./demos/basic.tsx"></code>
 
 ## 展示类型
 
 该用例会展示如何使用不同类型的 Avatar。
 
-:::demo
-
-avatar/types
-
-:::
+<code src="./demos/types.tsx"></code>
 
 ## 图片加载失败的回滚行为
 
 当展示类型为图片的时候，图片加载失败的 fallback 行为
 
-:::demo
-
-avatar/fallback
-
-:::
+<code src="./demos/fallback.tsx"></code>
 
 ## 图片如何适应容器
 
 当使用图片作为用户头像时，设置该图片如何在容器中展示。与[ object-fit ](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit) 属性一致
 
-:::demo
-
-avatar/fit
-
-:::
+<code src="./demos/fit.tsx"></code>
 
 ## 属性
 
