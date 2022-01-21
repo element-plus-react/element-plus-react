@@ -1,11 +1,12 @@
 ---
 title: Affix 固钉
+order: 1
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Navigation 导航
+  order: 5
 ---
 # Affix 固钉
 
@@ -15,31 +16,19 @@ group:
 
 固钉默认固定在页面顶部。
 
-:::demo 通过设置 `offset` 属性来改变吸顶距离，默认值为 0。
-
-affix/basic
-
-:::
+<code src="./demos/basic.tsx" desc="通过设置 `offset` 属性来改变吸顶距离，默认值为 0。"></code>
 
 ## 为 Affix 组件指定容器
 
 通过设置 `target` 属性，让固钉始终保持在容器内， 超过范围则隐藏。
 
-:::demo 请注意容器避免出现滚动条。
-
-affix/target
-
-:::
+<code src="./demos/target.tsx" desc="请注意容器避免出现滚动条。"></code>
 
 ## 固定 Affix 组件的位置
 
 Affix 组件提供 2 个固定的位置参数 `top` 和 `bottom`。
 
-:::demo 通过设置 `position` 属性来改变固定位置，默认值为 `top` 。
-
-affix/fixed
-
-:::
+<code src="./demos/fixed.tsx" desc="通过设置 `position` 属性来改变固定位置，默认值为 `top` 。"></code>
 
 ## 属性
 
