@@ -95,7 +95,7 @@
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.1",
     "sass": "^1.47.0",
-    "stylelint": "^14.2.0",
+    "stylelint": "^14.3.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard": "^24.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^2.5.0",
