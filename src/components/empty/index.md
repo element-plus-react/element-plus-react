@@ -1,11 +1,12 @@
 ---
 title: Empty 空状态
+order: 8
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Empty 空状态
 
@@ -13,41 +14,25 @@ group:
 
 ## 基础用法
 
-:::demo
-
-empty/basic-usage
-
-:::
+<code src="./demos/basic-usage.tsx" ></code>
 
 ## 自定义图片
 
 通过设置 `image` 属性传入图片 URL。
 
-:::demo
-
-empty/custom-image
-
-:::
+<code src="./demos/custom-image.tsx"></code>
 
 ## 图片尺寸
 
 Use `image-size` prop to control image size.
 
-:::demo
-
-empty/image-size
-
-:::
+<code src="./demos/image-size.tsx" ></code>
 
 ## Bottom content
 
 使用默认插槽可在底部插入内容。
 
-:::demo
-
-empty/bottom-content
-
-:::
+<code src="./demos/bottom-content.tsx"></code>
 
 ## Empty 属性
 
