@@ -1,11 +1,12 @@
 ---
 title: Result 结果
+order: 13
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Result 结果
 
@@ -13,19 +14,11 @@ group:
 
 ## 基础用法
 
-:::demo
-
-result/basic-usage
-
-:::
+<code src="./demos/basic-usage.tsx" ></code>
 
 ## 自定义内容
 
-:::demo
-
-result/customized-content
-
-:::
+<code src="./demos/customized-content.tsx" ></code>
 
 ## Result 属性
 

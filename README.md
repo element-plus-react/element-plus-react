@@ -84,7 +84,7 @@ And thank you to all our backers! 🙏
 - [x] Divider
 - [ ] Drawer
 - [ ] Dropdown
-- [ ] Empty
+- [x] Empty
 - [ ] Form
 - [x] Icon
 - [ ] Image
@@ -107,7 +107,7 @@ And thank you to all our backers! 🙏
 - [ ] Progress
 - [ ] Radio
 - [ ] Rate
-- [ ] Result
+- [x] Result
 - [x] Row
 - [ ] Scrollbar
 - [ ] Select
