@@ -1,11 +1,12 @@
 ---
 title: Page Header 页头
+order: 5
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Navigation 导航
+  order: 5
 ---
 # Page Header 页头
 
@@ -13,19 +14,11 @@ group:
 
 ## 基础用法
 
-:::demo
-
-page-header/basic
-
-:::
+<code src="./demos/basic.tsx"></code>
 
 ## 自定义图标
 
-:::demo
-
-page-header/custom-icon
-
-:::
+<code src="./demos/custom-icon.tsx"></code>
 
 ## 属性
 

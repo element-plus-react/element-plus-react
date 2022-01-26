@@ -99,7 +99,7 @@ And thank you to all our backers! 🙏
 - [ ] Notification
 - [ ] Option
 - [ ] Overlay
-- [ ] PageHeader
+- [x] PageHeader
 - [ ] Pagination
 - [ ] Popconfirm
 - [ ] Popover
