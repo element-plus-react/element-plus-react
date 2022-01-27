@@ -1,6 +1,7 @@
 import Alert from './components/alert'
 import Affix from './components/affix'
 import Avatar from './components/avatar'
+import Badge from './components/badge'
 import Button  from './components/button';
 import BackTop from './components/backtop'
 import Card from './components/card'
@@ -17,6 +18,7 @@ export{
   Alert,
   Affix,
   Avatar,
+  Badge,
   Button,
   BackTop,
   Card,
