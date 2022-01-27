@@ -84,5 +84,6 @@ export default {
     "dayjs",
     'react',
     'lodash',
+    'react-transition-group',
   ],
 }
