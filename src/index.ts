@@ -2,6 +2,7 @@ import Alert from './components/alert'
 import Affix from './components/affix'
 import Avatar from './components/avatar'
 import Button  from './components/button';
+import BackTop from './components/backtop'
 import Card from './components/card'
 import Col  from './components/layout/col';
 import ConfigProvider from './components/config-provider';
@@ -17,6 +18,7 @@ export{
   Affix,
   Avatar,
   Button,
+  BackTop,
   Card,
   ConfigProvider,
   Col,

@@ -61,9 +61,8 @@ And thank you to all our backers! 🙏
 
 - [x] Affix
 - [x] Alert
-- [ ] Autocomplete
 - [x] Avatar
-- [ ] Backtop
+- [x] BackTop
 - [ ] Badge
 - [ ] Breadcrumb
 - [x] Button
