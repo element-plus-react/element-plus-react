@@ -4,8 +4,8 @@ nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Others 其他
+  order: 7
 ---
 # Backtop 回到顶部
 
@@ -15,21 +15,13 @@ group:
 
 通过滑动来查看容器右下角的按钮
 
-:::demo
-
-backtop/basic
-
-:::
+<code src="./demos/basic.tsx" ></code>
 
 ## 自定义内容
 
 显示区域被固定为 40px \* 40px 的区域, 其中的内容可支持自定义。
 
-:::demo
-
-backtop/custom
-
-:::
+<code src="./demos/custom.tsx" ></code>
 
 ## 属性
 
