@@ -11,6 +11,7 @@ import ConfigProvider from './components/config-provider';
 import Container from './components/container';
 import Divider from './components/divider'
 import Empty from './components/empty'
+import Link from './components/link'
 import PageHeader from './components/page-header'
 import Row  from './components/layout/row';
 import Result from './components/result'
@@ -29,6 +30,7 @@ export{
   Container,
   Divider,
   Empty,
+  Link,
   PageHeader,
   Row,
   Result,

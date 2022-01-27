@@ -91,7 +91,7 @@ And thank you to all our backers! 🙏
 - [ ] InfiniteScroll
 - [ ] Input
 - [ ] InputNumber
-- [ ] Link
+- [x] Link
 - [ ] Loading
 - [ ] Menu
 - [ ] Message
