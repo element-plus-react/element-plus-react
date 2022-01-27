@@ -1,75 +1,44 @@
 ---
 title: Link 链接
+order: 7
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Basic 基础组件
+  order: 1
 ---
 # Link 链接
 
 文字超链接
 
-<style lang="scss">
-
-.example-showcase {
-  .el-link {
-    margin-right: 8px;
-
-    & .el-icon--right.el-icon {
-      vertical-align: text-bottom;
-    }
-  }
-}
-
-</style>
-
 ## 基础用法
 
 基础的文字链接用法。
 
-:::demo
-
-link/basic
-
-:::
+<code src="./demos/basic.tsx" ></code>
 
 ## 禁用状态
 
 文字链接不可用状态。
 
-:::demo
-
-link/disabled
-
-:::
+<code src="./demos/disabled.tsx"></code>
 
 ## 下划线
 
 文字链接下划线。
 
-:::demo
-
-link/underline
-
-:::
+<code src="./demos/underline.tsx"></code>
 
 ## 图标
 
 带图标的链接
 
-:::tip
-
+<Alert type="info">
 使用 `icon` 属性来为按钮添加图标。 您可以传递组件名称的字符串（提前注册）或组件本身是一个 SVG Vue 组件。 Element Plus 提供了一组图标，您可以在 [icon component](/zh-CN/component/icon)
+</Alert>
 
-:::
-
-:::demo
-
-link/with-icon
-
-:::
+<code src="./demos/with-icon.tsx"></code>
 
 ## 属性
 

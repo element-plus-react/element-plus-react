@@ -1,11 +1,12 @@
 ---
 title: Breadcrumb 面包屑
+order: 2
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Navigation 导航
+  order: 6
 ---
 # Breadcrumb 面包屑
 
@@ -13,19 +14,11 @@ group:
 
 ## 基础用法
 
-:::demo 在 `el-breadcrumb` 中使用 `el-breadcrumb-item` 标签表示从首页开始的每一级。 该组件接受一个 `String` 类型的参数 `separator`来作为分隔符。 默认值为 '/'。
-
-breadcrumb/basic
-
-:::
+<code src="./demos/basic.tsx" desc="在 `el-breadcrumb` 中使用 `el-breadcrumb-item` 标签表示从首页开始的每一级。 该组件接受一个 `String` 类型的参数 `separator`来作为分隔符。 默认值为 '/'。"></code>
 
 ## 图标分隔符
 
-:::demo 通过设置 `separator-class` 可使用相应的 `iconfont` 作为分隔符，注意这将使 `separator` 失效。
-
-breadcrumb/icon
-
-:::
+<code src="./demos/icon.tsx" desc="通过设置 `separator-class` 可使用相应的 `iconfont` 作为分隔符，注意这将使 `separator` 失效。"></code>
 
 ## Breadcrumb 属性
 

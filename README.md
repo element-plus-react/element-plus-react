@@ -64,7 +64,7 @@ And thank you to all our backers! 🙏
 - [x] Avatar
 - [x] BackTop
 - [x] Badge
-- [ ] Breadcrumb
+- [x] Breadcrumb
 - [x] Button
 - [ ] Calendar
 - [x] Card
@@ -91,7 +91,7 @@ And thank you to all our backers! 🙏
 - [ ] InfiniteScroll
 - [ ] Input
 - [ ] InputNumber
-- [ ] Link
+- [x] Link
 - [ ] Loading
 - [ ] Menu
 - [ ] Message

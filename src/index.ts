@@ -1,6 +1,7 @@
 import Alert from './components/alert'
 import Affix from './components/affix'
 import Avatar from './components/avatar'
+import Breadcrumb from './components/breadcrumb'
 import Badge from './components/badge'
 import Button  from './components/button';
 import BackTop from './components/backtop'
@@ -10,6 +11,7 @@ import ConfigProvider from './components/config-provider';
 import Container from './components/container';
 import Divider from './components/divider'
 import Empty from './components/empty'
+import Link from './components/link'
 import PageHeader from './components/page-header'
 import Row  from './components/layout/row';
 import Result from './components/result'
@@ -19,6 +21,7 @@ export{
   Affix,
   Avatar,
   Badge,
+  Breadcrumb,
   Button,
   BackTop,
   Card,
@@ -27,6 +30,7 @@ export{
   Container,
   Divider,
   Empty,
+  Link,
   PageHeader,
   Row,
   Result,
