@@ -63,7 +63,7 @@ And thank you to all our backers! 🙏
 - [x] Alert
 - [x] Avatar
 - [x] BackTop
-- [ ] Badge
+- [x] Badge
 - [ ] Breadcrumb
 - [x] Button
 - [ ] Calendar
