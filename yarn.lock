@@ -1855,9 +1855,9 @@
   dependencies:
     "@umijs/deps" "3.5.20"
 
-"@vueuse/core@^7.5.4":
+"@vueuse/core@^7.5.5":
   version "7.5.5"
-  resolved "https://registry.npmmirror.com/@vueuse/core/download/@vueuse/core-7.5.5.tgz#c2f2a8783de0884acfb0be25e71ec3c6d1f9c42e"
+  resolved "https://registry.yarnpkg.com/@vueuse/core/-/core-7.5.5.tgz#c2f2a8783de0884acfb0be25e71ec3c6d1f9c42e"
   integrity sha512-RBDqmIoGfak4h3xdXa/Av+ibkb8NY044wEy6+PG2FAWNaID8/FkqmSFjbxogrbmpSX1yZ1PBHrM8DUp/FrIpbg==
   dependencies:
     "@vueuse/shared" "7.5.5"
@@ -3213,15 +3213,15 @@ electron-to-chromium@^1.4.17:
   resolved "https://registry.npmmirror.com/electron-to-chromium/download/electron-to-chromium-1.4.53.tgz#5d80a91c399b44952ef485857fb5b9d4387d2e60"
   integrity sha512-rFveSKQczlcav+H3zkKqykU6ANseFwXwkl855jOIap5/0gnEcuIhv2ecz6aoTrXavF6I/CEBeRnBnkB51k06ew==
 
-element-plus@^1.3.0-beta.5:
-  version "1.3.0-beta.9"
-  resolved "https://registry.npmmirror.com/element-plus/download/element-plus-1.3.0-beta.9.tgz#eb182f30b56003b5b89b2174e6f78b603e246364"
-  integrity sha512-h+I6VVtJNwjVkNhfhXp2oCYjgBN7kWQ2Y6nWzwc0wiphAlQDhGuBXAGj9eYpf1uOrMgIpFFwbRhvK7C6sOJsWg==
+element-plus@^1.3.0-beta.10:
+  version "1.3.0-beta.10"
+  resolved "https://registry.yarnpkg.com/element-plus/-/element-plus-1.3.0-beta.10.tgz#10dd01586074c147df1b7902fd4d76b50f16e3cc"
+  integrity sha512-uPcre5liDfYvGbfaBDN2K7K5x6egBFdDQz0sv2cupcqzepUQoTMpq+mdTnHXzHChHhVwcLGp95kLYLL9yMkT8g==
   dependencies:
     "@ctrl/tinycolor" "^3.4.0"
     "@element-plus/icons-vue" "^0.2.6"
     "@popperjs/core" "^2.11.2"
-    "@vueuse/core" "^7.5.4"
+    "@vueuse/core" "^7.5.5"
     async-validator "^4.0.7"
     dayjs "^1.10.7"
     lodash "^4.17.21"
