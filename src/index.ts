@@ -17,6 +17,7 @@ import PageHeader from './components/page-header'
 import Row  from './components/layout/row';
 import Result from './components/result'
 import Space from "./components/space";
+import Steps from "./components/steps";
 import Transition from './components/transition'
 
 export{
@@ -39,5 +40,6 @@ export{
   Row,
   Result,
   Space,
+  Steps,
   Transition,
 }
