@@ -1,63 +1,32 @@
 ---
 title: Descriptions 描述列表
+order: 7
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Descriptions 描述列表
 
 列表形式展示多个字段。
 
-<style lang="scss" scoped>
-.example-showcase {
-  .margin-top {
-    margin-top: 20px;
-  }
-
-  .my-label {
-    background: var(--el-color-success-lighter);
-  }
-
-  .my-content {
-    background: var(--el-color-danger-lighter);
-  }
-}
-</style>
-
 ## 基础用法
 
-:::demo
-
-descriptions/basic-usage
-
-:::
+<code src="./demos/basic-usage.tsx"></code>
 
 ## 不同尺寸
 
-:::demo
-
-descriptions/sizes
-
-:::
+<code src="./demos/sizes.tsx"></code>
 
 ## 垂直列表
 
-:::demo
-
-descriptions/vertical-list
-
-:::
+<code src="./demos/vertical-list.tsx"></code>
 
 ## 自定义样式
 
-:::demo
-
-descriptions/customized-style
-
-:::
+<code src="./demos/customized-style.tsx"></code>
 
 ## Descriptions 属性
 
