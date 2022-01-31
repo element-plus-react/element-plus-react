@@ -111,7 +111,7 @@ And thank you to all our backers! 🙏
 - [ ] Scrollbar
 - [ ] Select
 - [ ] Skeleton
-- [ ] Space
+- [x] Space
 - [ ] Steps
 - [ ] Submenu
 - [ ] Switch

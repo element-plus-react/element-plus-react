@@ -16,6 +16,7 @@ import Link from './components/link'
 import PageHeader from './components/page-header'
 import Row  from './components/layout/row';
 import Result from './components/result'
+import Space from "./components/space";
 import Transition from './components/transition'
 
 export{
@@ -37,5 +38,6 @@ export{
   PageHeader,
   Row,
   Result,
+  Space,
   Transition,
 }
