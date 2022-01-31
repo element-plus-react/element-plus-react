@@ -18,7 +18,8 @@ import Row  from './components/layout/row';
 import Result from './components/result'
 import Space from "./components/space";
 import Steps from "./components/steps";
-import Transition from './components/transition'
+import Transition from './components/transition';
+import Timeline from "./components/timeline";
 
 export{
   Alert,
@@ -42,4 +43,5 @@ export{
   Space,
   Steps,
   Transition,
+  Timeline,
 }

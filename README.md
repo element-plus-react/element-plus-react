@@ -120,7 +120,7 @@ And thank you to all our backers! 🙏
 - [ ] Tag
 - [ ] TimePicker
 - [ ] TimeSelect
-- [ ] Timeline
+- [x] Timeline
 - [ ] ToolTip
 - [ ] Transfer
 - [ ] Tree
