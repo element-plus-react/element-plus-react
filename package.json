@@ -1,6 +1,6 @@
 {
   "name": "element-plus-react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://element-plus-react.github.io/",
   "scripts": {
     "start:play": "cd play && yarn run start",
