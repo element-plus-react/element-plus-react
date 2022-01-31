@@ -112,7 +112,7 @@ And thank you to all our backers! 🙏
 - [ ] Select
 - [ ] Skeleton
 - [x] Space
-- [ ] Steps
+- [x] Steps
 - [ ] Submenu
 - [ ] Switch
 - [ ] Table
