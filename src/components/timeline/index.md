@@ -1,11 +1,12 @@
 ---
 title: Timeline 时间线
+order: 17
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Timeline 时间线
 
@@ -15,41 +16,25 @@ group:
 
 Timeline 可拆分成多个按照时间戳排列的活动， 时间戳是其区分于其他控件的重要特征， 使用时注意与 Steps 步骤条等区分。
 
-:::demo
-
-timeline/basic
-
-:::
+<code src="./demos/basic.tsx"></code>
 
 ## ⾃定义节点样式
 
 可根据实际场景⾃定义节点尺⼨、颜⾊，或直接使⽤图标。
 
-:::demo
-
-timeline/custom-node
-
-:::
+<code src="./demos/custom-node.tsx"></code>
 
 ## ⾃定义时间戳
 
 当内容在垂直⽅向上过⾼时，可将时间戳置于内容之上。
 
-:::demo
-
-timeline/custom-timestamp
-
-:::
+<code src="./demos/custom-timestamp.tsx"></code>
 
 ## 垂直居中
 
 垂直居中样式的 Timeline-Item
 
-:::demo
-
-timeline/center
-
-:::
+<code src="./demos/center.tsx" ></code>
 
 ## Timeline 插槽
 
