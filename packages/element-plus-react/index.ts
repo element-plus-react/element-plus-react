@@ -1,4 +1,3 @@
-import Alert from './components/alert'
 import Affix from './components/affix'
 import Avatar from './components/avatar'
 import Breadcrumb from './components/breadcrumb'
@@ -20,6 +19,7 @@ import Space from "./components/space";
 import Steps from "./components/steps";
 import Transition from './components/transition';
 import Timeline from "./components/timeline";
+import Alert from './components/alert'
 
 export{
   Alert,

@@ -18,6 +18,8 @@
     "outDir": "./",
     "sourceMap": true
   },
-  "include": ["./packages"],
+  "include": [
+    "."
+  ],
   "exclude": ["node_modules", "lib", "es"]
 }
