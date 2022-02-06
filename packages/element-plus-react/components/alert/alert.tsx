@@ -8,7 +8,7 @@ import {
 } from '@ant-design/icons'
 import { isFunction } from 'lodash'
 import classnames from 'classnames'
-import { Transition } from '../../index'
+import Transition  from '../transition'
 
 export interface AlertProps {
   title?: string,

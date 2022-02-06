@@ -16,7 +16,7 @@ import cssnano from 'cssnano'
 const extensions = ['js','ts','tsx','json']
 
 export default {
-  input: "./src/index.ts",
+  input: "./index.ts",
   output: [
     {
       dir: 'lib',
@@ -62,6 +62,10 @@ export default {
     // terser(),
     copy({
       targets: [
+        {
+          src: '../../README.md',
+          dest: './',
+        },
         {
           src: 'es/index.css',
           dest: 'dist',
