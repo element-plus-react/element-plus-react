@@ -1,5 +1,5 @@
 import React from 'react'
-import { getCssVar } from '../../../packages/element-plus-react/components/_utils'
+import { getCssVar } from '../../../packages/components/_utils'
 
 const fontSizes = [
   {
