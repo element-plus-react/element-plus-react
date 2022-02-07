@@ -1,7 +1,7 @@
 {
   "homepage": "https://element-plus-react.github.io/",
   "name": "element-plus-react",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
@@ -12,11 +12,11 @@
   },
   "exports": {
     ".": {
-      "require": "./lib/index.js",
-      "import": "./es/index.js"
+      "require": "./lib/element-plus-react/index.js",
+      "import": "./es/element-plus-react/index.js"
     },
-    "./es": "./es/index.js",
-    "./lib": "./lib/index.js",
+    "./es": "./es/element-plus-react/index.js",
+    "./lib": "./lib/element-plus-react/index.js",
     "./*": "./*"
   },
   "files": [
@@ -24,10 +24,10 @@
     "lib",
     "dist"
   ],
-  "main": "lib/index.js",
-  "module": "es/index.js",
+  "main": "lib/element-plus-react/index.js",
+  "module": "es/element-plus-react/index.js",
   "style": "dist/index.css",
-  "types": "es/index.d.ts",
+  "types": "es/element-plus-react/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "@ctrl/tinycolor": "^3.4.0",
@@ -39,12 +39,25 @@
   },
   "devDependencies": {
     "@ctrl/tinycolor": "^3.4.0",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "@rollup/plugin-node-resolve": "^13.1.3",
     "@types/lodash": "^4.14.178",
     "@types/react": "^17.0.38",
     "@types/react-dom": "^17.0.11",
     "@types/react-transition-group": "^4.4.4",
+    "acorn-jsx": "^5.3.2",
+    "autoprefixer": "^10.4.2",
+    "cssnano": "^5.0.15",
+    "postcss": "^8.4.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "rollup": "^2.63.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.31.1",
     "typescript": "^4.5.4"
   },
   "peerDependencies": {
