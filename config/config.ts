@@ -13,7 +13,7 @@ export default defineConfig({
   //   'element-plus-react': path.resolve(__dirname,'../src'),
   // },
   resolve: {
-    includes: ['docs', 'packages/element-plus-react/components'],
+    includes: ['docs', 'packages/components'],
   },
   sass: {
     sassOptions: {},
