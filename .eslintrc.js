@@ -76,7 +76,7 @@ module.exports = {
           'react/no-array-index-key': 0,
           'jsx-a11y/href-no-hash': 0,
           'jsx-a11y/control-has-associated-label': 0,
-          'import/no-extraneous-dependencies': 0,
+          'import/no-extraneous-dependencies': 'off',
           'react/jsx-no-constructed-context-values': 0,
           'react/no-unstable-nested-components': 0,
         },
@@ -106,6 +106,7 @@ module.exports = {
       'react/no-unused-class-component-methods': 0,
       'import/extensions': 0,
       'import/no-cycle': 0,
+      'import/no-extraneous-dependencies': 'off',
       // 'import/no-extraneous-dependencies': [
       //   'error',
       //   {

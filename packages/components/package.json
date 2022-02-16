@@ -1,8 +1,7 @@
 {
   "name": "components",
   "version": "1.0.0",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "element-plus": "^2.0.0"
   }
