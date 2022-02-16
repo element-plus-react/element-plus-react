@@ -3,8 +3,8 @@ import classnames from 'classnames'
 import { TinyColor } from '@ctrl/tinycolor'
 import { isFunction } from 'lodash'
 import { LoadingOutlined } from '@ant-design/icons'
-import { getCssVar, GlobalConfig, css2object } from '../_utils/index'
-import { tuple } from '../_utils/type'
+import { getCssVar, GlobalConfig, css2object } from 'utils'
+import { tuple } from 'utils/src/type'
 import ButtonGroup, { ButtonGroupContext } from "./button-group";
 
 
