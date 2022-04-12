@@ -10,13 +10,18 @@
 
 <p align="center">Element Plus React - A React UI library</p>
 
-- 😈 本项目由个人维护，非官方团队，推荐[Element Plus](https://github.com/element-plus/element-plus) 或者 [antd](https://github.com/ant-design/ant-design)
-- 😈 The project is maintained by individuals and unofficial teams, recommend[Element Plus](https://github.com/element-plus/element-plus) or [antd](https://github.com/ant-design/ant-design)
+- 😈 本项目由个人维护，非官方团队，欢迎你加入我们，做大做强，再创辉煌！
+- 😈 This project is maintained by individuals and an unofficial team. You are welcome to join us to become bigger and stronger and create brilliance!
 
 - 🔥 Written in TypeScript
 
 ---
 
+## 友情链接
+ - [Element Plus](https://github.com/element-plus/element-plus)
+ - [antd](https://github.com/ant-design/ant-design)
+ - [dumi](https://github.com/umijs/dumi)
+ - [rollup](https://github.com/rollup/rollup)
 ## 📦 安装
 
 ```bash
