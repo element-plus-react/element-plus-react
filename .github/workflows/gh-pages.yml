@@ -15,13 +15,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
-          cache: 'yarn'
+          cache: 'pnpm'
       - name: Run npm scripts
         run: |
           node -v
-          yarn -v
-          yarn install
-          yarn run build:docs
+          pnpm -v
+          pnpm install
+          pnpm run build:docs
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

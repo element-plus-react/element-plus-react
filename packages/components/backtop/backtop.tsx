@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import { ToTopOutlined } from '@ant-design/icons'
 import { isFunction, throttle } from 'lodash'
 import { useEventListener } from 'ahooks'
-import { easeInOutCubic } from 'utils'
+import { easeInOutCubic } from '@element-plus/utils'
 
 interface BackTopProps {
   visibilityHeight?: number
