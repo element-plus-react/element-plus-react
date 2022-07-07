@@ -17,12 +17,14 @@ jobs:
       # 检查并切换到master分支
       - name: 检查master分支
         # 使用actions/checkout插件
-        uses: actions/checkout@v2
-
+        uses: actions/checkout@v3
+      - uses: pnpm/action-setup@646cdf48217256a3d0b80361c5a50727664284f2
+        with:
+          version: 6.10.0
       # 安装node
       - name: 设置Node.js
         # 使用actions/setup-node插件
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           # node版本
           node-version: '14'
