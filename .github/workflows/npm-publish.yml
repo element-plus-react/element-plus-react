@@ -19,7 +19,7 @@ jobs:
         # 使用actions/checkout插件
         uses: actions/checkout@v3
       - name: Install Pnpm
-        uses: pnpm/action-setup@2
+        uses: pnpm/action-setup@v2
         with:
           version: 7.5.0
       # 安装node
