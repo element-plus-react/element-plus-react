@@ -1,4 +1,4 @@
-import { GlobalConfig } from 'components/config-provider'
+import { GlobalConfig } from '@element-plus/components/config-provider'
 import { easeInOutCubic } from './src/animate'
 
 export {default as getCssVar} from './src/getCssVar'

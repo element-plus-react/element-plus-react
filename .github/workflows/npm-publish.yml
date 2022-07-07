@@ -26,14 +26,14 @@ jobs:
         with:
           # node版本
           node-version: '14'
-          cache: 'yarn'
+          cache: 'pnpm'
 
       - name: Run npm scripts
         run: |
           node -v
-          yarn -v
-          yarn install
-          yarn run build
+          pnpm -v
+          pnpm install
+          pnpm run build
       # 发布NPM包
       - name: 发布NPM包
         # 执行发布代码

@@ -1,7 +1,7 @@
 ---
 hero:
   title: 网站快速成型工具
-  desc: Element Plus，一套为开发者、设计师和产品经理准备的基于 Vue 3 的桌面端组件库
+  desc: Element Plus React，一套为开发者、设计师和产品经理准备的基于 React 的桌面端组件库
   actions:
     - text: 快速开始
       link: /components/button
