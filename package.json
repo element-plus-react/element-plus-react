@@ -1,14 +1,15 @@
 {
   "private": true,
+  "packageManager": "pnpm@7.5.0",
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "start:play": "yarn workspace play run start",
+    "start:play": "pnpm -C playground/play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
     "publish:docs": "gh-pages -d dist",
-    "build": "yarn workspace element-plus-react rollup -c",
+    "build": "cd packages/element-plus-react && rollup -c",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
@@ -17,6 +18,10 @@
     "dumi": "^1.1.38"
   },
   "devDependencies": {
+    "@element-plus/components": "workspace:*",
+    "@element-plus/hooks": "workspace:*",
+    "@element-plus/utils": "workspace:*",
+    "element-plus-react": "workspace:*",
     "@babel/cli": "^7.17.6",
     "@babel/core": "^7.16.7",
     "@babel/plugin-transform-modules-commonjs": "^7.16.7",
@@ -43,11 +48,12 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.2",
     "eslint-plugin-unicorn": "^40.0.0",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "^4.0.0",
     "husky": "^7.0.4",
     "prettier": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router": "^5.2.0",
     "sass": "^1.47.0",
     "stylelint": "^14.2.0",
     "stylelint-config-prettier": "^9.0.3",
