@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "prepare": "husky install",
     "start:play": "pnpm -C playground/play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
