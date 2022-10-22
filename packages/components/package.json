@@ -1,8 +1,7 @@
 {
   "name": "@element-plus/components",
   "version": "1.0.0",
-  "dependencies": {},
   "devDependencies": {
-    "element-plus": "^2.0.0"
+    "element-plus": "^2.2.19"
   }
 }
