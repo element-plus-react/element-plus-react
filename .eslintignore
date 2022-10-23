@@ -16,3 +16,4 @@ coverage
 # Scripts
 scripts/previewEditor/**/*
 
+**/package.json
