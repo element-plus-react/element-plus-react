@@ -2,6 +2,5 @@
   "name": "@element-plus/components",
   "version": "1.0.0",
   "devDependencies": {
-    "element-plus": "^2.2.19"
   }
 }
