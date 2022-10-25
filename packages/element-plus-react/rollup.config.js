@@ -1,22 +1,21 @@
-import clear from 'rollup-plugin-delete'
-import copy from 'rollup-plugin-copy'
-import babel from '@rollup/plugin-babel'
-import commonjs from '@rollup/plugin-commonjs'
+import clear from 'rollup-plugin-delete';
+import copy from 'rollup-plugin-copy';
+import babel from '@rollup/plugin-babel';
+import commonjs from '@rollup/plugin-commonjs';
 import jsx from 'acorn-jsx';
-import typescript from "rollup-plugin-typescript2";
-import resolve from "@rollup/plugin-node-resolve";
-import postcss from 'rollup-plugin-postcss'
-import autoprefixer from 'autoprefixer'
-import cssnano from 'cssnano'
-
-// import { terser } from 'rollup-plugin-terser'
+import typescript from 'rollup-plugin-typescript2';
+import resolve from '@rollup/plugin-node-resolve';
+import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer';
+import cssnano from 'cssnano';
+import externals from 'rollup-plugin-node-externals';
 
 // import pkg from './package.json'
 
-const extensions = ['js','ts','tsx','json']
+const extensions = ['js', 'ts', 'tsx', 'json'];
 
 export default {
-  input: "./index.ts",
+  input: './index.ts',
   output: [
     {
       dir: 'lib',
@@ -24,10 +23,6 @@ export default {
       name: 'ElementPlusReact',
       preserveModules: true,
       exports: 'named',
-      global: {
-        react: 'React',
-        lodash: '_',
-      },
     },
     {
       dir: 'es',
@@ -38,11 +33,12 @@ export default {
   ],
   acornInjectPlugins: [jsx()],
   plugins: [
-    clear({ targets: ["lib", "es", "dist"] }),
+    clear({ targets: ['lib', 'es', 'dist'] }),
+    externals.externals(),
     typescript({
-      jsx: 'preserve' ,
+      jsx: 'preserve',
       check: false,
-      exclude: ["node_modules", "lib", "es","*/demos/*"],
+      exclude: ['node_modules', 'lib', 'es', '*/demos/*'],
     }),
     resolve(),
     commonjs(),
@@ -53,41 +49,26 @@ export default {
       extensions,
     }),
     postcss({
-      plugins: [
-        autoprefixer(),
-        cssnano(),
-      ],
+      plugins: [autoprefixer(), cssnano()],
       extract: true,
     }),
-    // terser(),
     copy({
       targets: [
+        {
+          src: '../../node_modules/element-plus/theme-chalk',
+          dest: 'theme-chalk',
+        },
         {
           src: '../../README.md',
           dest: './',
         },
-        {
-          src: 'es/index.css',
-          dest: 'dist',
-        },
       ],
-      hook: 'writeBundle',
       verbose: true,
     }),
     clear({
-      targets: ['lib/index.css','es/index.css'],
+      targets: ['lib/index.css', 'es/index.css'],
       hook: 'closeBundle',
       verbose: true,
     }),
   ],
-  external: [
-    "@ant-design/icons",
-    "@ctrl/tinycolor",
-    'ahooks',
-    'classnames',
-    "dayjs",
-    'react',
-    'lodash',
-    'react-transition-group',
-  ],
-}
+};
