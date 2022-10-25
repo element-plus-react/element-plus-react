@@ -26,7 +26,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@element-plus/components": "workspace:1.0.0",
-    "@element-plus/eslint-config": "workspace:*",
+    "@element-plus/eslint-config": "workspace:0.0.1",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/react": "^17.0.50",
