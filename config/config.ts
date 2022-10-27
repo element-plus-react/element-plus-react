@@ -2,8 +2,11 @@ import { defineConfig } from 'dumi';
 // import * as path from "path";
 
 export default defineConfig({
+  alias: {
+    'element-plus-react': 'element-plus-react/index'
+  },
   mfsu: false,
-  styles: ['https://cdn.jsdelivr.net/npm/element-plus@2.2.19/theme-chalk/index.css'],
+  //styles: ['https://cdn.jsdelivr.net/npm/element-plus@2.2.19/theme-chalk/index.css'],
   themeConfig: {
     name: 'Element Plus React',
     // nav: [
