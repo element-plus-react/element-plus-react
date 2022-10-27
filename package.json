@@ -16,7 +16,7 @@
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
   "dependencies": {
-    "dumi": "^1.1.48"
+    "dumi": "^2.0.0-beta.9"
   },
   "devDependencies": {
     "@babel/cli": "^7.19.3",
@@ -29,10 +29,6 @@
     "@element-plus/eslint-config": "workspace:0.0.1",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
-    "@types/react": "^17.0.50",
-    "@types/react-dom": "^17.0.17",
-    "@types/sass": "^1.43.1",
-    "@umijs/plugin-sass": "^1.1.1",
     "cross-env": "^7.0.3",
     "element-plus": "^2.2.19",
     "element-plus-react": "workspace:0.0.4",
@@ -41,9 +37,6 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router": "^5.3.4",
     "sass": "^1.55.0",
     "typescript": "^4.8.4"
   },

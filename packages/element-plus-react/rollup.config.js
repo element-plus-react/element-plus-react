@@ -56,7 +56,7 @@ export default {
       targets: [
         {
           src: '../../node_modules/element-plus/theme-chalk',
-          dest: 'theme-chalk',
+          dest: './',
         },
         {
           src: '../../README.md',

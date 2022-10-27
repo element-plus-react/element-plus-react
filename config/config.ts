@@ -1,28 +1,24 @@
-import { defineConfig } from 'dumi'
+import { defineConfig } from 'dumi';
 // import * as path from "path";
 
 export default defineConfig({
-  title: 'Element Plus React',
-  mode: 'site',
+  mfsu: false,
+  styles: ['https://cdn.jsdelivr.net/npm/element-plus@2.2.19/theme-chalk/index.css'],
+  themeConfig: {
+    name: 'Element Plus React',
+    // nav: [
+    //   {
+    //     title: 'Github',
+    //     link: 'https://github.com/element-plus-react/element-plus-react',
+    //   },
+    // ],
+  },
   hash: true,
-  dynamicImport: {},
   base: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   publicPath: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   outputPath: 'dist',
-  // alias: {
-  //   'element-plus-react': path.resolve(__dirname,'../src'),
-  // },
   resolve: {
-    includes: ['docs', 'packages/components'],
+    atomDirs: [{ type: 'component', dir: './packages/components' }],
+    // includes: ['docs', 'packages/components'],
   },
-  sass: {
-    sassOptions: {},
-  },
-  navs: [
-    null,
-    {
-      title: 'Github',
-      path: 'https://github.com/element-plus-react/element-plus-react',
-    },
-  ],
-})
+});
