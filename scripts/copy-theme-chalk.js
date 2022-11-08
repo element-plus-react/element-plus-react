@@ -11,16 +11,20 @@ const fsPromises = fs.promises;
  * @param {*} resultPath (放置复制文件的地址，相对地址)
  */
 function copyFile(copiedPath, resultPath) {
-  copiedPath = path.join(__dirname, copiedPath);
-  resultPath = path.join(__dirname, resultPath);
-  fsPromises
-    .cp(copiedPath, resultPath, { recursive: true })
-    .then(() => {
-      console.log('success');
-    })
-    .catch(err => {
-      console.log(err);
-    });
+  try {
+    copiedPath = path.join(__dirname, copiedPath);
+    resultPath = path.join(__dirname, resultPath);
+    fsPromises
+      .cp(copiedPath, resultPath, { recursive: true })
+      .then(() => {
+        console.log('success');
+      })
+      .catch(err => {
+        console.log(err);
+      });
+  } catch (e) {
+    console.log(e);
+  }
 }
 
 copyFile(
