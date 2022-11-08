@@ -6,8 +6,8 @@ import jsx from 'acorn-jsx';
 import typescript from 'rollup-plugin-typescript2';
 import resolve from '@rollup/plugin-node-resolve';
 import postcss from 'rollup-plugin-postcss';
-import autoprefixer from 'autoprefixer';
-import cssnano from 'cssnano';
+// import autoprefixer from 'autoprefixer';
+// import cssnano from 'cssnano';
 import externals from 'rollup-plugin-node-externals';
 
 // import pkg from './package.json'
@@ -49,7 +49,7 @@ export default {
       extensions,
     }),
     postcss({
-      plugins: [autoprefixer(), cssnano()],
+      // plugins: [autoprefixer(), cssnano()],
       extract: true,
     }),
     copy({

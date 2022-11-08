@@ -5,7 +5,7 @@
     "packages/*"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && dumi setup",
     "start:play": "pnpm -C playground/play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
@@ -16,13 +16,12 @@
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
   "dependencies": {
-    "dumi": "^2.0.0-beta.9"
+    "dumi": "^2.0.0-rc.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/cli": "^7.19.3",
-    "@babel/core": "^7.19.6",
-    "@babel/plugin-transform-modules-commonjs": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.18.6",
     "@element-plus/components": "workspace:1.0.0",
@@ -30,15 +29,20 @@
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "cross-env": "^7.0.3",
-    "element-plus": "^2.2.19",
     "element-plus-react": "workspace:0.0.4",
-    "eslint": "^8.26.0",
+    "eslint": "^8.27.0",
     "gh-pages": "^4.0.0",
-    "husky": "^8.0.1",
+    "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "sass": "^1.55.0",
+    "sass": "^1.56.0",
     "typescript": "^4.8.4"
+  },
+  "resolutions": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom":"^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "peerDependencies": {
     "react": ">=16.9.0",
