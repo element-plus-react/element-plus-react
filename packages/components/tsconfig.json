@@ -20,6 +20,5 @@
     "sourceMap": true,
     "typeRoots": ["./typings"]
   },
-  "include": ["."],
-  "exclude": ["node_modules", "lib", "es"]
+  "include": ["."]
 }

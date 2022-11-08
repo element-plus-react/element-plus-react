@@ -3,7 +3,6 @@ module.exports = {
     'airbnb',
     'prettier',
     'plugin:compat/recommended',
-    'plugin:jest/recommended',
     'plugin:react/recommended',
     'plugin:import/typescript',
     'plugin:markdown/recommended',
@@ -12,7 +11,6 @@ module.exports = {
     browser: true,
     node: true,
     jasmine: true,
-    jest: true,
     es6: true,
   },
   settings: {
@@ -25,7 +23,6 @@ module.exports = {
   plugins: [
     'react',
     'babel',
-    'jest',
     '@typescript-eslint',
     'react-hooks',
     'unicorn',
@@ -143,13 +140,6 @@ module.exports = {
     // ban this for Number.isNaN needs polyfill
     'no-restricted-globals': 0,
     'max-classes-per-file': 0,
-
-    'jest/no-test-callback': 0,
-    'jest/expect-expect': 0,
-    'jest/no-done-callback': 0,
-    'jest/valid-title': 0,
-    'jest/no-conditional-expect': 0,
-    'jest/no-standalone-expect': 0,
 
     'unicorn/better-regex': 2,
     'unicorn/prefer-string-trim-start-end': 2,

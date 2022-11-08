@@ -1,6 +1,9 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  alias: {
+    'element-plus-react': '../../../packages/element-plus-react',
+  },
   // nodeModulesTransform: {
   //   type: 'none',
   // },

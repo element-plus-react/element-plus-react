@@ -1,0 +1,10 @@
+{
+  "name": "@element-plus/theme-chalk",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "node ../../scripts/copy-theme-chalk.js"
+  },
+  "dependencies": {
+    "element-plus": "^2.2.19"
+  }
+}
