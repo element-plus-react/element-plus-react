@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[3062],{43062:function(m,n,e){e.r(n);var s=e(79685),t=e(59332),a=e(63342),u=function(){return(0,a.jsx)(t.HY,{image:"https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"})};n.default=u}}]);

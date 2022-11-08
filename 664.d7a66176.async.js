@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[664],{60664:function(s,a,t){t.r(a),t.d(a,{default:function(){return c}});var f=t(79685),e=t(59332),n=t(63342),r=function(){return(0,n.jsx)("div",{className:"affix-container",children:(0,n.jsx)(e.D_,{target:".affix-container",offset:80,children:(0,n.jsx)(e.zx,{type:"primary",children:"Target container"})})})},c=r}}]);
