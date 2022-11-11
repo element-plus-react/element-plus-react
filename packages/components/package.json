@@ -2,5 +2,12 @@
   "name": "@element-plus/components",
   "version": "1.0.0",
   "devDependencies": {
+    "@ant-design/icons": "^4.7.0",
+    "@ctrl/tinycolor": "^3.4.1",
+    "ahooks": "^3.7.2",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.6",
+    "lodash": "^4.17.21",
+    "react-transition-group": "^4.4.5"
   }
 }

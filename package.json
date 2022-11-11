@@ -1,9 +1,6 @@
 {
   "private": true,
   "packageManager": "pnpm@7.5.0",
-  "workspaces": [
-    "packages/*"
-  ],
   "scripts": {
     "prepare": "husky install && dumi setup",
     "start:play": "pnpm -C playground/play run start",
@@ -16,18 +13,16 @@
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
   "dependencies": {
-    "dumi": "^2.0.0-rc.2",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "dumi": "^2.0.0-rc.5"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6",
-    "@babel/preset-typescript": "^7.18.6",
     "@element-plus/components": "workspace:1.0.0",
-    "@element-plus/eslint-config": "workspace:0.0.1",
+    "@element-plus/eslint-config": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
+    "@element-plus/theme-chalk": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
     "eslint": "^8.27.0",
@@ -35,18 +30,16 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1",
-    "sass": "^1.56.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.56.1",
     "typescript": "^4.8.4"
   },
   "resolutions": {
     "@types/react": "^18.0.0",
-    "@types/react-dom":"^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
-  },
-  "peerDependencies": {
-    "react": ">=16.9.0",
-    "react-dom": ">=16.9.0"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"

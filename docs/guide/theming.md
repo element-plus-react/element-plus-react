@@ -21,13 +21,13 @@ Element Plus 默认提供一套主题，CSS 命名采用 BEM 的风格，方便�
 
 ### 通过 SCSS 变量
 
-`theme-chalk` 使用SCSS编写而成。 你可以在 [`packages/theme-chalk/src/common/var.scss`](https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss).文件中查找SCSS变量。
+`theme-chalk` 使用 SCSS 编写而成。 你可以在 [`packages/theme-chalk/src/common/var.scss`](https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss).文件中查找 SCSS 变量。
 
 ::: warning
 
 我们使用 sass 模块（[sass:map](https://sass-lang.com/documentation/values/maps)...）来重构所有的 SCSS 变量。
 
-> [介绍Sass 模块 | CSS-TRICKS](https://css-tricks.com/introducing-sass-modules/)
+> [介绍 Sass 模块 | CSS-TRICKS](https://css-tricks.com/introducing-sass-modules/)
 
 例如， 使用`$colors`变量映射不同颜色。
 
@@ -68,7 +68,7 @@ $colors: map.deep-merge(
 
 ### 如何覆盖它？
 
-如果你的项目也使用了 SCSS， 那么你可以直接修改Element Plus的样式变量。 新建一个样式文件，例如 `styles/element/index.scss`：
+如果你的项目也使用了 SCSS， 那么你可以直接修改 Element Plus 的样式变量。 新建一个样式文件，例如 `styles/element/index.scss`：
 
 ```scss
 // styles/element/index.scss
@@ -98,35 +98,35 @@ $colors: map.deep-merge(
 
 ::: tip
 
-除此以外，你应该将scss与元素变量scss区分开来。 如果将它们混合在一起，`element-plus`的每次热更新都需要编译大量的 scss 文件，导致编译速度变慢。
+除此以外，你应该将 scss 与元素变量 scss 区分开来。 如果将它们混合在一起，`element-plus`的每次热更新都需要编译大量的 scss 文件，导致编译速度变慢。
 
 :::
 
 ```ts
-import Vue from 'vue'
+import Vue from 'vue';
 
-import './styles/element/index.scss'
-import ElementPlus from 'element-plus'
-import App from './App.vue'
+import './styles/element/index.scss';
+import ElementPlus from 'element-plus';
+import App from './App.vue';
 
-const app = createApp(App)
-app.use(ElementPlus)
+const app = createApp(App);
+app.use(ElementPlus);
 ```
 
-如果你正在使用vite，并且你想在按需导入时自定义主题。
+如果你正在使用 vite，并且你想在按需导入时自定义主题。
 
 使用 `scss.additionalData` 来编译所有应用 scss 变量的组件。
 
 ```ts
-import path from 'path'
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import path from 'path';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
 // 你同样可以使用 unplugin-vue-components
 // import Components from 'unplugin-vue-components/vite'
 // import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // 或者使用 unplugin-element-plus
-import ElementPlus from 'unplugin-element-plus/vite'
+import ElementPlus from 'unplugin-element-plus/vite';
 
 // vite.config.ts
 export default defineConfig({
@@ -159,16 +159,16 @@ export default defineConfig({
       useSource: true,
     }),
   ],
-})
+});
 ```
 
 ### 通过 CSS 变量设置
 
-CSS变量是一个非常有用的特性，几乎所有的浏览器都支持它。 （IE：啊这？)
+CSS 变量是一个非常有用的特性，几乎所有的浏览器都支持它。 （IE：啊这？)
 
-> 从这里学习更多关于[使用CSS自定义属性(变量) | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+> 从这里学习更多关于[使用 CSS 自定义属性(变量) | MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
 
-我们用css变量来改造了几乎所有组件的样式系统。 (自版本 `1.0.2-beta-70` [#2242](https://github.com/element-plus/element-plus/issues/2242) 开始)
+我们用 css 变量来改造了几乎所有组件的样式系统。 (自版本 `1.0.2-beta-70` [#2242](https://github.com/element-plus/element-plus/issues/2242) 开始)
 
 ::: tip
 
@@ -178,7 +178,7 @@ CSS 变量和 SCSS 变量系统是兼容的。 因此，我们使用 SCSS 里的
 
 这意味着你可以动态地改变组件内的个别变量，以便更好地自定义，而不必修改 Scss 然后重新编译它。
 
-> 以后，每个组件的Css变量名称和角色文档将被写入到每个组件中。
+> 以后，每个组件的 Css 变量名称和角色文档将被写入到每个组件中。
 
 比如这样：
 
@@ -206,14 +206,14 @@ CSS 变量和 SCSS 变量系统是兼容的。 因此，我们使用 SCSS 里的
 
 ```ts
 // document.documentElement is global
-const el = document.documentElement
+const el = document.documentElement;
 // const el = document.getElementById('xxx')
 
 // get css var
-getComputedStyle(el).getPropertyValue(`--el-color-primary`)
+getComputedStyle(el).getPropertyValue(`--el-color-primary`);
 
 // set css var
-el.style['--el-color-primary'] = 'red'
+el.style['--el-color-primary'] = 'red';
 ```
 
 如果你想要更优雅的方式，请看这里。 [useCssVar | VueUse](https://vueuse.org/core/usecssvar/)
@@ -226,7 +226,7 @@ el.style['--el-color-primary'] = 'red'
 
 ### 在您的项目中更新 SCSS 变量
 
-`theme-chalk` 是用SCSS写的。 如果你的项目也使用 SCSS，你可以直接修改样式变量。 新建一个样式文件，例如 `element-variables.scss`，写入以下内容：
+`theme-chalk` 是用 SCSS 写的。 如果你的项目也使用 SCSS，你可以直接修改样式变量。 新建一个样式文件，例如 `element-variables.scss`，写入以下内容：
 
 ```scss
 /* 主题颜色 */
@@ -238,13 +238,13 @@ $--font-path: '~element-plus/lib/theme-chalk/fonts';
 然后在你的项目入口文件中，导入这个样式文件替换 Element Plus 内置的 CSS：
 
 ```ts
-import Vue from 'vue'
-import ElementPlus from 'element-plus'
-import './element-variables.scss'
-import App from './App.vue'
+import Vue from 'vue';
+import ElementPlus from 'element-plus';
+import './element-variables.scss';
+import App from './App.vue';
 
-const app = createApp(App)
-app.use(ElementPlus)
+const app = createApp(App);
+app.use(ElementPlus);
 ```
 
 :::tip
@@ -335,11 +335,11 @@ et
 和引入默认主题一样，在代码里直接引用「在线主题编辑器」或「命令行工具」生成的主题的 `theme/index. css` 文件即可。
 
 ```javascript
-import { createApp } from 'vue'
-import '../theme/index.css'
-import ElementPlus from 'element-plus'
+import { createApp } from 'vue';
+import '../theme/index.css';
+import ElementPlus from 'element-plus';
 
-createApp(App).use(ElementPlus)
+createApp(App).use(ElementPlus);
 ```
 
 #### 按需引入组件主题
