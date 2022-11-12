@@ -15,22 +15,22 @@ importers:
       '@element-plus/hooks': workspace:1.0.0
       '@element-plus/theme-chalk': workspace:1.0.0
       '@element-plus/utils': workspace:1.0.0
-      '@types/react': ^18.0.0
-      '@types/react-dom': ^18.0.0
+      '@types/react': ^18.0.25
+      '@types/react-dom': ^18.0.8
       cross-env: ^7.0.3
-      dumi: ^2.0.0-rc.5
+      dumi: ^2.0.0-rc.6
       element-plus-react: workspace:0.0.4
       eslint: ^8.27.0
       gh-pages: ^4.0.0
       husky: ^8.0.2
       lint-staged: ^13.0.3
       prettier: ^2.7.1
-      react: ^18.0.0
-      react-dom: ^18.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
       sass: ^1.56.1
       typescript: ^4.8.4
     dependencies:
-      dumi: registry.npmmirror.com/dumi/2.0.0-rc.5_zle6ftasjxlmjrujagvjupbcru
+      dumi: registry.npmmirror.com/dumi/2.0.0-rc.6_zle6ftasjxlmjrujagvjupbcru
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/eslint-config': link:internal/eslint-config
@@ -218,11 +218,11 @@ packages:
     dependencies:
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
 
-  registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.54_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-oCQOaXfpLrSTFZiVV9/y7u9ykwyzE4KUBHq19cBkNfOv3Q2rdxfckv1Fun+ovBZblqU85YGxpDIGch9Xzkiixw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/cssinjs/-/cssinjs-0.0.0-alpha.54.tgz}
-    id: registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.54
+  registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.60_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-EQlU5f20flZMQ9XDbR/RL5MhQedgkHXR6o4pfbe6cMv0YMXK/jv669++N8msC7ZoNnGf2OxbmGRkvVS0OqG3iw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/cssinjs/-/cssinjs-0.0.0-alpha.60.tgz}
+    id: registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.60
     name: '@ant-design/cssinjs'
-    version: 0.0.0-alpha.54
+    version: 0.0.0-alpha.60
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -474,7 +474,7 @@ packages:
       react: '>=16.9.0'
       react-dom: '>=16.9.0'
     dependencies:
-      '@ant-design/cssinjs': registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.54_biqbaboplfbrettd7655fr4n2y
+      '@ant-design/cssinjs': registry.npmmirror.com/@ant-design/cssinjs/0.0.0-alpha.60_biqbaboplfbrettd7655fr4n2y
       '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.1
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
       rc-util: registry.npmmirror.com/rc-util/5.24.4_biqbaboplfbrettd7655fr4n2y
@@ -1894,7 +1894,7 @@ packages:
     peerDependencies:
       react: '>=16.3.0'
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.1
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       hoist-non-react-statics: registry.npmmirror.com/hoist-non-react-statics/3.3.2
       react: registry.npmmirror.com/react/18.2.0
       react-is: registry.npmmirror.com/react-is/16.13.1
@@ -2346,7 +2346,7 @@ packages:
     dependencies:
       '@svgr/plugin-jsx': registry.npmmirror.com/@svgr/plugin-jsx/6.5.1_@svgr+core@6.2.1
       camelcase: registry.npmmirror.com/camelcase/6.3.0
-      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.0.1
+      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.1.0
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -2389,15 +2389,15 @@ packages:
       '@svgr/core': '*'
     dependencies:
       '@svgr/core': registry.npmmirror.com/@svgr/core/6.2.1
-      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.0.1
+      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.1.0
       deepmerge: registry.npmmirror.com/deepmerge/4.2.2
       svgo: registry.npmmirror.com/svgo/2.8.0
     dev: false
 
-  registry.npmmirror.com/@swc/core-darwin-arm64/1.3.14:
-    resolution: {integrity: sha512-QFuUq3341uOCrJMIWGuo+CmRC5qZoM2lUo7o2lmv1FO1Dh9njTG85pLD83vz6y4j/F034DBGzvRgSti/Bsoccw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-darwin-arm64/1.3.15:
+    resolution: {integrity: sha512-XDa4jtf+LsL7/cFPhlfeAfkLgwFufKQZ+0SmhRSKL8clA5Me1TU4zxmFoHNyDQZ0el8Q9dCDWOWn3e0Q32lHdQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-arm64/-/core-darwin-arm64-1.3.15.tgz}
     name: '@swc/core-darwin-arm64'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
@@ -2405,10 +2405,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-darwin-x64/1.3.14:
-    resolution: {integrity: sha512-fpAjbjXimJBmxCumRB8zjEtPc0lGUi9Uvu92XH6ww6AyXvg7KQmua5P2R9tnzAm6NwTCXKkgS86cgKysAbbObw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-darwin-x64/1.3.15:
+    resolution: {integrity: sha512-f3Dn3s6tx9JyZVWtftOkcO67IUkFHFTRRoJKXlbCxeut6ogudZSJdc42rYomjAiwWkSS8kNpsOic+cDw8EgksQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-darwin-x64/-/core-darwin-x64-1.3.15.tgz}
     name: '@swc/core-darwin-x64'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
@@ -2416,10 +2416,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/1.3.14:
-    resolution: {integrity: sha512-3XSFlgIyDPS+x2c0IFr0AGj4NUbrWGKbkkUCpmAURII0n3YoDsYw8Ux73I8MkWxTTwDGkou8qQOXyA28kAUM4w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/1.3.15:
+    resolution: {integrity: sha512-bjZByu6FKXGhF+z0EwrdC3hDGt/vQnEc1BF9lettEeCSMbOUdAjz8afbnYEu25p6Un8qgEj5xyQgsnLOzLFJ8g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/-/core-linux-arm-gnueabihf-1.3.15.tgz}
     name: '@swc/core-linux-arm-gnueabihf'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
@@ -2427,10 +2427,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm64-gnu/1.3.14:
-    resolution: {integrity: sha512-r3fToDRYX76NEptAjvDg5aGrbitOgqooV37RpSTIGYd/CSNuin4cpCNFdca/Vh5lnNfal7mqdGDbG7gMruARtw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm64-gnu/1.3.15:
+    resolution: {integrity: sha512-/rm4+ck3oLC7qKi7q7IyqnPRg51HVVvpmcRPBbLrYPnD2m+FnL2uAPhOemAwM+GDv3eS+f5f8ye2Yz3hy99AtA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-gnu/-/core-linux-arm64-gnu-1.3.15.tgz}
     name: '@swc/core-linux-arm64-gnu'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -2439,10 +2439,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-arm64-musl/1.3.14:
-    resolution: {integrity: sha512-IivEUC+3HNSsQNCfaCDzev2CpsvWpgFReitCmj0PKIdXFRsTi78jtJiraLWnYy956j4wwZbKN0OFGkS2ekKAVg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-linux-arm64-musl/1.3.15:
+    resolution: {integrity: sha512-TRJcHyBsW/empMTaHEPmVnIKAThI43lTG7xANwtsB8/31ZSIDUEosZ3fEqmLSBqwvCoQfp93++2MFNQGTwMwpQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-arm64-musl/-/core-linux-arm64-musl-1.3.15.tgz}
     name: '@swc/core-linux-arm64-musl'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -2451,10 +2451,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-x64-gnu/1.3.14:
-    resolution: {integrity: sha512-HtwwA1Z0tE2z9fgaR5ehgY5ULbnVLHj3tayyWhIElF4EWsi6aQfCyn/oCZAcjoPKfEnJiSNBYt5gMmfK8l4mJA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-linux-x64-gnu/1.3.15:
+    resolution: {integrity: sha512-Xktb1uP4P9qNvyQ2nVPX2s+pAthWuTPmNeLO2NlS2jumzq01v4r3F64wLK7t31lvTEXyuiZSdfhE0yILcGmEqg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-gnu/-/core-linux-x64-gnu-1.3.15.tgz}
     name: '@swc/core-linux-x64-gnu'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -2463,10 +2463,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-linux-x64-musl/1.3.14:
-    resolution: {integrity: sha512-RPXilkTD8IVgpou4TNuqZJOB7kMrVJ7sm7GgHF4v1eV3xdIyvy4w5FWjXZRdwMW6iunLgQEckuOmVx0I4mrdNg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-linux-x64-musl/1.3.15:
+    resolution: {integrity: sha512-XUppG2CUE8guxKNpfhnbm2ukKdn0/hh+/t6tkQkbNm95CQqe0yiNMSZxUWIyf4wFcw1lymb15oiG8r34T+7iwQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-linux-x64-musl/-/core-linux-x64-musl-1.3.15.tgz}
     name: '@swc/core-linux-x64-musl'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -2475,10 +2475,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-arm64-msvc/1.3.14:
-    resolution: {integrity: sha512-H8Ka/ahJRs84hQCHC5ndORujbLBmi1mv+Z/m4CXpOaEX7TmeAo8nA17rrRckNvVkud9fghsKQGjkBQvJ0v7mRw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-win32-arm64-msvc/1.3.15:
+    resolution: {integrity: sha512-gU1HFMrVAiLZaLmgN7LlsdWY5deIFjAvB84/kQzQNvPbnaDJbA9FXN7b0Wi9rn4WCmWmbZBj5H8O3UkCQV7WYw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-arm64-msvc/-/core-win32-arm64-msvc-1.3.15.tgz}
     name: '@swc/core-win32-arm64-msvc'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
@@ -2486,10 +2486,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-ia32-msvc/1.3.14:
-    resolution: {integrity: sha512-H3ZmDXrVxrqBzzCFodwYfcXfTHE0xGNLJlLGzJ4haV6RBM3ZYIvRzDtPivDzic/VQncmPj1WpLoEDfx/7KNC8Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-win32-ia32-msvc/1.3.15:
+    resolution: {integrity: sha512-LmKqV6Vv455NaI7kv8P1xTbPCm8S1dNzI7EXb0A87Tm4Tzd5z6KnhDFCbvhMQjHixlq09V1szTdtN5YkIhMXEg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-ia32-msvc/-/core-win32-ia32-msvc-1.3.15.tgz}
     name: '@swc/core-win32-ia32-msvc'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
@@ -2497,10 +2497,10 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core-win32-x64-msvc/1.3.14:
-    resolution: {integrity: sha512-/D1lhWF/DQi2M7b6jWL35NmTY0mRJ5mwTXdmjqNNWOZ8h8TXQo1A3/FDFnfIIcRUeSNdF7IeB3xInT3BI34E1w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core-win32-x64-msvc/1.3.15:
+    resolution: {integrity: sha512-hikhDyJCNyf0C9+b62MXywmTx72+T3cbVBJa9q7vgBV/cKA9z0qbiVMmozAGraIv/gSq9HLHR9Q2nWWWeJl7yg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core-win32-x64-msvc/-/core-win32-x64-msvc-1.3.15.tgz}
     name: '@swc/core-win32-x64-msvc'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
@@ -2508,24 +2508,24 @@ packages:
     dev: false
     optional: true
 
-  registry.npmmirror.com/@swc/core/1.3.14:
-    resolution: {integrity: sha512-LpTTrXOGS7vnbR/rHrAux7GykUWbyVmI5NbICl9iF9yeqFdGm6JjaGBhbanmG8zrQL5aFx2kMxxb92V9D1KUiw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core/-/core-1.3.14.tgz}
+  registry.npmmirror.com/@swc/core/1.3.15:
+    resolution: {integrity: sha512-x5PYlmn2qFp8j0sl5vZHEdyA7SfjiqS7KgXSZfXydYiV1yFOaWQo2LvDjZ73fx3zhIR7oR96myDorglVpWdfhw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@swc/core/-/core-1.3.15.tgz}
     name: '@swc/core'
-    version: 1.3.14
+    version: 1.3.15
     engines: {node: '>=10'}
     hasBin: true
     requiresBuild: true
     optionalDependencies:
-      '@swc/core-darwin-arm64': registry.npmmirror.com/@swc/core-darwin-arm64/1.3.14
-      '@swc/core-darwin-x64': registry.npmmirror.com/@swc/core-darwin-x64/1.3.14
-      '@swc/core-linux-arm-gnueabihf': registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/1.3.14
-      '@swc/core-linux-arm64-gnu': registry.npmmirror.com/@swc/core-linux-arm64-gnu/1.3.14
-      '@swc/core-linux-arm64-musl': registry.npmmirror.com/@swc/core-linux-arm64-musl/1.3.14
-      '@swc/core-linux-x64-gnu': registry.npmmirror.com/@swc/core-linux-x64-gnu/1.3.14
-      '@swc/core-linux-x64-musl': registry.npmmirror.com/@swc/core-linux-x64-musl/1.3.14
-      '@swc/core-win32-arm64-msvc': registry.npmmirror.com/@swc/core-win32-arm64-msvc/1.3.14
-      '@swc/core-win32-ia32-msvc': registry.npmmirror.com/@swc/core-win32-ia32-msvc/1.3.14
-      '@swc/core-win32-x64-msvc': registry.npmmirror.com/@swc/core-win32-x64-msvc/1.3.14
+      '@swc/core-darwin-arm64': registry.npmmirror.com/@swc/core-darwin-arm64/1.3.15
+      '@swc/core-darwin-x64': registry.npmmirror.com/@swc/core-darwin-x64/1.3.15
+      '@swc/core-linux-arm-gnueabihf': registry.npmmirror.com/@swc/core-linux-arm-gnueabihf/1.3.15
+      '@swc/core-linux-arm64-gnu': registry.npmmirror.com/@swc/core-linux-arm64-gnu/1.3.15
+      '@swc/core-linux-arm64-musl': registry.npmmirror.com/@swc/core-linux-arm64-musl/1.3.15
+      '@swc/core-linux-x64-gnu': registry.npmmirror.com/@swc/core-linux-x64-gnu/1.3.15
+      '@swc/core-linux-x64-musl': registry.npmmirror.com/@swc/core-linux-x64-musl/1.3.15
+      '@swc/core-win32-arm64-msvc': registry.npmmirror.com/@swc/core-win32-arm64-msvc/1.3.15
+      '@swc/core-win32-ia32-msvc': registry.npmmirror.com/@swc/core-win32-ia32-msvc/1.3.15
+      '@swc/core-win32-x64-msvc': registry.npmmirror.com/@swc/core-win32-x64-msvc/1.3.15
     dev: false
 
   registry.npmmirror.com/@sxzz/popperjs-es/2.11.7:
@@ -3559,7 +3559,7 @@ packages:
     name: '@umijs/plugin-run'
     version: 4.0.30
     dependencies:
-      tsx: registry.npmmirror.com/tsx/3.12.0
+      tsx: registry.npmmirror.com/tsx/3.12.1
     dev: false
 
   registry.npmmirror.com/@umijs/plugins/4.0.30_gqczyrwmhlwpr6z64d3xh3wv54:
@@ -4903,6 +4903,12 @@ packages:
     version: 1.1.4
     dev: true
 
+  registry.npmmirror.com/character-reference-invalid/2.0.1:
+    resolution: {integrity: sha512-iBZ4F4wRbyORVsu0jPV7gXkOsGYjGHPmAyv+HiHG8gi5PtC9KI2j1+v8/tlibRvjoWX027ypmG/n0HtO5t7unw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/character-reference-invalid/-/character-reference-invalid-2.0.1.tgz}
+    name: character-reference-invalid
+    version: 2.0.1
+    dev: false
+
   registry.npmmirror.com/chardet/0.7.0:
     resolution: {integrity: sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/chardet/-/chardet-0.7.0.tgz}
     name: chardet
@@ -5351,6 +5357,19 @@ packages:
     resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cosmiconfig/-/cosmiconfig-7.0.1.tgz}
     name: cosmiconfig
     version: 7.0.1
+    engines: {node: '>=10'}
+    dependencies:
+      '@types/parse-json': registry.npmmirror.com/@types/parse-json/4.0.0
+      import-fresh: registry.npmmirror.com/import-fresh/3.3.0
+      parse-json: registry.npmmirror.com/parse-json/5.2.0
+      path-type: registry.npmmirror.com/path-type/4.0.0
+      yaml: registry.npmmirror.com/yaml/1.10.2
+    dev: false
+
+  registry.npmmirror.com/cosmiconfig/7.1.0:
+    resolution: {integrity: sha512-AdmX6xUzdNASswsFtmwSt7Vj8po9IuqXm0UXz7QKPuEUmPB4XyjGfaAr2PSuELMwkRMVH1EpIkX5bTZGRB3eCA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/cosmiconfig/-/cosmiconfig-7.1.0.tgz}
+    name: cosmiconfig
+    version: 7.1.0
     engines: {node: '>=10'}
     dependencies:
       '@types/parse-json': registry.npmmirror.com/@types/parse-json/4.0.0
@@ -6039,11 +6058,11 @@ packages:
     version: 2.0.0-alpha.0
     dev: false
 
-  registry.npmmirror.com/dumi/2.0.0-rc.5_zle6ftasjxlmjrujagvjupbcru:
-    resolution: {integrity: sha512-9LVZj7lKy2s9BcZIYFu9unnZWaORVcf6LEZ7UV6Ij07kW7AztthG7a+2T1Ko8hftV9piUR7XXygIfse9zZdLCA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dumi/-/dumi-2.0.0-rc.5.tgz}
-    id: registry.npmmirror.com/dumi/2.0.0-rc.5
+  registry.npmmirror.com/dumi/2.0.0-rc.6_zle6ftasjxlmjrujagvjupbcru:
+    resolution: {integrity: sha512-nYYZt1wR7eyPeaG8tHHkHHh5c2kimfs06BwSyfV5Ap+zA+bMXz/EDLjossaD/0/98Pi0QdWVIZjE4DbWpfVsnw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dumi/-/dumi-2.0.0-rc.6.tgz}
+    id: registry.npmmirror.com/dumi/2.0.0-rc.6
     name: dumi
-    version: 2.0.0-rc.5
+    version: 2.0.0-rc.6
     hasBin: true
     peerDependencies:
       react: '>=16.8'
@@ -6051,7 +6070,7 @@ packages:
     dependencies:
       '@ant-design/icons-svg': registry.npmmirror.com/@ant-design/icons-svg/4.2.1
       '@makotot/ghostui': registry.npmmirror.com/@makotot/ghostui/2.0.0_react@18.2.0
-      '@swc/core': registry.npmmirror.com/@swc/core/1.3.14
+      '@swc/core': registry.npmmirror.com/@swc/core/1.3.15
       '@types/hast': registry.npmmirror.com/@types/hast/2.3.4
       '@types/mdast': registry.npmmirror.com/@types/mdast/3.0.10
       '@umijs/bundler-utils': registry.npmmirror.com/@umijs/bundler-utils/4.0.30
@@ -6090,6 +6109,7 @@ packages:
       rehype-remove-comments: registry.npmmirror.com/rehype-remove-comments/5.0.0
       rehype-stringify: registry.npmmirror.com/rehype-stringify/9.0.3
       remark-breaks: registry.npmmirror.com/remark-breaks/3.0.2
+      remark-directive: registry.npmmirror.com/remark-directive/2.0.1
       remark-frontmatter: registry.npmmirror.com/remark-frontmatter/4.0.1
       remark-gfm: registry.npmmirror.com/remark-gfm/3.0.1
       remark-parse: registry.npmmirror.com/remark-parse/10.0.1
@@ -8295,7 +8315,7 @@ packages:
       '@babel/code-frame': registry.npmmirror.com/@babel/code-frame/7.18.6
       chalk: registry.npmmirror.com/chalk/4.1.2
       chokidar: registry.npmmirror.com/chokidar/3.5.3
-      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.0.1
+      cosmiconfig: registry.npmmirror.com/cosmiconfig/7.1.0
       deepmerge: registry.npmmirror.com/deepmerge/4.2.2
       fs-extra: registry.npmmirror.com/fs-extra/10.1.0
       memfs: registry.npmmirror.com/memfs/3.4.10
@@ -9549,6 +9569,12 @@ packages:
     version: 1.0.4
     dev: true
 
+  registry.npmmirror.com/is-alphabetical/2.0.1:
+    resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-alphabetical/-/is-alphabetical-2.0.1.tgz}
+    name: is-alphabetical
+    version: 2.0.1
+    dev: false
+
   registry.npmmirror.com/is-alphanumerical/1.0.4:
     resolution: {integrity: sha512-UzoZUr+XfVz3t3v4KyGEniVL9BDRoQtY7tOyrRybkVNjDFWyo1yhXNGrrBTQxp3ib9BLAWs7k2YKBQsFRkZG9A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-alphanumerical/-/is-alphanumerical-1.0.4.tgz}
     name: is-alphanumerical
@@ -9557,6 +9583,15 @@ packages:
       is-alphabetical: registry.npmmirror.com/is-alphabetical/1.0.4
       is-decimal: registry.npmmirror.com/is-decimal/1.0.4
     dev: true
+
+  registry.npmmirror.com/is-alphanumerical/2.0.1:
+    resolution: {integrity: sha512-hmbYhX/9MUMF5uh7tOXyK/n0ZvWpad5caBA17GsC6vyuCqaWliRG5K1qS9inmUhEMaOBIW7/whAnSwveW/LtZw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-alphanumerical/-/is-alphanumerical-2.0.1.tgz}
+    name: is-alphanumerical
+    version: 2.0.1
+    dependencies:
+      is-alphabetical: registry.npmmirror.com/is-alphabetical/2.0.1
+      is-decimal: registry.npmmirror.com/is-decimal/2.0.1
+    dev: false
 
   registry.npmmirror.com/is-arguments/1.1.1:
     resolution: {integrity: sha512-8Q7EARjzEnKpt/PCD7e1cgUS0a6X8u5tdSiMqXhojOdoV9TsMsiO+9VLC5vAmO8N7/GmXn7yjR8qnA6bVAEzfA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-arguments/-/is-arguments-1.1.1.tgz}
@@ -9667,6 +9702,12 @@ packages:
     version: 1.0.4
     dev: true
 
+  registry.npmmirror.com/is-decimal/2.0.1:
+    resolution: {integrity: sha512-AAB9hiomQs5DXWcRB1rqsxGUstbRroFOPPVAomNk/3XHR5JyEZChOyTWe2oayKnsSsr/kcGqF+z6yuH6HHpN0A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-decimal/-/is-decimal-2.0.1.tgz}
+    name: is-decimal
+    version: 2.0.1
+    dev: false
+
   registry.npmmirror.com/is-docker/2.2.1:
     resolution: {integrity: sha512-F+i2BKsFrH66iaUFc0woD8sLy8getkwTwtOBjvs56Cx4CgJDeKQeqfz8wAYiSb8JOprWhHH5p77PbmYCvvUuXQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-docker/-/is-docker-2.2.1.tgz}
     name: is-docker
@@ -9767,6 +9808,12 @@ packages:
     name: is-hexadecimal
     version: 1.0.4
     dev: true
+
+  registry.npmmirror.com/is-hexadecimal/2.0.1:
+    resolution: {integrity: sha512-DgZQp241c8oO6cA1SbTEWiXeoxV42vlcJxgH+B3hi1AiqqKruZR3ZGF8In3fj4+/y/7rHvlOZLZtgJ/4ttYGZg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-hexadecimal/-/is-hexadecimal-2.0.1.tgz}
+    name: is-hexadecimal
+    version: 2.0.1
+    dev: false
 
   registry.npmmirror.com/is-installed-globally/0.1.0:
     resolution: {integrity: sha512-ERNhMg+i/XgDwPIPF3u24qpajVreaiSuvpb1Uu0jugw7KKcxGyCX8cgp8P5fwTmAuXku6beDHHECdKArjlg7tw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/is-installed-globally/-/is-installed-globally-0.1.0.tgz}
@@ -10641,6 +10688,19 @@ packages:
       unist-util-visit: registry.npmmirror.com/unist-util-visit/4.1.1
     dev: false
 
+  registry.npmmirror.com/mdast-util-directive/2.2.2:
+    resolution: {integrity: sha512-6BuW4dFkCbTIf9peVMXdtWylI6ovMidVjnHyJpx7IDhwk3GosIgUs87Rl3x6T6kP5iAf1qIE3lMn6CgWw40d+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mdast-util-directive/-/mdast-util-directive-2.2.2.tgz}
+    name: mdast-util-directive
+    version: 2.2.2
+    dependencies:
+      '@types/mdast': registry.npmmirror.com/@types/mdast/3.0.10
+      '@types/unist': registry.npmmirror.com/@types/unist/2.0.6
+      mdast-util-to-markdown: registry.npmmirror.com/mdast-util-to-markdown/1.3.0
+      parse-entities: registry.npmmirror.com/parse-entities/4.0.0
+      stringify-entities: registry.npmmirror.com/stringify-entities/4.0.3
+      unist-util-visit-parents: registry.npmmirror.com/unist-util-visit-parents/5.1.1
+    dev: false
+
   registry.npmmirror.com/mdast-util-find-and-replace/2.2.1:
     resolution: {integrity: sha512-SobxkQXFAdd4b5WmEakmkVoh18icjQRxGy5OWTCzgsLRm1Fu/KCtwD1HIQSsmq5ZRjVH0Ehwg6/Fn3xIUk+nKw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/mdast-util-find-and-replace/-/mdast-util-find-and-replace-2.2.1.tgz}
     name: mdast-util-find-and-replace
@@ -10889,6 +10949,20 @@ packages:
       micromark-util-subtokenize: registry.npmmirror.com/micromark-util-subtokenize/1.0.2
       micromark-util-symbol: registry.npmmirror.com/micromark-util-symbol/1.0.1
       micromark-util-types: registry.npmmirror.com/micromark-util-types/1.0.2
+      uvu: registry.npmmirror.com/uvu/0.5.6
+    dev: false
+
+  registry.npmmirror.com/micromark-extension-directive/2.1.2:
+    resolution: {integrity: sha512-brqLEztt14/73snVXYsq9Cv6ng67O+Sy69ZuM0s8ZhN/GFI9rnyXyj0Y0DaCwi648vCImv7/U1H5TzR7wMv5jw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/micromark-extension-directive/-/micromark-extension-directive-2.1.2.tgz}
+    name: micromark-extension-directive
+    version: 2.1.2
+    dependencies:
+      micromark-factory-space: registry.npmmirror.com/micromark-factory-space/1.0.0
+      micromark-factory-whitespace: registry.npmmirror.com/micromark-factory-whitespace/1.0.0
+      micromark-util-character: registry.npmmirror.com/micromark-util-character/1.1.0
+      micromark-util-symbol: registry.npmmirror.com/micromark-util-symbol/1.0.1
+      micromark-util-types: registry.npmmirror.com/micromark-util-types/1.0.2
+      parse-entities: registry.npmmirror.com/parse-entities/4.0.0
       uvu: registry.npmmirror.com/uvu/0.5.6
     dev: false
 
@@ -11988,6 +12062,21 @@ packages:
       is-decimal: registry.npmmirror.com/is-decimal/1.0.4
       is-hexadecimal: registry.npmmirror.com/is-hexadecimal/1.0.4
     dev: true
+
+  registry.npmmirror.com/parse-entities/4.0.0:
+    resolution: {integrity: sha512-5nk9Fn03x3rEhGaX1FU6IDwG/k+GxLXlFAkgrbM1asuAFl3BhdQWvASaIsmwWypRNcZKHPYnIuOSfIWEyEQnPQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/parse-entities/-/parse-entities-4.0.0.tgz}
+    name: parse-entities
+    version: 4.0.0
+    dependencies:
+      '@types/unist': registry.npmmirror.com/@types/unist/2.0.6
+      character-entities: registry.npmmirror.com/character-entities/2.0.2
+      character-entities-legacy: registry.npmmirror.com/character-entities-legacy/3.0.0
+      character-reference-invalid: registry.npmmirror.com/character-reference-invalid/2.0.1
+      decode-named-character-reference: registry.npmmirror.com/decode-named-character-reference/1.0.2
+      is-alphanumerical: registry.npmmirror.com/is-alphanumerical/2.0.1
+      is-decimal: registry.npmmirror.com/is-decimal/2.0.1
+      is-hexadecimal: registry.npmmirror.com/is-hexadecimal/2.0.1
+    dev: false
 
   registry.npmmirror.com/parse-git-config/0.2.0:
     resolution: {integrity: sha512-amapZFADOJtHvX2URcRfbzG2OFcW+UAwmdK2kht2N2vsH5Py65VxI5yZTlD2DjmxVhTz6htFoVCxROYUJaYOXQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/parse-git-config/-/parse-git-config-0.2.0.tgz}
@@ -14119,7 +14208,7 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.1
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       invariant: registry.npmmirror.com/invariant/2.2.4
       prop-types: registry.npmmirror.com/prop-types/15.8.1
       react: registry.npmmirror.com/react/18.2.0
@@ -14601,6 +14690,17 @@ packages:
       '@types/mdast': registry.npmmirror.com/@types/mdast/3.0.10
       unified: registry.npmmirror.com/unified/10.1.2
       unist-util-visit: registry.npmmirror.com/unist-util-visit/4.1.1
+    dev: false
+
+  registry.npmmirror.com/remark-directive/2.0.1:
+    resolution: {integrity: sha512-oosbsUAkU/qmUE78anLaJePnPis4ihsE7Agp0T/oqTzvTea8pOiaYEtfInU/+xMOVTS9PN5AhGOiaIVe4GD8gw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/remark-directive/-/remark-directive-2.0.1.tgz}
+    name: remark-directive
+    version: 2.0.1
+    dependencies:
+      '@types/mdast': registry.npmmirror.com/@types/mdast/3.0.10
+      mdast-util-directive: registry.npmmirror.com/mdast-util-directive/2.2.2
+      micromark-extension-directive: registry.npmmirror.com/micromark-extension-directive/2.1.2
+      unified: registry.npmmirror.com/unified/10.1.2
     dev: false
 
   registry.npmmirror.com/remark-frontmatter/4.0.1:
@@ -16011,10 +16111,10 @@ packages:
       tslib: registry.npmmirror.com/tslib/1.14.1
       typescript: registry.npmmirror.com/typescript/4.8.4
 
-  registry.npmmirror.com/tsx/3.12.0:
-    resolution: {integrity: sha512-Z9drA8U1/jRJRWVTS2rOwdsCfkAShwfYBlE+6BVZsZChDsgYsEZZe44MGNNK6V6wQTTtu1kRNV57MsKRMJfdpg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tsx/-/tsx-3.12.0.tgz}
+  registry.npmmirror.com/tsx/3.12.1:
+    resolution: {integrity: sha512-Rcg1x+rNe7qwlP8j7kx4VjP/pJo/V57k+17hlrn6a7FuQLNwkaw5W4JF75tYornNVCxkXdSUnqlIT8JY/ttvIw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tsx/-/tsx-3.12.1.tgz}
     name: tsx
-    version: 3.12.0
+    version: 3.12.1
     hasBin: true
     dependencies:
       '@esbuild-kit/cjs-loader': registry.npmmirror.com/@esbuild-kit/cjs-loader/2.4.0
