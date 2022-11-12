@@ -1,7 +1,9 @@
-import React from "react";
-import { Button, Row } from 'element-plus-react'
+import React from 'react';
+import { Button, Row } from 'element-plus-react';
+import '../../layout/demos/index.scss';
 
-export default () => (<>
+export default () => (
+  <>
     <Row className="mb-4">
       <Button>Default</Button>
       <Button type="primary">Primary</Button>
@@ -14,20 +16,40 @@ export default () => (<>
 
     <Row className="mb-4">
       <Button plain>Plain</Button>
-      <Button type="primary" plain>Primary</Button>
-      <Button type="success" plain>Success</Button>
-      <Button type="info" plain>Info</Button>
-      <Button type="warning" plain>Warning</Button>
-      <Button type="danger" plain>Danger</Button>
+      <Button type="primary" plain>
+        Primary
+      </Button>
+      <Button type="success" plain>
+        Success
+      </Button>
+      <Button type="info" plain>
+        Info
+      </Button>
+      <Button type="warning" plain>
+        Warning
+      </Button>
+      <Button type="danger" plain>
+        Danger
+      </Button>
     </Row>
 
     <Row className="mb-4">
       <Button round>Round</Button>
-      <Button type="primary" round>Primary</Button>
-      <Button type="success" round>Success</Button>
-      <Button type="info" round>Info</Button>
-      <Button type="warning" round>Warning</Button>
-      <Button type="danger" round>Danger</Button>
+      <Button type="primary" round>
+        Primary
+      </Button>
+      <Button type="success" round>
+        Success
+      </Button>
+      <Button type="info" round>
+        Info
+      </Button>
+      <Button type="warning" round>
+        Warning
+      </Button>
+      <Button type="danger" round>
+        Danger
+      </Button>
     </Row>
 
     {/* <Row>
@@ -38,4 +60,5 @@ export default () => (<>
   <Button type="warning" :icon="Star" circle></Button>
   <Button type="danger" :icon="Delete" circle></Button>
 </Row>  */}
-  </>)
+  </>
+);

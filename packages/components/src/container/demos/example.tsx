@@ -1,7 +1,20 @@
-<template>
-  <el-container style="height: 500px; border: 99px solid #eee">
-    <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
-      <el-menu :default-openeds="['1', '3']">
+import React from "react"
+import {Container } from 'element-plus-react'
+import './example.scss'
+
+const item = {
+  date: '2016-05-02',
+  name: 'Tom',
+  address: 'No. 189, Grove St, Los Angeles',
+}
+const tableData = Array(20).fill(item)
+
+const Demo = ()=>{
+  return (
+<>
+  <Container style="height: 500px; border: 99px solid #eee">
+    <Container.Aside width="200px" style="background-color: rgb(238, 241, 246)">
+      <Menu :default-openeds="['1', '3']">
         <el-sub-menu index="1">
           <template #title>
             <el-icon><message /></el-icon>Navigator One
@@ -53,8 +66,8 @@
             <el-menu-item index="3-4-1">Option 4-1</el-menu-item>
           </el-sub-menu>
         </el-sub-menu>
-      </el-menu>
-    </el-aside>
+      </Menu>
+    </Container.Aside>
 
     <el-container>
       <el-header style="text-align: right; font-size: 12px">
@@ -81,29 +94,8 @@
         </el-table>
       </el-main>
     </el-container>
-  </el-container>
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-import { Message, Menu as IconMenu, Setting } from '@element-plus/icons-vue'
-
-const item = {
-  date: '2016-05-02',
-  name: 'Tom',
-  address: 'No. 189, Grove St, Los Angeles',
+  </Container>
+</>
+  )
 }
-const tableData = ref(Array(20).fill(item))
-</script>
-
-<style>
-.el-header {
-  background-color: #b3c0d1;
-  color: var(--el-text-color-primary);
-  line-height: 60px;
-}
-
-.el-aside {
-  color: var(--el-text-color-primary);
-}
-</style>
+export default Demo
