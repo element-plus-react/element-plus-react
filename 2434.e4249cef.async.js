@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[2434],{32434:function(o,e,t){t.r(e);var l=t(79685),s=t(59332),n=t(63342),u=function(){return(0,n.jsxs)(n.Fragment,{children:["Scroll down to see the bottom-right button.",(0,n.jsx)(s.kF,{})]})};e.default=u}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[1379],{91379:function(_,s,n){n.r(s);var r=n(79685),t=n(59332),u=n(41789),e=n(63342),l=function(){return(0,e.jsxs)("div",{children:[(0,e.jsx)(t.rU,{underline:!1,children:"Without Underline"}),(0,e.jsx)(t.rU,{children:"With Underline"})]})};s.default=l},41789:function(){}}]);

@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[5619],{45619:function(_,t,n){n.r(t);var u=n(79685),c=n(59332),E=n(95330),s=n(63342),e=function(){return(0,s.jsx)(c.Zb,{className:"box-card",children:[1,2,3,4].map(function(a){return(0,s.jsx)("div",{className:"text item",children:"List item ".concat(a)},a)})})};t.default=e},95330:function(){}}]);
