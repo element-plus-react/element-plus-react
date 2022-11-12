@@ -1,10 +1,10 @@
 lockfileVersion: 5.4
 
 overrides:
-  '@types/react': ^18.0.0
-  '@types/react-dom': ^18.0.0
-  react: ^18.0.0
-  react-dom: ^18.0.0
+  '@types/react': ^18.0.25
+  '@types/react-dom': ^18.0.8
+  react: ^18.2.0
+  react-dom: ^18.2.0
 
 importers:
 
@@ -114,16 +114,16 @@ importers:
       '@rollup/plugin-commonjs': ^23.0.0
       '@rollup/plugin-node-resolve': ^15.0.0
       '@types/lodash': ^4.14.186
-      '@types/react': ^18.0.0
-      '@types/react-dom': ^18.0.0
+      '@types/react': ^18.0.25
+      '@types/react-dom': ^18.0.8
       '@types/react-transition-group': ^4.4.5
       acorn-jsx: ^5.3.2
       ahooks: ^3.7.2
       classnames: ^2.3.2
       dayjs: ^1.11.6
       lodash: ^4.17.21
-      react: ^18.0.0
-      react-dom: ^18.0.0
+      react: ^18.2.0
+      react-dom: ^18.2.0
       react-transition-group: ^4.4.5
       rollup: ^3.0.0
       rollup-plugin-copy: ^3.4.0
