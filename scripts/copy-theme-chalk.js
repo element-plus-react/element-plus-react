@@ -1,14 +1,14 @@
 const fs = require('fs');
 const path = require('path');
-const child_process = require('child_process');
-const fsEx = require('fs-extra');
+//const child_process = require('child_process');
+//const fsEx = require('fs-extra');
 
 const fsPromises = fs.promises;
 
 /**
  *
- * @param {*} copiedPath (被复制文件的地址，相对地址)
- * @param {*} resultPath (放置复制文件的地址，相对地址)
+ * @param {String} copiedPath (被复制文件的地址，相对地址)
+ * @param {String} resultPath (放置复制文件的地址，相对地址)
  */
 function copyFile(copiedPath, resultPath) {
   try {

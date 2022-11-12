@@ -18,7 +18,7 @@
     "declarationDir": "typings",
     "outDir": "./",
     "sourceMap": true,
-    "typeRoots": ["./typings"]
+    "typeRoots": ["../../typings"]
   },
-  "include": ["."]
+  "include": ["src"]
 }
