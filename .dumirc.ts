@@ -20,6 +20,6 @@ export default defineConfig({
   publicPath: process.env.NODE_ENV === 'production' ? '/element-plus-react/' : '/',
   outputPath: 'dist',
   resolve: {
-    atomDirs: [{ type: 'components', dir: './packages/components' }],
+    atomDirs: [{ type: 'components', dir: './packages/components/src' }],
   },
 });

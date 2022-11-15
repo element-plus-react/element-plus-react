@@ -1,9 +1,9 @@
-import { GlobalConfig } from 'components/config-provider'
-import { useContext } from 'react'
+import { GlobalConfig } from '@element-plus/components/src/config-provider';
+import { useContext } from 'react';
 
-export default function useGlobalConfig (key?: string) {
-  const global = useContext(GlobalConfig)
+export default function useGlobalConfig(key?: string) {
+  const global = useContext(GlobalConfig);
   if (key) {
-    return global[key]
+    return global[key];
   }
 }

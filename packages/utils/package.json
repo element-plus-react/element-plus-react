@@ -2,6 +2,6 @@
   "name": "@element-plus/utils",
   "version": "1.0.0",
   "devDependencies": {
-    "lodash": "^4.17.21"
+    
   }
 }

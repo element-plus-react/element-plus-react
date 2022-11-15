@@ -7,7 +7,7 @@
     "build": "umi build",
     "postinstall": "umi setup"
   },
-  "dependencies": {
-    "umi": "^4"
+  "devDependencies": {
+    "umi": "^4.0.30"
   }
 }
