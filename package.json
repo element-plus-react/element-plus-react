@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.5.0",
+  "packageManager": "pnpm@7.15.0",
   "scripts": {
     "prepare": "husky install && dumi setup",
     "start:play": "pnpm -C playground/play run start",
@@ -13,7 +13,7 @@
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
   "dependencies": {
-    "dumi": "^2.0.0-rc.6"
+    "dumi": "^2.0.0-rc.11"
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
@@ -22,8 +22,10 @@
     "@element-plus/theme-chalk": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.8",
+    "@types/react-dom": "^18.0.9",
     "cross-env": "^7.0.3",
+    "lodash": "*",
+    "@types/lodash": "*",
     "element-plus-react": "workspace:0.0.4",
     "eslint": "^8.27.0",
     "gh-pages": "^4.0.0",
@@ -43,6 +45,11 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": ["prettier", "@babel/*", "rollup", "postcss", "react", "react-dom", "webpack", "stylelint", "eslint", "typescript"]
+    }
   },
   "browserslist": [
     "defaults",

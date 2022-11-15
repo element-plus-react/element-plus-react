@@ -4,7 +4,7 @@
   "scripts": {
     "prepare": "node ../../scripts/copy-theme-chalk.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "element-plus": "^2.2.19"
   }
 }
