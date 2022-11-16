@@ -22,11 +22,11 @@
   "files": [
     "es",
     "lib",
-    "dist"
+    "theme-chalk"
   ],
   "main": "lib/element-plus-react/index.js",
   "module": "es/element-plus-react/index.js",
-  "style": "dist/index.css",
+  "style": "theme-chalk/index.css",
   "types": "es/element-plus-react/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
