@@ -18,7 +18,8 @@
     "declarationDir": "typings",
     "outDir": "./",
     "sourceMap": true,
-    "typeRoots": ["./typings"]
+    "typeRoots": ["./typings"],
+    "preserveSymlinks": true
   },
   "include": ["."],
   "exclude": ["node_modules", "lib", "es"]

@@ -1,11 +1,12 @@
 ---
 title: Skeleton 骨架屏
+order: 14
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Skeleton 骨架屏
 
