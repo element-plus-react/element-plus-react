@@ -47,7 +47,7 @@ const App = () => (
 引入样式：
 
 ```jsx
-import 'element-plus-react/dist/index.css';
+import 'element-plus-react/theme-chalk/index.css';
 ```
 
 ---
