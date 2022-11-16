@@ -19,7 +19,7 @@ importers:
       '@types/react': ^18.0.25
       '@types/react-dom': ^18.0.8
       cross-env: ^7.0.3
-      dumi: ^2.0.0-rc.12
+      dumi: ^2.0.0-rc.14
       element-plus-react: workspace:0.0.4
       eslint: ^8.27.0
       father: ^4.1.0
@@ -33,7 +33,7 @@ importers:
       sass: ^1.56.1
       typescript: ^4.9.3
     dependencies:
-      dumi: registry.npmmirror.com/dumi/2.0.0-rc.12_nzcmioikxlzfuwvjqh4w6gghk4
+      dumi: registry.npmmirror.com/dumi/2.0.0-rc.14_nzcmioikxlzfuwvjqh4w6gghk4
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/eslint-config': link:internal/eslint-config
@@ -94,14 +94,14 @@ importers:
 
   packages/components:
     specifiers:
-      '@ant-design/icons': ^4.7.0
+      '@ant-design/icons': ^4.8.0
       '@ctrl/tinycolor': ^3.4.1
       ahooks: ^3.7.2
       classnames: ^2.3.2
       dayjs: ^1.11.6
       react-transition-group: ^4.4.5
     devDependencies:
-      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.7.0
+      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
       ahooks: registry.npmmirror.com/ahooks/3.7.2
       classnames: registry.npmmirror.com/classnames/2.3.2
@@ -110,7 +110,7 @@ importers:
 
   packages/element-plus-react:
     specifiers:
-      '@ant-design/icons': ^4.7.0
+      '@ant-design/icons': ^4.8.0
       '@ctrl/tinycolor': ^3.4.1
       '@types/lodash': ^4.14.189
       '@types/react': ^18.0.25
@@ -125,7 +125,7 @@ importers:
       react-transition-group: ^4.4.5
       typescript: ^4.9.3
     dependencies:
-      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.7.0_biqbaboplfbrettd7655fr4n2y
+      '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0_biqbaboplfbrettd7655fr4n2y
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
       ahooks: registry.npmmirror.com/ahooks/3.7.2_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
@@ -182,10 +182,10 @@ packages:
     name: '@ant-design/icons-svg'
     version: 4.2.1
 
-  registry.npmmirror.com/@ant-design/icons/4.7.0:
-    resolution: {integrity: sha512-aoB4Z7JA431rt6d4u+8xcNPPCrdufSRMUOpxa1ab6mz1JCQZOEVolj2WVs/tDFmN62zzK30mNelEsprLYsSF3g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/icons/-/icons-4.7.0.tgz}
+  registry.npmmirror.com/@ant-design/icons/4.8.0:
+    resolution: {integrity: sha512-T89P2jG2vM7OJ0IfGx2+9FC5sQjtTzRSz+mCHTXkFn/ELZc2YpfStmYHmqzq2Jx55J0F7+O6i5/ZKFSVNWCKNg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/icons/-/icons-4.8.0.tgz}
     name: '@ant-design/icons'
-    version: 4.7.0
+    version: 4.8.0
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.0.0'
@@ -203,11 +203,11 @@ packages:
       rc-util: registry.npmmirror.com/rc-util/5.24.4
     dev: true
 
-  registry.npmmirror.com/@ant-design/icons/4.7.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-aoB4Z7JA431rt6d4u+8xcNPPCrdufSRMUOpxa1ab6mz1JCQZOEVolj2WVs/tDFmN62zzK30mNelEsprLYsSF3g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/icons/-/icons-4.7.0.tgz}
-    id: registry.npmmirror.com/@ant-design/icons/4.7.0
+  registry.npmmirror.com/@ant-design/icons/4.8.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-T89P2jG2vM7OJ0IfGx2+9FC5sQjtTzRSz+mCHTXkFn/ELZc2YpfStmYHmqzq2Jx55J0F7+O6i5/ZKFSVNWCKNg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/icons/-/icons-4.8.0.tgz}
+    id: registry.npmmirror.com/@ant-design/icons/4.8.0
     name: '@ant-design/icons'
-    version: 4.7.0
+    version: 4.8.0
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.0.0'
@@ -1898,7 +1898,7 @@ packages:
       postcss:
         optional: true
     dependencies:
-      '@babel/core': registry.npmmirror.com/@babel/core/7.20.2
+      '@babel/core': registry.npmmirror.com/@babel/core/7.18.9
       postcss: registry.npmmirror.com/postcss/8.4.19
       postcss-syntax: registry.npmmirror.com/postcss-syntax/0.36.2_postcss@8.4.19
     transitivePeerDependencies:
@@ -3309,7 +3309,7 @@ packages:
     name: '@umijs/history'
     version: 5.3.1
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.1
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
       query-string: registry.npmmirror.com/query-string/6.14.1
 
   registry.npmmirror.com/@umijs/lint/4.0.0-canary.20221114.2_e3uo4sehh4zr4i6m57mkkxxv7y:
@@ -5708,11 +5708,11 @@ packages:
     version: 2.0.0-alpha.0
     dev: false
 
-  registry.npmmirror.com/dumi/2.0.0-rc.12_nzcmioikxlzfuwvjqh4w6gghk4:
-    resolution: {integrity: sha512-fuhWd0fDtl5lqOIRbrWD7y0raFiycISrTFYbAgTrke5Y6usnz8IYGuuhMdVQ9quKUtIvO11S1qCqb5WI2U7QOA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dumi/-/dumi-2.0.0-rc.12.tgz}
-    id: registry.npmmirror.com/dumi/2.0.0-rc.12
+  registry.npmmirror.com/dumi/2.0.0-rc.14_nzcmioikxlzfuwvjqh4w6gghk4:
+    resolution: {integrity: sha512-pgRB0YjAdBZ55ipb4iXkbeOaHri9Tcq5JSbsgzL/CYKiZsUci3VD2jmD1rXWk8LxK6OT6C6qg+TpWmCt97xfWA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dumi/-/dumi-2.0.0-rc.14.tgz}
+    id: registry.npmmirror.com/dumi/2.0.0-rc.14
     name: dumi
-    version: 2.0.0-rc.12
+    version: 2.0.0-rc.14
     hasBin: true
     peerDependencies:
       react: '>=16.8'
@@ -8599,7 +8599,7 @@ packages:
     name: history
     version: 5.3.0
     dependencies:
-      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.20.1
+      '@babel/runtime': registry.npmmirror.com/@babel/runtime/7.18.9
 
   registry.npmmirror.com/hmac-drbg/1.0.1:
     resolution: {integrity: sha512-Tti3gMqLdZfhOQY1Mzf/AanLiqh1WTiJgEj26ZuYQ9fbkLomzGchCws4FyrSd4VkpBfiNhaE1On+lOz894jvXg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz}
