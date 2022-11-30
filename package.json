@@ -1,6 +1,11 @@
 {
   "private": true,
   "packageManager": "pnpm@7.15.0",
+  "workspaces": [
+     "packages/**",
+     "playground/**",
+     "internal/eslint-config"
+  ],
   "scripts": {
     "prepare": "husky install && dumi setup",
     "start:play": "pnpm -C playground/play run start",
