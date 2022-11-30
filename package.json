@@ -2,9 +2,9 @@
   "private": true,
   "packageManager": "pnpm@7.15.0",
   "workspaces": [
-     "packages/**",
-     "playground/**",
-     "internal/eslint-config"
+     "packages/*",
+     "playground/*",
+     "internal/*"
   ],
   "scripts": {
     "prepare": "husky install && dumi setup",
