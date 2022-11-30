@@ -9,7 +9,7 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-     open-pull-requests-limit: 20
+    open-pull-requests-limit: 20
 
   - package-ecosystem: "github-actions"
     directory: "/"
