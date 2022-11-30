@@ -9,43 +9,11 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
-    ignore: 
-      - dependency-name: "@element-plus/components"
-      - dependency-name: "@element-plus/eslint-config"
-      - dependency-name: "@element-plus/hooks"
-      - dependency-name: "@element-plus/theme-chalk"
-      - dependency-name: "@element-plus/utils"
-      - dependency-name: "element-plus-react"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/internal/eslint-config" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/components" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/element-plus-react" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/hooks" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/theme-chalk" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/packages/utils" # Location of package manifests
-    schedule:
-      interval: "daily"
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/playground/play" # Location of package manifests
-    schedule:
-      interval: "daily"
+     open-pull-requests-limit: 20
+
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       # Check for updates to GitHub Actions every week
       interval: "weekly"
+    open-pull-requests-limit: 20
