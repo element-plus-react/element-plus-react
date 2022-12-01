@@ -4,6 +4,7 @@
   "devDependencies": {
     "@ant-design/icons": "^4.8.0",
     "@ctrl/tinycolor": "^3.4.1",
+    "@element-plus/theme-chalk": "^2.2.16",
     "ahooks": "^3.7.2",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.6",
