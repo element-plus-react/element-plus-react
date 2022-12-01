@@ -17,10 +17,10 @@ function copyFile(copiedPath, resultPath) {
     fsPromises
       .cp(copiedPath, resultPath, { recursive: true })
       .then(() => {
-        console.log(copiedPath + '==>' + resultPath + ':success');
+        console.log(`${copiedPath}==>${resultPath}:success`);
       })
       .catch(err => {
-        console.log(copiedPath + '==>' + resultPath + ':err', err);
+        console.log(`${copiedPath}==>${resultPath}:err`, err);
       });
   } catch (e) {
     console.log(e);
@@ -42,7 +42,7 @@ function copyFile(copiedPath, resultPath) {
     const { stdout: stdout4 } = await exec('father build');
     console.log(stdout4);
     copyFile(
-      '../../packages/theme-chalk/node_modules/element-plus/theme-chalk',
+      '../../packages/components/node_modules/@element-plus/theme-chalk',
       '../../packages/element-plus-react/theme-chalk',
     );
     copyFile('../../README.md', '../../packages/element-plus-react/README.md');
