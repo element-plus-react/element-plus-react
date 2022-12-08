@@ -1,10 +1,8 @@
 {
   "private": true,
   "workspaces": [
-    ".",
     "packages/*",
-    "playground/*",
-    "internal/*"
+    "playground/*"
   ],
   "scripts": {
     "prepare": "husky install && dumi setup",
@@ -24,12 +22,12 @@
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
-    "@element-plus/eslint-config": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/lodash": "^4.14.191",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.9",
+    "@umijs/fabric": "^3.0.0",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
     "eslint": "^8.28.0",
@@ -56,16 +54,7 @@
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": [
-        "prettier",
-        "@babel/*",
-        "rollup",
-        "postcss",
-        "react",
-        "react-dom",
-        "webpack",
-        "stylelint",
-        "eslint",
-        "typescript"
+       
       ]
     }
   },
