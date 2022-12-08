@@ -4,5 +4,3 @@
 packages:
   - 'packages/**'
   - 'playground/**'
-  - 'internal/**'
-  - '!internal/build'

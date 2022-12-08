@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ['@element-plus/eslint-config'],
+  extends: [require.resolve('@umijs/fabric/dist/eslint')],
 };
