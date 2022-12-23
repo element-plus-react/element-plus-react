@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 overrides:
   '@types/react': ^18.0.26
-  '@types/react-dom': ^18.0.8
+  '@types/react-dom': ^18.0.9
   react: ^18.2.0
   react-dom: ^18.2.0
 
@@ -15,7 +15,7 @@ importers:
       '@element-plus/utils': workspace:1.0.0
       '@types/lodash': ^4.14.191
       '@types/react': ^18.0.26
-      '@types/react-dom': ^18.0.8
+      '@types/react-dom': ^18.0.9
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
       dumi: ^2.0.10
@@ -39,7 +39,7 @@ importers:
       '@element-plus/utils': link:packages/utils
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
       '@types/react': 18.0.26
-      '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.9
+      '@types/react-dom': 18.0.9
       '@umijs/fabric': registry.npmmirror.com/@umijs/fabric/3.0.0
       cross-env: registry.npmmirror.com/cross-env/7.0.3
       element-plus-react: link:packages/element-plus-react
@@ -79,7 +79,7 @@ importers:
       '@ctrl/tinycolor': ^3.4.1
       '@types/lodash': ^4.14.191
       '@types/react': ^18.0.26
-      '@types/react-dom': ^18.0.8
+      '@types/react-dom': ^18.0.9
       '@types/react-transition-group': ^4.4.5
       ahooks: ^3.7.2
       classnames: ^2.3.2
@@ -99,7 +99,7 @@ importers:
     devDependencies:
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
       '@types/react': 18.0.26
-      '@types/react-dom': registry.npmmirror.com/@types/react-dom/18.0.9
+      '@types/react-dom': 18.0.9
       '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.5
       lodash: registry.npmmirror.com/lodash/4.17.21
       react: registry.npmmirror.com/react/18.2.0
@@ -387,6 +387,12 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
+
+  /@types/react-dom/18.0.9:
+    resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==}
+    dependencies:
+      '@types/react': 18.0.26
+    dev: true
 
   /@types/react/18.0.26:
     resolution: {integrity: sha512-hCR3PJQsAIXyxhTNSiDFY//LhnMZWpNNr5etoCqx/iUfGc5gXWtQR2Phl908jVR6uPXacojQWTg4qRpkxTuGug==}
@@ -4728,14 +4734,6 @@ packages:
     name: '@types/parse5'
     version: 6.0.3
     dev: false
-
-  registry.npmmirror.com/@types/react-dom/18.0.9:
-    resolution: {integrity: sha512-qnVvHxASt/H7i+XG1U1xMiY5t+IHcPGUK7TDMDzom08xa7e86eCeKOiLZezwCKVxJn6NEiiy2ekgX8aQssjIKg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.0.9.tgz}
-    name: '@types/react-dom'
-    version: 18.0.9
-    dependencies:
-      '@types/react': 18.0.26
-    dev: true
 
   registry.npmmirror.com/@types/react-transition-group/4.4.5:
     resolution: {integrity: sha512-juKD/eiSM3/xZYzjuzH6ZwpP+/lejltmiS3QEzV/vmb/Q8+HfDmxu+Baga8UEMGBqV88Nbg4l2hY/K2DkyaLLA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-transition-group/-/react-transition-group-4.4.5.tgz}
