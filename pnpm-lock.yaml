@@ -58,7 +58,7 @@ importers:
   packages/components:
     specifiers:
       '@ant-design/icons': ^4.8.0
-      '@ctrl/tinycolor': ^3.4.1
+      '@ctrl/tinycolor': ^3.5.0
       '@element-plus/theme-chalk': ^2.2.16
       ahooks: ^3.7.2
       classnames: ^2.3.2
@@ -66,7 +66,7 @@ importers:
       react-transition-group: ^4.4.5
     devDependencies:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0
-      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
+      '@ctrl/tinycolor': 3.5.0
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
       ahooks: registry.npmmirror.com/ahooks/3.7.2
       classnames: registry.npmmirror.com/classnames/2.3.2
@@ -76,7 +76,7 @@ importers:
   packages/element-plus-react:
     specifiers:
       '@ant-design/icons': ^4.8.0
-      '@ctrl/tinycolor': ^3.4.1
+      '@ctrl/tinycolor': ^3.5.0
       '@types/lodash': ^4.14.191
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.8
@@ -91,7 +91,7 @@ importers:
       typescript: ^4.9.3
     dependencies:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0_biqbaboplfbrettd7655fr4n2y
-      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
+      '@ctrl/tinycolor': 3.5.0
       ahooks: registry.npmmirror.com/ahooks/3.7.2_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: registry.npmmirror.com/dayjs/1.11.6
@@ -119,6 +119,10 @@ importers:
       umi: registry.npmmirror.com/umi/4.0.34
 
 packages:
+
+  /@ctrl/tinycolor/3.5.0:
+    resolution: {integrity: sha512-tlJpwF40DEQcfR/QF+wNMVyGMaO9FQp6Z1Wahj4Gk3CJQYHwA2xVG7iKDFdW6zuxZY9XWOpGcfNCTsX4McOsOg==}
+    engines: {node: '>=10'}
 
   /@esbuild/android-arm/0.15.14:
     resolution: {integrity: sha512-+Rb20XXxRGisNu2WmNKk+scpanb7nL5yhuI1KR9wQFiC43ddPj/V1fmNyzlFC9bKiG4mYzxW7egtoHVcynr+OA==}
@@ -1727,7 +1731,7 @@ packages:
     name: '@ant-design/colors'
     version: 6.0.0
     dependencies:
-      '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
+      '@ctrl/tinycolor': 3.5.0
 
   registry.npmmirror.com/@ant-design/icons-svg/4.2.1:
     resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ant-design/icons-svg/-/icons-svg-4.2.1.tgz}
@@ -3826,12 +3830,6 @@ packages:
     dependencies:
       postcss: registry.npmmirror.com/postcss/8.4.19
       postcss-selector-parser: registry.npmmirror.com/postcss-selector-parser/6.0.11
-
-  registry.npmmirror.com/@ctrl/tinycolor/3.4.1:
-    resolution: {integrity: sha512-ej5oVy6lykXsvieQtqZxCOaLT+xD4+QNarq78cIYISHmZXshCvROLudpQN3lfL8G0NL7plMSSK+zlyvCaIJ4Iw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@ctrl/tinycolor/-/tinycolor-3.4.1.tgz}
-    name: '@ctrl/tinycolor'
-    version: 3.4.1
-    engines: {node: '>=10'}
 
   registry.npmmirror.com/@element-plus/theme-chalk/2.2.16:
     resolution: {integrity: sha512-c4BoGFV/UL84kzH4bTlIOzlU3g9zTHew1SOGwAVPjEiVi1XBKauSUxkPngT4BjaZfF0CfL3P446zjXJ3rFWXMg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@element-plus/theme-chalk/-/theme-chalk-2.2.16.tgz}
