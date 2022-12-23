@@ -11,7 +11,7 @@
     "access": "public"
   },
   "peerDependencies": {
-    "eslint": "^8.0.0"
+    "eslint": "^8.30.0"
   },
   "dependencies": {
     "typescript": "^4.9.3"
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.45.0",
     "@typescript-eslint/parser": "^5.45.0",
-    "eslint": "^8.28.0",
+    "eslint": "^8.30.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-babel": "^5.3.1",
