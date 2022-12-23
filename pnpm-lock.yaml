@@ -62,7 +62,7 @@ importers:
       '@element-plus/theme-chalk': ^2.2.16
       ahooks: ^3.7.2
       classnames: ^2.3.2
-      dayjs: ^1.11.6
+      dayjs: ^1.11.7
       react-transition-group: ^4.4.5
     devDependencies:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0
@@ -70,7 +70,7 @@ importers:
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
       ahooks: registry.npmmirror.com/ahooks/3.7.2
       classnames: registry.npmmirror.com/classnames/2.3.2
-      dayjs: registry.npmmirror.com/dayjs/1.11.6
+      dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5
 
   packages/element-plus-react:
@@ -83,7 +83,7 @@ importers:
       '@types/react-transition-group': ^4.4.5
       ahooks: ^3.7.2
       classnames: ^2.3.2
-      dayjs: ^1.11.6
+      dayjs: ^1.11.7
       lodash: ^4.17.21
       react: ^18.2.0
       react-dom: ^18.2.0
@@ -94,7 +94,7 @@ importers:
       '@ctrl/tinycolor': registry.npmmirror.com/@ctrl/tinycolor/3.4.1
       ahooks: registry.npmmirror.com/ahooks/3.7.2_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
-      dayjs: registry.npmmirror.com/dayjs/1.11.6
+      dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
@@ -551,6 +551,9 @@ packages:
 
   /csstype/3.1.1:
     resolution: {integrity: sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==}
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
 
   /debug/3.1.0:
     resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
@@ -5907,7 +5910,7 @@ packages:
     dependencies:
       '@types/js-cookie': registry.npmmirror.com/@types/js-cookie/2.2.7
       ahooks-v3-count: registry.npmmirror.com/ahooks-v3-count/1.0.0
-      dayjs: registry.npmmirror.com/dayjs/1.11.6
+      dayjs: 1.11.7
       intersection-observer: registry.npmmirror.com/intersection-observer/0.12.2
       js-cookie: registry.npmmirror.com/js-cookie/2.2.1
       lodash: registry.npmmirror.com/lodash/4.17.21
@@ -5926,7 +5929,7 @@ packages:
     dependencies:
       '@types/js-cookie': registry.npmmirror.com/@types/js-cookie/2.2.7
       ahooks-v3-count: registry.npmmirror.com/ahooks-v3-count/1.0.0
-      dayjs: registry.npmmirror.com/dayjs/1.11.6
+      dayjs: 1.11.7
       intersection-observer: registry.npmmirror.com/intersection-observer/0.12.2
       js-cookie: registry.npmmirror.com/js-cookie/2.2.1
       lodash: registry.npmmirror.com/lodash/4.17.21
@@ -7421,11 +7424,6 @@ packages:
       image-size: registry.npmmirror.com/image-size/0.8.3
       mimer: registry.npmmirror.com/mimer/1.1.0
     dev: false
-
-  registry.npmmirror.com/dayjs/1.11.6:
-    resolution: {integrity: sha512-zZbY5giJAinCG+7AGaw0wIhNZ6J8AhWuSXKvuc1KAyMiRsvGQWqh4L+MomvhdAYjN+lqvVCMq1I41e3YHvXkyQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/dayjs/-/dayjs-1.11.6.tgz}
-    name: dayjs
-    version: 1.11.6
 
   registry.npmmirror.com/debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz}
