@@ -5,7 +5,7 @@
     "@ant-design/icons": "^4.8.0",
     "@ctrl/tinycolor": "^3.5.0",
     "@element-plus/theme-chalk": "^2.2.16",
-    "ahooks": "^3.7.3",
+    "ahooks": "^3.7.4",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "react-transition-group": "^4.4.5"
