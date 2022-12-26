@@ -60,7 +60,7 @@ importers:
       '@ant-design/icons': ^4.8.0
       '@ctrl/tinycolor': ^3.5.0
       '@element-plus/theme-chalk': ^2.2.16
-      ahooks: ^3.7.3
+      ahooks: ^3.7.4
       classnames: ^2.3.2
       dayjs: ^1.11.7
       react-transition-group: ^4.4.5
@@ -68,7 +68,7 @@ importers:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0
       '@ctrl/tinycolor': 3.5.0
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
-      ahooks: 3.7.3
+      ahooks: 3.7.4
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5
@@ -81,7 +81,7 @@ importers:
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.10
       '@types/react-transition-group': ^4.4.5
-      ahooks: ^3.7.3
+      ahooks: ^3.7.4
       classnames: ^2.3.2
       dayjs: ^1.11.7
       lodash: ^4.17.21
@@ -92,7 +92,7 @@ importers:
     dependencies:
       '@ant-design/icons': registry.npmmirror.com/@ant-design/icons/4.8.0_biqbaboplfbrettd7655fr4n2y
       '@ctrl/tinycolor': 3.5.0
-      ahooks: 3.7.3_react@18.2.0
+      ahooks: 3.7.4_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y
@@ -2897,8 +2897,8 @@ packages:
   /ahooks-v3-count/1.0.0:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
 
-  /ahooks/3.7.3:
-    resolution: {integrity: sha512-HzHD5xhI94xqWfij9rimfFtkbGm+TR/t86drdYrYHgAMth0rqLtHxlVOTCjgXqmXUt9xz0EbkBfrWZBl4lc2YQ==}
+  /ahooks/3.7.4:
+    resolution: {integrity: sha512-hvgdqzPUKXn95mK3cGlDCi/ZZqv+FRibCUCFT8zW3hCwLGvixVfnHrIW2/2lgzPdLo8mLjp/XOdIJvcPvE2lgQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2911,10 +2911,11 @@ packages:
       lodash: 4.17.21
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
+      tslib: 2.4.1
     dev: true
 
-  /ahooks/3.7.3_react@18.2.0:
-    resolution: {integrity: sha512-HzHD5xhI94xqWfij9rimfFtkbGm+TR/t86drdYrYHgAMth0rqLtHxlVOTCjgXqmXUt9xz0EbkBfrWZBl4lc2YQ==}
+  /ahooks/3.7.4_react@18.2.0:
+    resolution: {integrity: sha512-hvgdqzPUKXn95mK3cGlDCi/ZZqv+FRibCUCFT8zW3hCwLGvixVfnHrIW2/2lgzPdLo8mLjp/XOdIJvcPvE2lgQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2928,6 +2929,7 @@ packages:
       react: registry.npmmirror.com/react/18.2.0
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
+      tslib: 2.4.1
     dev: false
 
   /ajv-keywords/3.5.2_ajv@6.12.6:
