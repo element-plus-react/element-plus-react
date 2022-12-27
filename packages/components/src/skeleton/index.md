@@ -16,31 +16,19 @@ group:
 
 基础的骨架效果。
 
-:::demo
-
-skeleton/basic-usage
-
-:::
+<code src="./demos/basic-usage.tsx"></code>
 
 ## 更多参数
 
 可以配置骨架屏段落数量，以便更接近真实渲染效果。显示的数量会比传入的数量多 1，首行会被渲染一个长度 33% 的段首。
 
-:::demo
-
-skeleton/configurable-rows
-
-:::
+<code src="./demos/configurable-rows.tsx"></code>
 
 ## 动画效果
 
 我们提供了一个开关标志，表明是否显示加载动画， 调用 `animated` 如果真真是这样，所有的 `el-skeleton` 的子节点将显示动画。
 
-:::demo
-
-skeleton/animation
-
-:::
+<code src="./demos/animation.tsx"></code>
 
 ## 自定义样式
 
@@ -48,21 +36,13 @@ Element Plus 提供的排版模式有时候并不满足要求，当您想要用�
 
 我们提供了不同的模板单元可供使用，具体可选值请看 API 详细描述。 另外，在构建您自己自定义的骨架时，您应该尽可能更接近于真正的DOM。 避免DOM因高度差而发生抖动。
 
-:::demo
-
-skeleton/customized-template
-
-:::
+<code src="./demos/customized-template.tsx"></code>
 
 ## 加载状态
 
 当 `Loading` 结束之后，我们往往需要显示真实的 UI， 可以通过 `loading` 的值来控制是否显示加载后的 DOM。 然后通过 具名 Slot `default` 来设置当 loading 结束之后需要展示的 UI。
 
-:::demo
-
-skeleton/loading-state
-
-:::
+<code src="./demos/loading-state.tsx"></code>
 
 ## 渲染多条数据
 
@@ -74,21 +54,13 @@ skeleton/loading-state
 
 :::
 
-:::demo
-
-skeleton/rendering-with-data
-
-:::
+<code src="./demos/rendering-with-data.tsx"></code>
 
 ## 防止渲染抖动
 
 有的时候，API 的请求回来的特别快，往往骨架占位刚刚被渲染，真实的数据就已经回来了，用户的界面会突然一闪， 此时为了避免这种情况，就需要通过 `throttle` 属性来避免这个问题。
 
-:::demo
-
-skeleton/avoiding-rendering-bouncing
-
-:::
+<code src="./demos/avoiding-rendering-bouncing.tsx"></code>
 
 ## Skeleton 属性
 

@@ -17,6 +17,7 @@ import Row from './src/layout/row';
 import Result from './src/result';
 import Space from './src/space';
 import Steps from './src/steps';
+import Skeleton from './src/skeleton';
 import Transition from './src/transition';
 import Timeline from './src/timeline';
 import Alert from './src/alert';
@@ -44,4 +45,5 @@ export {
   Steps,
   Transition,
   Timeline,
+  Skeleton
 };

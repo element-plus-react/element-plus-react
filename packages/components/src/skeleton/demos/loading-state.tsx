@@ -1,4 +1,13 @@
-<template>
+import dayjs from 'dayjs'
+
+const currentDate = dayjs().format('YYYY-MM-DD')
+import React from "react"
+import { Skeleton } from 'element-plus-react'
+
+const Demo = () => {
+  return(
+  <>
+  {/* <template>
   <el-space direction="vertical" alignment="flex-start">
     <div>
       <label style="margin-right: 16px">Switch Loading</label>
@@ -40,12 +49,10 @@
       </template>
     </el-skeleton>
   </el-space>
-</template>
+</template> */}
+  
+  </>)
+}
+export default Demo
 
-<script lang="ts" setup>
-import { ref } from 'vue'
-import dayjs from 'dayjs'
 
-const loading = ref(true)
-const currentDate = dayjs().format('YYYY-MM-DD')
-</script>

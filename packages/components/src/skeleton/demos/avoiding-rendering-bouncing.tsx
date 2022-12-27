@@ -1,6 +1,14 @@
-<template>
-  <el-space direction="vertical" alignment="flex-start">
-    <div>
+import dayjs from 'dayjs'
+
+const loading = false
+const currentDate = dayjs().format('YYYY-MM-DD')
+
+import { Skeleton, Space } from 'element-plus-react'
+
+const Demo = () => {
+  return(
+    <Space direction="vertical" alignment="flex-start">
+    {/* <div>
       <label style="margin-right: 16px">Switch Loading</label>
       <el-switch v-model="loading" />
     </div>
@@ -43,14 +51,7 @@
           </div>
         </el-card>
       </template>
-    </el-skeleton>
-  </el-space>
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-import dayjs from 'dayjs'
-
-const loading = ref(false)
-const currentDate = dayjs().format('YYYY-MM-DD')
-</script>
+    </el-skeleton> */}
+  </Space>)
+}
+export default Demo
