@@ -115,7 +115,7 @@ And thank you to all our backers! 🙏
 - [x] Row
 - [ ] Scrollbar
 - [ ] Select
-- [ ] Skeleton
+- [x] Skeleton
 - [x] Space
 - [x] Steps
 - [ ] Submenu

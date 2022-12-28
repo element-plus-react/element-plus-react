@@ -1,9 +1,13 @@
-<template>
-  <el-skeleton />
-  <br />
-  <el-skeleton style="--el-skeleton-circle-size: 100px">
-    <template #template>
-      <el-skeleton-item variant="circle" />
-    </template>
-  </el-skeleton>
-</template>
+import React from "react"
+import { Skeleton } from 'element-plus-react'
+
+const Demo = () => {
+  return(
+  <>
+  <Skeleton />
+  <Skeleton template={<Skeleton.Item variant="circle" />}>
+
+  </Skeleton>
+  </>)
+}
+export default Demo

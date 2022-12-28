@@ -1,3 +1,11 @@
-<template>
-  <el-skeleton :rows="5" />
-</template>
+import React from "react"
+import { Skeleton } from 'element-plus-react'
+
+const Demo = () => {
+  return(
+  <>
+  <Skeleton rows={5}/>
+  
+  </>)
+}
+export default Demo
