@@ -17,7 +17,7 @@ importers:
       '@types/react-dom': ^18.0.10
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
-      dumi: ^2.0.17
+      dumi: ^2.0.18
       element-plus-react: workspace:0.0.4
       eslint: ^8.30.0
       father: ^4.1.2
@@ -30,7 +30,7 @@ importers:
       sass: ^1.57.1
       typescript: ^4.9.4
     dependencies:
-      dumi: 2.0.17_cmtnwjrurtgkws7uhrqeksxbmm
+      dumi: 2.0.18_cmtnwjrurtgkws7uhrqeksxbmm
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/hooks': link:packages/hooks
@@ -4333,8 +4333,8 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi/2.0.17_cmtnwjrurtgkws7uhrqeksxbmm:
-    resolution: {integrity: sha512-SnNX1vpILb5PTaeszb8bCMcZpT419zEv1xORZf/GIS0cEay7WAGTOoGycVdrsie/nPBYyQCpJih0ZR8gRu9tTg==}
+  /dumi/2.0.18_cmtnwjrurtgkws7uhrqeksxbmm:
+    resolution: {integrity: sha512-b90imq+zVSFdG7+sPsE1NHWVEQhcFVyocqtyecXAXIQ89ns/QLoTk6JT1CmmRDtbFoaT3roAr76v0sfDyyKm9Q==}
     hasBin: true
     peerDependencies:
       react: '>=16.8'
