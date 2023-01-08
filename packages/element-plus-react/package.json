@@ -3,6 +3,9 @@
   "name": "element-plus-react",
   "version": "0.0.4",
   "license": "MIT",
+  "scripts": {
+    "build": "father build"
+  },
   "bugs": {
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
   },
@@ -12,11 +15,11 @@
   },
   "exports": {
     ".": {
-      "require": "./lib/element-plus-react/index.js",
-      "import": "./es/element-plus-react/index.js"
+      "require": "./lib/element-plus-react/src/index.js",
+      "import": "./es/element-plus-react/src/index.js"
     },
-    "./es": "./es/element-plus-react/index.js",
-    "./lib": "./lib/element-plus-react/index.js",
+    "./es": "./es/element-plus-react/src/index.js",
+    "./lib": "./lib/element-plus-react/src/index.js",
     "./*": "./*"
   },
   "files": [
@@ -24,10 +27,10 @@
     "lib",
     "theme-chalk"
   ],
-  "main": "lib/element-plus-react/index.js",
-  "module": "es/element-plus-react/index.js",
-  "style": "theme-chalk/index.css",
-  "types": "es/element-plus-react/index.d.ts",
+  "main": "lib/element-plus-react/src/index.js",
+  "module": "es/element-plus-react/src/index.js",
+  "style": "theme-chalk/src/index.css",
+  "types": "es/element-plus-react/src/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^4.8.0",
     "@ctrl/tinycolor": "^3.5.0",

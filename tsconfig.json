@@ -19,8 +19,14 @@
     "outDir": "./",
     "sourceMap": true,
     "typeRoots": ["./typings"],
-    "preserveSymlinks": true
+    "preserveSymlinks": true,
+    "paths": {
+      "element-plus-react": ["./packages/element-plus-react/src"],
+      "@element-plus/components": ["./packages/components/src"],
+      "@element-plus/utils": ["./packages/utils/src"],
+      "@element-plus/hooks": ["./packages/hooks/src"]
+    }
   },
-  "include": ["."],
+  "include": [".", "packages/components/.fatherrc.ts", "packages/components/.fatherrc.ts"],
   "exclude": ["node_modules", "lib", "es"]
 }
