@@ -18,7 +18,7 @@
     "clearDir": "node ./scripts/clearDir.js"
   },
   "dependencies": {
-    "dumi": "^2.1.1"
+    "dumi": "^2.1.2"
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
