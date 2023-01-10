@@ -29,7 +29,7 @@
   "style": "theme-chalk/index.css",
   "types": "es/element-plus-react/index.d.ts",
   "dependencies": {
-    "@ant-design/icons": "^4.8.0",
+    "@ant-design/icons": "^5.0.0",
     "@ctrl/tinycolor": "^3.5.0",
     "ahooks": "^3.7.4",
     "classnames": "^2.3.2",

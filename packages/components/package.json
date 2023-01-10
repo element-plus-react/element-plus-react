@@ -2,7 +2,7 @@
   "name": "@element-plus/components",
   "version": "1.0.0",
   "devDependencies": {
-    "@ant-design/icons": "^4.8.0",
+    "@ant-design/icons": "^5.0.0",
     "@ctrl/tinycolor": "^3.5.0",
     "@element-plus/theme-chalk": "^2.2.16",
     "ahooks": "^3.7.4",
