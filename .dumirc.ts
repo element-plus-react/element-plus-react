@@ -1,9 +1,11 @@
 import { defineConfig } from 'dumi';
-import * as path from "path";
 
 export default defineConfig({
   alias: {
-    'element-plus-react': 'element-plus-react/index.ts'
+    'element-plus-react': 'element-plus-react/src/index.ts',
+    '@element-plus/components': './packages/components/src',
+    '@element-plus/utils': './packages/utils/src',
+    '@element-plus/hooks': './packages/hooks/src',
   },
   mfsu: false,
   themeConfig: {

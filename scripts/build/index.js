@@ -19,7 +19,7 @@ function copyFile(copiedPath, resultPath) {
       .then(() => {
         console.log(`${copiedPath}==>${resultPath}:success`);
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(`${copiedPath}==>${resultPath}:err`, err);
       });
   } catch (e) {
@@ -29,24 +29,20 @@ function copyFile(copiedPath, resultPath) {
 
 (async () => {
   try {
-    copyFile('element-plus-react.fatherrc.ts', '../../.fatherrc.ts');
-    const { stdout: stdout1 } = await exec('father build');
+    const { stdout: stdout1 } = await exec('pnpm -C packages/element-plus-react run build');
     console.log(stdout1);
-    copyFile('utils.fatherrc.ts', '../../.fatherrc.ts');
-    const { stdout: stdout2 } = await exec('father build');
+    const { stdout: stdout2 } = await exec('pnpm -C packages/components run build');
     console.log(stdout2);
-    copyFile('components.fatherrc.ts', '../../.fatherrc.ts');
-    const { stdout: stdout3 } = await exec('father build');
+    const { stdout: stdout3 } = await exec('pnpm -C packages/utils run build');
     console.log(stdout3);
-    copyFile('hooks.fatherrc.ts', '../../.fatherrc.ts');
-    const { stdout: stdout4 } = await exec('father build');
+    const { stdout: stdout4 } = await exec('pnpm -C packages/hooks run build');
     console.log(stdout4);
     copyFile(
       '../../packages/components/node_modules/@element-plus/theme-chalk',
       '../../packages/element-plus-react/theme-chalk',
     );
     copyFile('../../README.md', '../../packages/element-plus-react/README.md');
-    fs.unlink(path.resolve(__dirname, '../../.fatherrc.ts'), err => {
+    fs.unlink(path.resolve(__dirname, '../../.fatherrc.ts'), (err) => {
       if (err) {
         console.log(err);
       }

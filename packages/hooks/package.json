@@ -1,7 +1,7 @@
 {
   "name": "@element-plus/hooks",
-  "version": "1.0.0",
-  "devDependencies": {
-    
+  "version": "1.0.0", 
+  "scripts": {
+    "build": "father build"
   }
 }

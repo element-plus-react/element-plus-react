@@ -1,25 +1,4 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "strictNullChecks": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "jsx": "react-jsx",
-    "noUnusedParameters": true,
-    "noUnusedLocals": true,
-    "noImplicitAny": true,
-    "target": "es6",
-    "lib": ["dom", "es2017"],
-    "skipLibCheck": true,
-    "declaration": true,
-    "declarationDir": "typings",
-    "outDir": "./",
-    "sourceMap": true
-  },
-  "include": [
-    "*"
-  ],
-  "exclude": ["node_modules", "lib", "es"]
+  "extends": "../../tsconfig.json",
+  "include": ["src"]
 }
