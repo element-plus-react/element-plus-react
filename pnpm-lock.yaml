@@ -17,7 +17,7 @@ importers:
       '@types/react-dom': ^18.0.10
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
-      dumi: ^2.1.2
+      dumi: ^2.1.3
       element-plus-react: workspace:0.0.4
       eslint: ^8.31.0
       father: ^4.1.3
@@ -30,7 +30,7 @@ importers:
       sass: ^1.57.1
       typescript: ^4.9.4
     dependencies:
-      dumi: 2.1.2_smk3xfgobdpsts2dxinbidhn7e
+      dumi: 2.1.3_smk3xfgobdpsts2dxinbidhn7e
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/hooks': link:packages/hooks
@@ -1274,7 +1274,7 @@ packages:
     dependencies:
       '@babel/runtime': 7.20.6
       hoist-non-react-statics: 3.3.2
-      react: 18.2.0
+      react: registry.npmmirror.com/react/18.2.0
       react-is: 16.13.1
 
   /@makotot/ghostui/2.0.0_react@18.2.0:
@@ -2780,8 +2780,8 @@ packages:
       '@babel/runtime': 7.18.9
       '@loadable/component': 5.15.2_react@18.2.0
       history: 5.3.0
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
       react-helmet-async: 1.3.0_biqbaboplfbrettd7655fr4n2y
       react-router-dom: 6.3.0_biqbaboplfbrettd7655fr4n2y
 
@@ -4290,8 +4290,8 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi/2.1.2_smk3xfgobdpsts2dxinbidhn7e:
-    resolution: {integrity: sha512-qwNScr3jGxEL/Mho6MgdpSRpUq8Mcwcb2pyXKmQT9RVnm6iDO2gSqieRdhVuLI9LJaVakIX9GLdsURtDpFI1dw==}
+  /dumi/2.1.3_smk3xfgobdpsts2dxinbidhn7e:
+    resolution: {integrity: sha512-g08QqWF0/gofYrAkMVx0/vublNF48x/8zIN31sJtdgmJFzjr0ZAuObfSNFwV9TzwcRrtTsm23tpHxR7Q456KwA==}
     hasBin: true
     peerDependencies:
       react: '>=16.8'
@@ -9474,8 +9474,8 @@ packages:
       '@babel/runtime': 7.20.6
       invariant: 2.2.4
       prop-types: 15.8.1
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
+      react: registry.npmmirror.com/react/18.2.0
+      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
       react-fast-compare: 3.2.0
       shallowequal: 1.1.0
 
