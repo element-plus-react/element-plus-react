@@ -32,7 +32,7 @@
   "style": "theme-chalk/src/index.css",
   "types": "es/element-plus-react/src/index.d.ts",
   "dependencies": {
-    "@ant-design/icons": "^5.0.0",
+    "@ant-design/icons": "^5.0.1",
     "@ctrl/tinycolor": "^3.5.0",
     "ahooks": "^3.7.4",
     "classnames": "^2.3.2",
