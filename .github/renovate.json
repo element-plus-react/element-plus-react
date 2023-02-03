@@ -3,6 +3,7 @@
   "extends": [
     "config:base"
   ],
+  "labels": ["dependencies", "javascript"],
   "pin": false,
   "node": false,
   "rangeStrategy": "bump"
