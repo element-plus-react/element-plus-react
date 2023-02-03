@@ -17,7 +17,7 @@ importers:
       '@types/react-dom': ^18.0.10
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
-      dumi: ^2.1.5
+      dumi: ^2.1.7
       element-plus-react: workspace:0.0.4
       eslint: ^8.33.0
       father: ^4.1.3
@@ -30,7 +30,7 @@ importers:
       sass: ^1.58.0
       typescript: ^4.9.5
     dependencies:
-      dumi: 2.1.5_upaiqpkpcnxkx5iyn4cj7jg5ri
+      dumi: 2.1.7_upaiqpkpcnxkx5iyn4cj7jg5ri
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/hooks': link:packages/hooks
@@ -2562,18 +2562,6 @@ packages:
       - supports-color
     dev: true
 
-  /@umijs/bundler-utils/4.0.47:
-    resolution: {integrity: sha512-TgpsAo6+gYa0mytNUBXP0LSOxGUNLzuxsBg0jSdqcAVTHNBkMic72JMo8hgXa8TDx7f4Pb6GSngWj5Jgh/Pq1w==}
-    dependencies:
-      '@umijs/utils': 4.0.47
-      esbuild: 0.16.17
-      regenerate: 1.4.2
-      regenerate-unicode-properties: 10.0.1
-      spdy: 4.0.2
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
-
   /@umijs/bundler-utils/4.0.48:
     resolution: {integrity: sha512-rXIOGiAb28W/pOQ5QtAPtX/qwxuLD5SickLbu1hvOYOGjrFLNl9lEeIHxipTad/n35z9k6LRBBiDblR3e3xgPQ==}
     dependencies:
@@ -2759,15 +2747,6 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
-
-  /@umijs/core/4.0.47:
-    resolution: {integrity: sha512-LnaJ6NX32bo9Ax1EwZgTJhHRMlFuP4vuuTA04So6RgQYhxZOjs3fZmuxTSGGMXLqYRX6IwqaOzO+76nnnSl4Yw==}
-    dependencies:
-      '@umijs/bundler-utils': 4.0.47
-      '@umijs/utils': 4.0.47
-    transitivePeerDependencies:
-      - supports-color
-    dev: false
 
   /@umijs/core/4.0.48:
     resolution: {integrity: sha512-tJO2PTEUKGW5d93t48hhBfF2F85d3KXYQD1qi//rBdzXMSsox4XR3ufZbeU5ddSP1KkcDgnfpoL6pZ1LOU5wUw==}
@@ -3040,13 +3019,6 @@ packages:
       chokidar: 3.5.3
       pino: 7.11.0
     dev: true
-
-  /@umijs/utils/4.0.47:
-    resolution: {integrity: sha512-FLaLqutlCUPPb8EihUXd3Un8ycNTAqA0tYYQ81AF1UNon51EEhvnKpnICkLx7loNeenXaprM+fn/xDWQWsD3LA==}
-    dependencies:
-      chokidar: 3.5.3
-      pino: 7.11.0
-    dev: false
 
   /@umijs/utils/4.0.48:
     resolution: {integrity: sha512-amdKoGquAMQ+u3xIEizV5ApG7U3ElwuPWVScVT/Dc6sNh2COXZI5stizVa9eoA2lJ7DLD2i+WB4k/riG02qrMw==}
@@ -4551,16 +4523,16 @@ packages:
       is-obj: 1.0.1
     dev: false
 
-  /dumi-afx-deps/1.0.0-alpha.7:
-    resolution: {integrity: sha512-kE5cA5Nf65pZ2PcGfFkRKlwLvd6lhc+uPsyMjvzQdIGtl2nr5G6sTgD5EQCGasETwtvN3Z5aMkpO6aRbSL0ktA==}
+  /dumi-afx-deps/1.0.0-alpha.12:
+    resolution: {integrity: sha512-my+92PapBT+NFSFwVb60b8nqbOz1moLOfZpD3+XqryzaqCno1MSuX0oYc8TqN0wPLd7nEly8c8TIcaZGwj9U5g==}
     dev: false
 
   /dumi-assets-types/2.0.0-alpha.0:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi/2.1.5_upaiqpkpcnxkx5iyn4cj7jg5ri:
-    resolution: {integrity: sha512-y513nYZqUONlLez+LU5ikU6YzFYf8wxyqxbs764vCP4Q75ioLk8M8okt6FN7EX8sxbJihnyuRkLtXqMx1hjK3Q==}
+  /dumi/2.1.7_upaiqpkpcnxkx5iyn4cj7jg5ri:
+    resolution: {integrity: sha512-yiyb+FrkSDTUi2GmYDio8nsnnieKWgdWZPdlyKQtXl+yNqlNAx2a8m2A3FUqM5PoVByYIylqYIbXd7e6bMurhw==}
     hasBin: true
     peerDependencies:
       react: '>=16.8'
@@ -4572,13 +4544,13 @@ packages:
       '@swc/core': 1.3.21
       '@types/hast': 2.3.4
       '@types/mdast': 3.0.10
-      '@umijs/bundler-utils': 4.0.47
-      '@umijs/core': 4.0.47
+      '@umijs/bundler-utils': 4.0.48
+      '@umijs/core': 4.0.48
       animated-scroll-to: 2.3.0
       classnames: 2.3.2
       codesandbox: 2.2.3
       deepmerge: 4.2.2
-      dumi-afx-deps: 1.0.0-alpha.7
+      dumi-afx-deps: 1.0.0-alpha.12
       dumi-assets-types: 2.0.0-alpha.0
       enhanced-resolve: 5.12.0
       estree-util-to-js: 1.1.0
