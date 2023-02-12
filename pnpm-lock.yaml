@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 overrides:
-  '@types/react': ^18.0.27
+  '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.10
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -13,7 +13,7 @@ importers:
       '@element-plus/components': workspace:1.0.0
       '@element-plus/hooks': workspace:1.0.0
       '@element-plus/utils': workspace:1.0.0
-      '@types/react': ^18.0.27
+      '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.10
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
@@ -30,12 +30,12 @@ importers:
       sass: ^1.58.0
       typescript: ^4.9.5
     dependencies:
-      dumi: 2.1.9_wh56lniu2mf7qu642yngi4hxja
+      dumi: 2.1.9_dzwckl6zej5734iyc4worepvji
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/hooks': link:packages/hooks
       '@element-plus/utils': link:packages/utils
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       '@types/react-dom': 18.0.10
       '@umijs/fabric': registry.npmmirror.com/@umijs/fabric/3.0.0
       cross-env: registry.npmmirror.com/cross-env/7.0.3
@@ -78,7 +78,7 @@ importers:
       '@ant-design/icons': ^5.0.1
       '@ctrl/tinycolor': ^3.5.0
       '@types/lodash': ^4.14.191
-      '@types/react': ^18.0.27
+      '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.10
       '@types/react-transition-group': ^4.4.5
       ahooks: ^3.7.4
@@ -98,7 +98,7 @@ importers:
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       '@types/react-dom': 18.0.10
       '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.5
       lodash: registry.npmmirror.com/lodash/4.17.21
@@ -1166,20 +1166,6 @@ packages:
     dependencies:
       '@floating-ui/core': 0.6.2
 
-  /@floating-ui/react-dom-interactions/0.3.1_5ndqzdd6t4rivxsukjv3i3ak2q:
-    resolution: {integrity: sha512-tP2KEh7EHJr5hokSBHcPGojb+AorDNUf0NYfZGg/M+FsMvCOOsSEeEF0O1NDfETIzDnpbHnCs0DuvCFhSMSStg==}
-    deprecated: Package renamed to @floating-ui/react
-    dependencies:
-      '@floating-ui/react-dom': 0.6.3_5ndqzdd6t4rivxsukjv3i3ak2q
-      aria-hidden: 1.2.2_3stiutgnnbnfnf3uowm5cip22i
-      point-in-polygon: 1.1.0
-      use-isomorphic-layout-effect: 1.1.2_3stiutgnnbnfnf3uowm5cip22i
-    transitivePeerDependencies:
-      - '@types/react'
-      - react
-      - react-dom
-    dev: false
-
   /@floating-ui/react-dom-interactions/0.3.1_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-tP2KEh7EHJr5hokSBHcPGojb+AorDNUf0NYfZGg/M+FsMvCOOsSEeEF0O1NDfETIzDnpbHnCs0DuvCFhSMSStg==}
     deprecated: Package renamed to @floating-ui/react
@@ -1194,18 +1180,18 @@ packages:
       - react-dom
     dev: true
 
-  /@floating-ui/react-dom/0.6.3_5ndqzdd6t4rivxsukjv3i3ak2q:
-    resolution: {integrity: sha512-hC+pS5D6AgS2wWjbmSQ6UR6Kpy+drvWGJIri6e1EDGADTPsCaa4KzCgmCczHrQeInx9tqs81EyDmbKJYY2swKg==}
-    peerDependencies:
-      react: '>=16.8.0'
-      react-dom: '>=16.8.0'
+  /@floating-ui/react-dom-interactions/0.3.1_zula6vjvt3wdocc4mwcxqa6nzi:
+    resolution: {integrity: sha512-tP2KEh7EHJr5hokSBHcPGojb+AorDNUf0NYfZGg/M+FsMvCOOsSEeEF0O1NDfETIzDnpbHnCs0DuvCFhSMSStg==}
+    deprecated: Package renamed to @floating-ui/react
     dependencies:
-      '@floating-ui/dom': 0.4.5
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
-      use-isomorphic-layout-effect: 1.1.2_3stiutgnnbnfnf3uowm5cip22i
+      '@floating-ui/react-dom': 0.6.3_zula6vjvt3wdocc4mwcxqa6nzi
+      aria-hidden: 1.2.2_pmekkgnqduwlme35zpnqhenc34
+      point-in-polygon: 1.1.0
+      use-isomorphic-layout-effect: 1.1.2_pmekkgnqduwlme35zpnqhenc34
     transitivePeerDependencies:
       - '@types/react'
+      - react
+      - react-dom
     dev: false
 
   /@floating-ui/react-dom/0.6.3_biqbaboplfbrettd7655fr4n2y:
@@ -1221,6 +1207,20 @@ packages:
     transitivePeerDependencies:
       - '@types/react'
     dev: true
+
+  /@floating-ui/react-dom/0.6.3_zula6vjvt3wdocc4mwcxqa6nzi:
+    resolution: {integrity: sha512-hC+pS5D6AgS2wWjbmSQ6UR6Kpy+drvWGJIri6e1EDGADTPsCaa4KzCgmCczHrQeInx9tqs81EyDmbKJYY2swKg==}
+    peerDependencies:
+      react: '>=16.8.0'
+      react-dom: '>=16.8.0'
+    dependencies:
+      '@floating-ui/dom': 0.4.5
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      use-isomorphic-layout-effect: 1.1.2_pmekkgnqduwlme35zpnqhenc34
+    transitivePeerDependencies:
+      - '@types/react'
+    dev: false
 
   /@formatjs/ecma402-abstract/1.14.2:
     resolution: {integrity: sha512-tXDFpDperxDQ2GExcV8Gs5AWwLvaZZYCJ+kBDHhg4k3Ev6ig27BDG1AG2joR1VFX6sXZvC5+ohgcDkfBZPCOGg==}
@@ -1941,7 +1941,7 @@ packages:
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -2005,11 +2005,11 @@ packages:
   /@types/react-dom/18.0.10:
     resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
     dev: true
 
-  /@types/react/18.0.27:
-    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
+  /@types/react/18.0.28:
+    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
@@ -2776,7 +2776,7 @@ packages:
       - webpack-plugin-serve
     dev: true
 
-  /@umijs/preset-umi/4.0.51_rtj4syckkd2derthrlnawvwewi:
+  /@umijs/preset-umi/4.0.51_jhqgmc7lw75ebqnb7nujhkppki:
     resolution: {integrity: sha512-1ib+2k4KzpWHbn2RALMHNpODlSO/INAnLzX+6cZGI+6DCZsz2fIisnAULaKMDlrz8+j+5ANUoAJshRx1hjr48g==}
     dependencies:
       '@iconify/utils': 2.0.9
@@ -2795,7 +2795,7 @@ packages:
       '@umijs/server': 4.0.51
       '@umijs/utils': 4.0.51
       babel-plugin-dynamic-import-node: 2.3.3
-      click-to-react-component: 1.0.8_5ndqzdd6t4rivxsukjv3i3ak2q
+      click-to-react-component: 1.0.8_zula6vjvt3wdocc4mwcxqa6nzi
       core-js: 3.27.1
       current-script-polyfill: 1.0.0
       enhanced-resolve: 5.9.3
@@ -3115,7 +3115,7 @@ packages:
   /argparse/2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  /aria-hidden/1.2.2_3stiutgnnbnfnf3uowm5cip22i:
+  /aria-hidden/1.2.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-6y/ogyDTk/7YAe91T3E2PR1ALVKyM2QbTio5HwM+N1Q6CMlCKhvClyIjkckBswa0f2xJhjsfzIGa1yVSe1UMVA==}
     engines: {node: '>=10'}
     peerDependencies:
@@ -3125,7 +3125,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       react: 18.2.0
       tslib: 2.4.1
     dev: false
@@ -3768,20 +3768,6 @@ packages:
     resolution: {integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==}
     dev: false
 
-  /click-to-react-component/1.0.8_5ndqzdd6t4rivxsukjv3i3ak2q:
-    resolution: {integrity: sha512-YBNYOp00udy+NBEnUmM/3Df0Yco1iHNQ8k0ltlJVcDYK9AuYt14xPoJicBh/BokLqbzkci1p+pbdY5r4JXZC4g==}
-    peerDependencies:
-      react: '>=16.8.0'
-    dependencies:
-      '@floating-ui/react-dom-interactions': 0.3.1_5ndqzdd6t4rivxsukjv3i3ak2q
-      htm: 3.1.1
-      react: 18.2.0
-      react-merge-refs: 1.1.0
-    transitivePeerDependencies:
-      - '@types/react'
-      - react-dom
-    dev: false
-
   /click-to-react-component/1.0.8_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-YBNYOp00udy+NBEnUmM/3Df0Yco1iHNQ8k0ltlJVcDYK9AuYt14xPoJicBh/BokLqbzkci1p+pbdY5r4JXZC4g==}
     peerDependencies:
@@ -3795,6 +3781,20 @@ packages:
       - '@types/react'
       - react-dom
     dev: true
+
+  /click-to-react-component/1.0.8_zula6vjvt3wdocc4mwcxqa6nzi:
+    resolution: {integrity: sha512-YBNYOp00udy+NBEnUmM/3Df0Yco1iHNQ8k0ltlJVcDYK9AuYt14xPoJicBh/BokLqbzkci1p+pbdY5r4JXZC4g==}
+    peerDependencies:
+      react: '>=16.8.0'
+    dependencies:
+      '@floating-ui/react-dom-interactions': 0.3.1_zula6vjvt3wdocc4mwcxqa6nzi
+      htm: 3.1.1
+      react: 18.2.0
+      react-merge-refs: 1.1.0
+    transitivePeerDependencies:
+      - '@types/react'
+      - react-dom
+    dev: false
 
   /cliui/8.0.1:
     resolution: {integrity: sha512-BSeNnyus75C4//NQ9gQt1/csTXyo/8Sb+afLAkzAptFuMsod9HFokGNudZpi/oQV73hnVK+sR+5PVRMd+Dr7YQ==}
@@ -4396,7 +4396,7 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi/2.1.9_wh56lniu2mf7qu642yngi4hxja:
+  /dumi/2.1.9_dzwckl6zej5734iyc4worepvji:
     resolution: {integrity: sha512-QadjgDZINlDDCcQGxjNujoPRUku8LSW8Yw3UuQJK2+yu+BNeOc6NPRXWnTa4+XWGVjRH6Nn7+/wktZtcs9a1rw==}
     hasBin: true
     peerDependencies:
@@ -4453,7 +4453,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.58.0
       sitemap: 7.1.1
-      umi: 4.0.51_qnzjbopmr5i2b3ghnbcinhx4ea
+      umi: 4.0.51_rmvb2hlhntr5f7deearia5otdm
       unified: 10.1.2
       unist-util-visit: 4.1.1
       unist-util-visit-parents: 5.1.1
@@ -9837,7 +9837,7 @@ packages:
       '@formatjs/intl-displaynames': 6.2.2
       '@formatjs/intl-listformat': 7.1.6
       '@types/hoist-non-react-statics': 3.3.1
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       hoist-non-react-statics: 3.3.2
       intl-messageformat: 10.2.4
       react: registry.npmmirror.com/react/18.2.0
@@ -11102,7 +11102,7 @@ packages:
       - webpack-plugin-serve
     dev: true
 
-  /umi/4.0.51_qnzjbopmr5i2b3ghnbcinhx4ea:
+  /umi/4.0.51_rmvb2hlhntr5f7deearia5otdm:
     resolution: {integrity: sha512-6wAX/DGOKlGJBDdHlQEEfnITgrZlR060/R6Q6Q7gzPVEClDpW2BONoilePr2SmL83ISwzZ7vooFORfG45gvNnA==}
     engines: {node: '>=14'}
     hasBin: true
@@ -11112,7 +11112,7 @@ packages:
       '@umijs/bundler-webpack': 4.0.51_typescript@4.9.5
       '@umijs/core': 4.0.51
       '@umijs/lint': 4.0.51_7kw3g6rralp5ps6mg3uyzz6azm
-      '@umijs/preset-umi': 4.0.51_rtj4syckkd2derthrlnawvwewi
+      '@umijs/preset-umi': 4.0.51_jhqgmc7lw75ebqnb7nujhkppki
       '@umijs/renderer-react': 4.0.51_biqbaboplfbrettd7655fr4n2y
       '@umijs/server': 4.0.51
       '@umijs/test': 4.0.51
@@ -11325,7 +11325,7 @@ packages:
       punycode: 1.3.2
       querystring: 0.2.0
 
-  /use-isomorphic-layout-effect/1.1.2_3stiutgnnbnfnf3uowm5cip22i:
+  /use-isomorphic-layout-effect/1.1.2_pmekkgnqduwlme35zpnqhenc34:
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -11334,7 +11334,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
       react: 18.2.0
     dev: false
 
@@ -12968,7 +12968,7 @@ packages:
     name: '@types/react-transition-group'
     version: 4.4.5
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
     dev: true
 
   registry.npmmirror.com/@typescript-eslint/eslint-plugin/5.45.0_nobtl2otblk5f2djb7n7x2q6na:
