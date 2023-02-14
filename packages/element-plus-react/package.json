@@ -33,7 +33,7 @@
   "types": "es/element-plus-react/src/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
-    "@ctrl/tinycolor": "^3.5.0",
+    "@ctrl/tinycolor": "^3.5.1",
     "ahooks": "^3.7.4",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
