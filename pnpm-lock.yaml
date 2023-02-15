@@ -54,7 +54,7 @@ importers:
   packages/components:
     specifiers:
       '@ant-design/icons': ^5.0.1
-      '@ctrl/tinycolor': ^3.5.1
+      '@ctrl/tinycolor': ^3.6.0
       '@element-plus/theme-chalk': ^2.2.16
       '@types/lodash': ^4.14.191
       ahooks: ^3.7.4
@@ -64,7 +64,7 @@ importers:
       react-transition-group: ^4.4.5
     devDependencies:
       '@ant-design/icons': 5.0.1
-      '@ctrl/tinycolor': 3.5.1
+      '@ctrl/tinycolor': 3.6.0
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
       ahooks: 3.7.4
@@ -76,7 +76,7 @@ importers:
   packages/element-plus-react:
     specifiers:
       '@ant-design/icons': ^5.0.1
-      '@ctrl/tinycolor': ^3.5.1
+      '@ctrl/tinycolor': ^3.6.0
       '@types/lodash': ^4.14.191
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
@@ -91,7 +91,7 @@ importers:
       typescript: ^4.9.5
     dependencies:
       '@ant-design/icons': 5.0.1_biqbaboplfbrettd7655fr4n2y
-      '@ctrl/tinycolor': 3.5.1
+      '@ctrl/tinycolor': 3.6.0
       ahooks: 3.7.4_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
@@ -135,7 +135,7 @@ packages:
   /@ant-design/colors/7.0.0:
     resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
     dependencies:
-      '@ctrl/tinycolor': 3.5.1
+      '@ctrl/tinycolor': 3.6.0
 
   /@ant-design/icons-svg/4.2.1:
     resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==}
@@ -911,8 +911,8 @@ packages:
       postcss: 8.4.21
       postcss-selector-parser: 6.0.11
 
-  /@ctrl/tinycolor/3.5.1:
-    resolution: {integrity: sha512-Bp8VF1lm91/vxFSBdVrrSe+P4KpjRCSAJ6qPSeLFnVprT/ERXHDvV2OJSJbRwl1r/KcySshTUnVbAzrSbn93fg==}
+  /@ctrl/tinycolor/3.6.0:
+    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
     engines: {node: '>=10'}
 
   /@esbuild-kit/cjs-loader/2.4.1:
