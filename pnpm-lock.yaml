@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 overrides:
   '@types/react': ^18.0.28
-  '@types/react-dom': ^18.0.10
+  '@types/react-dom': ^18.0.11
   react: ^18.2.0
   react-dom: ^18.2.0
 
@@ -14,7 +14,7 @@ importers:
       '@element-plus/hooks': workspace:1.0.0
       '@element-plus/utils': workspace:1.0.0
       '@types/react': ^18.0.28
-      '@types/react-dom': ^18.0.10
+      '@types/react-dom': ^18.0.11
       '@umijs/fabric': ^3.0.0
       cross-env: ^7.0.3
       dumi: ^2.1.9
@@ -36,7 +36,7 @@ importers:
       '@element-plus/hooks': link:packages/hooks
       '@element-plus/utils': link:packages/utils
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@umijs/fabric': registry.npmmirror.com/@umijs/fabric/3.0.0
       cross-env: registry.npmmirror.com/cross-env/7.0.3
       element-plus-react: link:packages/element-plus-react
@@ -79,7 +79,7 @@ importers:
       '@ctrl/tinycolor': ^3.5.1
       '@types/lodash': ^4.14.191
       '@types/react': ^18.0.28
-      '@types/react-dom': ^18.0.10
+      '@types/react-dom': ^18.0.11
       '@types/react-transition-group': ^4.4.5
       ahooks: ^3.7.4
       classnames: ^2.3.2
@@ -99,7 +99,7 @@ importers:
     devDependencies:
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
       '@types/react': 18.0.28
-      '@types/react-dom': 18.0.10
+      '@types/react-dom': 18.0.11
       '@types/react-transition-group': registry.npmmirror.com/@types/react-transition-group/4.4.5
       lodash: registry.npmmirror.com/lodash/4.17.21
       react: registry.npmmirror.com/react/18.2.0
@@ -2002,8 +2002,8 @@ packages:
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
 
-  /@types/react-dom/18.0.10:
-    resolution: {integrity: sha512-E42GW/JA4Qv15wQdqJq8DL4JhNpB3prJgjgapN3qJT9K2zO5IIAQh4VXvCEDupoqAwnz0cY4RlXeC/ajX5SFHg==}
+  /@types/react-dom/18.0.11:
+    resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==}
     dependencies:
       '@types/react': 18.0.28
     dev: true
