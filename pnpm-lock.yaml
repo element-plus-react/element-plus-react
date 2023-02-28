@@ -57,7 +57,7 @@ importers:
       '@ctrl/tinycolor': ^3.6.0
       '@element-plus/theme-chalk': ^2.2.16
       '@types/lodash': ^4.14.191
-      ahooks: ^3.7.4
+      ahooks: ^3.7.5
       classnames: ^2.3.2
       dayjs: ^1.11.7
       lodash: npm:lodash-es@^4.17.21
@@ -67,7 +67,7 @@ importers:
       '@ctrl/tinycolor': 3.6.0
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
-      ahooks: 3.7.4
+      ahooks: 3.7.5
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       lodash: /lodash-es/4.17.21
@@ -81,7 +81,7 @@ importers:
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
       '@types/react-transition-group': ^4.4.5
-      ahooks: ^3.7.4
+      ahooks: ^3.7.5
       classnames: ^2.3.2
       dayjs: ^1.11.7
       lodash: ^4.17.21
@@ -92,7 +92,7 @@ importers:
     dependencies:
       '@ant-design/icons': 5.0.1_biqbaboplfbrettd7655fr4n2y
       '@ctrl/tinycolor': 3.6.0
-      ahooks: 3.7.4_react@18.2.0
+      ahooks: 3.7.5_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y
@@ -2979,8 +2979,8 @@ packages:
   /ahooks-v3-count/1.0.0:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
 
-  /ahooks/3.7.4:
-    resolution: {integrity: sha512-hvgdqzPUKXn95mK3cGlDCi/ZZqv+FRibCUCFT8zW3hCwLGvixVfnHrIW2/2lgzPdLo8mLjp/XOdIJvcPvE2lgQ==}
+  /ahooks/3.7.5:
+    resolution: {integrity: sha512-RWkJYK5xj9ZXROj9jABRDqdpTBimkY1tlyeJQ8Ci7MAl1sC5xzSzwO20ydk6BjtdbWt56DPCYZhq4lGu3O2Zwg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2996,8 +2996,8 @@ packages:
       tslib: 2.4.1
     dev: true
 
-  /ahooks/3.7.4_react@18.2.0:
-    resolution: {integrity: sha512-hvgdqzPUKXn95mK3cGlDCi/ZZqv+FRibCUCFT8zW3hCwLGvixVfnHrIW2/2lgzPdLo8mLjp/XOdIJvcPvE2lgQ==}
+  /ahooks/3.7.5_react@18.2.0:
+    resolution: {integrity: sha512-RWkJYK5xj9ZXROj9jABRDqdpTBimkY1tlyeJQ8Ci7MAl1sC5xzSzwO20ydk6BjtdbWt56DPCYZhq4lGu3O2Zwg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
