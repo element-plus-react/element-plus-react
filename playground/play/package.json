@@ -8,6 +8,6 @@
     "postinstall": "umi setup"
   },
   "devDependencies": {
-    "umi": "^4.0.53"
+    "umi": "^4.0.55"
   }
 }
