@@ -24,13 +24,13 @@ importers:
       gh-pages: ^5.0.0
       husky: ^8.0.3
       lint-staged: ^13.1.2
-      prettier: ^2.8.4
+      prettier: ^2.8.6
       react: ^18.2.0
       react-dom: ^18.2.0
       sass: ^1.58.3
       typescript: ^4.9.5
     dependencies:
-      dumi: 2.1.14_dzwckl6zej5734iyc4worepvji
+      dumi: 2.1.14_mptf7xgo6wori2bs7jwd32nzrq
     devDependencies:
       '@element-plus/components': link:packages/components
       '@element-plus/hooks': link:packages/hooks
@@ -45,7 +45,7 @@ importers:
       gh-pages: 5.0.0
       husky: 8.0.3
       lint-staged: 13.1.2
-      prettier: 2.8.4
+      prettier: 2.8.6
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
       sass: 1.58.3
@@ -4656,7 +4656,7 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi/2.1.14_dzwckl6zej5734iyc4worepvji:
+  /dumi/2.1.14_mptf7xgo6wori2bs7jwd32nzrq:
     resolution: {integrity: sha512-j6Wsk15pdZF1ZHbvuBlDXMv8yCVdWhQHC8l4a9O/rphBYMHUPagZIcHiSXpzW+4oKYaXG6DErK9RkcvyuGgXHQ==}
     hasBin: true
     peerDependencies:
@@ -4713,7 +4713,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.58.3
       sitemap: 7.1.1
-      umi: 4.0.53_iuyejn5dft6dfiymbwrhpleyx4
+      umi: 4.0.53_kkxvla56try3kkuiziwkbwflr4
       unified: 10.1.2
       unist-util-visit: 4.1.1
       unist-util-visit-parents: 5.1.1
@@ -9741,7 +9741,7 @@ packages:
         optional: true
     dev: true
 
-  /prettier-plugin-organize-imports/3.2.2_silln3pw57har7jydmecgzoypa:
+  /prettier-plugin-organize-imports/3.2.2_k4ha7c5shlzw7es36i4xz5r3bm:
     resolution: {integrity: sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA==}
     peerDependencies:
       '@volar/vue-language-plugin-pug': ^1.0.4
@@ -9754,11 +9754,11 @@ packages:
       '@volar/vue-typescript':
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.6
       typescript: 4.9.5
     dev: false
 
-  /prettier-plugin-packagejson/2.3.0_prettier@2.8.4:
+  /prettier-plugin-packagejson/2.3.0_prettier@2.8.6:
     resolution: {integrity: sha512-2SAPMMk1UDkqsB7DifWKcwCm6VC52JXMrzLHfbcQHJRWhRCj9zziOy+s+2XOyPBeyqFqS+A/1IKzOrxKFTo6pw==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -9766,7 +9766,7 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.6
       sort-package-json: 1.57.0
     dev: false
 
@@ -9782,8 +9782,8 @@ packages:
       synckit: 0.8.5
     dev: true
 
-  /prettier/2.8.4:
-    resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
+  /prettier/2.8.6:
+    resolution: {integrity: sha512-mtuzdiBbHwPEgl7NxWlqOkithPyp4VN93V7VeHVWBF+ad3I5avc0RVDT4oImXQy9H/AqxA2NSQH8pSxHW6FYbQ==}
     engines: {node: '>=10.13.0'}
     hasBin: true
 
@@ -11448,7 +11448,7 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  /umi/4.0.53_iuyejn5dft6dfiymbwrhpleyx4:
+  /umi/4.0.53_kkxvla56try3kkuiziwkbwflr4:
     resolution: {integrity: sha512-geHoXBTJvkkzHmSWzPlthH8NAFanJQ6fkn9hKUQjNUjve3dlvqcE7Mfk81zWMhh8ERWA7Bjy0SUrI2LZuWCjAw==}
     engines: {node: '>=14'}
     hasBin: true
@@ -11463,8 +11463,8 @@ packages:
       '@umijs/server': 4.0.53
       '@umijs/test': 4.0.53
       '@umijs/utils': 4.0.53
-      prettier-plugin-organize-imports: 3.2.2_silln3pw57har7jydmecgzoypa
-      prettier-plugin-packagejson: 2.3.0_prettier@2.8.4
+      prettier-plugin-organize-imports: 3.2.2_k4ha7c5shlzw7es36i4xz5r3bm
+      prettier-plugin-packagejson: 2.3.0_prettier@2.8.6
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
@@ -13472,10 +13472,10 @@ packages:
       eslint-plugin-unicorn: registry.npmmirror.com/eslint-plugin-unicorn/20.1.0_eslint@7.32.0
       fast-glob: registry.npmmirror.com/fast-glob/3.2.12
       os-locale: registry.npmmirror.com/os-locale/5.0.0
-      prettier: 2.8.4
-      prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.2.1_silln3pw57har7jydmecgzoypa
-      prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.3.0_prettier@2.8.4
-      prettier-plugin-two-style-order: registry.npmmirror.com/prettier-plugin-two-style-order/1.0.1_prettier@2.8.4
+      prettier: 2.8.6
+      prettier-plugin-organize-imports: registry.npmmirror.com/prettier-plugin-organize-imports/3.2.1_k4ha7c5shlzw7es36i4xz5r3bm
+      prettier-plugin-packagejson: registry.npmmirror.com/prettier-plugin-packagejson/2.3.0_prettier@2.8.6
+      prettier-plugin-two-style-order: registry.npmmirror.com/prettier-plugin-two-style-order/1.0.1_prettier@2.8.6
       stylelint: registry.npmmirror.com/stylelint/13.13.1
       stylelint-config-css-modules: registry.npmmirror.com/stylelint-config-css-modules/2.3.0_stylelint@13.13.1
       stylelint-config-prettier: registry.npmmirror.com/stylelint-config-prettier/8.0.2_stylelint@13.13.1
@@ -14229,7 +14229,7 @@ packages:
       postcss: 8.4.21
     dev: true
 
-  registry.npmmirror.com/prettier-plugin-organize-imports/3.2.1_silln3pw57har7jydmecgzoypa:
+  registry.npmmirror.com/prettier-plugin-organize-imports/3.2.1_k4ha7c5shlzw7es36i4xz5r3bm:
     resolution: {integrity: sha512-bty7C2Ecard5EOXirtzeCAqj4FU4epeuWrQt/Z+sh8UVEpBlBZ3m3KNPz2kFu7KgRTQx/C9o4/TdquPD1jOqjQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prettier-plugin-organize-imports/-/prettier-plugin-organize-imports-3.2.1.tgz}
     id: registry.npmmirror.com/prettier-plugin-organize-imports/3.2.1
     name: prettier-plugin-organize-imports
@@ -14245,11 +14245,11 @@ packages:
       '@volar/vue-typescript':
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.6
       typescript: 4.9.5
     dev: true
 
-  registry.npmmirror.com/prettier-plugin-packagejson/2.3.0_prettier@2.8.4:
+  registry.npmmirror.com/prettier-plugin-packagejson/2.3.0_prettier@2.8.6:
     resolution: {integrity: sha512-2SAPMMk1UDkqsB7DifWKcwCm6VC52JXMrzLHfbcQHJRWhRCj9zziOy+s+2XOyPBeyqFqS+A/1IKzOrxKFTo6pw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prettier-plugin-packagejson/-/prettier-plugin-packagejson-2.3.0.tgz}
     id: registry.npmmirror.com/prettier-plugin-packagejson/2.3.0
     name: prettier-plugin-packagejson
@@ -14260,11 +14260,11 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.6
       sort-package-json: 1.57.0
     dev: true
 
-  registry.npmmirror.com/prettier-plugin-two-style-order/1.0.1_prettier@2.8.4:
+  registry.npmmirror.com/prettier-plugin-two-style-order/1.0.1_prettier@2.8.6:
     resolution: {integrity: sha512-ETltO2FRR/Pxc7bsgz2XwuzWSPwafl7/v5+5Rria4S579CTas7dya+xsmbkix0q1tYQiuRjVVdfGnCKlH/aOuQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prettier-plugin-two-style-order/-/prettier-plugin-two-style-order-1.0.1.tgz}
     id: registry.npmmirror.com/prettier-plugin-two-style-order/1.0.1
     name: prettier-plugin-two-style-order
@@ -14275,7 +14275,7 @@ packages:
       postcss: 8.4.21
       postcss-less: registry.npmmirror.com/postcss-less/4.0.1
       postcss-sorting: registry.npmmirror.com/postcss-sorting/6.0.0_postcss@8.4.21
-      prettier: 2.8.4
+      prettier: 2.8.6
     dev: true
 
   registry.npmmirror.com/progress/2.0.3:
