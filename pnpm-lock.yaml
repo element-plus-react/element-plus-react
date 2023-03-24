@@ -27,7 +27,7 @@ importers:
       prettier: ^2.8.7
       react: ^18.2.0
       react-dom: ^18.2.0
-      sass: ^1.58.3
+      sass: ^1.60.0
       typescript: ^4.9.5
     dependencies:
       dumi: 2.1.17_vzv5hw2vzjr7nernkchr3fqhwq
@@ -48,7 +48,7 @@ importers:
       prettier: 2.8.7
       react: registry.npmmirror.com/react/18.2.0
       react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
-      sass: 1.58.3
+      sass: 1.60.0
       typescript: 4.9.5
 
   packages/components:
@@ -2703,7 +2703,7 @@ packages:
       - supports-color
     dev: true
 
-  /@umijs/bundler-vite/4.0.62_sass@1.58.3:
+  /@umijs/bundler-vite/4.0.62_sass@1.60.0:
     resolution: {integrity: sha512-b65vRcgt1UuedPXf3Z8GDMQNn89LbiP5Ef/dSR9ZXSo3lGUNYjAuD4SiJFC6QokiRTmf1fIvQgUQYqNuqTyWGA==}
     hasBin: true
     dependencies:
@@ -2714,7 +2714,7 @@ packages:
       less: 4.1.3
       postcss-preset-env: 7.5.0
       rollup-plugin-visualizer: 5.9.0
-      vite: 4.2.0_less@4.1.3+sass@1.58.3
+      vite: 4.2.0_less@4.1.3+sass@1.60.0
     transitivePeerDependencies:
       - '@types/node'
       - postcss
@@ -3106,7 +3106,7 @@ packages:
       tsx: 3.12.2
     dev: true
 
-  /@umijs/preset-umi/4.0.62_lthqvjg5g5egku76m7gecdcu2a:
+  /@umijs/preset-umi/4.0.62_wfvwebx5mz4knfmrpgo6235zhi:
     resolution: {integrity: sha512-i90srrmPbco/oFn+s/a6ZH0rg4LcBItolhKN0qCmK+Y3g2XbKKQL8TsDQGPVVGu6yPCz/aTi0QnKSGjNTS98QQ==}
     dependencies:
       '@iconify/utils': 2.1.1
@@ -3114,7 +3114,7 @@ packages:
       '@umijs/ast': 4.0.62
       '@umijs/babel-preset-umi': 4.0.62
       '@umijs/bundler-utils': 4.0.62
-      '@umijs/bundler-vite': 4.0.62_sass@1.58.3
+      '@umijs/bundler-vite': 4.0.62_sass@1.60.0
       '@umijs/bundler-webpack': 4.0.62_typescript@4.9.5
       '@umijs/core': 4.0.62
       '@umijs/did-you-know': 1.0.3
@@ -4922,9 +4922,9 @@ packages:
       remark-gfm: 3.0.1
       remark-parse: 10.0.1
       remark-rehype: 10.1.0
-      sass: 1.58.3
+      sass: 1.60.0
       sitemap: 7.1.1
-      umi: 4.0.62_3bjpko4xa4l77pkrf5dbxfjd6y
+      umi: 4.0.62_pbthnpx27ai3do5nrdyx2sfc2a
       unified: 10.1.2
       unist-util-visit: 4.1.1
       unist-util-visit-parents: 5.1.1
@@ -10801,8 +10801,8 @@ packages:
   /safer-buffer/2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
 
-  /sass/1.58.3:
-    resolution: {integrity: sha512-Q7RaEtYf6BflYrQ+buPudKR26/lH+10EmO9bBqbmPh/KeLqv8bjpTNqxe71ocONqXq+jYiCbpPUmQMS+JJPk4A==}
+  /sass/1.60.0:
+    resolution: {integrity: sha512-updbwW6fNb5gGm8qMXzVO7V4sWf7LMXnMly/JEyfbfERbVH46Fn6q02BX7/eHTdKpE7d+oTkMMQpFWNUMfFbgQ==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
@@ -11586,7 +11586,7 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
 
-  /umi/4.0.62_3bjpko4xa4l77pkrf5dbxfjd6y:
+  /umi/4.0.62_pbthnpx27ai3do5nrdyx2sfc2a:
     resolution: {integrity: sha512-UFBiqd0DCmyKm7DE3vmRf7UcWeKUNbZKqoDMJ2toNykJCTuhMIJSJVvx5kFbOkUbiRR3Cv9t4i6gfUeyJy9ueQ==}
     engines: {node: '>=14'}
     hasBin: true
@@ -11596,7 +11596,7 @@ packages:
       '@umijs/bundler-webpack': 4.0.62_typescript@4.9.5
       '@umijs/core': 4.0.62
       '@umijs/lint': 4.0.62_7kw3g6rralp5ps6mg3uyzz6azm
-      '@umijs/preset-umi': 4.0.62_lthqvjg5g5egku76m7gecdcu2a
+      '@umijs/preset-umi': 4.0.62_wfvwebx5mz4knfmrpgo6235zhi
       '@umijs/renderer-react': 4.0.62_biqbaboplfbrettd7655fr4n2y
       '@umijs/server': 4.0.62
       '@umijs/test': 4.0.62
@@ -12010,7 +12010,7 @@ packages:
     optionalDependencies:
       fsevents: 2.3.2
 
-  /vite/4.2.0_less@4.1.3+sass@1.58.3:
+  /vite/4.2.0_less@4.1.3+sass@1.60.0:
     resolution: {integrity: sha512-AbDTyzzwuKoRtMIRLGNxhLRuv1FpRgdIw+1y6AQG73Q5+vtecmvzKo/yk8X/vrHDpETRTx01ABijqUHIzBXi0g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -12040,7 +12040,7 @@ packages:
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.20.0
-      sass: 1.58.3
+      sass: 1.60.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: false
