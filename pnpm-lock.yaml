@@ -57,7 +57,7 @@ importers:
       '@ctrl/tinycolor': ^3.6.0
       '@element-plus/theme-chalk': ^2.2.16
       '@types/lodash': ^4.14.191
-      ahooks: ^3.7.5
+      ahooks: ^3.7.6
       classnames: ^2.3.2
       dayjs: ^1.11.7
       lodash: npm:lodash-es@^4.17.21
@@ -67,7 +67,7 @@ importers:
       '@ctrl/tinycolor': 3.6.0
       '@element-plus/theme-chalk': registry.npmmirror.com/@element-plus/theme-chalk/2.2.16
       '@types/lodash': registry.npmmirror.com/@types/lodash/4.14.191
-      ahooks: 3.7.5
+      ahooks: 3.7.6
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       lodash: /lodash-es/4.17.21
@@ -81,7 +81,7 @@ importers:
       '@types/react': ^18.0.28
       '@types/react-dom': ^18.0.11
       '@types/react-transition-group': ^4.4.5
-      ahooks: ^3.7.5
+      ahooks: ^3.7.6
       classnames: ^2.3.2
       dayjs: ^1.11.7
       lodash: ^4.17.21
@@ -92,7 +92,7 @@ importers:
     dependencies:
       '@ant-design/icons': 5.0.1_biqbaboplfbrettd7655fr4n2y
       '@ctrl/tinycolor': 3.6.0
-      ahooks: 3.7.5_react@18.2.0
+      ahooks: 3.7.6_react@18.2.0
       classnames: registry.npmmirror.com/classnames/2.3.2
       dayjs: 1.11.7
       react-transition-group: registry.npmmirror.com/react-transition-group/4.4.5_biqbaboplfbrettd7655fr4n2y
@@ -3283,12 +3283,13 @@ packages:
   /ahooks-v3-count/1.0.0:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
 
-  /ahooks/3.7.5:
-    resolution: {integrity: sha512-RWkJYK5xj9ZXROj9jABRDqdpTBimkY1tlyeJQ8Ci7MAl1sC5xzSzwO20ydk6BjtdbWt56DPCYZhq4lGu3O2Zwg==}
+  /ahooks/3.7.6:
+    resolution: {integrity: sha512-p+2j4H/BI9vqXR0fZI7S/q6fUPxPklQnHqvU7zAVBljMFNSFeYRWB2iHHbjpXGOwUTOBYCh2OuvIHyJYj6Lpag==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
+      '@babel/runtime': 7.21.0
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
       dayjs: 1.11.7
@@ -3297,15 +3298,16 @@ packages:
       lodash: 4.17.21
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: true
 
-  /ahooks/3.7.5_react@18.2.0:
-    resolution: {integrity: sha512-RWkJYK5xj9ZXROj9jABRDqdpTBimkY1tlyeJQ8Ci7MAl1sC5xzSzwO20ydk6BjtdbWt56DPCYZhq4lGu3O2Zwg==}
+  /ahooks/3.7.6_react@18.2.0:
+    resolution: {integrity: sha512-p+2j4H/BI9vqXR0fZI7S/q6fUPxPklQnHqvU7zAVBljMFNSFeYRWB2iHHbjpXGOwUTOBYCh2OuvIHyJYj6Lpag==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
+      '@babel/runtime': 7.21.0
       '@types/js-cookie': 2.2.7
       ahooks-v3-count: 1.0.0
       dayjs: 1.11.7
@@ -3315,7 +3317,7 @@ packages:
       react: registry.npmmirror.com/react/18.2.0
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /ajv-keywords/3.5.2_ajv@6.12.6:
@@ -11450,9 +11452,6 @@ packages:
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
     dev: false
-
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
 
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
