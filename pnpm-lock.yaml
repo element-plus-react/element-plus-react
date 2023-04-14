@@ -81,8 +81,8 @@ importers:
         specifier: ^2.2.16
         version: registry.npmmirror.com/@element-plus/theme-chalk@2.2.16
       '@types/lodash':
-        specifier: ^4.14.191
-        version: registry.npmmirror.com/@types/lodash@4.14.191
+        specifier: ^4.14.194
+        version: 4.14.194
       ahooks:
         specifier: ^3.7.6
         version: 3.7.6(react@18.2.0)
@@ -121,8 +121,8 @@ importers:
         version: registry.npmmirror.com/react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.191
-        version: registry.npmmirror.com/@types/lodash@4.14.191
+        specifier: ^4.14.194
+        version: 4.14.194
       '@types/react':
         specifier: ^18.0.34
         version: 18.0.34
@@ -150,8 +150,8 @@ importers:
   packages/utils:
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.191
-        version: registry.npmmirror.com/@types/lodash@4.14.191
+        specifier: ^4.14.194
+        version: 4.14.194
       lodash:
         specifier: npm:lodash-es@^4.17.21
         version: /lodash-es@4.17.21
@@ -2078,6 +2078,10 @@ packages:
     dependencies:
       '@types/node': 18.11.10
     dev: false
+
+  /@types/lodash@4.14.194:
+    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+    dev: true
 
   /@types/mdast@3.0.10:
     resolution: {integrity: sha512-W864tg/Osz1+9f4lrGTZpCSO5/z4608eUp19tbozkq2HJK6i3z1kT0H9tlADXuYIb1YYOBByU4Jsqkk75q48qA==}
@@ -13196,12 +13200,6 @@ packages:
     dependencies:
       '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
-    dev: true
-
-  registry.npmmirror.com/@types/lodash@4.14.191:
-    resolution: {integrity: sha512-BdZ5BCCvho3EIXw6wUCXHe7rS53AIDPLE+JzwgT+OsJk53oBfbSmZZ7CX4VaRoN78N+TJpFi9QPlfIVNmJYWxQ==, registry: https://registry.npmjs.org/, tarball: https://registry.npmmirror.com/@types/lodash/-/lodash-4.14.191.tgz}
-    name: '@types/lodash'
-    version: 4.14.191
     dev: true
 
   registry.npmmirror.com/@types/minimist@1.2.2:
