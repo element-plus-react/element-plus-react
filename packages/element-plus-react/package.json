@@ -34,7 +34,7 @@
   "dependencies": {
     "@ant-design/icons": "^5.0.1",
     "@ctrl/tinycolor": "^3.6.0",
-    "ahooks": "^3.7.6",
+    "ahooks": "^3.7.7",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.7",
     "react-transition-group": "^4.4.5"
