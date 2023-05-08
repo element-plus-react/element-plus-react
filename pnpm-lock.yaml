@@ -84,8 +84,8 @@ importers:
         specifier: ^4.14.191
         version: registry.npmmirror.com/@types/lodash@4.14.191
       ahooks:
-        specifier: ^3.7.6
-        version: 3.7.6(react@18.2.0)
+        specifier: ^3.7.7
+        version: 3.7.7(react@18.2.0)
       classnames:
         specifier: ^2.3.2
         version: registry.npmmirror.com/classnames@2.3.2
@@ -108,8 +108,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       ahooks:
-        specifier: ^3.7.6
-        version: 3.7.6(react@18.2.0)
+        specifier: ^3.7.7
+        version: 3.7.7(react@18.2.0)
       classnames:
         specifier: ^2.3.2
         version: registry.npmmirror.com/classnames@2.3.2
@@ -3345,8 +3345,8 @@ packages:
   /ahooks-v3-count@1.0.0:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
 
-  /ahooks@3.7.6(react@18.2.0):
-    resolution: {integrity: sha512-p+2j4H/BI9vqXR0fZI7S/q6fUPxPklQnHqvU7zAVBljMFNSFeYRWB2iHHbjpXGOwUTOBYCh2OuvIHyJYj6Lpag==}
+  /ahooks@3.7.7(react@18.2.0):
+    resolution: {integrity: sha512-5e5WlPq81Y84UnTLOKIQeq2cJw4aa7yj8fR2Nb/oMmXPrWMjIMCbPS1o+fpxSfCaNA3AzOnnMc8AehWRZltkJQ==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
