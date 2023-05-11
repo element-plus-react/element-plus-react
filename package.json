@@ -30,7 +30,7 @@
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
     "eslint": "^8.40.0",
-    "father": "^4.1.7",
+    "father": "^4.1.9",
     "gh-pages": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
