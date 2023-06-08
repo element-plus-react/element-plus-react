@@ -81,8 +81,8 @@ importers:
         specifier: ^2.2.16
         version: registry.npmmirror.com/@element-plus/theme-chalk@2.2.16
       '@types/lodash':
-        specifier: ^4.14.194
-        version: 4.14.194
+        specifier: ^4.14.195
+        version: 4.14.195
       ahooks:
         specifier: ^3.7.7
         version: 3.7.7(react@18.2.0)
@@ -121,8 +121,8 @@ importers:
         version: registry.npmmirror.com/react-transition-group@4.4.5(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.194
-        version: 4.14.194
+        specifier: ^4.14.195
+        version: 4.14.195
       '@types/react':
         specifier: ^18.0.34
         version: 18.0.34
@@ -150,8 +150,8 @@ importers:
   packages/utils:
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.194
-        version: 4.14.194
+        specifier: ^4.14.195
+        version: 4.14.195
       lodash:
         specifier: npm:lodash-es@^4.17.21
         version: /lodash-es@4.17.21
@@ -2113,8 +2113,8 @@ packages:
       '@types/node': 18.11.10
     dev: false
 
-  /@types/lodash@4.14.194:
-    resolution: {integrity: sha512-r22s9tAS7imvBt2lyHC9B8AGwWnXaYb1tY09oyLkXDs4vArpYJzw09nj8MLx5VfciBPGIb+ZwG0ssYnEPJxn/g==}
+  /@types/lodash@4.14.195:
+    resolution: {integrity: sha512-Hwx9EUgdwf2GLarOjQp5ZH8ZmblzcbTBC2wtQWNKARBSxM9ezRIAUpeDTgoQRAFB0+8CNWXVA9+MaSOzOF3nPg==}
     dev: true
 
   /@types/mdast@3.0.10:
@@ -10551,8 +10551,8 @@ packages:
       babel-plugin-styled-components: 2.0.7(styled-components@5.3.9)
       css-to-react-native: 3.2.0
       hoist-non-react-statics: 3.3.2
-      react: registry.npmmirror.com/react@18.2.0
-      react-dom: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
       react-is: 16.13.1
       shallowequal: 1.1.0
       supports-color: 5.5.0
