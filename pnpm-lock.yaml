@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 overrides:
   '@types/react': ^18.2.14
   '@types/react-dom': ^18.2.6
@@ -84,8 +88,8 @@ importers:
         specifier: ^4.14.195
         version: 4.14.195
       ahooks:
-        specifier: ^3.7.7
-        version: 3.7.7(react@18.2.0)
+        specifier: ^3.7.8
+        version: 3.7.8(react@18.2.0)
       classnames:
         specifier: ^2.3.2
         version: 2.3.2
@@ -108,8 +112,8 @@ importers:
         specifier: ^3.6.0
         version: 3.6.0
       ahooks:
-        specifier: ^3.7.7
-        version: 3.7.7(react@18.2.0)
+        specifier: ^3.7.8
+        version: 3.7.8(react@18.2.0)
       classnames:
         specifier: ^2.3.2
         version: 2.3.2
@@ -3821,8 +3825,8 @@ packages:
   /ahooks-v3-count@1.0.0:
     resolution: {integrity: sha512-V7uUvAwnimu6eh/PED4mCDjE7tokeZQLKlxg9lCTMPhN+NjsSbtdacByVlR1oluXQzD3MOw55wylDmQo4+S9ZQ==}
 
-  /ahooks@3.7.7(react@18.2.0):
-    resolution: {integrity: sha512-5e5WlPq81Y84UnTLOKIQeq2cJw4aa7yj8fR2Nb/oMmXPrWMjIMCbPS1o+fpxSfCaNA3AzOnnMc8AehWRZltkJQ==}
+  /ahooks@3.7.8(react@18.2.0):
+    resolution: {integrity: sha512-e/NMlQWoCjaUtncNFIZk3FG1ImSkV/JhScQSkTqnftakRwdfZWSw6zzoWSG9OMYqPNs2MguDYBUFFC6THelWXA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -12834,7 +12838,3 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
-
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
