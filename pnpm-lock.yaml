@@ -163,8 +163,8 @@ importers:
   playground/play:
     devDependencies:
       umi:
-        specifier: ^4.0.71
-        version: 4.0.71(@babel/core@7.22.5)(@types/react@18.2.14)(eslint@8.44.0)(postcss@8.4.24)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
+        specifier: ^4.0.72
+        version: 4.0.72(@babel/core@7.22.5)(@types/react@18.2.14)(eslint@8.44.0)(postcss@8.4.24)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
 
 packages:
 
@@ -3193,6 +3193,15 @@ packages:
       '@umijs/bundler-utils': 4.0.71
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@umijs/ast@4.0.72:
+    resolution: {integrity: sha512-WatRvU09vsx4Hlu5hemPA7a+QK4pJvzmQz/9LxN/KVgn+wZXi717qHFLu5eoV6XO7HlFZaEBGq2aHpDj0ngA8w==}
+    dependencies:
+      '@umijs/bundler-utils': 4.0.72
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@umijs/babel-preset-umi@4.0.71(styled-components@5.3.11):
     resolution: {integrity: sha512-8xpDpuSxHDvA2/Z5xow5D+5ny6ZesFvmUUaOeOULATlGdo8DO2BV7V3rZvSm7jvk6r/V6hf/OZePjXu0ZNrymQ==}
@@ -3207,6 +3216,20 @@ packages:
       - styled-components
       - supports-color
 
+  /@umijs/babel-preset-umi@4.0.72(styled-components@5.3.11):
+    resolution: {integrity: sha512-9L2zwcux8iMOD9ji6YK1kiFbA9ZI1o0O/9NJo69QdCv3N41ENXWeNfXVu72GD6+mytmKZEWNCtD0qAzBTXj5jQ==}
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@bloomberg/record-tuple-polyfill': 0.0.4
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+      babel-plugin-styled-components: 2.1.1(styled-components@5.3.11)
+      core-js: 3.28.0
+    transitivePeerDependencies:
+      - styled-components
+      - supports-color
+    dev: true
+
   /@umijs/bundler-esbuild@4.0.71:
     resolution: {integrity: sha512-L16Pvy3r1xqpqzLQtbO6ubPkD0xTUpQlluo718SCjw6Y21DtuLB2lNN0/CpvcrO85ELU2vY8ACHB97pidPzWAw==}
     hasBin: true
@@ -3220,6 +3243,20 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@umijs/bundler-esbuild@4.0.72:
+    resolution: {integrity: sha512-T7nonD78F6RG94xATF5n/KkdJCOVYukokGFDAd4nPTNhbdYVakgNqwpRVwLEFofYMAN9uJ7rIUKFEt3qMpFR7w==}
+    hasBin: true
+    dependencies:
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+      enhanced-resolve: 5.9.3
+      postcss: 8.4.24
+      postcss-flexbugs-fixes: 5.0.2(postcss@8.4.24)
+      postcss-preset-env: 7.5.0(postcss@8.4.24)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@umijs/bundler-utils@4.0.71:
     resolution: {integrity: sha512-GMCnznsEUO+uqpjUR/xrZxahJUeM5UblLUsjoRFujcLpB9Yfgx+BVc1XTfQjtZLMfEu0CYPUeqmNsygnR/MMlg==}
     dependencies:
@@ -3230,6 +3267,18 @@ packages:
       spdy: 4.0.2
     transitivePeerDependencies:
       - supports-color
+
+  /@umijs/bundler-utils@4.0.72:
+    resolution: {integrity: sha512-ROGNx6dy3tiMwhC29F6xvWC9O3F4CXnND2raupljTk+QDuvc1hmwUiB/gmCWrts/98cKN2959js03ivIPn9NNw==}
+    dependencies:
+      '@umijs/utils': 4.0.72
+      esbuild: 0.17.19
+      regenerate: 1.4.2
+      regenerate-unicode-properties: 10.1.0
+      spdy: 4.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@umijs/bundler-vite@4.0.71(postcss@8.4.24)(sass@1.63.6):
     resolution: {integrity: sha512-XraQOul7GrkUalSw3lppSuN7TJOAPQitE6iAam2lVdDNiJLWrY5jBd1fE3uwCIIacXwPDBQSyEV7oZey8xaGfg==}
@@ -3252,6 +3301,30 @@ packages:
       - sugarss
       - supports-color
       - terser
+    dev: false
+
+  /@umijs/bundler-vite@4.0.72(postcss@8.4.24)(sass@1.63.6):
+    resolution: {integrity: sha512-dsinf6yMW66ZAijHYTrNgzwPfSBXtEd+UxsB2gZFgsdVDDvE19Htuee4HqBCGBr+W66SLn99addckT8mzivfiA==}
+    hasBin: true
+    dependencies:
+      '@svgr/core': 6.5.1
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+      '@vitejs/plugin-react': 4.0.0(vite@4.3.1)
+      less: 4.1.3
+      postcss-preset-env: 7.5.0(postcss@8.4.24)
+      rollup-plugin-visualizer: 5.9.0
+      vite: 4.3.1(less@4.1.3)(sass@1.63.6)
+    transitivePeerDependencies:
+      - '@types/node'
+      - postcss
+      - rollup
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+    dev: true
 
   /@umijs/bundler-webpack@4.0.71(styled-components@5.3.11)(typescript@4.8.4)(webpack@5.88.0):
     resolution: {integrity: sha512-VeiApfpi2SUC63mhAjOqQhFjORZ8xG7kUNeDnCNxCSRao2MJ5h7vcD9rMcNln69OlN6Urtc1gIS7znKHbm9THA==}
@@ -3327,6 +3400,45 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /@umijs/bundler-webpack@4.0.72(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0):
+    resolution: {integrity: sha512-0oTvna4AdMoSvRWeF0E8u8/aKASwll226DkLKvjYDs5FE9nhbxIHevsoSRX7TnlEDPNfV/a3kVRnRG1dR2oJnQ==}
+    hasBin: true
+    dependencies:
+      '@pmmmwh/react-refresh-webpack-plugin': 0.5.10(react-refresh@0.14.0)(webpack@5.88.0)
+      '@svgr/core': 6.5.1
+      '@svgr/plugin-jsx': 6.5.1(@svgr/core@6.5.1)
+      '@svgr/plugin-svgo': 6.5.1(@svgr/core@6.5.1)
+      '@types/hapi__joi': 17.1.9
+      '@umijs/babel-preset-umi': 4.0.72(styled-components@5.3.11)
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/case-sensitive-paths-webpack-plugin': 1.0.1
+      '@umijs/mfsu': 4.0.72
+      '@umijs/utils': 4.0.72
+      cors: 2.8.5
+      css-loader: 6.7.1(webpack@5.88.0)
+      es5-imcompatible-versions: 0.1.85
+      fork-ts-checker-webpack-plugin: 8.0.0(typescript@5.1.6)(webpack@5.88.0)
+      jest-worker: 29.4.3
+      lightningcss: 1.19.0
+      node-libs-browser: 2.2.1
+      postcss: 8.4.24
+      postcss-preset-env: 7.5.0(postcss@8.4.24)
+      react-error-overlay: 6.0.9
+      react-refresh: 0.14.0
+    transitivePeerDependencies:
+      - '@types/webpack'
+      - sockjs-client
+      - styled-components
+      - supports-color
+      - type-fest
+      - typescript
+      - webpack
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: true
 
   /@umijs/case-sensitive-paths-webpack-plugin@1.0.1:
     resolution: {integrity: sha512-kDKJ8yTarxwxGJDInG33hOpaQRZ//XpNuuznQ/1Mscypw6kappzFmrBr2dOYave++K7JHouoANF354UpbEQw0Q==}
@@ -3338,6 +3450,15 @@ packages:
       '@umijs/utils': 4.0.71
     transitivePeerDependencies:
       - supports-color
+
+  /@umijs/core@4.0.72:
+    resolution: {integrity: sha512-E4+V/SuM8hcnmX/B+phU24LtNvV5Y7DY2ggtkQbJXtEGVFIImeC2ZEEWvGCFzq3soRCCTYG3Iwun4/TpInWIdg==}
+    dependencies:
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@umijs/did-you-know@1.0.3:
     resolution: {integrity: sha512-9EZ+rgY9+2HEaE+Z9dGkal2ccw8L4uuz77tCB5WpskW7NBZX5nOj82sqF/shEtA5tU3SWO/Mi4n35K3iONvDtw==}
@@ -3503,6 +3624,36 @@ packages:
       - stylelint
       - supports-color
       - typescript
+    dev: false
+
+  /@umijs/lint@4.0.72(eslint@8.44.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-kH3L81Rex+jj5WeyJjR2G6yI1/0KFpr91ZtXeMy9Iyd4G7mEUJl3Fl/9iUEwZ2sgUa7kEJ+28H43eER5W4A6bg==}
+    dependencies:
+      '@babel/core': 7.21.0
+      '@babel/eslint-parser': 7.19.1(@babel/core@7.21.0)(eslint@8.44.0)
+      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2)(postcss@8.4.24)
+      '@typescript-eslint/eslint-plugin': 5.48.1(@typescript-eslint/parser@5.48.1)(eslint@8.44.0)(typescript@5.1.6)
+      '@typescript-eslint/parser': 5.48.1(eslint@8.44.0)(typescript@5.1.6)
+      '@umijs/babel-preset-umi': 4.0.72(styled-components@5.3.11)
+      eslint-plugin-jest: 27.2.1(@typescript-eslint/eslint-plugin@5.48.1)(eslint@8.44.0)(typescript@5.1.6)
+      eslint-plugin-react: 7.32.2(eslint@8.44.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.44.0)
+      postcss: 8.4.24
+      postcss-syntax: 0.36.2(postcss@8.4.24)
+      stylelint-config-standard: 25.0.0(stylelint@14.16.1)
+    transitivePeerDependencies:
+      - eslint
+      - jest
+      - postcss-html
+      - postcss-jsx
+      - postcss-less
+      - postcss-markdown
+      - postcss-scss
+      - styled-components
+      - stylelint
+      - supports-color
+      - typescript
+    dev: true
 
   /@umijs/mfsu@4.0.71:
     resolution: {integrity: sha512-T8M4oTBbli+RyHKLDR/sZdDZYmF4qHbQ6TTPTB85xKFX/Ww5jfdc4+6LuODuvH0w+tbKIVm5W//gKAx67dQCkg==}
@@ -3515,10 +3666,29 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@umijs/mfsu@4.0.72:
+    resolution: {integrity: sha512-oyWNIRVK6/FCewMZ8jjn5ICTWWZ7VWP7javN1/zLczvPy2s3cMp5lZuN2Ca39v2Px/DfkCBKSiB/EI6Kts0G8A==}
+    dependencies:
+      '@umijs/bundler-esbuild': 4.0.72
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+      enhanced-resolve: 5.9.3
+      is-equal: 1.6.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@umijs/plugin-run@4.0.71:
     resolution: {integrity: sha512-6tbfUFV9JvOu0lWleMB12VfyA5g/PtrkdX79dwo/AjkWW6r9YTmDRCYdnl/UE+sWDqp+sP0eOxWBIUdAOgoEhg==}
     dependencies:
       tsx: 3.12.7
+    dev: false
+
+  /@umijs/plugin-run@4.0.72:
+    resolution: {integrity: sha512-z5p5z8BNcDb5LxbbeLoB7EfDesaSxSO9zFa3IbulgGFM/qfnaPPwfUEJDYLXkggxiDhbiUP95TDvC1R6AGDWBg==}
+    dependencies:
+      tsx: 3.12.7
+    dev: true
 
   /@umijs/preset-umi@4.0.71(@types/react@18.2.14)(postcss@8.4.24)(sass@1.63.6)(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0):
     resolution: {integrity: sha512-+cEluoWaHLpbb1ywEgELJ3O2cMlh7a8I9gf595J2jyqNcuiQ/JzFpWQZZVHCNkENdtqcfWsUJ5u5l1a+yF1bRg==}
@@ -3575,6 +3745,64 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /@umijs/preset-umi@4.0.72(@types/react@18.2.14)(postcss@8.4.24)(sass@1.63.6)(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0):
+    resolution: {integrity: sha512-DDRzPCyP2K667YrOHrexAPcEacTdA9/TBn73erwreZpi+c4qhFZ2eYQo27SAGAhfZlYDYthL8JAfbgfhYmLo1A==}
+    dependencies:
+      '@iconify/utils': 2.1.1
+      '@svgr/core': 6.5.1
+      '@umijs/ast': 4.0.72
+      '@umijs/babel-preset-umi': 4.0.72(styled-components@5.3.11)
+      '@umijs/bundler-esbuild': 4.0.72
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/bundler-vite': 4.0.72(postcss@8.4.24)(sass@1.63.6)
+      '@umijs/bundler-webpack': 4.0.72(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0)
+      '@umijs/core': 4.0.72
+      '@umijs/did-you-know': 1.0.3
+      '@umijs/es-module-parser': 0.0.7
+      '@umijs/history': 5.3.1
+      '@umijs/mfsu': 4.0.72
+      '@umijs/plugin-run': 4.0.72
+      '@umijs/renderer-react': 4.0.72(react-dom@18.2.0)(react@18.2.0)
+      '@umijs/server': 4.0.72
+      '@umijs/ui': 3.0.1
+      '@umijs/utils': 4.0.72
+      '@umijs/zod2ts': 4.0.72
+      babel-plugin-dynamic-import-node: 2.3.3
+      click-to-react-component: 1.0.8(@types/react@18.2.14)(react-dom@18.2.0)(react@18.2.0)
+      core-js: 3.28.0
+      current-script-polyfill: 1.0.0
+      enhanced-resolve: 5.9.3
+      fast-glob: 3.2.12
+      html-webpack-plugin: 5.5.0(webpack@5.88.0)
+      path-to-regexp: 1.7.0
+      postcss-prefix-selector: 1.16.0(postcss@8.4.24)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router: 6.3.0(react@18.2.0)
+      react-router-dom: 6.3.0(react-dom@18.2.0)(react@18.2.0)
+      regenerator-runtime: 0.13.11
+    transitivePeerDependencies:
+      - '@types/node'
+      - '@types/react'
+      - '@types/webpack'
+      - postcss
+      - rollup
+      - sass
+      - sockjs-client
+      - styled-components
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - type-fest
+      - typescript
+      - webpack
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: true
 
   /@umijs/renderer-react@4.0.71(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Frq7U4hE/GoMwIPzlrX2l0buESZP58j54/WyUw+dJy1LgJL+Xy7Xjo4Du/O4IEE0PEOC3owR+vJkSCM2D5nEyg==}
@@ -3589,6 +3817,22 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
       react-helmet-async: 1.3.0(react-dom@18.2.0)(react@18.2.0)
       react-router-dom: 6.3.0(react-dom@18.2.0)(react@18.2.0)
+    dev: false
+
+  /@umijs/renderer-react@4.0.72(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-eOJgxbwFR23wWMvR2FFcSy0Ba8d7MtOit68SE+PfX43Gy/51Ywsa1BF1G9QNgs3UAjWKK5DpK1UCHrgQ4cgegA==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@loadable/component': 5.15.2(react@18.2.0)
+      history: 5.3.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-helmet-async: 1.3.0(react-dom@18.2.0)(react@18.2.0)
+      react-router-dom: 6.3.0(react-dom@18.2.0)(react@18.2.0)
+    dev: true
 
   /@umijs/server@4.0.71:
     resolution: {integrity: sha512-yhaQMD5yHYDZ9FE11rKJCD7cugtdH9t8qtpNnsSxbPWiJU731Rx0aXu3c81wDS+aCWDafQKrod1T4fKsJbGpYQ==}
@@ -3600,6 +3844,19 @@ packages:
       react-router-dom: 6.3.0(react-dom@18.2.0)(react@18.2.0)
     transitivePeerDependencies:
       - supports-color
+    dev: false
+
+  /@umijs/server@4.0.72:
+    resolution: {integrity: sha512-J6seC7HPZIRoDirCEelEdXzeTJsvg5FpxRkV3BP+ZS3xsg140ckGQRdCzqykJ2ZZHjhxpdJsLtdleAmE8Iq6Ew==}
+    dependencies:
+      '@umijs/bundler-utils': 4.0.72
+      history: 5.3.0
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-router-dom: 6.3.0(react-dom@18.2.0)(react@18.2.0)
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@umijs/test@4.0.71(@babel/core@7.22.5):
     resolution: {integrity: sha512-QakGNRFoxuFQ4zkoI5iogHUdEJK8ybZt4xb949klEPlBfCiqUXNYUx8r7e0vlkOgmv44voEIm3B/y6msYt3rqQ==}
@@ -3615,6 +3872,23 @@ packages:
     transitivePeerDependencies:
       - '@babel/core'
       - supports-color
+    dev: false
+
+  /@umijs/test@4.0.72(@babel/core@7.22.5):
+    resolution: {integrity: sha512-sSknbprNSQhVcyIIfOlRMay9yyG189XdmIgoJWHG0sqKOaJLt0iEJ4RkOWGv9YVnW7M06cE6+8+FGUEF8/lFXw==}
+    dependencies:
+      '@babel/plugin-transform-modules-commonjs': 7.21.2(@babel/core@7.22.5)
+      '@jest/types': 27.5.1
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/utils': 4.0.72
+      babel-jest: 29.5.0(@babel/core@7.22.5)
+      esbuild: 0.17.19
+      identity-obj-proxy: 3.0.0
+      isomorphic-unfetch: 4.0.2
+    transitivePeerDependencies:
+      - '@babel/core'
+      - supports-color
+    dev: true
 
   /@umijs/ui@3.0.1:
     resolution: {integrity: sha512-zcz37AJH0xt/6XVVbyO/hmsK9Hq4vH23HZ4KYVi5A8rbM9KeJkJigTS7ELOdArawZhVNGe+h3a5Oixs4a2QsWw==}
@@ -3625,8 +3899,20 @@ packages:
       chokidar: 3.5.3
       pino: 7.11.0
 
+  /@umijs/utils@4.0.72:
+    resolution: {integrity: sha512-+BOOGCipnr3iEzAliYrfFQeyQd3DrT1vMMXlsBqyD3Qh1owrSb/FsTvFTUYU0jrVgBc3MR5UneEBcPbqxq36Pw==}
+    dependencies:
+      chokidar: 3.5.3
+      pino: 7.11.0
+    dev: true
+
   /@umijs/zod2ts@4.0.71:
     resolution: {integrity: sha512-+0K4AI20Qmk7nMKU1iwSOv+sdIzjx31NA3ViMKt8T7GcMT0h9pTpCnPUeWeulxvRjOdm/421a9ioKFk6vheIOA==}
+    dev: false
+
+  /@umijs/zod2ts@4.0.72:
+    resolution: {integrity: sha512-qjfoAT7yODzKaj9AxOM0qh8e3rpPe7xvUq6ux+0yaxNrt+JbjC6gy66S3f836NpforMBCWEOuSLbfdyVhzKxNQ==}
+    dev: true
 
   /@vercel/ncc@0.33.3:
     resolution: {integrity: sha512-JGZ11QV+/ZcfudW2Cz2JVp54/pJNXbsuWRgSh2ZmmZdQBKXqBtIGrwI1Wyx8nlbzAiEFe7FHi4K1zX4//jxTnQ==}
@@ -12176,6 +12462,59 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: false
+
+  /umi@4.0.72(@babel/core@7.22.5)(@types/react@18.2.14)(eslint@8.44.0)(postcss@8.4.24)(prettier@2.8.8)(react-dom@18.2.0)(react@18.2.0)(sass@1.63.6)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0):
+    resolution: {integrity: sha512-VXXwhHtZAApRR02c2F+uDv84m/Bf5g56pMKrArtIUFsrWM8hqS3f7whzgpdjzh0H8EFjpXwan0kJrkXFr6dAPg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@umijs/bundler-utils': 4.0.72
+      '@umijs/bundler-webpack': 4.0.72(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0)
+      '@umijs/core': 4.0.72
+      '@umijs/lint': 4.0.72(eslint@8.44.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)
+      '@umijs/preset-umi': 4.0.72(@types/react@18.2.14)(postcss@8.4.24)(sass@1.63.6)(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0)
+      '@umijs/renderer-react': 4.0.72(react-dom@18.2.0)(react@18.2.0)
+      '@umijs/server': 4.0.72
+      '@umijs/test': 4.0.72(@babel/core@7.22.5)
+      '@umijs/utils': 4.0.72
+      prettier-plugin-organize-imports: 3.2.2(prettier@2.8.8)(typescript@5.1.6)
+      prettier-plugin-packagejson: 2.4.3(prettier@2.8.8)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/node'
+      - '@types/react'
+      - '@types/webpack'
+      - '@volar/vue-language-plugin-pug'
+      - '@volar/vue-typescript'
+      - eslint
+      - jest
+      - postcss
+      - postcss-html
+      - postcss-jsx
+      - postcss-less
+      - postcss-markdown
+      - postcss-scss
+      - prettier
+      - react
+      - react-dom
+      - rollup
+      - sass
+      - sockjs-client
+      - styled-components
+      - stylelint
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - type-fest
+      - typescript
+      - webpack
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: true
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
