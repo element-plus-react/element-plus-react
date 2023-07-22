@@ -5,6 +5,5 @@
   ],
   "labels": ["dependencies", "javascript"],
   "pin": false,
-  "node": false,
   "rangeStrategy": "bump"
 }
