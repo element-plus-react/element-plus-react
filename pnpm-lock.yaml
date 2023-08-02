@@ -76,8 +76,8 @@ importers:
   packages/components:
     devDependencies:
       '@ant-design/icons':
-        specifier: ^5.1.4
-        version: 5.1.4(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^5.2.4
+        version: 5.2.4(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
         specifier: ^3.6.0
         version: 3.6.0
@@ -106,8 +106,8 @@ importers:
   packages/element-plus-react:
     dependencies:
       '@ant-design/icons':
-        specifier: ^5.1.4
-        version: 5.1.4(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^5.2.4
+        version: 5.2.4(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
         specifier: ^3.6.0
         version: 3.6.0
@@ -186,18 +186,23 @@ packages:
 
   /@ant-design/icons-svg@4.2.1:
     resolution: {integrity: sha512-EB0iwlKDGpG93hW8f85CTJTs4SvMX7tt5ceupvhALp1IF44SeUFOMhKUOYqpsoYWQKAOuTRDMqn75rEaKDp0Xw==}
+    dev: false
 
-  /@ant-design/icons@5.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-YHKL7Jx3bM12OxvtiYDon04BsBT/6LGitYEqar3GljzWaAyMOAD8i/uF1Rsi5Us/YNdWWXBGSvZV2OZWMpJlcA==}
+  /@ant-design/icons-svg@4.3.0:
+    resolution: {integrity: sha512-WOgvdH/1Wl8Z7VXigRbCa5djO14zxrNTzvrAQzhWiBQtEKT0uTc8K1ltjKZ8U1gPn/wXhMA8/jE39SJl0WNxSg==}
+
+  /@ant-design/icons@5.2.4(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-WFPLMLiLaTcw7Vzwuglgm7aViI9DJ8SdrLt6r1rI1oxA1yjp02/ZRB4b+OFlFy2F91JMq3FnAQ9K6irq9QiSvw==}
     engines: {node: '>=8'}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
       '@ant-design/colors': 7.0.0
-      '@ant-design/icons-svg': 4.2.1
+      '@ant-design/icons-svg': 4.3.0
       '@babel/runtime': 7.22.5
       classnames: 2.3.2
+      lodash.camelcase: 4.3.0
       rc-util: 5.34.0(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -6771,6 +6776,9 @@ packages:
   /lodash-es@4.17.21:
     resolution: {integrity: sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw==}
     dev: true
+
+  /lodash.camelcase@4.3.0:
+    resolution: {integrity: sha512-TwuEnCnxbc3rAvhf/LbG7tJUDzhqXyFnv3dtzLOPgCG/hODL7WFnsbwktkD7yUV0RrreP/l1PALq/YSg6VvjlA==}
 
   /lodash.get@4.4.2:
     resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}

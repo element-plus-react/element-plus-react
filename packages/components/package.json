@@ -5,7 +5,7 @@
     "build": "father build"
   },
   "devDependencies": {
-    "@ant-design/icons": "^5.1.4",
+    "@ant-design/icons": "^5.2.4",
     "@ctrl/tinycolor": "^3.6.0",
     "@element-plus/theme-chalk": "^2.2.16",
     "ahooks": "^3.7.8",
