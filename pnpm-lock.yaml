@@ -16,7 +16,7 @@ importers:
     dependencies:
       dumi:
         specifier: ^2.2.1
-        version: 2.2.1(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.0)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
+        version: 2.2.1(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.1)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
     devDependencies:
       '@element-plus/components':
         specifier: workspace:1.0.0
@@ -58,8 +58,8 @@ importers:
         specifier: ^13.2.3
         version: 13.2.3
       prettier:
-        specifier: ^3.0.0
-        version: 3.0.0
+        specifier: ^3.0.1
+        version: 3.0.1
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -4200,7 +4200,7 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi@2.2.1(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.0)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0):
+  /dumi@2.2.1(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.1)(react-dom@18.2.0)(react@18.2.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0):
     resolution: {integrity: sha512-9AU79JbFQ+hhkL2Y0XYEuSuwiyz+U2KcqstzI68n9BKYODP9VGs0UlfrHfd8W+8bSbiHTNXNz0eRbBdZBMswgQ==}
     hasBin: true
     peerDependencies:
@@ -4263,7 +4263,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.64.1
       sitemap: 7.1.1
-      umi: 4.0.73(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.0)(react-dom@18.2.0)(react@18.2.0)(sass@1.64.1)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
+      umi: 4.0.73(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.1)(react-dom@18.2.0)(react@18.2.0)(sass@1.64.1)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0)
       unified: 10.1.2
       unist-util-visit: 4.1.2
       unist-util-visit-parents: 5.1.3
@@ -8658,6 +8658,24 @@ packages:
     dependencies:
       prettier: 3.0.0
       typescript: 5.1.6
+    dev: true
+
+  /prettier-plugin-organize-imports@3.2.2(prettier@3.0.1)(typescript@5.1.6):
+    resolution: {integrity: sha512-e97lE6odGSiHonHJMTYC0q0iLXQyw0u5z/PJpvP/3vRy6/Zi9kLBwFAbEGjDzIowpjQv8b+J04PDamoUSQbzGA==}
+    peerDependencies:
+      '@volar/vue-language-plugin-pug': ^1.0.4
+      '@volar/vue-typescript': ^1.0.4
+      prettier: '>=2.0'
+      typescript: '>=2.9'
+    peerDependenciesMeta:
+      '@volar/vue-language-plugin-pug':
+        optional: true
+      '@volar/vue-typescript':
+        optional: true
+    dependencies:
+      prettier: 3.0.1
+      typescript: 5.1.6
+    dev: false
 
   /prettier-plugin-packagejson@2.4.3(prettier@3.0.0):
     resolution: {integrity: sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==}
@@ -8670,9 +8688,29 @@ packages:
       prettier: 3.0.0
       sort-package-json: 2.4.1
       synckit: 0.8.5
+    dev: true
+
+  /prettier-plugin-packagejson@2.4.3(prettier@3.0.1):
+    resolution: {integrity: sha512-kPeeviJiwy0BgOSk7No8NmzzXfW4R9FYWni6ziA5zc1kGVVrKnBzMZdu2TUhI+I7h8/5Htt3vARYOk7KKJTTNQ==}
+    peerDependencies:
+      prettier: '>= 1.16.0'
+    peerDependenciesMeta:
+      prettier:
+        optional: true
+    dependencies:
+      prettier: 3.0.1
+      sort-package-json: 2.4.1
+      synckit: 0.8.5
+    dev: false
 
   /prettier@3.0.0:
     resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
+
+  /prettier@3.0.1:
+    resolution: {integrity: sha512-fcOWSnnpCrovBsmFZIGIy9UqK2FaI7Hqax+DIO0A9UxeVoY4iweyaFjS5TavZN97Hfehph0nhsZnjlVKzEQSrQ==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -10566,6 +10604,59 @@ packages:
       - webpack-dev-server
       - webpack-hot-middleware
       - webpack-plugin-serve
+    dev: true
+
+  /umi@4.0.73(@babel/core@7.22.5)(@types/react@18.2.15)(eslint@8.45.0)(postcss@8.4.24)(prettier@3.0.1)(react-dom@18.2.0)(react@18.2.0)(sass@1.64.1)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)(webpack@5.88.0):
+    resolution: {integrity: sha512-nESgoeAZfWZoAXpe2avFgD664q1ZJCSUo3fXM3AE6rj11SpClmcBUUpIvk5ceCPnTkxmauM5bEn6PGKeYRFvtA==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      '@babel/runtime': 7.21.0
+      '@umijs/bundler-utils': 4.0.73
+      '@umijs/bundler-webpack': 4.0.73(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0)
+      '@umijs/core': 4.0.73
+      '@umijs/lint': 4.0.73(eslint@8.45.0)(styled-components@5.3.11)(stylelint@14.16.1)(typescript@5.1.6)
+      '@umijs/preset-umi': 4.0.73(@types/react@18.2.15)(postcss@8.4.24)(sass@1.64.1)(styled-components@5.3.11)(typescript@5.1.6)(webpack@5.88.0)
+      '@umijs/renderer-react': 4.0.73(react-dom@18.2.0)(react@18.2.0)
+      '@umijs/server': 4.0.73
+      '@umijs/test': 4.0.73(@babel/core@7.22.5)
+      '@umijs/utils': 4.0.73
+      prettier-plugin-organize-imports: 3.2.2(prettier@3.0.1)(typescript@5.1.6)
+      prettier-plugin-packagejson: 2.4.3(prettier@3.0.1)
+    transitivePeerDependencies:
+      - '@babel/core'
+      - '@types/node'
+      - '@types/react'
+      - '@types/webpack'
+      - '@volar/vue-language-plugin-pug'
+      - '@volar/vue-typescript'
+      - eslint
+      - jest
+      - postcss
+      - postcss-html
+      - postcss-jsx
+      - postcss-less
+      - postcss-markdown
+      - postcss-scss
+      - prettier
+      - react
+      - react-dom
+      - rollup
+      - sass
+      - sockjs-client
+      - styled-components
+      - stylelint
+      - stylus
+      - sugarss
+      - supports-color
+      - terser
+      - type-fest
+      - typescript
+      - webpack
+      - webpack-dev-server
+      - webpack-hot-middleware
+      - webpack-plugin-serve
+    dev: false
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
