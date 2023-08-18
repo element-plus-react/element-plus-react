@@ -41,7 +41,7 @@
     "typescript": "^5.1.6"
   },
   "resolutions": {
-    "@types/react": "^18.2.15",
+    "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
