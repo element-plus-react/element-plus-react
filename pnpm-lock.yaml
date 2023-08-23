@@ -73,8 +73,8 @@ importers:
         specifier: ^5.2.5
         version: 5.2.5(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^3.6.1
+        version: 3.6.1
       '@element-plus/theme-chalk':
         specifier: ^2.2.16
         version: 2.2.16
@@ -103,8 +103,8 @@ importers:
         specifier: ^5.2.5
         version: 5.2.5(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^3.6.1
+        version: 3.6.1
       ahooks:
         specifier: ^3.7.8
         version: 3.7.8(react@18.2.0)
@@ -176,7 +176,7 @@ packages:
   /@ant-design/colors@7.0.0:
     resolution: {integrity: sha512-iVm/9PfGCbC0dSMBrz7oiEXZaaGH7ceU40OJEfKmyuzR9R5CRimJYPlRiFtMQGQcbNMea/ePcoIebi4ASGYXtg==}
     dependencies:
-      '@ctrl/tinycolor': 3.6.0
+      '@ctrl/tinycolor': 3.6.1
 
   /@ant-design/icons-svg@4.3.0:
     resolution: {integrity: sha512-WOgvdH/1Wl8Z7VXigRbCa5djO14zxrNTzvrAQzhWiBQtEKT0uTc8K1ltjKZ8U1gPn/wXhMA8/jE39SJl0WNxSg==}
@@ -1598,8 +1598,8 @@ packages:
     dependencies:
       postcss-selector-parser: 6.0.13
 
-  /@ctrl/tinycolor@3.6.0:
-    resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
+  /@ctrl/tinycolor@3.6.1:
+    resolution: {integrity: sha512-SITSV6aIXsuVNV3f3O0f2n/cgyEDWoSqtZMYiAmcsYHydcKrOz3gUxB/iXd/Qf08+IZX4KpgNbvUdMBmWz+kcA==}
     engines: {node: '>=10'}
 
   /@element-plus/theme-chalk@2.2.16:
