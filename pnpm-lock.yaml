@@ -73,8 +73,8 @@ importers:
         specifier: ^5.2.5
         version: 5.2.5(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^4.0.0
+        version: 4.0.0
       '@element-plus/theme-chalk':
         specifier: ^2.2.16
         version: 2.2.16
@@ -103,8 +103,8 @@ importers:
         specifier: ^5.2.5
         version: 5.2.5(react-dom@18.2.0)(react@18.2.0)
       '@ctrl/tinycolor':
-        specifier: ^3.6.0
-        version: 3.6.0
+        specifier: ^4.0.0
+        version: 4.0.0
       ahooks:
         specifier: ^3.7.8
         version: 3.7.8(react@18.2.0)
@@ -1601,6 +1601,10 @@ packages:
   /@ctrl/tinycolor@3.6.0:
     resolution: {integrity: sha512-/Z3l6pXthq0JvMYdUFyX9j0MaCltlIn6mfh9jLyQwg5aPKxkyNa0PTHtU1AlFXLNk55ZuAeJRcpvq+tmLfKmaQ==}
     engines: {node: '>=10'}
+
+  /@ctrl/tinycolor@4.0.0:
+    resolution: {integrity: sha512-c0CEvs6FsBU1QI/nVBY5QQvTnkkTjAfL6t1YwNtI6sGGf2CI+C7znHLxS5EqBCnIDPuLFkgJNMTba7n2eyTz8w==}
+    engines: {node: '>=14'}
 
   /@element-plus/theme-chalk@2.2.16:
     resolution: {integrity: sha512-c4BoGFV/UL84kzH4bTlIOzlU3g9zTHew1SOGwAVPjEiVi1XBKauSUxkPngT4BjaZfF0CfL3P446zjXJ3rFWXMg==}
