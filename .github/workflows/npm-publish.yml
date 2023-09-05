@@ -17,7 +17,7 @@ jobs:
       # 检查并切换到master分支
       - name: 检查master分支
         # 使用actions/checkout插件
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Pnpm
         uses: pnpm/action-setup@v2
         with:
