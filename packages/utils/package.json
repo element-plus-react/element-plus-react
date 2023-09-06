@@ -5,7 +5,7 @@
     "build": "father build"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.197",
+    "@types/lodash": "^4.14.198",
     "lodash": "npm:lodash-es@^4.17.21"
   }
 }
