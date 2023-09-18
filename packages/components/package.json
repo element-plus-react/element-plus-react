@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@ant-design/icons": "^5.2.6",
-    "@ctrl/tinycolor": "^3.6.1",
+    "@ctrl/tinycolor": "^4.0.2",
     "@element-plus/theme-chalk": "^2.2.16",
     "ahooks": "^3.7.8",
     "classnames": "^2.3.2",
