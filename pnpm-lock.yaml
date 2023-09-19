@@ -46,8 +46,8 @@ importers:
         specifier: ^8.49.0
         version: 8.49.0
       father:
-        specifier: ^4.3.4
-        version: 4.3.4(styled-components@6.0.7)(webpack@5.88.2)
+        specifier: ^4.3.5
+        version: 4.3.5(styled-components@6.0.7)(webpack@5.88.2)
       gh-pages:
         specifier: ^6.0.0
         version: 6.0.0
@@ -5709,8 +5709,8 @@ packages:
     dependencies:
       reusify: 1.0.4
 
-  /father@4.3.4(styled-components@6.0.7)(webpack@5.88.2):
-    resolution: {integrity: sha512-XFHV957Jt8OA6kdMD1ZM1mMXmwgPdvpy5B+adDI0rPF6qzCVSr8draLnOGExARsXEuuLqr+KN44kghY8s+3yng==}
+  /father@4.3.5(styled-components@6.0.7)(webpack@5.88.2):
+    resolution: {integrity: sha512-5JX93SemZ8kH0YI+tSbBikke+XzcFW8XQa5o75hIWyCZzWQ12D71REo0l/vGHRpo6OzkN9c9lWqJbS6BcRWsUQ==}
     hasBin: true
     dependencies:
       '@microsoft/api-extractor': 7.36.3
