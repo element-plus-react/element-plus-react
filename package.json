@@ -25,7 +25,7 @@
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
+    "@types/react-dom": "^18.2.8",
     "@umijs/lint": "^4.0.81",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
