@@ -32,7 +32,7 @@ importers:
         version: 18.2.21
       '@types/react-dom':
         specifier: ^18.2.7
-        version: 18.2.7
+        version: 18.2.10
       '@umijs/lint':
         specifier: ^4.0.81
         version: 4.0.81(eslint@8.49.0)(styled-components@6.0.7)(stylelint@14.16.1)(typescript@5.2.2)
@@ -2675,6 +2675,12 @@ packages:
     dependencies:
       types-ramda: 0.29.4
     dev: false
+
+  /@types/react-dom@18.2.10:
+    resolution: {integrity: sha512-5VEC5RgXIk1HHdyN1pHlg0cOqnxHzvPGpMMyGAP5qSaDRmyZNDaQ0kkVAkK6NYlDhP6YBID3llaXlmAS/mdgCA==}
+    dependencies:
+      '@types/react': 18.2.21
+    dev: true
 
   /@types/react-dom@18.2.7:
     resolution: {integrity: sha512-GRaAEriuT4zp9N4p1i8BDBYmEyfo+xQ3yHjJU4eiK5NDa1RmUZG+unZABUTK4/Ox/M+GaHwb6Ow8rUITrtjszA==}
