@@ -23,6 +23,5 @@
     "json",
     "jsonc"
   ],
-  "files.eol": "\n",
-  "eslint.packageManager": "pnpm"
+  "files.eol": "\n"
 }
