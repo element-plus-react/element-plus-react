@@ -2,12 +2,13 @@ import { defineConfig } from 'dumi';
 
 export default defineConfig({
   alias: {
-    'element-plus-react': 'element-plus-react/src/index.ts',
-    '@element-plus/components': './packages/components/src',
-    '@element-plus/utils': './packages/utils/src',
-    '@element-plus/hooks': './packages/hooks/src',
+    'element-plus-react': 'element-plus-react/src',
+    '@element-plus/components': '@element-plus/components/src',
+    '@element-plus/utils': '@element-plus/utils/src',
+    '@element-plus/hooks': '@element-plus/hooks/src',
   },
-  mfsu: false,
+  // mfsu: false,
+  // monorepoRedirect: {},
   themeConfig: {
     name: 'Element Plus React',
     // nav: [

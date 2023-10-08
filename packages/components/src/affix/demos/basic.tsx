@@ -1,4 +1,3 @@
-import React from 'react';
 import { Affix, Button } from 'element-plus-react';
 
 const Demo = () => (

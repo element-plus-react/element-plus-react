@@ -22,9 +22,9 @@ group:
 
 `<el-footer>`：底栏容器。
 
-<Alert type="info">
+:::info
  以上组件采用了 flex 布局，使用前请确定目标浏览器是否兼容。 此外，`el-container`的直接子元素必须是后四个组件中的一个或多个。 后四个组件的亲元素必须是一个 `el-container`
-</Alert>
+:::
 
 ## 常见页面布局
 

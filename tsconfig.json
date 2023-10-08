@@ -25,8 +25,9 @@
       "@element-plus/components": ["./packages/components/src"],
       "@element-plus/utils": ["./packages/utils/src"],
       "@element-plus/hooks": ["./packages/hooks/src"]
-    }
+    },
+    "types": ["@types/node"]
   },
-  "include": [".", "packages/components/.fatherrc.ts", "packages/components/.fatherrc.ts"],
+  "include": [".", ".dumirc.ts"],
   "exclude": ["node_modules", "lib", "es"]
 }
