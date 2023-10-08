@@ -40,9 +40,9 @@ You can set the size with built-in sizes `small`, `default`, `large`, these size
 
 <code src="./demos/customized-size.tsx"></code>
 
-<Alert type="info">
+:::info
 不要让 `ElSpace` 与使用依赖父元素百分比宽度 (高度) 的元素一起使用, 例如 `ElSlider`, 这样会造成光标不同步
-</Alert>
+:::
 
 ## 自动换行
 

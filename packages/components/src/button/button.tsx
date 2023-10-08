@@ -4,11 +4,11 @@ import { TinyColor } from '@ctrl/tinycolor';
 import { isFunction } from 'lodash';
 import { LoadingOutlined } from '@ant-design/icons';
 import { getCssVar, GlobalConfig, css2object } from '@element-plus/utils';
-import { tuple } from '@element-plus/utils/src/type';
+import { tuple } from '@element-plus/utils';
 import ButtonGroup, { ButtonGroupContext } from './button-group';
 
 const ButtonHTMLTypes = tuple('submit', 'button', 'reset');
-export type ButtonHTMLType = typeof ButtonHTMLTypes[number];
+export type ButtonHTMLType = (typeof ButtonHTMLTypes)[number];
 export interface ButtonProps {
   size?: 'large' | 'default' | 'small';
   disabled?: boolean;
