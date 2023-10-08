@@ -43,7 +43,7 @@ importers:
         specifier: ^7.0.3
         version: 7.0.3
       element-plus-react:
-        specifier: workspace:*
+        specifier: workspace:0.0.4
         version: link:packages/element-plus-react
       eslint:
         specifier: ^8.51.0
