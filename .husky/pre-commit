@@ -1,4 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# 兼容fnm
+export PATH="$HOME/AppData/Roaming/fnm/aliases/default:$PATH"
+
 pnpm exec lint-staged
