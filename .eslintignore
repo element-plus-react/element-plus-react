@@ -1,20 +1,4 @@
-components/**/*.js
-components/**/*.jsx
-!components/*/__tests__/**/*.js
-!components/*/demo/*
-!.*.js
-~*
-
-typings
 es/**/*
 lib/**/*
 node_modules
-_site
 dist
-coverage
-**/*.d.ts
-# Scripts
-scripts/previewEditor/**/*
-
-*.json
-abandon
