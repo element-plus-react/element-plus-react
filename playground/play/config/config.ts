@@ -1,14 +1,17 @@
-import { defineConfig } from 'umi';
+import { defineConfig } from "umi";
 
 export default defineConfig({
-  mfsu: false,
+  //mfsu: false,
   alias: {
-    //'element-plus-react': '../../../packages/element-plus-react',
+    // "element-plus-react": "element-plus-react/src",
+    // '@element-plus/components': '@element-plus/components/src',
+    // '@element-plus/utils': '@element-plus/utils/src',
+    // '@element-plus/hooks': '@element-plus/hooks/src',
   },
   // nodeModulesTransform: {
   //   type: 'none',
   // },
-  extraBabelIncludes: ['element-plus-react'],
-  routes: [{ path: '/', component: '@/pages/index' }],
-  fastRefresh: true,
+  //extraBabelIncludes: ['element-plus-react'],
+  // routes: [{ path: '/', component: '@/pages/index' }],
+  //fastRefresh: true,
 });
