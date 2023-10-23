@@ -25,7 +25,7 @@ jobs:
       # 安装node
       - name: 设置Node.js
         # 使用actions/setup-node插件
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           # node版本
           node-version: '18'
