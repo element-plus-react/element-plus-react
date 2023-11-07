@@ -82,8 +82,8 @@ importers:
         specifier: ^2.2.16
         version: 2.2.16
       '@types/lodash':
-        specifier: ^4.14.199
-        version: 4.14.199
+        specifier: ^4.14.201
+        version: 4.14.201
       ahooks:
         specifier: ^3.7.8
         version: 3.7.8(react@18.2.0)
@@ -122,8 +122,8 @@ importers:
         version: 4.4.5(react-dom@18.2.0)(react@18.2.0)
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.199
-        version: 4.14.199
+        specifier: ^4.14.201
+        version: 4.14.201
       '@types/react':
         specifier: ^18.2.25
         version: 18.2.25
@@ -151,8 +151,8 @@ importers:
   packages/utils:
     devDependencies:
       '@types/lodash':
-        specifier: ^4.14.199
-        version: 4.14.199
+        specifier: ^4.14.201
+        version: 4.14.201
       lodash:
         specifier: npm:lodash-es@^4.17.21
         version: /lodash-es@4.17.21
@@ -3063,8 +3063,8 @@ packages:
       '@types/node': 18.18.4
     dev: false
 
-  /@types/lodash@4.14.199:
-    resolution: {integrity: sha512-Vrjz5N5Ia4SEzWWgIVwnHNEnb1UE1XMkvY5DGXrAeOGE9imk0hgTHh5GyDjLDJi9OTCn9oo9dXH1uToK1VRfrg==}
+  /@types/lodash@4.14.201:
+    resolution: {integrity: sha512-y9euML0cim1JrykNxADLfaG0FgD1g/yTHwUs/Jg9ZIU7WKj2/4IW9Lbb1WZbvck78W/lfGXFfe+u2EGfIJXdLQ==}
     dev: true
 
   /@types/mdast@3.0.12:
