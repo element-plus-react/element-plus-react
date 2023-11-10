@@ -18,25 +18,25 @@
     "clearDir": "node ./scripts/clearDir.js"
   },
   "dependencies": {
-    "dumi": "^2.2.12"
+    "dumi": "^2.2.14"
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
-    "@types/node": "18",
-    "@types/react": "^18.2.25",
-    "@types/react-dom": "^18.2.11",
-    "@umijs/lint": "^4.0.83",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@umijs/lint": "^4.0.88",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
-    "eslint": "^8.51.0",
-    "father": "^4.3.5",
+    "eslint": "^8.53.0",
+    "father": "^4.3.7",
     "gh-pages": "^6.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^14.0.1",
+    "lint-staged": "^15.0.2",
     "prettier": "^3.0.3",
-    "sass": "^1.69.0",
+    "sass": "^1.69.5",
     "typescript": "^5.2.2"
   },
   "resolutions": {
