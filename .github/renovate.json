@@ -4,7 +4,7 @@
     "config:base"
   ],
   "labels": ["dependencies", "javascript"],
-  "pin": false,
-  "node": false,
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
   "rangeStrategy": "bump"
 }

@@ -1,28 +1,11 @@
 {
+  "eslint.format.enable": true,
   "editor.formatOnSave": true,
-  "npm.packageManager": "pnpm",
-  "eslint.probe": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "json",
-    "jsonc"
-  ],
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact",
-    "html",
-    "vue",
-    "markdown",
-    "json",
-    "jsonc"
-  ],
-  "files.eol": "\n",
-  "eslint.packageManager": "pnpm"
+  "editor.tabSize": 2,
+  "cSpell.words": [],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  }
 }
