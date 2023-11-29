@@ -1,8 +1,7 @@
 {
   "private": true,
   "workspaces": [
-    "packages/*",
-    "playground/*"
+    "packages/*"
   ],
   "scripts": {
     "prepare": "husky install && dumi setup",

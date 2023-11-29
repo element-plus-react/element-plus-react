@@ -68,12 +68,6 @@ importers:
         specifier: ^5.2.2
         version: 5.2.2
 
-  examples/play:
-    devDependencies:
-      umi:
-        specifier: ^4.0.88
-        version: 4.0.88(@babel/core@7.23.3)(@types/node@20.9.0)(@types/react@18.2.37)(eslint@8.53.0)(prettier@3.0.3)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
-
   packages/components:
     devDependencies:
       '@ant-design/icons':
@@ -151,6 +145,12 @@ importers:
         version: 5.2.2
 
   packages/hooks: {}
+
+  packages/playground:
+    devDependencies:
+      umi:
+        specifier: ^4.0.88
+        version: 4.0.88(@babel/core@7.23.3)(@types/node@20.9.0)(@types/react@18.2.37)(eslint@8.53.0)(prettier@3.0.3)(react-dom@18.2.0)(react@18.2.0)(sass@1.69.5)(stylelint@14.16.1)(typescript@5.2.2)(webpack@5.89.0)
 
   packages/utils:
     devDependencies:
