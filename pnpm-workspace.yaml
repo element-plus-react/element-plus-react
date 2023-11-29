@@ -1,6 +1,4 @@
-# pnpm不兼容yarn、npm的package.json#workspace，有点……
-# 作者说是为了package.json#workspace的设计是糟糕的不合理的，不想污染package.json
-# 然而现实就是pnpm也没少污染package.json
 packages:
+  - ./
   - packages/*
-  - playground/*
+  - examples/*

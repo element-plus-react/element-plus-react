@@ -14,37 +14,30 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev",
-    "update:deps": "pnpm up -r --workspace",
+    "update:deps": "pnpm up -i -r -L",
     "clearDir": "node ./scripts/clearDir.js"
   },
   "dependencies": {
-    "dumi": "^2.0.16"
+    "dumi": "^2.2.14"
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10",
-    "@umijs/fabric": "^3.0.0",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@umijs/lint": "^4.0.88",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
-    "eslint": "^8.30.0",
-    "father": "^4.1.2",
-    "gh-pages": "^4.0.0",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.1.0",
-    "prettier": "^2.8.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sass": "^1.57.1",
-    "typescript": "^4.9.4"
-  },
-  "resolutions": {
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "eslint": "^8.53.0",
+    "father": "^4.3.7",
+    "gh-pages": "^6.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5",
+    "typescript": "^5.2.2"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
@@ -52,6 +45,10 @@
   "pnpm": {
     "peerDependencyRules": {
       "ignoreMissing": []
+    },
+    "overrides": {
+      "react": "18.2.0",
+      "react-dom": "18.2.0"
     }
   },
   "browserslist": [

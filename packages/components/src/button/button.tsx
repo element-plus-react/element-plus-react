@@ -1,18 +1,18 @@
-import React, { useMemo, useContext } from 'react';
-import classnames from 'classnames';
-import { TinyColor } from '@ctrl/tinycolor';
-import { isFunction } from 'lodash';
-import { LoadingOutlined } from '@ant-design/icons';
-import { getCssVar, GlobalConfig, css2object } from '@element-plus/utils';
-import { tuple } from '@element-plus/utils/src/type';
-import ButtonGroup, { ButtonGroupContext } from './button-group';
+import React, { useMemo, useContext } from "react";
+import classnames from "classnames";
+import { TinyColor } from "@ctrl/tinycolor";
+import { isFunction } from "lodash";
+import { LoadingOutlined } from "@ant-design/icons";
+import { getCssVar, GlobalConfig, css2object } from "@element-plus/utils";
+import { tuple } from "@element-plus/utils";
+import ButtonGroup, { ButtonGroupContext } from "./button-group";
 
-const ButtonHTMLTypes = tuple('submit', 'button', 'reset');
-export type ButtonHTMLType = typeof ButtonHTMLTypes[number];
+const ButtonHTMLTypes = tuple("submit", "button", "reset");
+export type ButtonHTMLType = (typeof ButtonHTMLTypes)[number];
 export interface ButtonProps {
-  size?: 'large' | 'default' | 'small';
+  size?: "large" | "default" | "small";
   disabled?: boolean;
-  type?: 'default' | 'primary' | 'success' | 'warning' | 'info' | 'danger' | 'text';
+  type?: "default" | "primary" | "success" | "warning" | "info" | "danger" | "text";
   icon?: any;
   nativeType?: ButtonHTMLType;
   loading?: boolean;
@@ -32,7 +32,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const {
     disabled,
     autofocus,
-    nativeType = 'button' as ButtonProps['nativeType'],
+    nativeType = "button" as ButtonProps["nativeType"],
     loading,
     plain,
     round,
@@ -50,14 +50,14 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     [props.size, globalConfig.size, buttonGroupContext?.size],
   );
   const buttonType = useMemo(
-    () => props.type ?? buttonGroupContext?.type ?? '',
+    () => props.type ?? buttonGroupContext?.type ?? "",
     [props.type, buttonGroupContext?.type],
   );
 
   // add space between two characters in Chinese
   const shouldAddSpace = useMemo(() => {
     const defaultSlot = props.children;
-    if (autoInsertSpace && typeof defaultSlot === 'string' && defaultSlot?.length === 2) {
+    if (autoInsertSpace && typeof defaultSlot === "string" && defaultSlot?.length === 2) {
       return true;
     }
     return false;
@@ -74,37 +74,37 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
 
       if (plain) {
         styles = {
-          '--el-button-bg-color': new TinyColor(buttonColor).tint(90).toString(),
-          '--el-button-text-color': buttonColor,
-          '--el-button-hover-text-color': 'var(--el-color-white)',
-          '--el-button-hover-bg-color': buttonColor,
-          '--el-button-hover-border-color': buttonColor,
-          '--el-button-active-bg-color': shadeBgColor,
-          '--el-button-active-text-color': 'var(--el-color-white)',
-          '--el-button-active-border-color': shadeBgColor,
+          "--el-button-bg-color": new TinyColor(buttonColor).tint(90).toString(),
+          "--el-button-text-color": buttonColor,
+          "--el-button-hover-text-color": "var(--el-color-white)",
+          "--el-button-hover-bg-color": buttonColor,
+          "--el-button-hover-border-color": buttonColor,
+          "--el-button-active-bg-color": shadeBgColor,
+          "--el-button-active-text-color": "var(--el-color-white)",
+          "--el-button-active-border-color": shadeBgColor,
         };
       } else {
         const tintBgColor = new TinyColor(buttonColor).tint(20).toString();
         styles = {
-          '--el-button-bg-color': buttonColor,
-          '--el-button-border-color': buttonColor,
-          '--el-button-hover-bg-color': tintBgColor,
-          '--el-button-hover-border-color': tintBgColor,
-          '--el-button-active-bg-color': shadeBgColor,
-          '--el-button-active-border-color': shadeBgColor,
+          "--el-button-bg-color": buttonColor,
+          "--el-button-border-color": buttonColor,
+          "--el-button-hover-bg-color": tintBgColor,
+          "--el-button-hover-border-color": tintBgColor,
+          "--el-button-active-bg-color": shadeBgColor,
+          "--el-button-active-border-color": shadeBgColor,
         };
       }
 
       if (disabled) {
         const disabledButtonColor = new TinyColor(buttonColor).tint(50).toString();
-        styles['--el-button-disabled-bg-color'] = disabledButtonColor;
-        styles['--el-button-disabled-border-color'] = disabledButtonColor;
+        styles["--el-button-disabled-bg-color"] = disabledButtonColor;
+        styles["--el-button-disabled-border-color"] = disabledButtonColor;
       }
     }
 
-    if (typeof props?.style === 'object') {
+    if (typeof props?.style === "object") {
       styles = { ...styles, ...props.style };
-    } else if (typeof props?.style === 'string') {
+    } else if (typeof props?.style === "string") {
       const customStyle = css2object(props?.style);
       styles = { ...styles, ...customStyle };
     }
@@ -120,15 +120,15 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   };
 
   const className = classnames(
-    'el-button',
-    buttonType ? `el-button--${buttonType}` : '',
-    buttonSize ? `el-button--${buttonSize}` : '',
+    "el-button",
+    buttonType ? `el-button--${buttonType}` : "",
+    buttonSize ? `el-button--${buttonSize}` : "",
     {
-      'is-disabled': disabled,
-      'is-loading': loading,
-      'is-plain': plain,
-      'is-round': round,
-      'is-circle': circle,
+      "is-disabled": disabled,
+      "is-loading": loading,
+      "is-plain": plain,
+      "is-round": round,
+      "is-circle": circle,
     },
     props.className,
   );
@@ -141,7 +141,7 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
       </span>
     ) : null;
   const kids = props.children ? (
-    <span className={shouldAddSpace ? 'el-button__text--expand' : ''}>{props.children}</span>
+    <span className={shouldAddSpace ? "el-button__text--expand" : ""}>{props.children}</span>
   ) : null;
 
   return (
