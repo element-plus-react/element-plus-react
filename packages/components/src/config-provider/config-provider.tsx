@@ -1,13 +1,13 @@
+import { omit } from "lodash-es";
 import React, { createContext, useEffect, useState } from "react";
-import { omit } from "lodash";
 
 export interface GlobalConfigTypes {
-  size?: "large" | "default" | "small",
-  zIndex?: number
-  autoInsertSpace?: boolean
+  size?: "large" | "default" | "small";
+  zIndex?: number;
+  autoInsertSpace?: boolean;
   message?: {
-    max?: number
-  }
+    max?: number;
+  };
 }
 
 export const GlobalConfig = createContext<GlobalConfigTypes>({});
@@ -17,9 +17,7 @@ const ConfigProvider: React.FC<GlobalConfigTypes> = (props) => {
   useEffect(() => {
     setState(omit(props, ["children"]));
   }, [props]);
-  return (<GlobalConfig.Provider value={state}>
-    {props.children}
-  </GlobalConfig.Provider>);
+  return <GlobalConfig.Provider value={state}>{props.children}</GlobalConfig.Provider>;
 };
 
 export default ConfigProvider;
