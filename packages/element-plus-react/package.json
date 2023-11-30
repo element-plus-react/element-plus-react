@@ -4,7 +4,7 @@
   "version": "0.0.4",
   "license": "MIT",
   "scripts": {
-    "build": "father build"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "bugs": {
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
@@ -40,11 +40,21 @@
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.201",
+    "@babel/preset-react": "*",
+    "@rollup/plugin-babel": "^6.0.0",
+    "@rollup/plugin-commonjs": "^23.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "rollup": "^3.0.0",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "rollup-plugin-node-externals": "^5.0.0",
+    "@types/lodash-es": "^4.14.201",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-transition-group": "^4.4.9",
-    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2"

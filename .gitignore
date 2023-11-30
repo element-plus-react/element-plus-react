@@ -19,7 +19,7 @@ coverage
 .umi-production
 #yarn.lock
 
-packages/element-plus-react/es
-packages/element-plus-react/lib
+**/es/**
+**/lib/**
 packages/element-plus-react/theme-chalk
 packages/element-plus-react/README.md

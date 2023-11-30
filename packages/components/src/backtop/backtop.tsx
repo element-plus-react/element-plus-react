@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { ToTopOutlined } from '@ant-design/icons';
-import { isFunction, throttle } from 'lodash';
-import { useEventListener } from 'ahooks';
-import { easeInOutCubic } from '@element-plus/utils';
+import { ToTopOutlined } from "@ant-design/icons";
+import { easeInOutCubic } from "@element-plus/utils";
+import { useEventListener } from "ahooks";
+import { isFunction, throttle } from "lodash-es";
+import React, { useEffect, useRef, useState } from "react";
 
 interface BackTopProps {
   visibilityHeight?: number;
@@ -12,8 +12,8 @@ interface BackTopProps {
   onClick?: (evt: MouseEvent) => void;
 }
 
-const BackTop: React.FC<BackTopProps> = props => {
-  const { visibilityHeight = 200, target = '', right = 40, bottom = 40 } = props;
+const BackTop: React.FC<BackTopProps> = (props) => {
+  const { visibilityHeight = 200, target = "", right = 40, bottom = 40 } = props;
   const el = useRef<HTMLElement | undefined>(document.documentElement);
   const container = useRef<Document | HTMLElement>(document);
   const [visible, setVisible] = useState(false);
@@ -50,7 +50,7 @@ const BackTop: React.FC<BackTopProps> = props => {
 
   const handleScrollThrottled = throttle(handleScroll, 300);
 
-  useEventListener('scroll', handleScrollThrottled, { target: container.current });
+  useEventListener("scroll", handleScrollThrottled, { target: container.current });
 
   useEffect(() => {
     if (target) {
