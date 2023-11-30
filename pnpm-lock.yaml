@@ -35,8 +35,8 @@ importers:
         specifier: ^18.2.15
         version: 18.2.15
       '@umijs/lint':
-        specifier: ^4.0.88
-        version: 4.0.88(eslint@8.53.0)(stylelint@14.16.1)(typescript@5.2.2)
+        specifier: ^4.0.89
+        version: 4.0.89(eslint@8.53.0)(stylelint@14.16.1)(typescript@5.2.2)
       cross-env:
         specifier: ^7.0.3
         version: 7.0.3
@@ -1486,7 +1486,7 @@ packages:
       postcss: '>=7.0.0'
       postcss-syntax: '>=0.36.2'
     dependencies:
-      '@babel/core': 7.23.2
+      '@babel/core': 7.23.3
       postcss: 8.4.31
       postcss-syntax: 0.36.2(postcss@8.4.31)
     transitivePeerDependencies:
@@ -2093,6 +2093,18 @@ packages:
     transitivePeerDependencies:
       - supports-color
 
+  /@umijs/babel-preset-umi@4.0.89:
+    resolution: {integrity: sha512-Q9/SaEU3K9q+aNMmwIxcfkqtYdhE4n/J0BRx0XUo71rN0mN+4EOuOPLNMD8hKtJw5CZeASeS3qQbQKd44SjOow==}
+    dependencies:
+      '@babel/runtime': 7.23.2
+      '@bloomberg/record-tuple-polyfill': 0.0.4
+      '@umijs/bundler-utils': 4.0.89
+      '@umijs/utils': 4.0.89
+      core-js: 3.28.0
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
   /@umijs/bundler-esbuild@4.0.88:
     resolution: {integrity: sha512-gbUnsQ4JCx0zVjq7olCVM8mg4yX4IwzNQwic/iJM5s5KS/Cv+u5JHIfGyevYZT3FUjxVl79IsmxYOwKXoDaTpA==}
     hasBin: true
@@ -2116,6 +2128,18 @@ packages:
       spdy: 4.0.2
     transitivePeerDependencies:
       - supports-color
+
+  /@umijs/bundler-utils@4.0.89:
+    resolution: {integrity: sha512-/nKdEj0ku9MX5RYYLzDObuvDBb1sd89XD2Opldk7kgLbLw1iePksrWtP8gR5X2UGjqtEZYvcfrYFt0jV0LCcQg==}
+    dependencies:
+      '@umijs/utils': 4.0.89
+      esbuild: 0.17.19
+      regenerate: 1.4.2
+      regenerate-unicode-properties: 10.1.1
+      spdy: 4.0.2
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
 
   /@umijs/bundler-vite@4.0.88(@types/node@20.9.0)(postcss@8.4.31)(sass@1.69.5):
     resolution: {integrity: sha512-qiToAgLwmPWz1t8l82qEPyFXlZvnRKWJW0WG6vuxQNikDMKCWhk18gZaWwMNhqQvAx/oZ37vFCmR8CDoNOMI/A==}
@@ -2347,6 +2371,34 @@ packages:
       - supports-color
       - typescript
 
+  /@umijs/lint@4.0.89(eslint@8.53.0)(stylelint@14.16.1)(typescript@5.2.2):
+    resolution: {integrity: sha512-z7pSpZoAecTltLwBEiyyzZYY3wPlg7DA5U4llWJbkfz/U0TdKgeDAzH6cq1SpvuRBsLTO3aiD6+6DP0NDuU82g==}
+    dependencies:
+      '@babel/core': 7.23.2
+      '@babel/eslint-parser': 7.22.15(@babel/core@7.23.2)(eslint@8.53.0)
+      '@stylelint/postcss-css-in-js': 0.38.0(postcss-syntax@0.36.2)(postcss@8.4.31)
+      '@typescript-eslint/eslint-plugin': 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.53.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 5.62.0(eslint@8.53.0)(typescript@5.2.2)
+      '@umijs/babel-preset-umi': 4.0.89
+      eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@5.62.0)(eslint@8.53.0)(typescript@5.2.2)
+      eslint-plugin-react: 7.33.2(eslint@8.53.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.53.0)
+      postcss: 8.4.31
+      postcss-syntax: 0.36.2(postcss@8.4.31)
+      stylelint-config-standard: 25.0.0(stylelint@14.16.1)
+    transitivePeerDependencies:
+      - eslint
+      - jest
+      - postcss-html
+      - postcss-jsx
+      - postcss-less
+      - postcss-markdown
+      - postcss-scss
+      - stylelint
+      - supports-color
+      - typescript
+    dev: true
+
   /@umijs/mfsu@4.0.88:
     resolution: {integrity: sha512-McHqSuLShUZYD15PsYqpelbot7PyakbMSDr/ckDQNzll6g6B0WIAsDLcDzDf4NFHnxqG76eiWjPuB29f5VSymA==}
     dependencies:
@@ -2505,6 +2557,13 @@ packages:
     dependencies:
       chokidar: 3.5.3
       pino: 7.11.0
+
+  /@umijs/utils@4.0.89:
+    resolution: {integrity: sha512-Gq2yyuhp4m17DfU9VE59MkJGQrnbSsFp9/pfOFhbArV6AWzSo+EUY6UwLPmuQdJbJzVacZlN6N8t6cb794sVNw==}
+    dependencies:
+      chokidar: 3.5.3
+      pino: 7.11.0
+    dev: true
 
   /@umijs/zod2ts@4.0.88:
     resolution: {integrity: sha512-YdctA0RdGlJCnkc7wegre4BD2QfWGPOXes6pBiD1HUxBYiB4VQRrk54ESOD87o/OVB2VfhfqjE/v+xeevEeF3w==}
