@@ -50,7 +50,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-node-externals": "^5.0.0",
-    "@types/lodash-es": "^4.14.201",
+    "@types/lodash-es": "^4.17.12",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-transition-group": "^4.4.9",
