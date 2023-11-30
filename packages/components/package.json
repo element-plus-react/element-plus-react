@@ -8,11 +8,11 @@
     "@ant-design/icons": "^5.2.6",
     "@ctrl/tinycolor": "^4.0.2",
     "@element-plus/theme-chalk": "^2.2.16",
-    "@types/lodash": "^4.14.201",
+    "@types/lodash-es": "^4.14.201",
     "ahooks": "^3.7.8",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.10",
-    "lodash": "npm:lodash-es@^4.17.21",
+    "lodash-es": "^4.17.21",
     "react-transition-group": "^4.4.5"
   }
 }

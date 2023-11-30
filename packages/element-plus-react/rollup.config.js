@@ -55,12 +55,16 @@ export default {
     copy({
       targets: [
         {
-          src: "../../node_modules/element-plus/theme-chalk",
+          src: "../components/node_modules/@element-plus/theme-chalk",
           dest: "./",
         },
         {
           src: "../../README.md",
           dest: "./",
+        },
+        {
+          src: "./es/packages",
+          dest: "./es",
         },
       ],
       verbose: true,

@@ -1,19 +1,19 @@
-import { camelCase, trim, replace } from 'lodash'
+import { camelCase, replace, trim } from "lodash-es";
 /**
-   * return JSON output for CSS string
-   * @param text {String}
-   * @returns {Object}
-   */
+ * return JSON output for CSS string
+ * @param text {String}
+ * @returns {Object}
+ */
 const cssToObject = (text: string) => {
-  if (typeof text !== 'string') {
+  if (typeof text !== "string") {
     return null;
   }
-  const output: any = {}
+  const output: any = {};
   try {
-    text.split(";").forEach(keyValue => {
+    text.split(";").forEach((keyValue) => {
       const style = keyValue.split(":");
       if (style && style.length === 2) {
-        output[camelCase(trim(style[0]))] = trim(replace(style[1], /'|"/g, ""))
+        output[camelCase(trim(style[0]))] = trim(replace(style[1], /'|"/g, ""));
       }
     });
   } catch (e) {
@@ -22,4 +22,4 @@ const cssToObject = (text: string) => {
   return output;
 };
 
-export default cssToObject
+export default cssToObject;

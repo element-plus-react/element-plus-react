@@ -37,8 +37,7 @@
     "ahooks": "^3.7.8",
     "classnames": "^2.3.2",
     "dayjs": "^1.11.10",
-    "react-transition-group": "^4.4.5",
-    "lodash-es": "*"
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@babel/preset-react": "*",
@@ -51,11 +50,11 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-typescript2": "^0.34.1",
     "rollup-plugin-node-externals": "^5.0.0",
-    "@types/lodash": "^4.14.201",
+    "@types/lodash-es": "^4.14.201",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@types/react-transition-group": "^4.4.9",
-    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.2.2"
