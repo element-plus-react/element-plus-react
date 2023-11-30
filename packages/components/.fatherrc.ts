@@ -1,9 +1,5 @@
-import { defineConfig } from 'father';
+import { defineConfig } from "father";
 
 export default defineConfig({
-  extends: '../../scripts/build/.fatherrc.base.ts',
-  esm: {
-    input: 'src',
-    output: '../element-plus-react/es/components',
-  },
+  extends: "../../.fatherrc.base.ts",
 });

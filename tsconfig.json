@@ -21,10 +21,10 @@
     "typeRoots": ["./typings"],
     "preserveSymlinks": true,
     "paths": {
-      "element-plus-react": ["./packages/element-plus-react/src"],
-      "@element-plus/components": ["./packages/components/src"],
-      "@element-plus/utils": ["./packages/utils/src"],
-      "@element-plus/hooks": ["./packages/hooks/src"]
+      "element-plus-react": ["./packages/element-plus-react/src/index.ts"],
+      "@element-plus/components": ["./packages/components/src/index.ts"],
+      "@element-plus/utils": ["./packages/utils/src/index.ts"],
+      "@element-plus/hooks": ["./packages/hooks/src/index.ts"]
     },
     "types": ["@types/node"]
   },

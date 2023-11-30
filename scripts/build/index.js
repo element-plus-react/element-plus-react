@@ -1,7 +1,7 @@
-const fs = require('fs');
-const path = require('path');
-const util = require('util');
-const exec = util.promisify(require('child_process').exec);
+const fs = require("fs");
+const path = require("path");
+const util = require("util");
+const exec = util.promisify(require("child_process").exec);
 
 const fsPromises = fs.promises;
 
@@ -29,25 +29,25 @@ function copyFile(copiedPath, resultPath) {
 
 (async () => {
   try {
-    const { stdout: stdout1 } = await exec('pnpm -C packages/element-plus-react run build');
-    console.log(stdout1);
-    const { stdout: stdout2 } = await exec('pnpm -C packages/components run build');
+    // const { stdout: stdout1 } = await exec("pnpm -C packages/element-plus-react run build");
+    // console.log(stdout1);
+    const { stdout: stdout2 } = await exec("pnpm -C packages/components run build");
     console.log(stdout2);
-    const { stdout: stdout3 } = await exec('pnpm -C packages/utils run build');
-    console.log(stdout3);
-    const { stdout: stdout4 } = await exec('pnpm -C packages/hooks run build');
-    console.log(stdout4);
-    copyFile(
-      '../../packages/components/node_modules/@element-plus/theme-chalk',
-      '../../packages/element-plus-react/theme-chalk',
-    );
-    copyFile('../../README.md', '../../packages/element-plus-react/README.md');
-    fs.unlink(path.resolve(__dirname, '../../.fatherrc.ts'), (err) => {
-      if (err) {
-        console.log(err);
-      }
-      console.log('.fatherrc.ts 删除成功');
-    });
+    // const { stdout: stdout3 } = await exec("pnpm -C packages/utils run build");
+    // console.log(stdout3);
+    // const { stdout: stdout4 } = await exec("pnpm -C packages/hooks run build");
+    // console.log(stdout4);
+    // copyFile(
+    //   '../../packages/components/node_modules/@element-plus/theme-chalk',
+    //   '../../packages/element-plus-react/theme-chalk',
+    // );
+    // copyFile('../../README.md', '../../packages/element-plus-react/README.md');
+    // fs.unlink(path.resolve(__dirname, "../../.fatherrc.ts"), (err) => {
+    //   if (err) {
+    //     console.log(err);
+    //   }
+    //   console.log(".fatherrc.ts 删除成功");
+    // });
   } catch (e) {
     console.log(e);
   }
