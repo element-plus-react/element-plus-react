@@ -3,11 +3,13 @@
   "version": "0.0.1-alpha.0",
   "private": true,
   "scripts": {
+    "dev": "umi dev",
     "start": "umi dev",
     "build": "umi build",
     "postinstall": "umi setup"
   },
   "devDependencies": {
-    "umi": "^4.0.88"
+    "umi": "^4.0.89",
+    "element-plus-react": "workspace:0.0.4"
   }
 }
