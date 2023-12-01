@@ -1,4 +1,3 @@
-import '@element-plus/components/src/base/style';
-import '@element-plus/theme-chalk/src/skeleton-item.scss';
-
-import '@element-plus/theme-chalk/src/skeleton.scss';
+import "@element-plus/theme-chalk/src/skeleton-item.scss";
+import "@element-plus/theme-chalk/src/skeleton.scss";
+import "../../base/style";

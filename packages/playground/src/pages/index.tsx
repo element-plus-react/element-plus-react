@@ -1,7 +1,5 @@
-import React from "react";
-import { Button } from "element-plus-react";
-//import 'element-plus-react/theme-chalk/index.css';
-import "./index.css";
+import { Button } from "element-plus-react/es/packages/element-plus-react/src/index";
+import "element-plus-react/theme-chalk/src/index.scss";
 
 export default function IndexPage() {
   return (
