@@ -4,6 +4,8 @@
   "scripts": {
     "build": "father build"
   },
+  "module": "src/index.ts",
+  "types": "src/index.ts",
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
     "lodash-es": "^4.17.21"

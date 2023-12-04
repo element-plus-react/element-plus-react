@@ -1,15 +1,16 @@
-import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
-import resolve from "@rollup/plugin-node-resolve";
+//import babel from "@rollup/plugin-babel";
+import { nodeResolve } from "@rollup/plugin-node-resolve";
 //import jsx from "acorn-jsx";
 import clear from "rollup-plugin-delete";
+//import typescript from "rollup-plugin-typescript2";
+import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
-import typescript from "rollup-plugin-typescript2";
 
 const extensions = ["js", "ts", "tsx", "json"];
 
 export default {
   input: "./src/index.ts",
+  // input: "../components/src/index.ts",
   external: [
     "react",
     "react-dom",
@@ -21,6 +22,8 @@ export default {
     "dayjs",
     "react-transition-group",
     "lodash-es",
+    "@element-plus/theme-chalk",
+    "react/jsx-runtime",
   ],
   output: [
     {
@@ -28,6 +31,7 @@ export default {
       format: "es",
       preserveModules: true,
       exports: "named",
+      preserveModulesRoot: "@element-plus/components",
     },
   ],
   // acornInjectPlugins: [jsx()],
@@ -35,18 +39,25 @@ export default {
     clear({ targets: ["es"] }),
     //  nodeExternals(),
     typescript({
-      jsx: "preserve",
-      check: false,
-      exclude: ["node_modules", "es", "*/demos/*"],
+      // jsx: "preserve",
+      // // check: false,
+      // exclude: ["node_modules", "es", "*/demos/*"],
+      // include: ["../components"],
     }),
-    resolve(),
-    commonjs(),
-    babel({
-      presets: ["@babel/preset-react"],
-      babelHelpers: "bundled",
-      exclude: "**/node_modules/**",
-      extensions,
+    nodeResolve({
+      //extensions,
+      // resolveOnly: ["@element-plus/components"],
+      // modulePaths: ["../../node_modules"],
+      // moduleDirectories: ["../../node_modules"],
+      //modulePaths: ["../../node_modules/@element-plus/components"],
     }),
+    // commonjs(),
+    // babel({
+    //   presets: ["@babel/preset-react"],
+    //   babelHelpers: "bundled",
+    //   exclude: "**/node_modules/**",
+    //   extensions,
+    // }),
     postcss({
       extract: true,
     }),
