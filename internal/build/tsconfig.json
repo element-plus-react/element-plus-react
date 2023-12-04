@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "strictNullChecks": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react-jsx",
+    "noUnusedParameters": true,
+    "noUnusedLocals": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "lib": ["dom", "es2017"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "es",
+    "outDir": "es",
+    "sourceMap": false,
+    "preserveSymlinks": true,
+    "paths": {
+      "element-plus-react": ["../element-plus-react/src/index.ts"]
+    }
+  },
+  "include": ["."],
+  "exclude": ["node_modules", "lib", "es"]
+}
