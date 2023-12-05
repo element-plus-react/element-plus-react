@@ -10,6 +10,7 @@ interface BackTopProps {
   right?: number;
   bottom?: number;
   onClick?: (evt: MouseEvent) => void;
+  children: React.ReactNode;
 }
 
 const BackTop: React.FC<BackTopProps> = (props) => {
@@ -44,7 +45,7 @@ const BackTop: React.FC<BackTopProps> = (props) => {
   const handleClick = (event: any) => {
     scrollToTop();
     if (isFunction(props.onClick)) {
-      props.onClick(event);
+      props.onClick?.(event);
     }
   };
 

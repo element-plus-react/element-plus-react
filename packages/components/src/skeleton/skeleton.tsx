@@ -1,7 +1,7 @@
-import React, { CSSProperties, PropsWithChildren } from 'react';
-import classNames from 'classnames';
-import { useNamespace } from '@element-plus/hooks';
-import SkeletonItem from './skeleton-item';
+import { useNamespace } from "@element-plus/hooks";
+import classNames from "classnames";
+import React, { CSSProperties } from "react";
+import SkeletonItem from "./skeleton-item";
 
 export type ISkeletonProps = {
   animated?: boolean;
@@ -14,25 +14,26 @@ export type ISkeletonProps = {
 };
 
 const Skeleton: React.FC<ISkeletonProps> = (props) => {
-  const { animated = false, count = 1, rows = 3, loading = true, style, throttle } = props;
-  const ns = useNamespace('skeleton');
-  const classnames = classNames(ns.b(), ns.is('animated', animated));
+  const { animated = false, count = 1, rows = 3, loading = true, style } = props;
+  const ns = useNamespace("skeleton");
+  const classnames = classNames(ns.b(), ns.is("animated", animated));
   return (
     <div className={classnames} style={style}>
       {Array(count)
         .fill(1)
-        .map((i) => (
+        .map(() => (
           <>
             {loading && (
               <div>
-                <SkeletonItem className={ns.is('first')} variant="p" />
+                <SkeletonItem className={ns.is("first")} variant="p" />
                 {Array(rows)
                   .fill(1)
-                  .map((i) => (
+                  .map((i, index) => (
                     <SkeletonItem
+                      key={index}
                       className={classNames(
-                        ns.e('paragraph'),
-                        ns.is('last', i === rows && rows > 1),
+                        ns.e("paragraph"),
+                        ns.is("last", i === rows && rows > 1),
                       )}
                       variant="p"
                     />

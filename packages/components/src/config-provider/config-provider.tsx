@@ -8,6 +8,7 @@ export interface GlobalConfigTypes {
   message?: {
     max?: number;
   };
+  children?: React.ReactNode;
 }
 
 export const GlobalConfig = createContext<GlobalConfigTypes>({});

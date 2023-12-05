@@ -19,7 +19,8 @@ export interface AlertProps {
   showIcon?: boolean;
   center?: boolean;
   effect?: "light" | "dark";
-  onClose?: (evt: MouseEvent) => void;
+  onClose?: (evt: React.MouseEvent<HTMLDivElement>) => void;
+  children?: React.ReactNode;
 }
 
 export const TypeComponentsMap = {
@@ -44,10 +45,10 @@ const Alert: React.FC<AlertProps> = (props) => {
     [props.children, props.description],
   );
   // methods
-  const close = (evt: MouseEvent) => {
+  const close = (evt: React.MouseEvent<HTMLDivElement>) => {
     setVisible(false);
     if (isFunction(props.onClose)) {
-      props.onClose(evt);
+      props.onClose?.(evt);
     }
   };
   const classNames = classnames(

@@ -13,7 +13,7 @@ const PageHeader: React.FC<PageHeaderProps> = (props) => {
   const { icon = <ArrowLeftOutlined /> } = props;
   const handleClick = () => {
     if (isFunction(props.onBack)) {
-      props.onBack();
+      props.onBack?.();
     }
   };
   return (

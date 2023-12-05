@@ -1,83 +1,86 @@
-import React, { useContext, useMemo } from 'react'
 import classnames from "classnames";
-import './style'
-import {RowContext} from '../row'
+import React, { useContext, useMemo } from "react";
+import { RowContext } from "../row";
+import "./style";
 
 type SizeObject = {
-  span?: number
-  offset?: number
-}
-type Size = number | SizeObject
+  span?: number;
+  offset?: number;
+};
+type Size = number | SizeObject;
 
 export interface ColProps {
-  tag?: string
-  span?: number
-  offset?: number
-  pull?: number
-  push?: number
-  xs?: number| Size
-  sm?: number| Size
-  md?: number| Size
-  lg?: number| Size
-  xl?: number| Size
-  className?: string
+  tag?: string;
+  span?: number;
+  offset?: number;
+  pull?: number;
+  push?: number;
+  xs?: number | Size;
+  sm?: number | Size;
+  md?: number | Size;
+  lg?: number | Size;
+  xl?: number | Size;
+  className?: string;
+  children?: React.ReactNode;
 }
 
 const Col: React.FC<ColProps> = (props) => {
-  const rowState = useContext(RowContext)
-  const {
-    tag='div',
-  } = props
-  const { gutter } = rowState
+  const rowState = useContext(RowContext);
+  const { tag = "div" } = props;
+  const { gutter } = rowState;
   const style = useMemo(() => {
     if (gutter) {
       return {
         paddingLeft: `${gutter / 2}px`,
         paddingRight: `${gutter / 2}px`,
-      }
+      };
     }
-    return {}
-  }, [gutter])
+    return {};
+  }, [gutter]);
   const classList = useMemo(() => {
-    const classes: string[] = []
+    const classes: string[] = [];
 
-    const pos = ['span', 'offset', 'pull', 'push'] as const
+    const pos = ["span", "offset", "pull", "push"] as const;
     pos.forEach((prop) => {
-      const size = props[prop]
-      if (typeof size === 'number') {
-        if (prop === 'span') classes.push(`el-col-${props[prop]}`)
-        else if (size > 0) classes.push(`el-col-${prop}-${props[prop]}`)
+      const size = props[prop];
+      if (typeof size === "number") {
+        if (prop === "span") classes.push(`el-col-${props[prop]}`);
+        else if (size > 0) classes.push(`el-col-${prop}-${props[prop]}`);
       }
-    })
+    });
 
-    const sizes = ['xs', 'sm', 'md', 'lg', 'xl'] as const
+    const sizes = ["xs", "sm", "md", "lg", "xl"] as const;
     sizes.forEach((size) => {
-      if (typeof props[size] === 'number') {
-        classes.push(`el-col-${size}-${props[size]}`)
-      } else if (typeof props[size] === 'object') {
-        const sizeProps: any = props[size]
+      if (typeof props[size] === "number") {
+        classes.push(`el-col-${size}-${props[size]}`);
+      } else if (typeof props[size] === "object") {
+        const sizeProps: any = props[size];
         Object.keys(sizeProps).forEach((prop) => {
           classes.push(
-            prop !== 'span'
+            prop !== "span"
               ? `el-col-${size}-${prop}-${sizeProps[prop]}`
               : `el-col-${size}-${sizeProps[prop]}`,
-          )
-        })
+          );
+        });
       }
-    })
+    });
     // this is for the fix
     if (gutter) {
-      classes.push('is-guttered')
+      classes.push("is-guttered");
     }
 
-    return classes
-  },[gutter, props])
+    return classes;
+  }, [gutter, props]);
 
-  const Tag = `${tag}`
+  const Tag = `${tag}`;
 
-  const className = classnames('el-col', props.className, classList)
+  const className = classnames("el-col", props.className, classList);
 
-  return <Tag style={style} className={className}>{props.children}</Tag>
-}
+  return (
+    <Tag style={style} className={className}>
+      {props.children}
+    </Tag>
+  );
+};
 
-export default Col
+export default Col;

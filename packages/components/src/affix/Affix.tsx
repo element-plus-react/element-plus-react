@@ -97,7 +97,7 @@ const Affix: React.FC<PropsWithChildren<AffixProps>> = (props) => {
   const onScroll = () => {
     update();
     if (isFunction(props.onScroll)) {
-      props.onScroll({
+      props.onScroll?.({
         scrollTop: state.scrollTop,
         fixed: state.fixed,
       });
@@ -120,7 +120,7 @@ const Affix: React.FC<PropsWithChildren<AffixProps>> = (props) => {
 
   useEffect(() => {
     if (isFunction(props.onChange)) {
-      props.onChange(state.fixed);
+      props.onChange?.(state.fixed);
     }
   }, [props.onChange, state.fixed]);
   return (

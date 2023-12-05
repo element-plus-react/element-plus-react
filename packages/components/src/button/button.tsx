@@ -113,8 +113,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
   const handleClick = (
     event: React.MouseEvent<HTMLButtonElement | HTMLAnchorElement, MouseEvent>,
   ) => {
-    if (isFunction(props?.onClick)) {
-      props?.onClick(event);
+    if (isFunction(props.onClick)) {
+      props.onClick?.(event);
     }
   };
 
