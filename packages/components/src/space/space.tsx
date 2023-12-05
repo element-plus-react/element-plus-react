@@ -15,7 +15,7 @@ export interface SpaceProps {
   fill?: boolean;
   fillRatio?: number;
   size?: "large" | "default" | "small" | number;
-  children?: React.ReactNode;
+  children?: React.ReactNode[];
 }
 
 const Space: React.FC<SpaceProps> = (props) => {
@@ -39,7 +39,7 @@ const Space: React.FC<SpaceProps> = (props) => {
   // loop the children, if current children is rendered via `renderList` or `<v-for>`
   if (isArray(props.children)) {
     let extractedChildren: React.ReactNode[] = [];
-    props.children.forEach((child, loopKey) => {
+    props.children?.forEach((child, loopKey) => {
       extractedChildren.push(
         <SpaceItem style={itemStyle} prefixCls={prefixCls} key={`LoopKey${loopKey}`}>
           {child}

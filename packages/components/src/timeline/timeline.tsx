@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const Timeline:React.FC = (props) => (<ul className="el-timeline">
-    {props.children}
-  </ul>)
+type IProps = {
+  children?: React.ReactNode;
+};
 
-export default Timeline
+const Timeline: React.FC<IProps> = (props) => <ul className="el-timeline">{props.children}</ul>;
+
+export default Timeline;

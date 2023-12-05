@@ -1,10 +1,11 @@
-import React from 'react'
-import { CSSTransition } from 'react-transition-group'
+import React from "react";
+import { CSSTransition } from "react-transition-group";
 
 interface TransitionProps {
-  in: boolean
-  name: string
-  timeout: number
+  in: boolean;
+  name: string;
+  timeout: number;
+  children: React.ReactNode;
 }
 
 const transitionName = (name: string) => ({
@@ -17,16 +18,15 @@ const transitionName = (name: string) => ({
   exit: `${name}-leave`,
   exitActive: `${name}-leave-active`,
   exitDone: `${name}-leave-to`,
-})
+});
 
 const Transition: React.FC<TransitionProps> = (props) => {
-  const classNames = transitionName(props.name)
+  const classNames = transitionName(props.name);
   return (
-    <CSSTransition in={props.in} classNames={classNames} timeout={props.timeout}
-                   unmountOnExit>
+    <CSSTransition in={props.in} classNames={classNames} timeout={props.timeout} unmountOnExit>
       {props.children}
     </CSSTransition>
-  )
-}
+  );
+};
 
-export default Transition
+export default Transition;

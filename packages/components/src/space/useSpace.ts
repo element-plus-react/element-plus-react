@@ -55,7 +55,7 @@ export function useSpace(props: SpaceProps) {
     } else {
       let val: number;
       if (isNumber(size)) {
-        val = size;
+        val = size as number;
       } else {
         val = SIZE_MAP[size] || SIZE_MAP.small;
       }
