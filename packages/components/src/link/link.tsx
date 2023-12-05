@@ -9,6 +9,7 @@ interface LinkProps {
   href?: string;
   icon?: React.ReactNode;
   onClick?: (evt: MouseEvent) => void;
+  children?: React.ReactNode;
 }
 
 const Link: React.FC<LinkProps> = (props) => {
@@ -21,7 +22,7 @@ const Link: React.FC<LinkProps> = (props) => {
   ]);
   const handleClick = (event: any) => {
     if (!props.disabled && isFunction(props.onClick)) {
-      props.onClick(event);
+      props.onClick?.(event);
     }
   };
   return (

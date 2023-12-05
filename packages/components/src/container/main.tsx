@@ -1,9 +1,9 @@
 import React from "react";
 
-const Main: React.FC = (props) => (
-  <main className="el-main" >
-    {props.children}
-  </main>
-)
+type IMainProps = {
+  children: React.ReactNode;
+};
 
-export default Main
+const Main: React.FC<IMainProps> = (props) => <main className="el-main">{props.children}</main>;
+
+export default Main;

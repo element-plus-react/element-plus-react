@@ -15,6 +15,7 @@ export interface SpaceProps {
   fill?: boolean;
   fillRatio?: number;
   size?: "large" | "default" | "small" | number;
+  children?: React.ReactNode;
 }
 
 const Space: React.FC<SpaceProps> = (props) => {

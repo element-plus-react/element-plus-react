@@ -11,6 +11,7 @@ export interface InnerDescriptionsProps {
   title?: string;
   extra?: React.ReactNode;
   style?: React.CSSProperties;
+  children?: React.ReactNode;
 }
 
 export const DescriptionsContext = createContext({});

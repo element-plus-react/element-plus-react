@@ -1,14 +1,19 @@
-import React from 'react'
+import React from "react";
 
 interface SpaceItemProps {
-  style?: React.CSSProperties
-  prefixCls?: string
+  style?: React.CSSProperties;
+  prefixCls?: string;
+  children?: React.ReactNode;
 }
 
 const SpaceItem: React.FC<SpaceItemProps> = (props) => {
-  const { prefixCls = 'el-space',style } = props
-  const classes = `${prefixCls}__item`
-  return <div className={classes} style={style}>{props.children}</div>
-}
+  const { prefixCls = "el-space", style } = props;
+  const classes = `${prefixCls}__item`;
+  return (
+    <div className={classes} style={style}>
+      {props.children}
+    </div>
+  );
+};
 
-export default SpaceItem
+export default SpaceItem;

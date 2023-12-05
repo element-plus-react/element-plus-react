@@ -9,7 +9,8 @@ interface AvatarProps {
   alt?: string;
   srcSet?: string;
   fit?: "fill" | "contain" | "cover" | "none" | "scale-down";
-  onError?: (evt: Event) => void;
+  onError?: () => void;
+  children: React.ReactNode;
 }
 
 const Avatar: React.FC<AvatarProps> = (props) => {
@@ -40,10 +41,10 @@ const Avatar: React.FC<AvatarProps> = (props) => {
     setHasLoadError(false);
   }, [props.src]);
 
-  function handleError(e: Event) {
+  function handleError() {
     setHasLoadError(true);
     if (isFunction(props.onError)) {
-      props.onError(e);
+      props.onError?.();
     }
   }
 
