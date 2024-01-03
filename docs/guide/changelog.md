@@ -21,4 +21,3 @@ Element Plus 团队在正常情况下使用 **每周** 发布策略， 但关键
 
 在这个页面上，你只能看到我们最近更新的 30 条 [更新日志](https://github.com/element-plus/element-plus/blob/dev/CHANGELOG.en-US.md)。
 
-<Changelog />
