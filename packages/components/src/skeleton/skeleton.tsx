@@ -22,7 +22,7 @@ const Skeleton: React.FC<ISkeletonProps> = (props) => {
       {Array(count)
         .fill(1)
         .map(() => (
-          <>
+          <React.Fragment key={count}>
             {loading && (
               <div>
                 <SkeletonItem className={ns.is("first")} variant="p" />
@@ -40,7 +40,7 @@ const Skeleton: React.FC<ISkeletonProps> = (props) => {
                   ))}
               </div>
             )}
-          </>
+          </React.Fragment>
         ))}
     </div>
   );
