@@ -1,5 +1,4 @@
 import classnames from "classnames";
-import { cloneDeep } from "lodash-es";
 import React, { createContext, useMemo } from "react";
 import DescriptionsRow from "./descriptions-row";
 
@@ -25,7 +24,10 @@ const filledNode = (node, span, count, isLast = false) => {
   }
   if (isLast) {
     // set the last span
-    node.props.span = span;
+    return React.cloneElement(node, {
+      span: span,
+    });
+    // node.props.span = span;
   }
   return node;
 };
@@ -45,7 +47,6 @@ const Descriptions: React.FC<InnerDescriptionsProps> = (props) => {
   const { border = false, column = 3, direction = "horizontal", size, title, extra } = props;
 
   const getRows = useMemo(() => {
-    console.log(new Date().getTime());
     const children = flattedChildren(props.children).filter(
       (node) => node?.type?.name === "DescriptionsItem",
     );
@@ -54,31 +55,30 @@ const Descriptions: React.FC<InnerDescriptionsProps> = (props) => {
     let count = column;
     let totalSpan = 0; // all spans number of item
     children.forEach((node, index) => {
-      const _node = cloneDeep(node);
-      const span = _node.props?.span || 1;
+      const span = node.props?.span || 1;
       if (index < children.length - 1) {
         totalSpan += span > count ? count : span;
       }
       if (index === children.length - 1) {
         // calculate the last item span
         const lastSpan = column - (totalSpan % column);
-        temp.push(filledNode(_node, lastSpan, count, true));
+        temp.push(filledNode(node, lastSpan, count, true));
         rows.push(temp);
         return;
       }
       if (span < count) {
         count -= span;
-        temp.push(_node);
+        temp.push(node);
       } else {
-        temp.push(filledNode(_node, span, count));
+        temp.push(filledNode(node, span, count));
         rows.push(temp);
         count = column;
         temp = [];
       }
     });
-    console.log(new Date().getTime());
     return rows;
-  }, [column, props.children]);
+  }, [column]);
+  // console.log(column, props.children);
   const descriptionKls = classnames("el-descriptions", `is-el-descriptions--${size}`);
   const state = useMemo(() => ({ direction, border }), [border, direction]);
   return (
