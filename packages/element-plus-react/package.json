@@ -53,13 +53,5 @@
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
-  },
-  "browserslist": [
-    "defaults",
-    "not ie < 8",
-    "last 2 versions",
-    "> 1%",
-    "iOS 7",
-    "last 3 iOS versions"
-  ]
+  }
 }
