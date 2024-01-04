@@ -25,13 +25,10 @@
 ## 📦 安装
 
 ```bash
+pnpm i element-plus-react
 npm install element-plus-react --save
-```
-
-```bash
 yarn add element-plus-react
 ```
-
 ## 🔨 示例
 
 ```jsx
@@ -62,7 +59,7 @@ And thank you to all our backers! 🙏
 </a>
 
 ---
-## Components
+## 组件开发进度
 
 - [x] Affix
 - [x] Alert
