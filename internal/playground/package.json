@@ -9,7 +9,7 @@
     "postinstall": "umi setup"
   },
   "devDependencies": {
-    "umi": "^4.0.89",
+    "umi": "^4.1.0",
     "element-plus-react": "workspace:0.0.4"
   }
 }
