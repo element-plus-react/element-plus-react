@@ -14,11 +14,11 @@ group:
 
 ## 基础用法
 
-<code src="./demos/basic.tsx" desc="在 `el-breadcrumb` 中使用 `el-breadcrumb-item` 标签表示从首页开始的每一级。 该组件接受一个 `String` 类型的参数 `separator`来作为分隔符。 默认值为 '/'。"></code>
+<code src="./demos/basic.tsx" title=" " description="在 `el-breadcrumb` 中使用 `el-breadcrumb-item` 标签表示从首页开始的每一级。 该组件接受一个 `String` 类型的参数 `separator`来作为分隔符。 默认值为 '/'。"></code>
 
 ## 图标分隔符
 
-<code src="./demos/icon.tsx" desc="通过设置 `separator-class` 可使用相应的 `iconfont` 作为分隔符，注意这将使 `separator` 失效。"></code>
+<code src="./demos/icon.tsx" title=" " description="通过设置 `separator-class` 可使用相应的 `iconfont` 作为分隔符，注意这将使 `separator` 失效。"></code>
 
 ## Breadcrumb 属性
 
