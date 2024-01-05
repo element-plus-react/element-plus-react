@@ -25,19 +25,19 @@ badge/basic
 
 你还可以自定义最大值
 
-<code src="./demos/max.tsx" desc="由`max`属性定义，它接受一个`Number`， 要注意的是，该值当且仅当在 `value` 的值也是 `Number` 时生效。"></code>
+<code src="./demos/max.tsx" title=" " description="由`max`属性定义，它接受一个`Number`， 要注意的是，该值当且仅当在 `value` 的值也是 `Number` 时生效。"></code>
 
 ## 自定义显示内容
 
 你也可以展示除数字以外你想要展示的任何值。
 
-<code src="./demos/customize.tsx" desc="当 `value` 是一个 `String` 类型当时候，你可以展示任何你想展示的内容。"></code>
+<code src="./demos/customize.tsx" title=" " description="当 `value` 是一个 `String` 类型当时候，你可以展示任何你想展示的内容。"></code>
 
 ## 小红点
 
 通过一个小红点标记来告知用户有新内容。
 
-<code src="./demos/dot.tsx" desc="除了数字外，设置`is-dot`属性 ，它接受一个`Boolean` 类型作为参数。"></code>
+<code src="./demos/dot.tsx" title=" " description="除了数字外，设置`is-dot`属性 ，它接受一个`Boolean` 类型作为参数。"></code>
 
 ## 属性
 
