@@ -76,6 +76,7 @@ And thank you to all our backers! 🙏
 - [ ] Checkbox
 - [x] Col
 - [ ] Collapse
+- [x] Countdown
 - [ ] ColorPicker
 - [x] Container
 - [ ] DatePicker
@@ -110,6 +111,7 @@ And thank you to all our backers! 🙏
 - [ ] Rate
 - [x] Result
 - [x] Row
+- [x] Statistic
 - [ ] Scrollbar
 - [ ] Select
 - [x] Skeleton
