@@ -1,4 +1,4 @@
-import '../../base/style'
+import "../../base/style";
 
-import '@element-plus/theme-chalk/src/descriptions.scss'
-import '@element-plus/theme-chalk/src/descriptions-item.scss'
+import "@element-plus-react/theme-chalk/src/descriptions-item.scss";
+import "@element-plus-react/theme-chalk/src/descriptions.scss";

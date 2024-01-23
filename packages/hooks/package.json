@@ -1,6 +1,8 @@
 {
   "name": "@element-plus/hooks",
   "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "father build"
   }

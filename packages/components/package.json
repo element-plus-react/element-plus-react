@@ -1,6 +1,8 @@
 {
   "name": "@element-plus/components",
   "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.ts",
   "scripts": {
     "build": "father build"
   },
@@ -14,5 +16,8 @@
     "dayjs": "^1.11.10",
     "lodash-es": "^4.17.21",
     "react-transition-group": "^4.4.5"
+  },
+  "dependencies": {
+    "@element-plus-react/theme-chalk": "^0.0.3"
   }
 }

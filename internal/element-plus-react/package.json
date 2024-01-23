@@ -1,8 +1,11 @@
 {
   "homepage": "https://element-plus-react.github.io/",
   "name": "element-plus-react",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "license": "MIT",
+  "scripts": {
+    "build": "vite build && tsc --rootDir ../../packages --declarationDir es"
+  },
   "bugs": {
     "url": "https://github.com/element-plus-react/element-plus-react/issues"
   },
@@ -10,28 +13,16 @@
     "type": "git",
     "url": "https://github.com/element-plus-react/element-plus-react"
   },
-  "exports": {
-    ".": {
-      "require": "./lib/element-plus-react/src/index.js",
-      "import": "./es/element-plus-react/src/index.js"
-    },
-    "./es": "./es/element-plus-react/src/index.js",
-    "./lib": "./lib/element-plus-react/src/index.js",
-    "./*": "./*"
-  },
   "files": [
-    "es",
-    "lib",
-    "theme-chalk"
+    "es"
   ],
   "type": "module",
-  "main": "lib/element-plus-react/src/index.js",
-  "module": "es/element-plus-react/src/index.js",
-  "style": "theme-chalk/src/index.css",
-  "types": "es/element-plus-react/src/index.d.ts",
+  "main": "es/components/src/index.js",
+  "types": "es/components/src/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@ctrl/tinycolor": "^4.0.2",
+    "@element-plus-react/theme-chalk": "^0.0.3",
     "ahooks": "^3.7.8",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",
@@ -42,10 +33,13 @@
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "@types/react-transition-group": "^4.4.10",
+    "@vitejs/plugin-react": "^4.2.1",
     "lodash-es": "^4.17.21",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "^5.3.3"
+    "rollup-plugin-copy": "^3.5.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
   },
   "peerDependencies": {
     "react": "18.2.0",
