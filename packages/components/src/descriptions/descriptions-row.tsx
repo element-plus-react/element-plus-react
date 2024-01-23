@@ -3,12 +3,12 @@ import { DescriptionsContext } from "./descriptions";
 import DescriptionsCell from "./descriptions-cell";
 
 interface DescriptionsRowProps {
-  row: any;
+  row: any[];
 }
 
 const DescriptionsRow: React.FC<DescriptionsRowProps> = (props) => {
   const { row } = props;
-  const descriptions = useContext(DescriptionsContext);
+  const descriptions: any = useContext(DescriptionsContext);
   return descriptions.direction === "vertical" ? (
     <>
       <tr>

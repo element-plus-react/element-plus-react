@@ -15,6 +15,7 @@ const Divider: React.FC<DividerProps> = (props) => {
   const classNames = classnames(["el-divider", `el-divider--${direction}`]);
   const childClassNames = classnames("el-divider__text", `is-${contentPosition}`);
   return (
+    // @ts-ignore
     <div className={classNames} style={{ "--el-border-style": borderStyle }}>
       {props.children && direction !== "vertical" && (
         <div className={childClassNames}>{props.children}</div>

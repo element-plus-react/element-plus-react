@@ -66,7 +66,7 @@ const Statistic: React.FC<IStatisticProps> = (props) => {
           </div>
         )}
         <span className={ns.e("number")} style={props.valueStyle}>
-          {displayValue}
+          {displayValue as React.ReactNode}
         </span>
         {props.suffix && (
           <div className={ns.e("suffix")}>

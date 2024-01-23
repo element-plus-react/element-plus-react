@@ -17,7 +17,7 @@ const InnerContainer: React.FC<InnerContainerProps> = (props) => {
     if (props.children) {
       const vNodes = props.children as React.ReactElement[];
       return vNodes?.some((vNode) => {
-        const tag = vNode.type?.name;
+        const tag = (vNode.type as any)?.name;
         return tag === "Header" || tag === "Footer";
       });
     }

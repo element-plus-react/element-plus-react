@@ -18,6 +18,7 @@
     "react-transition-group": "^4.4.5"
   },
   "dependencies": {
-    "@element-plus-react/theme-chalk": "^0.0.3"
+    "@element-plus-react/theme-chalk": "^0.0.3",
+    "csstype": "^3.1.3"
   }
 }

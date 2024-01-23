@@ -26,6 +26,7 @@ const Avatar: React.FC<AvatarProps> = (props) => {
   }, [icon, shape, size]);
 
   const sizeStyle = useMemo<React.CSSProperties>(
+    // @ts-ignore
     () => (typeof size === "number" ? { "--el-avatar-size": `${size}px` } : {}),
     [size],
   );

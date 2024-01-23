@@ -77,6 +77,7 @@ const Col: React.FC<ColProps> = (props) => {
   const className = classnames("el-col", props.className, classList);
 
   return (
+    // @ts-ignore
     <Tag style={style} className={className}>
       {props.children}
     </Tag>
