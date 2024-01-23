@@ -23,29 +23,29 @@ group:
 
 使用列创建基础网格布局。
 
-<code src="./demos/basic-layout.tsx" desc="通过 `row` 和 `col` 组件，并通过 col 组件的 `span` 属性我们就可以自由地组合布局。"></code>
+<code src="./demos/basic-layout.tsx" title=" " description="通过 `row` 和 `col` 组件，并通过 col 组件的 `span` 属性我们就可以自由地组合布局。"></code>
 
 ## 分栏间隔
 
 支持列间距。
 
-<code src="./demos/column-spacing.tsx" desc="行提供 `gutter` 属性来指定列之间的间距，其默认值为0。"></code>
+<code src="./demos/column-spacing.tsx" title=" " description="行提供 `gutter` 属性来指定列之间的间距，其默认值为0。"></code>
 
 ## 混合布局
 
-<code src="./demos/hybrid-layout.tsx" desc="通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。"></code>
+<code src="./demos/hybrid-layout.tsx" title=" " description="通过基础的 1/24 分栏任意扩展组合形成较为复杂的混合布局。"></code>
 
 ## 列偏移
 
 您可以指定列偏移量。
 
-<code src="./demos/column-offset.tsx" desc="通过制定 col 组件的 `offset` 属性可以指定分栏偏移的栏数。"></code>
+<code src="./demos/column-offset.tsx" title=" " description="通过制定 col 组件的 `offset` 属性可以指定分栏偏移的栏数。"></code>
 
 ## 对齐方式
 
 默认使用 flex 布局来对分栏进行灵活的对齐。
 
-<code src="./demos/alignment.tsx" desc="属性来指定 start, center, end, space-between, space-around 其中的值来定义子元素的排版方式。"></code>
+<code src="./demos/alignment.tsx" title=" " description="属性来指定 start, center, end, space-between, space-around 其中的值来定义子元素的排版方式。"></code>
 
 ## 响应式布局
 
