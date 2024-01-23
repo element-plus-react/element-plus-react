@@ -2,7 +2,7 @@ import { pick } from "lodash-es";
 import React, { createContext } from "react";
 import { ButtonProps } from "./button";
 
-type ButtonGroupProps = Pick<ButtonProps, "type" | "size">;
+type ButtonGroupProps = Pick<ButtonProps, "type" | "size" | "children">;
 
 export const ButtonGroupContext = createContext<ButtonGroupProps>({});
 

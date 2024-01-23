@@ -3,15 +3,15 @@ import React, { useContext } from "react";
 import { DescriptionsContext } from "./descriptions";
 
 interface DescriptionsCellProps {
-  cell: object;
+  cell: Record<any, any>;
   tag: string;
   type: string;
-  children: React.ReactNode;
+  children?: React.ReactNode;
 }
 
 const DescriptionsCell: React.FC<DescriptionsCellProps> = (props) => {
   const { cell, tag: Component, type } = props;
-  const descriptions = useContext(DescriptionsContext);
+  const descriptions: any = useContext(DescriptionsContext);
   const { border, direction } = descriptions;
   const isVertical = direction === "vertical";
   const { label } = cell.props;
@@ -29,6 +29,7 @@ const DescriptionsCell: React.FC<DescriptionsCellProps> = (props) => {
   switch (type) {
     case "label":
       return (
+        // @ts-ignore
         <Component
           style={style}
           className={classnames([
@@ -46,6 +47,7 @@ const DescriptionsCell: React.FC<DescriptionsCellProps> = (props) => {
       );
     case "content":
       return (
+        // @ts-ignore
         <Component
           style={style}
           className={classnames([

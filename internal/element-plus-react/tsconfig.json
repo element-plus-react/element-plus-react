@@ -1,17 +1,15 @@
 {
   "compilerOptions": {
-    "composite": true,
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
     "baseUrl": ".",
     "jsx": "react-jsx",
-    "noEmit": false,
     "declaration": true,
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
     "rootDirs": ["../../packages"]
   },
   "include": ["../../packages/**/*.ts", "../../packages/**/*.tsx"],
-  "exclude": ["node_modules", "lib", "es"]
+  "exclude": ["node_modules", "es", "../../packages/**/demos/**"]
 }

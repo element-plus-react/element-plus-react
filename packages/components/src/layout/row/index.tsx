@@ -37,6 +37,7 @@ const Row: React.FC<RowProps> = (props) => {
   const state = useMemo(() => ({ gutter: props.gutter }), [props.gutter]);
   return (
     <RowContext.Provider value={state}>
+      {/* @ts-ignore */}
       <Tag style={style} className={className}>
         {props.children}
       </Tag>
