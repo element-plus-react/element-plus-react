@@ -15,7 +15,7 @@
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
   },
   "dependencies": {
-    "dumi": "^2.2.16"
+    "dumi": "^2.2.17"
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
