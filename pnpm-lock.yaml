@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       dumi:
-        specifier: ^2.2.16
-        version: 2.2.16(@babel/core@7.23.7)(@types/node@20.10.6)(@types/react@18.2.46)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.3.3)(webpack@5.89.0)
+        specifier: ^2.2.17
+        version: 2.2.17(@babel/core@7.23.7)(@types/node@20.10.6)(@types/react@18.2.46)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.3.3)(webpack@5.89.0)
     devDependencies:
       '@element-plus/components':
         specifier: workspace:1.0.0
@@ -384,7 +384,7 @@ packages:
     resolution: {integrity: sha512-0pYVBnDKZO2fnSPCrgM/6WMc7eS20Fbok+0r88fp+YtWVLZrp4CkafFGIp+W0VKw4a22sgebPT99y+FDNMdP4w==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/types': 7.23.5
+      '@babel/types': 7.23.6
 
   /@babel/helper-module-transforms@7.23.3(@babel/core@7.23.2):
     resolution: {integrity: sha512-7bBs4ED9OmswdfDzpz4MpWgSrV7FXlc3zIagvLFjS5H+Mk7Snr21vQ6QwrsoCGMfNC4e4LQPdoULEt4ykz0SRQ==}
@@ -619,12 +619,6 @@ packages:
       '@babel/core': 7.23.7
       '@babel/helper-plugin-utils': 7.22.5
 
-  /@babel/runtime@7.22.10:
-    resolution: {integrity: sha512-21t/fkKLMZI4pqP2wlmsQAWnYW1PDyKyyUV4vCi+B25ydmdaYTKXPwCj0BzSUnZf4seIiYvSA3jcZ3gdsMFkLQ==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      regenerator-runtime: 0.14.0
-
   /@babel/runtime@7.23.2:
     resolution: {integrity: sha512-mM8eg4yl5D6i3lu2QKPuPH4FArvJ8KhTofbE7jwMUv9KX5mBvwPAqnV3MlyBNqdp9RyRKP6Yck8TrfYrPvX3bg==}
     engines: {node: '>=6.9.0'}
@@ -668,14 +662,6 @@ packages:
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
-
-  /@babel/types@7.23.5:
-    resolution: {integrity: sha512-ON5kSOJwVO6xXVRTvOI0eOnWe7VdUcIpsovGo9U/Br4Ie4UVFQTboO2cYnDhAGU6Fp+UxSiT+pMft0SMHfuq6w==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/helper-string-parser': 7.23.4
-      '@babel/helper-validator-identifier': 7.22.20
-      to-fast-properties: 2.0.0
 
   /@babel/types@7.23.6:
     resolution: {integrity: sha512-+uarb83brBzPKN38NX1MkB6vb6+mwvR6amUulqAE7ccQw1pEl+bCia9TbdG1lsnFP7lZySvUn37CHyXQdfTwzg==}
@@ -2626,7 +2612,6 @@ packages:
       spdy: 4.0.2
     transitivePeerDependencies:
       - supports-color
-    dev: true
 
   /@umijs/bundler-vite@4.0.90(@types/node@20.10.6)(postcss@8.4.32)(sass@1.69.7):
     resolution: {integrity: sha512-Z4O+BhsmHmFKBgSJcQGy+6wyVDYMDtpBD37l5wI2xjEHkHwSiwLf9VCt1oUEwT+yv1mTaBfq8bUjconTFL/ydA==}
@@ -3071,7 +3056,6 @@ packages:
     dependencies:
       chokidar: 3.5.3
       pino: 7.11.0
-    dev: true
 
   /@umijs/zod2ts@4.0.90:
     resolution: {integrity: sha512-W2L6Sp/aSYDnWwNICgwACzxmkX0WcpHW3zUIwCqEfcj8EhuWoB8E79bP7ENoVeFgjEh+u4SR7C+7T27I3ngq+g==}
@@ -3776,7 +3760,7 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001566
+      caniuse-lite: 1.0.30001572
       electron-to-chromium: 1.4.603
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13(browserslist@4.22.2)
@@ -3903,9 +3887,6 @@ packages:
   /camelcase@6.3.0:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
-
-  /caniuse-lite@1.0.30001566:
-    resolution: {integrity: sha512-ggIhCsTxmITBAMmK8yZjEhCO5/47jKXPu6Dha/wuCS4JePVL+3uiDEBuhu2aIoT+bqTOR8L76Ip1ARL9xYsEJA==}
 
   /caniuse-lite@1.0.30001572:
     resolution: {integrity: sha512-1Pbh5FLmn5y4+QhNyJE9j3/7dK44dGB83/ZMjv/qJk86TvDbjk0LosiZo0i0WB0Vx607qMX9jYrn1VLHCkN4rw==}
@@ -4704,7 +4685,7 @@ packages:
   /dom-helpers@5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.22.10
+      '@babel/runtime': 7.23.7
       csstype: 3.1.3
 
   /dom-serializer@0.2.2:
@@ -4797,8 +4778,8 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi@2.2.16(@babel/core@7.23.7)(@types/node@20.10.6)(@types/react@18.2.46)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.3.3)(webpack@5.89.0):
-    resolution: {integrity: sha512-r2x/CY0fR8/YZOwEnG4JsLEpn8jOg94Qyd1u+7pRD9SCx7dF9It+GwkGbdNEsyenGsO/ZU9wD+Kz7KO+HU7/EA==}
+  /dumi@2.2.17(@babel/core@7.23.7)(@types/node@20.10.6)(@types/react@18.2.46)(eslint@8.56.0)(prettier@3.1.1)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.3.3)(webpack@5.89.0):
+    resolution: {integrity: sha512-oI2OVlkkVORy0ud64YlhrBF+rsAda9rGFxMLrOLepTjC96mLOrgUz/geKkckWA5LemEuFVsaTYE/5HDpAPTkvQ==}
     hasBin: true
     peerDependencies:
       react: 18.2.0
@@ -4810,9 +4791,9 @@ packages:
       '@swc/core': 1.3.72
       '@types/hast': 2.3.9
       '@types/mdast': 3.0.15
-      '@umijs/bundler-utils': 4.0.90
+      '@umijs/bundler-utils': 4.1.1
       '@umijs/core': 4.0.90
-      '@umijs/utils': 4.0.90
+      '@umijs/utils': 4.1.1
       animated-scroll-to: 2.3.0
       classnames: 2.3.2
       codesandbox: 2.2.3
@@ -9301,7 +9282,7 @@ packages:
     dependencies:
       icss-utils: 5.1.0(postcss@8.4.32)
       postcss: 8.4.32
-      postcss-selector-parser: 6.0.13
+      postcss-selector-parser: 6.0.15
       postcss-value-parser: 4.2.0
 
   /postcss-modules-scope@3.1.0(postcss@8.4.32):
@@ -9460,13 +9441,6 @@ packages:
     dependencies:
       balanced-match: 1.0.2
       postcss: 8.4.32
-
-  /postcss-selector-parser@6.0.13:
-    resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
-    engines: {node: '>=4'}
-    dependencies:
-      cssesc: 3.0.0
-      util-deprecate: 1.0.2
 
   /postcss-selector-parser@6.0.15:
     resolution: {integrity: sha512-rEYkQOMUCEMhsKbK66tbEU9QVIxbhN18YiniAwA7XQYTVBqrBy+P2p5JcdqsHgKM2zWylp8d7J6eszocfds5Sw==}
@@ -10087,9 +10061,6 @@ packages:
   /regenerator-runtime@0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
     dev: false
-
-  /regenerator-runtime@0.14.0:
-    resolution: {integrity: sha512-srw17NI0TUWHuGa5CFGGmhfNIeja30WMBfbslPNhf6JrqQlLN5gcrvig1oqPxiVaXb0oW0XRKtH6Nngs5lKCIA==}
 
   /regenerator-runtime@0.14.1:
     resolution: {integrity: sha512-dYnhHh0nJoMfnkZs6GmmhFknAGRrLznOu5nc9ML+EJxGvrx6H7teuevqVqCuPcPK//3eDrrjQhehXVx9cnkGdw==}
