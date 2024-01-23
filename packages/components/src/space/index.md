@@ -16,13 +16,13 @@ group:
 
 最基础的用法，通过这个组件来给组件之间提供统一的间距。
 
-<code src="./demos/basic.tsx" title=" " description="通过间距组件来给多个组件之间提供间距"></code>
+<code src="./demos/basic.tsx" desc="通过间距组件来给多个组件之间提供间距"></code>
 
 ## 垂直布局
 
 使用 `direction` 来控制布局的方式, 背后实际上是利用了 `flex-direction` 来控制.
 
-<code src="./demos/vertical-layout.tsx" title=" " description="我们也提供垂直布局方式。"></code>
+<code src="./demos/vertical-layout.tsx" desc="我们也提供垂直布局方式。"></code>
 
 ## 控制间距的大小
 
@@ -48,7 +48,7 @@ You can set the size with built-in sizes `small`, `default`, `large`, these size
 
 在**水平 (horizontal) **模式下, 通过控制 `wrap `**(布尔类型) **来控制是否自动换行
 
-<code src="./demos/auto-wrapping.tsx" title=" " description="利用 `wrap` 属性控制换行"></code>
+<code src="./demos/auto-wrapping.tsx" desc="利用 `wrap` 属性控制换行"></code>
 
 ## 行间分隔符
 
@@ -66,7 +66,7 @@ You can set the size with built-in sizes `small`, `default`, `large`, these size
 
 设置该值可以调整所有子节点在容器内的对齐方式, 可设置的值与 [align-items ](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)一致
 
-<code src="./demos/alignment.tsx" title=" " description="使用 `alignment` 属性来对齐"></code>
+<code src="./demos/alignment.tsx" desc="使用 `alignment` 属性来对齐"></code>
 
 ## 填充容器
 
@@ -74,13 +74,13 @@ You can set the size with built-in sizes `small`, `default`, `large`, these size
 
 下面的例子中，当设置为 `fill` 时，子节点的宽度会自动适配容器的宽度。
 
-<code src="./demos/fill.tsx" title=" " description="用 fill 属性让子节点自动填充容器"></code>
+<code src="./demos/fill.tsx" desc="用 fill 属性让子节点自动填充容器"></code>
 
 也可以使用 `fillRatio` 参数，自定义填充的比例， 默认值为 `100`，代表基于父容器宽度的 ` 100%` 进行填充
 
 需要注意的是，水平布局和垂直布局的表现形式稍有不同，具体的效果可以查看下面的例子
 
-<code src="./demos/fill-ratio.tsx" title=" " description="用 fillRatio 自定义填充比例"></code>
+<code src="./demos/fill-ratio.tsx" desc="用 fillRatio 自定义填充比例"></code>
 
 ## Space 属性
 

@@ -16,13 +16,13 @@ group:
 
 简单的步骤条。
 
-<code src="./demos/basic.tsx" title=" " description="设置 `active` 属性，接受一个 `Number`，表明步骤的 index，从 0 开始。 需要定宽的步骤条时，设置 `space` 属性即可，它接受 `Number`， 单位为 `px`， 如果不设置，则为自适应。 设置 `finish-status` 属性可以改变已经完成的步骤的状态。"></code>
+<code src="./demos/basic.tsx" desc="设置 `active` 属性，接受一个 `Number`，表明步骤的 index，从 0 开始。 需要定宽的步骤条时，设置 `space` 属性即可，它接受 `Number`， 单位为 `px`， 如果不设置，则为自适应。 设置 `finish-status` 属性可以改变已经完成的步骤的状态。"></code>
 
 ## 含状态的步骤条
 
 每一步骤显示出该步骤的状态。
 
-<code src="./demos/with-status.tsx" title=" " description="也可以使用 `title` 具名插槽，可以用 `slot` 的方式来取代属性的设置， 在本文档最后的列表中有所有的插槽可供参考。"></code>
+<code src="./demos/with-status.tsx" desc="也可以使用 `title` 具名插槽，可以用 `slot` 的方式来取代属性的设置， 在本文档最后的列表中有所有的插槽可供参考。"></code>
 
 ## 居中的步骤条
 
@@ -40,19 +40,19 @@ group:
 
 可以在步骤栏中使用各种自定义图标。
 
-<code src="./demos/with-icon.tsx" title=" " description="通过 `icon` 属性来设置图标， 图标的类型可以参考 Icon 组件的文档， 除此以外，还能通过具名 `slot` 来使用自定义的图标。"></code>
+<code src="./demos/with-icon.tsx" desc="通过 `icon` 属性来设置图标， 图标的类型可以参考 Icon 组件的文档， 除此以外，还能通过具名 `slot` 来使用自定义的图标。"></code>
 
 ## 垂直的步骤条
 
 垂直方向的步骤条。
 
-<code src="./demos/vertical.tsx" title=" " description="只需要在 `el-steps` 元素中设置 `direction` 属性为 `vertical` 即可。"></code>
+<code src="./demos/vertical.tsx" desc="只需要在 `el-steps` 元素中设置 `direction` 属性为 `vertical` 即可。"></code>
 
 ## 简洁风格的步骤条
 
 设置 `simple`
 
-<code src="./demos/simple.tsx" title=" " description="可应用简洁风格，该条件下 `align-center` / `description` / `direction` / `space` 都将失效。"></code>
+<code src="./demos/simple.tsx" desc="可应用简洁风格，该条件下 `align-center` / `description` / `direction` / `space` 都将失效。"></code>
 
 ## Steps 属性
 

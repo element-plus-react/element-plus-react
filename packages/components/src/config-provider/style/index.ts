@@ -1,3 +1,3 @@
-import '../../base/style'
+import "../../base/style";
 
-import '@element-plus/theme-chalk/src/config-provider.scss'
+import "@element-plus-react/theme-chalk/src/config-provider.scss";

@@ -9,7 +9,7 @@
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
     "publish:docs": "gh-pages -d dist",
-    "build": "cd internal/build && pnpm run build",
+    "build": "cd internal/element-plus-react && pnpm run build",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
     "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
@@ -19,13 +19,12 @@
   },
   "devDependencies": {
     "@element-plus/components": "workspace:1.0.0",
-    "@element-plus/theme-chalk": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/node": "^20.10.6",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
-    "@umijs/lint": "^4.0.90",
+    "@umijs/lint": "^4.1.1",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:0.0.4",
     "eslint": "^8.56.0",

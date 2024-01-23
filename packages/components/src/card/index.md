@@ -16,7 +16,7 @@ group:
 
 卡片包含标题，内容以及操作区域。
 
-<code src="./demos/basic.tsx" title=" " description="Card 组件由 `header` 和 `body` 组成。 `header` 是可选的，其内容取决于一个具名的 slot。"></code>
+<code src="./demos/basic.tsx" desc="Card 组件由 `header` 和 `body` 组成。 `header` 是可选的，其内容取决于一个具名的 slot。"></code>
 
 ## 简单卡片
 
@@ -28,13 +28,13 @@ group:
 
 可配置定义更丰富的内容展示。
 
-<code src="./demos/with-images.tsx" title=" " description="配置`body-style`属性来自定义`body`部分的样式。 在这个例子中我们还使用了 `el-col` 组件来布局。"></code>
+<code src="./demos/with-images.tsx" desc="配置`body-style`属性来自定义`body`部分的样式。 在这个例子中我们还使用了 `el-col` 组件来布局。"></code>
 
 ## 带有阴影效果的卡片
 
 你可以定义什么时候展示卡片的阴影效果。
 
-<code src="./demos/shadow.tsx" title=" " description="通过 `shadow` 属性设置卡片阴影出现的时机。 该属性的值可以是：`always`、`hover`或`never`。"></code>
+<code src="./demos/shadow.tsx" desc="通过 `shadow` 属性设置卡片阴影出现的时机。 该属性的值可以是：`always`、`hover`或`never`。"></code>
 
 ## 属性
 

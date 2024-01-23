@@ -1,2 +1,2 @@
-import '../../base/style'
-import '@element-plus/theme-chalk/src/card.scss'
+import "@element-plus-react/theme-chalk/src/card.scss";
+import "../../base/style";

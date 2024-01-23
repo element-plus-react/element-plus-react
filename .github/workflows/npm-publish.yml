@@ -42,7 +42,7 @@ jobs:
         # 执行发布代码
         run: |
           npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-          cd packages/element-plus-react
+          cd internal/element-plus-react
           npm publish
         env:
           # 配置 npm access token 环境变量

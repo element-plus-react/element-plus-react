@@ -1,1 +1,1 @@
-import '@element-plus/theme-chalk/src/base.scss'
+import "@element-plus-react/theme-chalk/src/base.scss";
