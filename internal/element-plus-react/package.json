@@ -21,7 +21,7 @@
   "types": "es/components/src/index.d.ts",
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
-    "@ctrl/tinycolor": "^4.0.2",
+    "@ctrl/tinycolor": "^4.0.3",
     "@element-plus-react/theme-chalk": "^0.0.3",
     "ahooks": "^3.7.8",
     "classnames": "^2.5.1",
