@@ -1,7 +1,7 @@
 {
   "homepage": "https://element-plus-react.github.io/",
   "name": "element-plus-react",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "scripts": {
     "build": "vite build && tsc --rootDir ../../packages --declarationDir es"
