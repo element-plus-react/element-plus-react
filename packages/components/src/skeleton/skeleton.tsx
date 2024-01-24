@@ -11,6 +11,7 @@ export type ISkeletonProps = {
   throttle?: number;
   style?: CSSProperties;
   template?: React.ReactNode;
+  children?: React.ReactNode;
 };
 
 const Skeleton: React.FC<ISkeletonProps> = (props) => {
@@ -19,29 +20,29 @@ const Skeleton: React.FC<ISkeletonProps> = (props) => {
   const classnames = classNames(ns.b(), ns.is("animated", animated));
   return (
     <div className={classnames} style={style}>
-      {Array(count)
-        .fill(1)
-        .map(() => (
-          <React.Fragment key={count}>
-            {loading && (
-              <div>
-                <SkeletonItem className={ns.is("first")} variant="p" />
-                {Array(rows)
-                  .fill(1)
-                  .map((i, index) => (
-                    <SkeletonItem
-                      key={index}
-                      className={classNames(
-                        ns.e("paragraph"),
-                        ns.is("last", i === rows && rows > 1),
-                      )}
-                      variant="p"
-                    />
-                  ))}
-              </div>
-            )}
-          </React.Fragment>
-        ))}
+      {loading
+        ? Array(count)
+            .fill(1)
+            .map(() => (
+              <React.Fragment key={count}>
+                <div>
+                  <SkeletonItem className={ns.is("first")} variant="p" />
+                  {Array(rows)
+                    .fill(1)
+                    .map((i, index) => (
+                      <SkeletonItem
+                        key={index}
+                        className={classNames(
+                          ns.e("paragraph"),
+                          ns.is("last", i === rows && rows > 1),
+                        )}
+                        variant="p"
+                      />
+                    ))}
+                </div>
+              </React.Fragment>
+            ))
+        : props.children}
     </div>
   );
 };
