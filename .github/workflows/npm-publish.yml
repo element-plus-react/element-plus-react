@@ -36,6 +36,11 @@ jobs:
           node -v
           pnpm -v
           pnpm install
+      - name: Run test
+        run: |
+          pnpm run test
+      - name: Run build
+        run: |
           pnpm run build
       # 发布NPM包
       - name: 发布NPM包
