@@ -1,0 +1,37 @@
+.changelog-versions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+
+  p {
+    margin-right: 2rem;
+  }
+}
+.changelog-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  .changelog-meta {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    p {
+      margin: 0;
+    }
+    .changelog-date {
+      margin-left: 8px;
+    }
+  }
+
+  .link-item {
+    line-height: 1.7;
+  }
+}
+.changelog-card {
+  margin-top: 18px;
+}
+.changelogs {
+  margin-top: 18px;
+}
