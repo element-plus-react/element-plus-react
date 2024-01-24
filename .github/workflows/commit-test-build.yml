@@ -26,9 +26,15 @@ jobs:
         with:
           node-version: 20
           cache: "pnpm"
-      - name: Run npm scripts
+      - name: Run build
         run: |
           node -v
           pnpm -v
           pnpm install
           pnpm run build
+      - name: Run build:docs
+        run: |
+          node -v
+          pnpm -v
+          pnpm install
+          pnpm run build:docs
