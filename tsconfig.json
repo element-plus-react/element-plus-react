@@ -24,10 +24,10 @@
       "element-plus-react": ["./internal/element-plus-react/src/index.ts"],
       "@element-plus/components": ["./packages/components/src/index.ts"],
       "@element-plus/utils": ["./packages/utils/src/index.ts"],
-      "@element-plus/hooks": ["./packages/hooks/src/index.ts"]
+      "@element-plus/hooks": ["./packages/hooks/src/index.ts"],
     },
-    "types": ["@types/node"]
+    "types": ["@types/node"],
   },
   "include": [".", ".dumirc.ts"],
-  "exclude": ["node_modules", "lib", "es"]
+  "exclude": ["node_modules", "es", "**/__tests__/**"],
 }

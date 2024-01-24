@@ -8,8 +8,8 @@
     "declaration": true,
     "emitDeclarationOnly": true,
     "skipLibCheck": true,
-    "rootDirs": ["../../packages"]
+    "rootDirs": ["../../packages"],
   },
   "include": ["../../packages/**/*.ts", "../../packages/**/*.tsx"],
-  "exclude": ["node_modules", "es", "../../packages/**/demos/**"]
+  "exclude": ["node_modules", "es", "../../packages/**/demos/**", "../../packages/**/__tests__/**"],
 }

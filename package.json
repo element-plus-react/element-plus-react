@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "scripts": {
+    "test": "vitest",
     "prepare": "husky install && dumi setup",
     "start:play": "pnpm -C playground/play run start",
     "start:docs": "dumi dev",
@@ -25,6 +26,7 @@
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "@umijs/lint": "^4.1.1",
+    "@vitejs/plugin-react": "^4.2.1",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:*",
     "eslint": "^8.56.0",
@@ -32,8 +34,12 @@
     "husky": "^8.0.3",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
     "sass": "^1.70.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.0.12",
+    "vitest": "^1.2.1"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
