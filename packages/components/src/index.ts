@@ -23,6 +23,7 @@ import Statistic from "./statistics";
 import Steps from "./steps";
 import Timeline from "./timeline";
 import Transition from "./transition";
+import Watermark from "./watermark";
 
 export {
   Affix,
@@ -50,4 +51,5 @@ export {
   Steps,
   Timeline,
   Transition,
+  Watermark,
 };

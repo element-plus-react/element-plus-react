@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Watermark > create 1`] = `
+<Watermark
+  className="watermark"
+>
+  Rem is the best girl
+</Watermark>
+`;
