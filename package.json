@@ -32,7 +32,7 @@
     "element-plus-react": "workspace:*",
     "eslint": "^8.56.0",
     "gh-pages": "^6.1.1",
-    "husky": "^8.0.3",
+    "husky": "^9.0.6",
     "lint-staged": "^15.2.0",
     "prettier": "^3.2.4",
     "react": "18.2.0",
