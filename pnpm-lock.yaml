@@ -259,8 +259,8 @@ importers:
         specifier: ^5.3.4
         version: 5.3.4(react-dom@18.2.0)(react@18.2.0)
       rc-upload:
-        specifier: ~4.3.5
-        version: 4.3.6(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~4.5.2
+        version: 4.5.2(react-dom@18.2.0)(react@18.2.0)
       rc-util:
         specifier: ^5.37.0
         version: 5.38.1(react-dom@18.2.0)(react@18.2.0)
@@ -10529,8 +10529,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-upload@4.3.6(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Bt7ESeG5tT3IY82fZcP+s0tQU2xmo1W6P3S8NboUUliquJLQYLkUcsaExi3IlBVr43GQMCjo30RA2o0i70+NjA==}
+  /rc-upload@4.5.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-QO3ne77DwnAPKFn0bA5qJM81QBjQi0e0NHdkvpFyY73Bea2NfITiotqJqVjHgeYPOJu5lLVR32TNGP084aSoXA==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
