@@ -26,7 +26,7 @@
     "rc-field-form": "~1.38.2",
     "rc-image": "~5.13.0",
     "rc-input": "~0.1.4",
-    "rc-input-number": "~7.3.11",
+    "rc-input-number": "~9.0.0",
     "rc-mentions": "~1.13.1",
     "rc-menu": "~9.8.4",
     "rc-motion": "^2.9.0",
