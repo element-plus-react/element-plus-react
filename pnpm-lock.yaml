@@ -235,8 +235,8 @@ importers:
         specifier: ~5.0.0
         version: 5.0.0(react-dom@18.2.0)(react@18.2.0)
       rc-switch:
-        specifier: ~3.2.2
-        version: 3.2.2(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~4.1.0
+        version: 4.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-table:
         specifier: ~7.26.0
         version: 7.26.0(react-dom@18.2.0)(react@18.2.0)
@@ -10389,8 +10389,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-switch@3.2.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-+gUJClsZZzvAHGy1vZfnwySxj+MjLlGRyXKXScrtCTcmiYNPzxDFOxdQ/3pK1Kt/0POvwJ/6ALOR8gwdXGhs+A==}
+  /rc-switch@4.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-TI8ufP2Az9oEbvyCeVE4+90PDSljGyuwix3fV58p7HV2o4wBnVToEyomJRVyTaZeqNPAp+vqeo4Wnj5u0ZZQBg==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
