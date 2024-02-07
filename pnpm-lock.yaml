@@ -178,8 +178,8 @@ importers:
         specifier: ~9.0.2
         version: 9.0.2(react-dom@18.2.0)(react@18.2.0)
       rc-drawer:
-        specifier: ~6.3.0
-        version: 6.3.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~7.1.0
+        version: 7.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-dropdown:
         specifier: ~4.0.1
         version: 4.0.1(react-dom@18.2.0)(react@18.2.0)
@@ -10067,8 +10067,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-drawer@6.3.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-uBZVb3xTAR+dBV53d/bUhTctCw3pwcwJoM7g5aX+7vgwt2zzVzoJ6aqFjYJpBlZ9zp0dVYN8fV+hykFE7c4lig==}
+  /rc-drawer@7.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-nBE1rF5iZvpavoyqhSSz2mk/yANltA7g3aF0U45xkx381n3we/RKs9cJfNKp9mSWCedOKWt9FLEwZDaAaOGn2w==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
