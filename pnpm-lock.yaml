@@ -190,8 +190,8 @@ importers:
         specifier: ~5.13.0
         version: 5.13.0(react-dom@18.2.0)(react@18.2.0)
       rc-input:
-        specifier: ~0.1.4
-        version: 0.1.4(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~0.2.2
+        version: 0.2.2(react-dom@18.2.0)(react@18.2.0)
       rc-input-number:
         specifier: ~7.3.11
         version: 7.3.11(react-dom@18.2.0)(react@18.2.0)
@@ -10153,8 +10153,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-input@0.1.4(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-FqDdNz+fV2dKNgfXzcSLKvC+jEs1709t7nD+WdfjrdSaOcefpgc7BUJYadc3usaING+b7ediMTfKxuJBsEFbXA==}
+  /rc-input@0.2.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xgkVcFgtRO0Hl9hmvslZhObNyxbSpTmy3nR1Tk4XrjjZ9lFJ7GcJBy6ss30Pdb0oX36cHzLN8I7VCjBGeRNB9A==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
