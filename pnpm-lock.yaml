@@ -214,8 +214,8 @@ importers:
         specifier: ~2.7.6
         version: 2.7.6(react-dom@18.2.0)(react@18.2.0)
       rc-progress:
-        specifier: ~3.4.2
-        version: 3.4.2(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~3.5.1
+        version: 3.5.1(react-dom@18.2.0)(react@18.2.0)
       rc-rate:
         specifier: ~2.9.3
         version: 2.9.3(react-dom@18.2.0)(react@18.2.0)
@@ -10287,8 +10287,8 @@ packages:
       shallowequal: 1.1.0
     dev: false
 
-  /rc-progress@3.4.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-iAGhwWU+tsayP+Jkl9T4+6rHeQTG9kDz8JAHZk4XtQOcYN5fj9H34NXNEdRdZx94VUDHMqCb1yOIvi8eJRh67w==}
+  /rc-progress@3.5.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-V6Amx6SbLRwPin/oD+k1vbPrO8+9Qf8zW1T8A7o83HdNafEVvAxPV5YsgtKFP+Ud5HghLj33zKOcEHrcrUGkfw==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
