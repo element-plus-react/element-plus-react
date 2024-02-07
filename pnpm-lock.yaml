@@ -247,8 +247,8 @@ importers:
         specifier: ~0.4.7
         version: 0.4.7(react-dom@18.2.0)(react@18.2.0)
       rc-tooltip:
-        specifier: ~5.2.2
-        version: 5.2.2(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~5.3.1
+        version: 5.3.1(react-dom@18.2.0)(react@18.2.0)
       rc-tree:
         specifier: ~5.7.12
         version: 5.7.12(react-dom@18.2.0)(react@18.2.0)
@@ -10469,8 +10469,8 @@ packages:
       shallowequal: 1.1.0
     dev: false
 
-  /rc-tooltip@5.2.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-jtQzU/18S6EI3lhSGoDYhPqNpWajMtS5VV/ld1LwyfrDByQpYmw/LW6U7oFXXLukjfDHQ7Ju705A82PRNFWYhg==}
+  /rc-tooltip@5.3.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-e6H0dMD38EPaSPD2XC8dRfct27VvT2TkPdoBSuNl3RRZ5tspiY/c5xYEmGC0IrABvMBgque4Mr2SMZuliCvoiQ==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
