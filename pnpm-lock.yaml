@@ -238,8 +238,8 @@ importers:
         specifier: ~3.2.2
         version: 3.2.2(react-dom@18.2.0)(react@18.2.0)
       rc-table:
-        specifier: ~7.26.0
-        version: 7.26.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~7.40.0
+        version: 7.40.0(react-dom@18.2.0)(react@18.2.0)
       rc-tabs:
         specifier: ~12.5.10
         version: 12.5.10(react-dom@18.2.0)(react@18.2.0)
@@ -1875,6 +1875,18 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.2
+    dev: false
+
+  /@rc-component/context@1.4.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-kFcNxg9oLRMoL3qki0OMxK+7g5mypjgaaJp/pkOis/6rVxma9nJBF/8kCIuTYHUQNr0ii7MxqE33wirPZLJQ2w==}
+    peerDependencies:
+      react: 18.2.0
+      react-dom: 18.2.0
+    dependencies:
+      '@babel/runtime': 7.23.9
+      rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /@rc-component/portal@1.1.2(react-dom@18.2.0)(react@18.2.0):
@@ -10402,20 +10414,21 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-table@7.26.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-0cD8e6S+DTGAt5nBZQIPFYEaIukn17sfa5uFL98faHlH/whZzD8ii3dbFL4wmUDEL4BLybhYop+QUfZJ4CPvNQ==}
+  /rc-table@7.40.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3O/AMZQt6MXr1rMRBkn+L6v80ym07Yp+ESG3yv7SiTZOyTRcpkSlDAcK+zu8rdCEuKUbQx/s3XHB9kHSfxTtEg==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
     dependencies:
       '@babel/runtime': 7.23.9
+      '@rc-component/context': 1.4.0(react-dom@18.2.0)(react@18.2.0)
       classnames: 2.5.1
       rc-resize-observer: 1.4.0(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
+      rc-virtual-list: 3.11.3(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      shallowequal: 1.1.0
     dev: false
 
   /rc-tabs@12.15.0(react-dom@18.2.0)(react@18.2.0):
