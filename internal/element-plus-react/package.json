@@ -20,17 +20,17 @@
   "main": "es/components/src/index.js",
   "types": "es/components/src/index.d.ts",
   "dependencies": {
-    "@ant-design/icons": "^5.2.6",
+    "@ant-design/icons": "^5.3.0",
     "@ctrl/tinycolor": "^4.0.3",
     "@element-plus-react/theme-chalk": "^0.0.3",
-    "ahooks": "^3.7.8",
+    "ahooks": "^3.7.10",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
-    "@types/react": "^18.2.48",
+    "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.18",
     "@types/react-transition-group": "^4.4.10",
     "@vitejs/plugin-react": "^4.2.1",
