@@ -184,8 +184,8 @@ importers:
         specifier: ~4.0.1
         version: 4.0.1(react-dom@18.2.0)(react@18.2.0)
       rc-field-form:
-        specifier: ~1.38.2
-        version: 1.38.2(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~1.41.0
+        version: 1.41.0(react-dom@18.2.0)(react@18.2.0)
       rc-image:
         specifier: ~5.13.0
         version: 5.13.0(react-dom@18.2.0)(react@18.2.0)
@@ -10110,8 +10110,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-field-form@1.38.2(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-O83Oi1qPyEv31Sg+Jwvsj6pXc8uQI2BtIAkURr5lvEYHVggXJhdU/nynK8wY1gbw0qR48k731sN5ON4egRCROA==}
+  /rc-field-form@1.41.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-k9AS0wmxfJfusWDP/YXWTpteDNaQ4isJx9UKxx4/e8Dub4spFeZ54/EuN2sYrMRID/+hUznPgVZeg+Gf7XSYCw==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: 18.2.0
