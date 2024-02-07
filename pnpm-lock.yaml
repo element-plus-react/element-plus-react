@@ -169,8 +169,8 @@ importers:
         specifier: ~3.7.3
         version: 3.7.3(react-dom@18.2.0)(react@18.2.0)
       rc-checkbox:
-        specifier: ~3.0.1
-        version: 3.0.1(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~3.1.0
+        version: 3.1.0(react-dom@18.2.0)(react@18.2.0)
       rc-collapse:
         specifier: ~3.4.2
         version: 3.4.2(react-dom@18.2.0)(react@18.2.0)
@@ -10024,8 +10024,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-checkbox@3.0.1(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-k7nxDWxYF+jDI0ZcCvuvj71xONmWRVe5+1MKcERRR9MRyP3tZ69b+yUCSXXh+sik4/Hc9P5wHr2nnUoGS2zBjA==}
+  /rc-checkbox@3.1.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-PAwpJFnBa3Ei+5pyqMMXdcKYKNBMS+TvSDiLdDnARnMJHC8ESxwPfm4Ao1gJiKtWLdmGfigascnCpwrHFgoOBQ==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
