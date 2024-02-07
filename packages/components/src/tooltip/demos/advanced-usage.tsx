@@ -1,32 +1,22 @@
-<template>
-  <el-tooltip
-    :disabled="disabled"
-    content="click to close tooltip function"
-    placement="bottom"
-    effect="light"
-  >
-    <el-button @click="disabled = !disabled"
-      >click to {{ disabled ? 'active' : 'close' }} tooltip function</el-button
-    >
-  </el-tooltip>
-</template>
+import { Button, Tooltip } from "element-plus-react";
+import { useState } from "react";
 
-<script lang="ts" setup>
-import { ref } from 'vue'
+const Demos = () => {
+  const [disabled, setDisabled] = useState(false);
+  return (
+    <>
+      <Tooltip
+        disabled={disabled}
+        content="click to close tooltip function"
+        placement="bottom"
+        effect="light"
+      >
+        <Button onClick={() => setDisabled(!disabled)}>
+          click to {disabled ? "active" : "close"} tooltip function
+        </Button>
+      </Tooltip>
+    </>
+  );
+};
 
-const disabled = ref(false)
-</script>
-
-<style>
-.slide-fade-enter-active {
-  transition: all 0.3s ease;
-}
-.slide-fade-leave-active {
-  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
-}
-.slide-fade-enter,
-.expand-fade-leave-active {
-  margin-left: 20px;
-  opacity: 0;
-}
-</style>
+export default Demos;
