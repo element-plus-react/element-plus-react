@@ -22,6 +22,7 @@ import Space from "./space";
 import Statistic from "./statistics";
 import Steps from "./steps";
 import Timeline from "./timeline";
+import Tooltip from "./tooltip";
 import Transition from "./transition";
 import Watermark from "./watermark";
 
@@ -50,6 +51,7 @@ export {
   Statistic,
   Steps,
   Timeline,
+  Tooltip,
   Transition,
   Watermark,
 };

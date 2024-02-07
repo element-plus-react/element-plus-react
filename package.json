@@ -5,7 +5,7 @@
   ],
   "scripts": {
     "test": "vitest",
-    "prepare": "husky install && dumi setup",
+    "prepare": "husky && dumi setup",
     "start:play": "pnpm -C playground/play run start",
     "start:docs": "dumi dev",
     "build:docs": "dumi build",
@@ -23,8 +23,8 @@
     "@element-plus/components": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
-    "@types/node": "^20.11.5",
-    "@types/react": "^18.2.48",
+    "@types/node": "^20.11.16",
+    "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.18",
     "@umijs/lint": "^4.1.1",
     "@vitejs/plugin-react": "^4.2.1",
@@ -32,15 +32,15 @@
     "element-plus-react": "workspace:*",
     "eslint": "^8.56.0",
     "gh-pages": "^6.1.1",
-    "husky": "^8.0.3",
-    "lint-staged": "^15.2.0",
-    "prettier": "^3.2.4",
+    "husky": "^9.0.10",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sass": "^1.70.0",
     "typescript": "^5.3.3",
     "vite": "^5.0.12",
-    "vitest": "^1.2.1"
+    "vitest": "^1.2.2"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"

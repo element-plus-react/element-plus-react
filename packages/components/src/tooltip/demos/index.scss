@@ -1,0 +1,28 @@
+.tooltip-base-box {
+  width: 600px;
+}
+.tooltip-base-box .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tooltip-base-box .center {
+  justify-content: center;
+}
+.tooltip-base-box .box-item {
+  //width: 110px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+.slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(1, 0.5, 0.8, 1);
+}
+.slide-fade-enter,
+.expand-fade-leave-active {
+  margin-left: 20px;
+  opacity: 0;
+}

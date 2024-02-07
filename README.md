@@ -95,7 +95,6 @@ And thank you to all our backers! 🙏
 - [ ] Tag
 - [ ] TimePicker
 - [ ] TimeSelect
-- [ ] ToolTip
 - [ ] Transfer
 - [ ] Tree
 - [ ] Upload
