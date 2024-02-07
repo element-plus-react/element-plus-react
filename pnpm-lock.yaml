@@ -232,8 +232,8 @@ importers:
         specifier: ~10.0.1
         version: 10.0.1(react-dom@18.2.0)(react@18.2.0)
       rc-steps:
-        specifier: ~5.0.0
-        version: 5.0.0(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~6.0.1
+        version: 6.0.1(react-dom@18.2.0)(react@18.2.0)
       rc-switch:
         specifier: ~3.2.2
         version: 3.2.2(react-dom@18.2.0)(react@18.2.0)
@@ -10375,8 +10375,8 @@ packages:
       shallowequal: 1.1.0
     dev: false
 
-  /rc-steps@5.0.0(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-9TgRvnVYirdhbV0C3syJFj9EhCRqoJAsxt4i1rED5o8/ZcSv5TLIYyo4H8MCjLPvbe2R+oBAm/IYBEtC+OS1Rw==}
+  /rc-steps@6.0.1(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-lKHL+Sny0SeHkQKKDJlAjV5oZ8DwCdS2hFhAkIjuQt1/pB81M0cA0ErVFdHq9+jmPmFw1vJB2F5NBzFXLJxV+g==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: 18.2.0
