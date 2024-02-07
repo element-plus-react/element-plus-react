@@ -241,8 +241,8 @@ importers:
         specifier: ~7.26.0
         version: 7.26.0(react-dom@18.2.0)(react@18.2.0)
       rc-tabs:
-        specifier: ~12.5.10
-        version: 12.5.10(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~14.0.0
+        version: 14.0.0(react-dom@18.2.0)(react@18.2.0)
       rc-textarea:
         specifier: ~0.4.7
         version: 0.4.7(react-dom@18.2.0)(react@18.2.0)
@@ -10436,8 +10436,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-tabs@12.5.10(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Ay0l0jtd4eXepFH9vWBvinBjqOpqzcsJTerBGwJy435P2S90Uu38q8U/mvc1sxUEVOXX5ZCFbxcWPnfG3dH+tQ==}
+  /rc-tabs@14.0.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-lp1YWkaPnjlyhOZCPrAWxK6/P6nMGX/BAZcAC3nuVwKz0Byfp+vNnQKK8BRCP2g/fzu+SeB5dm9aUigRu3tRkQ==}
     engines: {node: '>=8.x'}
     peerDependencies:
       react: 18.2.0
@@ -10445,8 +10445,8 @@ packages:
     dependencies:
       '@babel/runtime': 7.23.9
       classnames: 2.5.1
-      rc-dropdown: 4.0.1(react-dom@18.2.0)(react@18.2.0)
-      rc-menu: 9.8.4(react-dom@18.2.0)(react@18.2.0)
+      rc-dropdown: 4.1.0(react-dom@18.2.0)(react@18.2.0)
+      rc-menu: 9.12.4(react-dom@18.2.0)(react@18.2.0)
       rc-motion: 2.9.0(react-dom@18.2.0)(react@18.2.0)
       rc-resize-observer: 1.4.0(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
