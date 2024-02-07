@@ -193,8 +193,8 @@ importers:
         specifier: ~0.1.4
         version: 0.1.4(react-dom@18.2.0)(react@18.2.0)
       rc-input-number:
-        specifier: ~7.3.11
-        version: 7.3.11(react-dom@18.2.0)(react@18.2.0)
+        specifier: ~7.4.2
+        version: 7.4.2(react-dom@18.2.0)(react@18.2.0)
       rc-mentions:
         specifier: ~1.13.1
         version: 1.13.1(react-dom@18.2.0)(react@18.2.0)
@@ -1875,6 +1875,13 @@ packages:
       open: 9.1.0
       picocolors: 1.0.0
       tslib: 2.6.2
+    dev: false
+
+  /@rc-component/mini-decimal@1.1.0:
+    resolution: {integrity: sha512-jS4E7T9Li2GuYwI6PyiVXmxTiM6b07rlD9Ge8uGZSCz3WlzcG5ZK7g5bbuKNeZ9pgUuPK/5guV781ujdVpm4HQ==}
+    engines: {node: '>=8.x'}
+    dependencies:
+      '@babel/runtime': 7.23.9
     dev: false
 
   /@rc-component/portal@1.1.2(react-dom@18.2.0)(react@18.2.0):
@@ -10140,13 +10147,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-input-number@7.3.11(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-aMWPEjFeles6PQnMqP5eWpxzsvHm9rh1jQOWXExUEIxhX62Fyl/ptifLHOn17+waDG1T/YUb6flfJbvwRhHrbA==}
+  /rc-input-number@7.4.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-yGturTw7WGP+M1GbJ+UTAO7L4buxeW6oilhL9Sq3DezsRS8/9qec4UiXUbeoiX9bzvRXH11JvgskBtxSp4YSNg==}
     peerDependencies:
       react: 18.2.0
       react-dom: 18.2.0
     dependencies:
       '@babel/runtime': 7.23.9
+      '@rc-component/mini-decimal': 1.1.0
       classnames: 2.5.1
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
