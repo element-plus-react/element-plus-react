@@ -19,7 +19,7 @@ jobs:
         # 使用actions/checkout插件
         uses: actions/checkout@v4
       - name: Install Pnpm
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v3
         with:
           version: 8.8.0
       # 安装node
