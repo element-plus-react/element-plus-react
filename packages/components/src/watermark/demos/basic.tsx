@@ -6,9 +6,11 @@ const font = {
 
 const Demos = () => {
   return (
-    <Watermark font={font}>
-      <div style={{ height: "500px" }} />
-    </Watermark>
+    <div className="demos-watermark ">
+      <Watermark font={font}>
+        <div style={{ height: "500px" }} />
+      </Watermark>
+    </div>
   );
 };
 

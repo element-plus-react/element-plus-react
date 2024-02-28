@@ -1,22 +1,20 @@
-<template>
-  <div class="demo-image__error">
-    <div class="block">
-      <span class="demonstration">Default</span>
-      <el-image></el-image>
-    </div>
-    <div class="block">
-      <span class="demonstration">Custom</span>
-      <el-image>
-        <template #error>
-          <div class="image-slot">
-            <el-icon><icon-picture /></el-icon>
-          </div>
-        </template>
-      </el-image>
-    </div>
-  </div>
-</template>
+const src = "https://cube.elemecdn.com/6/94/4d3ea53c084bad6931a56d5158a48jpeg.jpeg";
 
-<script setup lang="ts">
-import { Picture as IconPicture } from '@element-plus/icons-vue'
-</script>
+import { Image } from "element-plus-react";
+
+const Demos = () => {
+  return (
+    <div className="demo-image__error">
+      <div className="block">
+        <span className="demonstration">Default</span>
+        <Image></Image>
+      </div>
+      <div className="block">
+        <span className="demonstration">Custom</span>
+        <Image fallback={src}></Image>
+      </div>
+    </div>
+  );
+};
+
+export default Demos;

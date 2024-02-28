@@ -1,11 +1,12 @@
 ---
 title: Image 图片
+order: 9
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Data 数据展示
+  order: 4
 ---
 # Image 图片
 
@@ -83,43 +84,23 @@ group:
 
 ## 基础用法
 
-:::demo 可通过`fit`确定图片如何适应到容器框，同原生 [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)。
-
-image/basic-usage
-
-:::
+<code src="./demos/basic-usage.tsx" title=" " description='可通过`fit`确定图片如何适应到容器框，同原生 [object-fit](https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit)'></code>
 
 ## 占位内容
 
-:::demo 可通过`slot = placeholder`可自定义占位内容
-
-image/placeholder
-
-:::
+<code src="./demos/placeholder.tsx" title=" " description='可通过`slot = placeholder`可自定义占位内容'></code>
 
 ## 加载失败
 
-:::demo 可通过`slot = error`可自定义加载失败内容
-
-image/load-failed
-
-:::
+<code src="./demos/load-failed.tsx" title=" " description='可通过`slot = error`可自定义加载失败内容'></code>
 
 ## 懒加载
 
-:::demo 可通过`lazy`开启懒加载功能， 当图片滚动到可视范围内才会加载。 可通过 `scroll-container` 来设置滚动容器， 若未定义，则为最近一个 overflow 值为 auto 或 scroll 的父元素。
-
-image/lazy-load
-
-:::
+<code src="./demos/lazy-load.tsx" title=" " description='可通过`lazy`开启懒加载功能， 当图片滚动到可视范围内才会加载。 可通过 `scroll-container` 来设置滚动容器， 若未定义，则为最近一个 overflow 值为 auto 或 scroll 的父元素。'></code>
 
 ## 图片预览
 
-:::demo 可通过 `previewSrcList` 开启预览大图的功能。 你可以通过 `initial-index` 初始化第一张预览图片的位置。 默认初始位置为 0。
-
-image/image-preview
-
-:::
+<code src="./demos/image-preview.tsx" title=" " description='可通过 `previewSrcList` 开启预览大图的功能。 你可以通过 `initial-index` 初始化第一张预览图片的位置。 默认初始位置为 0。'></code>
 
 ## Image 属性
 
