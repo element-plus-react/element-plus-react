@@ -15,23 +15,24 @@ const Demos = () => {
     offset: [] as unknown as [number, number],
   });
   return (
-    <div className="wrapper">
-      <Watermark
-        className="watermark"
-        content={config.content}
-        font={config.font}
-        z-index={config.zIndex}
-        rotate={config.rotate}
-        gap={config.gap}
-        offset={config.offset}
-      >
-        <div className="demo">
-          <h1>Element Plus</h1>
-          <h2>A Vue 3 based component library for designers and developers</h2>
-          <img src="https://element-plus.org/images/element-plus-logo.svg" alt="示例图片" />
-        </div>
-      </Watermark>
-      {/* <el-form
+    <div className="demos-watermark ">
+      <div className="wrapper">
+        <Watermark
+          className="watermark"
+          content={config.content}
+          font={config.font}
+          z-index={config.zIndex}
+          rotate={config.rotate}
+          gap={config.gap}
+          offset={config.offset}
+        >
+          <div className="demo">
+            <h1>Element Plus</h1>
+            <h2>A Vue 3 based component library for designers and developers</h2>
+            <img src="https://element-plus.org/images/element-plus-logo.svg" alt="示例图片" />
+          </div>
+        </Watermark>
+        {/* <el-form
       class="form"
       :model="config"
       label-position="top"
@@ -73,6 +74,7 @@ const Demos = () => {
         </el-space>
       </el-form-item>
     </el-form> */}
+      </div>
     </div>
   );
 };

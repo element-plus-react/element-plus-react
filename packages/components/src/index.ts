@@ -12,6 +12,7 @@ import Countdown from "./countdown";
 import Descriptions from "./descriptions";
 import Divider from "./divider";
 import Empty from "./empty";
+import Image from "./image";
 import Col from "./layout/col";
 import Row from "./layout/row";
 import Link from "./link";
@@ -42,6 +43,7 @@ export {
   Descriptions,
   Divider,
   Empty,
+  Image,
   Link,
   PageHeader,
   Result,

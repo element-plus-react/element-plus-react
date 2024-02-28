@@ -68,7 +68,6 @@ And thank you to all our backers! 🙏
 - [ ] Drawer
 - [ ] Dropdown
 - [ ] Form
-- [ ] Image
 - [ ] ImageViewer
 - [ ] InfiniteScroll
 - [ ] Input
