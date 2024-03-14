@@ -14,7 +14,7 @@ importers:
     dependencies:
       dumi:
         specifier: ^2.2.17
-        version: 2.2.17(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.55)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1)
+        version: 2.2.17(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.65)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1)
       markdown-it:
         specifier: ^14.0.0
         version: 14.0.0
@@ -32,11 +32,11 @@ importers:
         specifier: ^20.11.16
         version: 20.11.16
       '@types/react':
-        specifier: ^18.2.55
-        version: 18.2.55
+        specifier: ^18.2.65
+        version: 18.2.65
       '@types/react-dom':
-        specifier: ^18.2.18
-        version: 18.2.18
+        specifier: ^18.2.22
+        version: 18.2.22
       '@umijs/lint':
         specifier: ^4.1.2
         version: 4.1.2(eslint@8.56.0)(stylelint@14.16.1)(typescript@5.4.2)
@@ -111,11 +111,11 @@ importers:
         specifier: ^4.17.12
         version: 4.17.12
       '@types/react':
-        specifier: ^18.2.55
-        version: 18.2.55
+        specifier: ^18.2.65
+        version: 18.2.65
       '@types/react-dom':
-        specifier: ^18.2.18
-        version: 18.2.18
+        specifier: ^18.2.22
+        version: 18.2.22
       '@types/react-transition-group':
         specifier: ^4.4.10
         version: 4.4.10
@@ -1706,21 +1706,21 @@ packages:
       '@floating-ui/core': 0.6.2
     dev: false
 
-  /@floating-ui/react-dom-interactions@0.3.1(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0):
+  /@floating-ui/react-dom-interactions@0.3.1(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-tP2KEh7EHJr5hokSBHcPGojb+AorDNUf0NYfZGg/M+FsMvCOOsSEeEF0O1NDfETIzDnpbHnCs0DuvCFhSMSStg==}
     deprecated: Package renamed to @floating-ui/react
     dependencies:
-      '@floating-ui/react-dom': 0.6.3(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
+      '@floating-ui/react-dom': 0.6.3(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
       aria-hidden: 1.2.3
       point-in-polygon: 1.1.0
-      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.55)(react@18.2.0)
+      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.65)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
       - react
       - react-dom
     dev: false
 
-  /@floating-ui/react-dom@0.6.3(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0):
+  /@floating-ui/react-dom@0.6.3(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-hC+pS5D6AgS2wWjbmSQ6UR6Kpy+drvWGJIri6e1EDGADTPsCaa4KzCgmCczHrQeInx9tqs81EyDmbKJYY2swKg==}
     peerDependencies:
       react: 18.2.0
@@ -1729,7 +1729,7 @@ packages:
       '@floating-ui/dom': 0.4.5
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
-      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.55)(react@18.2.0)
+      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.65)(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
     dev: false
@@ -2527,7 +2527,7 @@ packages:
   /@types/hoist-non-react-statics@3.3.5:
     resolution: {integrity: sha512-SbcrWzkKBw2cdwRTwQAswfpB9g9LJWfjtUeW/jvNwbhC8cpmmNYVePa+ncbUe0rGTQ7G3Ff6mYUN2VMfLVr+Sg==}
     dependencies:
-      '@types/react': 18.2.55
+      '@types/react': 18.2.65
       hoist-non-react-statics: 3.3.2
     dev: false
 
@@ -2625,20 +2625,20 @@ packages:
       types-ramda: 0.29.7
     dev: false
 
-  /@types/react-dom@18.2.18:
-    resolution: {integrity: sha512-TJxDm6OfAX2KJWJdMEVTwWke5Sc/E/RlnPGvGfS0W7+6ocy2xhDVQVh/KvC2Uf7kACs+gDytdusDSdWfWkaNzw==}
+  /@types/react-dom@18.2.22:
+    resolution: {integrity: sha512-fHkBXPeNtfvri6gdsMYyW+dW7RXFo6Ad09nLFK0VQWR7yGLai/Cyvyj696gbwYvBnhGtevUG9cET0pmUbMtoPQ==}
     dependencies:
-      '@types/react': 18.2.55
+      '@types/react': 18.2.65
     dev: true
 
   /@types/react-transition-group@4.4.10:
     resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
     dependencies:
-      '@types/react': 18.2.55
+      '@types/react': 18.2.65
     dev: true
 
-  /@types/react@18.2.55:
-    resolution: {integrity: sha512-Y2Tz5P4yz23brwm2d7jNon39qoAtMMmalOQv6+fEFt1mT+FcM3D841wDpoUvFXhaYenuROCy3FZYqdTjM7qVyA==}
+  /@types/react@18.2.65:
+    resolution: {integrity: sha512-98TsY0aW4jqx/3RqsUXwMDZSWR1Z4CUlJNue8ueS2/wcxZOsz4xmW1X8ieaWVRHcmmQM3R8xVA4XWB3dJnWwDQ==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
@@ -3130,7 +3130,7 @@ packages:
       tsx: 3.14.0
     dev: false
 
-  /@umijs/preset-umi@4.1.1(@types/node@20.11.16)(@types/react@18.2.55)(sass@1.70.0)(typescript@5.4.2)(webpack@5.90.1):
+  /@umijs/preset-umi@4.1.1(@types/node@20.11.16)(@types/react@18.2.65)(sass@1.70.0)(typescript@5.4.2)(webpack@5.90.1):
     resolution: {integrity: sha512-mpm2aqyRttfAQRstCoA98oya5r0eZL6dWe3oddTsScjyO/T9rT9vOb2xyqlsE95DTNFEBeyCjr8dcvs2HifJ1w==}
     dependencies:
       '@iconify/utils': 2.1.1
@@ -3153,7 +3153,7 @@ packages:
       '@umijs/utils': 4.1.1
       '@umijs/zod2ts': 4.1.1
       babel-plugin-dynamic-import-node: 2.3.3
-      click-to-react-component: 1.1.0(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
+      click-to-react-component: 1.1.0(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
       core-js: 3.34.0
       current-script-polyfill: 1.0.0
       enhanced-resolve: 5.9.3
@@ -4392,12 +4392,12 @@ packages:
     resolution: {integrity: sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==}
     dev: false
 
-  /click-to-react-component@1.1.0(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0):
+  /click-to-react-component@1.1.0(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-/DjZemufS1BkxyRgZL3r7HXVVOFRWVQi5Xd4EBnjxZMwrHEh0OlUVA2N9CjXkZ0x8zMf8dL1cKnnx+xUWUg4VA==}
     peerDependencies:
       react: 18.2.0
     dependencies:
-      '@floating-ui/react-dom-interactions': 0.3.1(@types/react@18.2.55)(react-dom@18.2.0)(react@18.2.0)
+      '@floating-ui/react-dom-interactions': 0.3.1(@types/react@18.2.65)(react-dom@18.2.0)(react@18.2.0)
       htm: 3.1.1
       react: 18.2.0
       react-merge-refs: 1.1.0
@@ -5211,7 +5211,7 @@ packages:
     resolution: {integrity: sha512-a/Y5lf0G6gwsEQ9hop/n03CcjmHsGBk384Cz/AEX6mRYrfSpUx/lQvP9HLoXkCzScl9PL1sSmLPnMkgaXDCZLA==}
     dev: false
 
-  /dumi@2.2.17(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.55)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1):
+  /dumi@2.2.17(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.65)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1):
     resolution: {integrity: sha512-oI2OVlkkVORy0ud64YlhrBF+rsAda9rGFxMLrOLepTjC96mLOrgUz/geKkckWA5LemEuFVsaTYE/5HDpAPTkvQ==}
     hasBin: true
     peerDependencies:
@@ -5275,7 +5275,7 @@ packages:
       remark-rehype: 10.1.0
       sass: 1.70.0
       sitemap: 7.1.1
-      umi: 4.1.1(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.55)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1)
+      umi: 4.1.1(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.65)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1)
       unified: 10.1.2
       unist-util-visit: 4.1.2
       unist-util-visit-parents: 5.1.3
@@ -11246,7 +11246,7 @@ packages:
       '@formatjs/intl-displaynames': 6.6.6
       '@formatjs/intl-listformat': 7.5.5
       '@types/hoist-non-react-statics': 3.3.5
-      '@types/react': 18.2.55
+      '@types/react': 18.2.65
       hoist-non-react-statics: 3.3.2
       intl-messageformat: 10.5.10
       react: 18.2.0
@@ -12805,7 +12805,7 @@ packages:
     resolution: {integrity: sha512-Hhy+BhRBleFjpJ2vchUNN40qgkh0366FWJGqVLYBHev0vpHTrXSA0ryT+74UiW6KWsldNurQMKGqCm1M2zBciQ==}
     dev: true
 
-  /umi@4.1.1(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.55)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1):
+  /umi@4.1.1(@babel/core@7.23.9)(@types/node@20.11.16)(@types/react@18.2.65)(eslint@8.56.0)(prettier@3.2.5)(react-dom@18.2.0)(react@18.2.0)(sass@1.70.0)(stylelint@14.16.1)(typescript@5.4.2)(webpack@5.90.1):
     resolution: {integrity: sha512-FGSyS4V2kyXnrOudT3JBavhNjSIzgC1FJjOCmhjElmGIZV/FY9gpqOKk9WExdO96xSOvff0+16SK2WtQj/xQgQ==}
     engines: {node: '>=14'}
     hasBin: true
@@ -12815,7 +12815,7 @@ packages:
       '@umijs/bundler-webpack': 4.1.1(typescript@5.4.2)(webpack@5.90.1)
       '@umijs/core': 4.1.1
       '@umijs/lint': 4.1.1(eslint@8.56.0)(stylelint@14.16.1)(typescript@5.4.2)
-      '@umijs/preset-umi': 4.1.1(@types/node@20.11.16)(@types/react@18.2.55)(sass@1.70.0)(typescript@5.4.2)(webpack@5.90.1)
+      '@umijs/preset-umi': 4.1.1(@types/node@20.11.16)(@types/react@18.2.65)(sass@1.70.0)(typescript@5.4.2)(webpack@5.90.1)
       '@umijs/renderer-react': 4.1.1(react-dom@18.2.0)(react@18.2.0)
       '@umijs/server': 4.1.1
       '@umijs/test': 4.1.1(@babel/core@7.23.9)
@@ -13032,7 +13032,7 @@ packages:
       qs: 6.11.2
     dev: false
 
-  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.55)(react@18.2.0):
+  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.65)(react@18.2.0):
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -13041,7 +13041,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@types/react': 18.2.55
+      '@types/react': 18.2.65
       react: 18.2.0
     dev: false
 
