@@ -82,7 +82,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
           "--el-button-active-text-color": "var(--el-color-white)",
           "--el-button-active-border-color": shadeBgColor,
         };
-      } else {
+      }
+      else {
         const tintBgColor = new TinyColor(buttonColor).tint(20).toString();
         styles = {
           "--el-button-bg-color": buttonColor,
@@ -103,7 +104,8 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
 
     if (typeof props?.style === "object") {
       styles = { ...styles, ...props.style };
-    } else if (typeof props?.style === "string") {
+    }
+    else if (typeof props?.style === "string") {
       const customStyle = css2object(props?.style);
       styles = { ...styles, ...customStyle };
     }
@@ -131,17 +133,23 @@ const InternalButton: React.ForwardRefRenderFunction<unknown, ButtonProps> = (pr
     },
     props.className,
   );
-  const iconNode =
-    props.icon && !loading ? (
-      <span className="el-icon">{props.icon}</span>
-    ) : loading ? (
-      <span className="el-icon is-loading">
-        <LoadingOutlined />
-      </span>
-    ) : null;
-  const kids = props.children ? (
-    <span className={shouldAddSpace ? "el-button__text--expand" : ""}>{props.children}</span>
-  ) : null;
+  const iconNode
+    = props.icon && !loading
+      ? (
+        <span className="el-icon">{props.icon}</span>
+        )
+      : loading
+        ? (
+          <span className="el-icon is-loading">
+            <LoadingOutlined />
+          </span>
+          )
+        : null;
+  const kids = props.children
+    ? (
+      <span className={shouldAddSpace ? "el-button__text--expand" : ""}>{props.children}</span>
+      )
+    : null;
 
   return (
     <button
