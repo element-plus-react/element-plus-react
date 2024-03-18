@@ -32,13 +32,15 @@ yarn add element-plus-react
 ## 🔨 示例
 
 ```jsx
-import { Button } from 'element-plus-react';
+import { Button } from "element-plus-react";
 
-const App = () => (
-  <>
-    <Button type="primary">PRESS ME</Button>
-  </>
-);
+function App() {
+  return (
+    <>
+      <Button type="primary">PRESS ME</Button>
+    </>
+  );
+}
 ```
 
 ---
@@ -67,7 +69,6 @@ And thank you to all our backers! 🙏
 - [ ] Dialog
 - [ ] Dropdown
 - [ ] Form
-- [ ] ImageViewer
 - [ ] InfiniteScroll
 - [ ] Input
 - [ ] InputNumber
@@ -83,7 +84,6 @@ And thank you to all our backers! 🙏
 - [ ] Popper
 - [ ] Progress
 - [ ] Radio
-- [ ] Rate
 - [ ] Scrollbar
 - [ ] Select
 - [ ] Submenu

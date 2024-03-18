@@ -1,9 +1,10 @@
-<template>
-  <el-rate v-model="value" allow-half />
-</template>
+import { Rate } from "element-plus-react";
 
-<script lang="ts" setup>
-import { ref } from 'vue'
+const value1 = 1;
+function Demos() {
+  return (
+    <Rate defaultValue={value1} allowHalf></Rate>
+  );
+}
 
-const value = ref()
-</script>
+export default Demos;
