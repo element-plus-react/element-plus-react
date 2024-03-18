@@ -26,12 +26,14 @@ import Timeline from "./timeline";
 import Tooltip from "./tooltip";
 import Transition from "./transition";
 import Watermark from "./watermark";
+import Drawer from "./drawer";
 
 export {
   Affix,
   Alert,
   Avatar,
   BackTop,
+  Drawer,
   Badge,
   Breadcrumb,
   Button,
