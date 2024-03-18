@@ -1,38 +1,30 @@
-<template>
-  <el-radio-group v-model="direction">
+import { Button, Drawer } from "element-plus-react";
+import { useState } from "react";
+
+function Demos() {
+  const [drawer, setDrawer] = useState(false);
+  return (
+    <>
+      {/* <el-radio-group v-model="direction">
     <el-radio label="ltr">left to right</el-radio>
     <el-radio label="rtl">right to left</el-radio>
     <el-radio label="ttb">top to bottom</el-radio>
     <el-radio label="btt">bottom to top</el-radio>
-  </el-radio-group>
+  </el-radio-group> */}
 
-  <el-button type="primary" style="margin-left: 16px" @click="drawer = true">
-    open
-  </el-button>
+      <Button type="primary" onClick={() => setDrawer(true)}>
+        open
+      </Button>
 
-  <el-drawer
-    v-model="drawer"
-    title="I am the title"
-    :direction="direction"
-    :before-close="handleClose"
-  >
-    <span>Hi, there!</span>
-  </el-drawer>
-</template>
-
-<script lang="ts" setup>
-import { ref } from 'vue'
-import { ElMessageBox } from 'element-plus'
-
-const drawer = ref(false)
-const direction = ref('rtl')
-const handleClose = (done: () => void) => {
-  ElMessageBox.confirm('Are you sure you want to close this?')
-    .then(() => {
-      done()
-    })
-    .catch(() => {
-      // catch error
-    })
+      <Drawer
+        visible={drawer}
+        title="I am the title"
+        onClose={() => setDrawer(false)}
+      >
+        <span>Hi, there!</span>
+      </Drawer>
+    </>
+  );
 }
-</script>
+
+export default Demos;

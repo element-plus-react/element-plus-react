@@ -12,25 +12,29 @@
     "publish:docs": "gh-pages -d dist",
     "build": "cd internal/element-plus-react && pnpm run build",
     "format": "prettier --write .",
-    "lint": "eslint . --ext .js,.ts,.jsx,.tsx --max-warnings 0 && pretty-quick --check --branch dev",
-    "lint:fix": "eslint --fix . --ext .js,.ts,.jsx,.tsx && pretty-quick --branch dev"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "dumi": "^2.2.17",
     "markdown-it": "^14.0.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.8.2",
     "@element-plus/components": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
     "@types/node": "^20.11.27",
     "@types/react": "^18.2.65",
     "@types/react-dom": "^18.2.22",
-    "@umijs/lint": "^4.1.2",
     "@vitejs/plugin-react": "^4.2.1",
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:*",
     "eslint": "^8.57.0",
+    "eslint-plugin-format": "^0.1.0",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.6",
     "gh-pages": "^6.1.1",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.2",

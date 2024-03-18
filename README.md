@@ -65,7 +65,6 @@ And thank you to all our backers! 🙏
 - [ ] DatePicker
 - [ ] Directives
 - [ ] Dialog
-- [ ] Drawer
 - [ ] Dropdown
 - [ ] Form
 - [ ] ImageViewer
