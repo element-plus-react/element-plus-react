@@ -18,5 +18,5 @@ module.exports = antfu({
     curly: "off",
   },
 }, {
-  ignores: ["*.json"],
+  ignores: ["**/*.json"],
 });
