@@ -27,8 +27,10 @@ import Tooltip from "./tooltip";
 import Transition from "./transition";
 import Watermark from "./watermark";
 import Drawer from "./drawer";
+import Rate from "./rate";
 
 export {
+  Rate,
   Affix,
   Alert,
   Avatar,

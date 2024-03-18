@@ -1,11 +1,12 @@
 ---
 title: Rate 评分
+order: 11
 nav:
   title: 组件
   path: /components
 group:
-  title: TODO 待办
-  order: 99
+  title: Form 表单组件
+  order: 4
 ---
 # Rate 评分
 
@@ -32,17 +33,15 @@ group:
   }
 }
 
-
-
 </style>
 
 ## 基础用法
 
 :::demo 评分默认被分为三个等级，可以利用颜色数组对分数及情感倾向进行分级（默认情况下不区分颜色）。 三个等级所对应的颜色用 `colors` 属性设置，而它们对应的两个阈值则通过 `low-threshold` 和 `high-threshold` 设定。
 
-rate/basic-usage
-
 :::
+
+<code src="./demos/basic-usage.tsx"></code>
 
 ## Sizes
 
@@ -56,10 +55,9 @@ rate/sizes
 
 :::demo Add attribute `allow-half` Half star allowed
 
-rate/allow-half
-
 :::
 
+<code src="./demos/allow-half.tsx"></code>
 ## With text
 
 Using text to indicate rating score
