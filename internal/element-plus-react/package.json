@@ -39,7 +39,7 @@
     "react-dom": "18.2.0",
     "rollup-plugin-copy": "^3.5.0",
     "typescript": "^5.4.2",
-    "vite": "^5.1.6"
+    "vite": "^5.2.2"
   },
   "peerDependencies": {
     "react": "18.2.0",
