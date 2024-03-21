@@ -24,6 +24,8 @@ const Rate = React.forwardRef<unknown, RateProps>((props, ref) => {
   console.log(character);
   return (
     <RcRate
+      // eslint-disable-next-line ts/ban-ts-comment
+      // @ts-expect-error
       ref={ref}
       character={character}
      // characterRender={characterRender}
