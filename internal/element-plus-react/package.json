@@ -23,7 +23,7 @@
     "@ant-design/icons": "^5.3.4",
     "@ctrl/tinycolor": "^4.0.3",
     "@element-plus-react/theme-chalk": "^0.0.3",
-    "ahooks": "^3.7.10",
+    "ahooks": "^3.7.11",
     "classnames": "^2.5.1",
     "dayjs": "^1.11.10",
     "react-transition-group": "^4.4.5"
