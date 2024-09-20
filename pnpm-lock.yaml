@@ -113,8 +113,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
+        specifier: ^1.11.13
+        version: 1.11.13
       react-transition-group:
         specifier: ^4.4.5
         version: 4.4.5(react-dom@18.2.0)(react@18.2.0)
@@ -296,8 +296,8 @@ importers:
         specifier: ^2.5.1
         version: 2.5.1
       dayjs:
-        specifier: ^1.11.10
-        version: 1.11.10
+        specifier: ^1.11.13
+        version: 1.11.13
       lodash-es:
         specifier: ^4.17.21
         version: 4.17.21
@@ -4123,7 +4123,7 @@ packages:
       react: 18.2.0
     dependencies:
       '@babel/runtime': 7.23.9
-      dayjs: 1.11.10
+      dayjs: 1.11.13
       intersection-observer: 0.12.2
       js-cookie: 2.2.1
       lodash: 4.17.21
@@ -5552,8 +5552,8 @@ packages:
       '@babel/runtime': 7.23.9
     dev: false
 
-  /dayjs@1.11.10:
-    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
+  /dayjs@1.11.13:
+    resolution: {integrity: sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg==}
 
   /debug@3.1.0:
     resolution: {integrity: sha512-OX8XqP7/1a9cqkxYw2yXss15f26NKWBpDXQd0/uK/KPqdQhxbPa994hnzjcE2VqQpDslf55723cKPUOGSmMY3g==}
@@ -11879,7 +11879,7 @@ packages:
       '@babel/runtime': 7.23.9
       classnames: 2.5.1
       date-fns: 2.30.0
-      dayjs: 1.11.10
+      dayjs: 1.11.13
       moment: 2.30.1
       rc-trigger: 5.3.4(react-dom@18.2.0)(react@18.2.0)
       rc-util: 5.38.1(react-dom@18.2.0)(react@18.2.0)
