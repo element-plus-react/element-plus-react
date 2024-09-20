@@ -5,6 +5,7 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "rangeStrategy": "bump",
+  "automerge": true,
   "ignoreDeps": [
     "rc-cascader",
     "rc-checkbox",
