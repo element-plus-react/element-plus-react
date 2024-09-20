@@ -10,7 +10,7 @@
     "@types/react-transition-group": "^4.4.11",
     "ahooks": "^3.7.11",
     "classnames": "^2.5.1",
-    "dayjs": "^1.11.10",
+    "dayjs": "^1.11.13",
     "lodash-es": "^4.17.21",
     "react-transition-group": "^4.4.5"
   },

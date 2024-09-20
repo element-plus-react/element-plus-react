@@ -25,7 +25,7 @@
     "@element-plus-react/theme-chalk": "^0.0.3",
     "ahooks": "^3.7.11",
     "classnames": "^2.5.1",
-    "dayjs": "^1.11.10",
+    "dayjs": "^1.11.13",
     "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
