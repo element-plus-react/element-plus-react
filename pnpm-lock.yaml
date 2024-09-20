@@ -129,8 +129,8 @@ importers:
         specifier: ^18.2.25
         version: 18.2.25
       '@types/react-transition-group':
-        specifier: ^4.4.10
-        version: 4.4.10
+        specifier: ^4.4.11
+        version: 4.4.11
       '@vitejs/plugin-react':
         specifier: ^4.2.1
         version: 4.2.1(vite@5.2.14)
@@ -287,8 +287,8 @@ importers:
         specifier: ^4.17.12
         version: 4.17.12
       '@types/react-transition-group':
-        specifier: ^4.4.10
-        version: 4.4.10
+        specifier: ^4.4.11
+        version: 4.4.11
       ahooks:
         specifier: ^3.7.11
         version: 3.7.11(react@18.2.0)
@@ -3044,8 +3044,8 @@ packages:
       '@types/react': 18.2.79
     dev: true
 
-  /@types/react-transition-group@4.4.10:
-    resolution: {integrity: sha512-hT/+s0VQs2ojCX823m60m5f0sL5idt9SO6Tj6Dg+rdphGPIeJbJ6CxvBYkgkGKrYeDjvIpKTR38UzmtHJOGW3Q==}
+  /@types/react-transition-group@4.4.11:
+    resolution: {integrity: sha512-RM05tAniPZ5DZPzzNFP+DmrcOdD0efDUxMy3145oljWSl3x9ZV5vhme98gTxFrj2lhXvmGNnUiuDyJgY9IKkNA==}
     dependencies:
       '@types/react': 18.2.79
     dev: true
