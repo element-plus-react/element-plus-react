@@ -5,7 +5,7 @@
   "main": "./src/index.ts",
   "devDependencies": {
     "@ant-design/icons": "^5.3.6",
-    "@ctrl/tinycolor": "^4.0.3",
+    "@ctrl/tinycolor": "^4.1.0",
     "@types/lodash-es": "^4.17.12",
     "@types/react-transition-group": "^4.4.11",
     "ahooks": "^3.7.11",
