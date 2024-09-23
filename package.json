@@ -31,7 +31,7 @@
     "cross-env": "^7.0.3",
     "element-plus-react": "workspace:*",
     "eslint": "^8.57.1",
-    "eslint-plugin-format": "^0.1.0",
+    "eslint-plugin-format": "^0.1.2",
     "eslint-plugin-react": "^7.36.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-react-refresh": "^0.4.6",
