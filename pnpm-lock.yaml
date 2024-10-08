@@ -107,8 +107,8 @@ importers:
         specifier: ^0.0.3
         version: 0.0.3
       ahooks:
-        specifier: ^3.7.11
-        version: 3.7.11(react@18.3.1)
+        specifier: ^3.8.1
+        version: 3.8.1(react@18.3.1)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -290,8 +290,8 @@ importers:
         specifier: ^4.4.11
         version: 4.4.11
       ahooks:
-        specifier: ^3.7.11
-        version: 3.7.11(react@18.3.1)
+        specifier: ^3.8.1
+        version: 3.8.1(react@18.3.1)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -2166,8 +2166,8 @@ packages:
     resolution: {integrity: sha512-e0L/HNe6qkQ7H19kTlRRqUibEAwDK5AFk6y3PtMsuut2VAH6+Q4xZml1tNDJD7kSAyqmbG/K08K5WEJYtUrSlQ==}
     engines: {node: '>= 4.0.0'}
 
-  ahooks@3.7.11:
-    resolution: {integrity: sha512-BfSq7HJ9wk/7a2vX7WbLdwzHyQHmbNe21ipX1PfIzssXIzQfAl79WVJ9GjZaqNl4PFPsJusj/Xjg2OF+gIgGaQ==}
+  ahooks@3.8.1:
+    resolution: {integrity: sha512-JoP9+/RWO7MnI/uSKdvQ8WB10Y3oo1PjLv+4Sv4Vpm19Z86VUMdXh+RhWvMGxZZs06sq2p0xVtFk8Oh5ZObsoA==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: 18.3.1
@@ -4637,8 +4637,9 @@ packages:
     resolution: {integrity: sha512-eIz2msL/EzL9UFTFFx7jBTkeZfku0yUAyZZZmJ93H2TYEiroIx2PQjEXcwYtYl8zXCxb+PAmA2hLIt/6ZEkPHw==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
 
-  js-cookie@2.2.1:
-    resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
+  js-cookie@3.0.5:
+    resolution: {integrity: sha512-cEiJEAEoIbWfCZYKWhVwFuvPX1gETRYPw6LlaTKoxD3s2AkXzkCjnp6h0V77ozyqj0jakteJ4YqDJT830+lVGw==}
+    engines: {node: '>=14'}
 
   js-tokens@4.0.0:
     resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
@@ -7268,9 +7269,6 @@ packages:
   tslib@1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
-  tslib@2.6.2:
-    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-
   tslib@2.7.0:
     resolution: {integrity: sha512-gLXCKdN1/j47AiHiOkJN69hJmcbGTHI0ImLmbYLHykhgeN0jVGola9yVjFgzCUklsZQMW55o+dW7IXv3RCXDzA==}
 
@@ -8565,38 +8563,38 @@ snapshots:
   '@formatjs/ecma402-abstract@1.18.2':
     dependencies:
       '@formatjs/intl-localematcher': 0.5.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/fast-memoize@2.2.0':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/icu-messageformat-parser@2.7.5':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/icu-skeleton-parser': 1.7.2
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/icu-skeleton-parser@1.7.2':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/intl-displaynames@6.6.6':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/intl-localematcher': 0.5.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/intl-listformat@7.5.5':
     dependencies:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/intl-localematcher': 0.5.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/intl-localematcher@0.5.4':
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@formatjs/intl@2.9.11(typescript@5.4.3)':
     dependencies:
@@ -8606,7 +8604,7 @@ snapshots:
       '@formatjs/intl-displaynames': 6.6.6
       '@formatjs/intl-listformat': 7.5.5
       intl-messageformat: 10.5.10
-      tslib: 2.6.2
+      tslib: 2.7.0
     optionalDependencies:
       typescript: 5.4.3
 
@@ -8717,7 +8715,7 @@ snapshots:
 
   '@loadable/component@5.15.2(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       hoist-non-react-statics: 3.3.2
       react: 18.3.1
       react-is: 16.13.1
@@ -8751,11 +8749,11 @@ snapshots:
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.1.0
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   '@rc-component/portal@1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       classnames: 2.5.1
       rc-util: 5.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
@@ -8763,7 +8761,7 @@ snapshots:
 
   '@rc-component/trigger@1.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       '@rc-component/portal': 1.1.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classnames: 2.5.1
       rc-motion: 2.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -9440,7 +9438,7 @@ snapshots:
 
   '@umijs/history@5.3.1':
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       query-string: 6.14.1
 
   '@umijs/lint@4.1.1(eslint@8.57.1)(stylelint@14.16.1)(typescript@5.4.3)':
@@ -9659,7 +9657,7 @@ snapshots:
 
   '@vue/compiler-core@3.5.6':
     dependencies:
-      '@babel/parser': 7.25.6
+      '@babel/parser': 7.25.7
       '@vue/shared': 3.5.6
       entities: 4.5.0
       estree-walker: 2.0.2
@@ -9672,7 +9670,7 @@ snapshots:
 
   '@vue/compiler-sfc@3.5.6':
     dependencies:
-      '@babel/parser': 7.25.6
+      '@babel/parser': 7.25.7
       '@vue/compiler-core': 3.5.6
       '@vue/compiler-dom': 3.5.6
       '@vue/compiler-ssr': 3.5.6
@@ -9789,18 +9787,18 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ahooks@3.7.11(react@18.3.1):
+  ahooks@3.8.1(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       dayjs: 1.11.13
       intersection-observer: 0.12.2
-      js-cookie: 2.2.1
+      js-cookie: 3.0.5
       lodash: 4.17.21
       react: 18.3.1
       react-fast-compare: 3.2.2
       resize-observer-polyfill: 1.5.1
       screenfull: 5.2.0
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   ajv-keywords@3.5.2(ajv@6.12.6):
     dependencies:
@@ -9873,7 +9871,7 @@ snapshots:
 
   aria-hidden@1.2.3:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   array-buffer-byte-length@1.0.1:
     dependencies:
@@ -10273,7 +10271,7 @@ snapshots:
   camel-case@4.1.2:
     dependencies:
       pascal-case: 3.1.2
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   camelcase-keys@6.2.2:
     dependencies:
@@ -10730,7 +10728,7 @@ snapshots:
 
   date-fns@2.30.0:
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
 
   dayjs@1.11.13: {}
 
@@ -10905,7 +10903,7 @@ snapshots:
   dot-case@3.0.4:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   dot-prop@4.2.1:
     dependencies:
@@ -12420,7 +12418,7 @@ snapshots:
 
   history@5.3.0:
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
 
   hmac-drbg@1.0.1:
     dependencies:
@@ -12633,7 +12631,7 @@ snapshots:
       '@formatjs/ecma402-abstract': 1.18.2
       '@formatjs/fast-memoize': 2.2.0
       '@formatjs/icu-messageformat-parser': 2.7.5
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   invariant@2.2.4:
     dependencies:
@@ -12966,7 +12964,7 @@ snapshots:
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  js-cookie@2.2.1: {}
+  js-cookie@3.0.5: {}
 
   js-tokens@4.0.0: {}
 
@@ -13067,7 +13065,7 @@ snapshots:
     dependencies:
       copy-anything: 2.0.6
       parse-node-version: 1.0.1
-      tslib: 2.6.2
+      tslib: 2.7.0
     optionalDependencies:
       errno: 0.1.8
       graceful-fs: 4.2.11
@@ -13212,7 +13210,7 @@ snapshots:
 
   lower-case@2.0.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   lowercase-keys@1.0.1: {}
 
@@ -13829,7 +13827,7 @@ snapshots:
   no-case@3.0.4:
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   node-abort-controller@3.1.1: {}
 
@@ -14142,7 +14140,7 @@ snapshots:
   param-case@3.0.4:
     dependencies:
       dot-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   parent-module@1.0.1:
     dependencies:
@@ -14219,7 +14217,7 @@ snapshots:
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   path-browserify@0.0.1: {}
 
@@ -14707,7 +14705,7 @@ snapshots:
 
   rc-align@4.0.15(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       classnames: 2.5.1
       dom-align: 1.12.4
       rc-util: 5.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14775,7 +14773,7 @@ snapshots:
 
   rc-dropdown@4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       '@rc-component/trigger': 1.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classnames: 2.5.1
       rc-util: 5.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14830,7 +14828,7 @@ snapshots:
 
   rc-menu@9.12.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       '@rc-component/trigger': 1.18.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       classnames: 2.5.1
       rc-motion: 2.9.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14869,7 +14867,7 @@ snapshots:
 
   rc-overflow@1.3.2(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       classnames: 2.5.1
       rc-resize-observer: 1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rc-util: 5.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -14979,7 +14977,7 @@ snapshots:
 
   rc-tabs@12.15.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       classnames: 2.5.1
       rc-dropdown: 4.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rc-menu: 9.12.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15066,7 +15064,7 @@ snapshots:
 
   rc-virtual-list@3.11.3(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       classnames: 2.5.1
       rc-resize-observer: 1.4.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       rc-util: 5.38.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -15094,7 +15092,7 @@ snapshots:
 
   react-error-boundary@4.0.12(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       react: 18.3.1
 
   react-error-overlay@6.0.9: {}
@@ -15103,7 +15101,7 @@ snapshots:
 
   react-helmet-async@1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
-      '@babel/runtime': 7.23.9
+      '@babel/runtime': 7.25.7
       invariant: 2.2.4
       prop-types: 15.8.1
       react: 18.3.1
@@ -15123,7 +15121,7 @@ snapshots:
       hoist-non-react-statics: 3.3.2
       intl-messageformat: 10.5.10
       react: 18.3.1
-      tslib: 2.6.2
+      tslib: 2.7.0
     optionalDependencies:
       typescript: 5.4.3
 
@@ -16029,17 +16027,17 @@ snapshots:
 
   synckit@0.6.2:
     dependencies:
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   synckit@0.8.5:
     dependencies:
       '@pkgr/utils': 2.4.2
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   synckit@0.9.1:
     dependencies:
       '@pkgr/core': 0.1.1
-      tslib: 2.6.2
+      tslib: 2.7.0
 
   systemjs@6.14.3: {}
 
@@ -16175,8 +16173,6 @@ snapshots:
   ts-toolbelt@9.6.0: {}
 
   tslib@1.14.1: {}
-
-  tslib@2.6.2: {}
 
   tslib@2.7.0: {}
 
@@ -16612,7 +16608,7 @@ snapshots:
       '@webassemblyjs/wasm-parser': 1.12.1
       acorn: 8.12.1
       acorn-import-attributes: 1.9.5(acorn@8.12.1)
-      browserslist: 4.23.3
+      browserslist: 4.24.0
       chrome-trace-event: 1.0.4
       enhanced-resolve: 5.17.1
       es-module-lexer: 1.5.4
