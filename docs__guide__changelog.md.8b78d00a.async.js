@@ -1,0 +1,6 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[9083],{51535:function(m,l,e){e.r(l);var a=e(26496),p=e(40555),i=e(42345),c=e(94402),h=e(51546),E=e(51568),v=e(78204),g=e(47015),n=e(2875),t=e(83102),r=e(75271),_=e(52676);function d(){var o=(0,n.eL)(),s=o.texts;return(0,_.jsxs)(_.Fragment,{children:[(0,_.jsxs)("div",{className:"markdown",children:[(0,_.jsx)("style",{scoped:!0,lang:"scss",dangerouslySetInnerHTML:{__html:`
+@at-root .hero-content {
+  padding: 32px;
+
+}
+`}}),(0,_.jsxs)("h1",{id:"\u66F4\u65B0\u65E5\u5FD7",children:[(0,_.jsx)("a",{"aria-hidden":"true",tabIndex:"-1",href:"#\u66F4\u65B0\u65E5\u5FD7",children:(0,_.jsx)("span",{className:"icon icon-link"})}),"\u66F4\u65B0\u65E5\u5FD7"]}),(0,_.jsxs)("p",{children:[s[0].value,(0,_.jsx)("strong",{children:s[1].value}),s[2].value,(0,_.jsx)("strong",{children:s[3].value}),s[4].value]}),(0,_.jsxs)("p",{children:[s[5].value,(0,_.jsx)("a",{href:"https://github.com/element-plus-react/element-plus-react/releases",children:s[6].value}),s[7].value]})]}),(0,_.jsx)(n.Dl,{demo:{id:"docs-guide-changelog-demo-changelog",inline:!0},previewerProps:{}})]})}function u(){return(0,_.jsx)(n.dY,{children:(0,_.jsx)(r.Suspense,{fallback:(0,_.jsx)(t.Z,{}),children:(0,_.jsx)(d,{})})})}l.default=u}}]);
