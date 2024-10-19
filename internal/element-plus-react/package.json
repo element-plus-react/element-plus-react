@@ -33,7 +33,7 @@
     "@types/react": "^18.3.11",
     "@types/react-dom": "^18.3.1",
     "@types/react-transition-group": "^4.4.11",
-    "@vitejs/plugin-react": "^4.3.2",
+    "@vitejs/plugin-react": "^4.3.3",
     "lodash-es": "^4.17.21",
     "react": "18.3.1",
     "react-dom": "18.3.1",
