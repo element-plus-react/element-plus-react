@@ -107,8 +107,8 @@ importers:
         specifier: ^0.0.3
         version: 0.0.3
       ahooks:
-        specifier: ^3.8.1
-        version: 3.8.1(react@18.3.1)
+        specifier: ^3.8.2
+        version: 3.8.2(react@18.3.1)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -290,8 +290,8 @@ importers:
         specifier: ^4.4.11
         version: 4.4.11
       ahooks:
-        specifier: ^3.8.1
-        version: 3.8.1(react@18.3.1)
+        specifier: ^3.8.2
+        version: 3.8.2(react@18.3.1)
       classnames:
         specifier: ^2.5.1
         version: 2.5.1
@@ -2493,8 +2493,8 @@ packages:
     resolution: {integrity: sha512-e0L/HNe6qkQ7H19kTlRRqUibEAwDK5AFk6y3PtMsuut2VAH6+Q4xZml1tNDJD7kSAyqmbG/K08K5WEJYtUrSlQ==}
     engines: {node: '>= 4.0.0'}
 
-  ahooks@3.8.1:
-    resolution: {integrity: sha512-JoP9+/RWO7MnI/uSKdvQ8WB10Y3oo1PjLv+4Sv4Vpm19Z86VUMdXh+RhWvMGxZZs06sq2p0xVtFk8Oh5ZObsoA==}
+  ahooks@3.8.2:
+    resolution: {integrity: sha512-iuYD3PWopdw9HqH++3ul6/Oxl9Q9/tP+np4yiYd0mIzN3QfDKnyII28MWUcmSkaHF415R6bUcrl0vD/80NNogg==}
     engines: {node: '>=8.0.0'}
     peerDependencies:
       react: 18.3.1
@@ -10774,7 +10774,7 @@ snapshots:
     dependencies:
       humanize-ms: 1.2.1
 
-  ahooks@3.8.1(react@18.3.1):
+  ahooks@3.8.2(react@18.3.1):
     dependencies:
       '@babel/runtime': 7.25.7
       dayjs: 1.11.13
