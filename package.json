@@ -43,7 +43,7 @@
     "react-dom": "18.3.1",
     "sass": "^1.82.0",
     "typescript": "^5.7.2",
-    "vite": "^6.0.2",
+    "vite": "^6.0.3",
     "vitest": "^2.1.8"
   },
   "lint-staged": {
