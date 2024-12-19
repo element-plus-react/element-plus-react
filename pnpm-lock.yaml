@@ -13,8 +13,8 @@ importers:
   .:
     dependencies:
       dumi:
-        specifier: ^2.4.16
-        version: 2.4.16(@babel/core@7.26.0)(@swc/helpers@0.5.1)(@types/node@22.10.2)(@types/react@19.0.2)(eslint@9.17.0)(lightningcss@1.22.1)(prettier@3.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.33.0)(type-fest@0.20.2)(typescript@5.7.2)(webpack@5.94.0)
+        specifier: ^2.4.17
+        version: 2.4.17(@babel/core@7.26.0)(@swc/helpers@0.5.1)(@types/node@22.10.2)(@types/react@19.0.2)(eslint@9.17.0)(lightningcss@1.22.1)(prettier@3.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.33.0)(type-fest@0.20.2)(typescript@5.7.2)(webpack@5.94.0)
       markdown-it:
         specifier: ^14.1.0
         version: 14.1.0
@@ -3481,8 +3481,8 @@ packages:
   dumi-assets-types@2.4.14:
     resolution: {integrity: sha512-k2Z3z7/IcHOYASP/nDjocShdzXatmOuhkAwgYw/4KNiq36gpAKjn5MlrPkzdGH70TbcHGLGEul9b/4sYJLoS9A==}
 
-  dumi@2.4.16:
-    resolution: {integrity: sha512-lHqLJ4xiM8n86xlvnyUZ/SR4mL9KYj92dEABe87nJVpZ7/BGB8oAZrhUc5G/4xZCu6ZWR+J6f+yqpKUErdczow==}
+  dumi@2.4.17:
+    resolution: {integrity: sha512-rWCD3gyqkMxim5xHoe5J6AL+vmaEVeoBKs7Gr2gXV7iVlNppJXSog9Yr8fm/5GAx+9BFq/ebx/UCXWFdcfAgFA==}
     hasBin: true
     peerDependencies:
       react: 19.0.0
@@ -9435,7 +9435,7 @@ snapshots:
 
   '@pkgr/utils@2.4.2':
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       fast-glob: 3.3.2
       is-glob: 4.0.3
       open: 9.1.0
@@ -11829,7 +11829,7 @@ snapshots:
 
   dumi-assets-types@2.4.14: {}
 
-  dumi@2.4.16(@babel/core@7.26.0)(@swc/helpers@0.5.1)(@types/node@22.10.2)(@types/react@19.0.2)(eslint@9.17.0)(lightningcss@1.22.1)(prettier@3.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.33.0)(type-fest@0.20.2)(typescript@5.7.2)(webpack@5.94.0):
+  dumi@2.4.17(@babel/core@7.26.0)(@swc/helpers@0.5.1)(@types/node@22.10.2)(@types/react@19.0.2)(eslint@9.17.0)(lightningcss@1.22.1)(prettier@3.4.2)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(rollup@3.29.4)(stylelint@14.16.1)(terser@5.33.0)(type-fest@0.20.2)(typescript@5.7.2)(webpack@5.94.0):
     dependencies:
       '@ant-design/icons-svg': 4.4.2
       '@makotot/ghostui': 2.0.0(react@19.0.0)
@@ -12653,7 +12653,7 @@ snapshots:
 
   execa@5.1.1:
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 2.1.0
       is-stream: 2.0.1
@@ -12665,7 +12665,7 @@ snapshots:
 
   execa@7.2.0:
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       get-stream: 6.0.1
       human-signals: 4.3.1
       is-stream: 3.0.0
@@ -12902,7 +12902,7 @@ snapshots:
 
   foreground-child@3.3.0:
     dependencies:
-      cross-spawn: 7.0.5
+      cross-spawn: 7.0.6
       signal-exit: 4.1.0
 
   fork-ts-checker-webpack-plugin@8.0.0(typescript@5.7.2)(webpack@5.94.0):
