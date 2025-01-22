@@ -20,7 +20,7 @@
   "main": "es/components/src/index.js",
   "types": "es/components/src/index.d.ts",
   "dependencies": {
-    "@ant-design/icons": "^5.5.2",
+    "@ant-design/icons": "^5.6.0",
     "@ctrl/tinycolor": "^4.1.0",
     "@element-plus-react/theme-chalk": "^0.0.3",
     "ahooks": "^3.8.4",
