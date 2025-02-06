@@ -58,5 +58,5 @@
       "react-dom": "19.0.0"
     }
   },
-  "packageManager": "pnpm@10.2.0"
+  "packageManager": "pnpm@10.2.1"
 }
