@@ -16,7 +16,7 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "dumi": "^2.4.17",
+    "dumi": "^2.4.18",
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
