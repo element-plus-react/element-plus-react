@@ -21,7 +21,7 @@ importers:
     devDependencies:
       '@antfu/eslint-config':
         specifier: ^4.3.0
-        version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.7.3))(@vue/compiler-sfc@3.5.6)(eslint-plugin-format@1.0.1(eslint@9.21.0))(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.21.0))(eslint@9.21.0)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(less@4.1.3)(lightningcss@1.22.1)(sass@1.85.1)(terser@5.33.0)(yaml@2.7.0))
+        version: 4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.7.3))(@vue/compiler-sfc@3.5.6)(eslint-plugin-format@1.0.1(eslint@9.21.0))(eslint-plugin-react-hooks@5.2.0(eslint@9.21.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.21.0))(eslint@9.21.0)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(less@4.1.3)(lightningcss@1.22.1)(sass@1.85.1)(terser@5.33.0)(yaml@2.7.0))
       '@element-plus/components':
         specifier: workspace:1.0.0
         version: link:packages/components
@@ -59,8 +59,8 @@ importers:
         specifier: ^7.37.4
         version: 7.37.4(eslint@9.21.0)
       eslint-plugin-react-hooks:
-        specifier: ^5.1.0
-        version: 5.1.0(eslint@9.21.0)
+        specifier: ^5.2.0
+        version: 5.2.0(eslint@9.21.0)
       eslint-plugin-react-refresh:
         specifier: ^0.4.19
         version: 0.4.19(eslint@9.21.0)
@@ -3655,8 +3655,8 @@ packages:
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0
 
-  eslint-plugin-react-hooks@5.1.0:
-    resolution: {integrity: sha512-mpJRtPgHN2tNAvZ35AMfqeB3Xqeo273QxrHJsbBEPWODRM4r0yB6jfoROqKEYrOn27UtRPpcpHc2UqyBSuUNTw==}
+  eslint-plugin-react-hooks@5.2.0:
+    resolution: {integrity: sha512-+f15FfK64YQwZdJNELETdn5ibXEUQmW1DZL6KXhNnc2heoy/sg9VJJeT7n8TlMWouzWqSWavFkIhHyIbIAEapg==}
     engines: {node: '>=10'}
     peerDependencies:
       eslint: ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0-0 || ^9.0.0
@@ -7796,7 +7796,7 @@ snapshots:
       react: 19.0.0
       react-dom: 19.0.0(react@19.0.0)
 
-  '@antfu/eslint-config@4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.7.3))(@vue/compiler-sfc@3.5.6)(eslint-plugin-format@1.0.1(eslint@9.21.0))(eslint-plugin-react-hooks@5.1.0(eslint@9.21.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.21.0))(eslint@9.21.0)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(less@4.1.3)(lightningcss@1.22.1)(sass@1.85.1)(terser@5.33.0)(yaml@2.7.0))':
+  '@antfu/eslint-config@4.3.0(@typescript-eslint/utils@8.24.1(eslint@9.21.0)(typescript@5.7.3))(@vue/compiler-sfc@3.5.6)(eslint-plugin-format@1.0.1(eslint@9.21.0))(eslint-plugin-react-hooks@5.2.0(eslint@9.21.0))(eslint-plugin-react-refresh@0.4.19(eslint@9.21.0))(eslint@9.21.0)(typescript@5.7.3)(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.5)(less@4.1.3)(lightningcss@1.22.1)(sass@1.85.1)(terser@5.33.0)(yaml@2.7.0))':
     dependencies:
       '@antfu/install-pkg': 1.0.0
       '@clack/prompts': 0.10.0
@@ -7836,7 +7836,7 @@ snapshots:
       yaml-eslint-parser: 1.2.3
     optionalDependencies:
       eslint-plugin-format: 1.0.1(eslint@9.21.0)
-      eslint-plugin-react-hooks: 5.1.0(eslint@9.21.0)
+      eslint-plugin-react-hooks: 5.2.0(eslint@9.21.0)
       eslint-plugin-react-refresh: 0.4.19(eslint@9.21.0)
     transitivePeerDependencies:
       - '@eslint/json'
@@ -9945,7 +9945,7 @@ snapshots:
       '@vue/shared': 3.5.6
       estree-walker: 2.0.2
       magic-string: 0.30.17
-      postcss: 8.5.2
+      postcss: 8.5.3
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.6':
@@ -11611,7 +11611,7 @@ snapshots:
     dependencies:
       eslint: 9.21.0
 
-  eslint-plugin-react-hooks@5.1.0(eslint@9.21.0):
+  eslint-plugin-react-hooks@5.2.0(eslint@9.21.0):
     dependencies:
       eslint: 9.21.0
 
@@ -14646,9 +14646,9 @@ snapshots:
 
   postcss-resolve-nested-selector@0.1.6: {}
 
-  postcss-safe-parser@6.0.0(postcss@8.5.2):
+  postcss-safe-parser@6.0.0(postcss@8.5.3):
     dependencies:
-      postcss: 8.5.2
+      postcss: 8.5.3
 
   postcss-selector-not@5.0.0(postcss@8.5.2):
     dependencies:
@@ -16004,10 +16004,10 @@ snapshots:
       micromatch: 4.0.8
       normalize-path: 3.0.0
       picocolors: 1.1.1
-      postcss: 8.5.2
+      postcss: 8.5.3
       postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.6
-      postcss-safe-parser: 6.0.0(postcss@8.5.2)
+      postcss-safe-parser: 6.0.0(postcss@8.5.3)
       postcss-selector-parser: 6.1.2
       postcss-value-parser: 4.2.0
       resolve-from: 5.0.0
