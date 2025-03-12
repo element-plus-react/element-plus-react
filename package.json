@@ -20,7 +20,7 @@
     "markdown-it": "^14.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.8.1",
+    "@antfu/eslint-config": "^4.10.0",
     "@element-plus/components": "workspace:1.0.0",
     "@element-plus/hooks": "workspace:1.0.0",
     "@element-plus/utils": "workspace:1.0.0",
