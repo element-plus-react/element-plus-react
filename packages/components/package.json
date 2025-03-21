@@ -4,7 +4,7 @@
   "type": "module",
   "main": "./src/index.ts",
   "devDependencies": {
-    "@ant-design/icons": "^5.6.1",
+    "@ant-design/icons": "^6.0.0",
     "@ctrl/tinycolor": "^4.1.0",
     "@types/lodash-es": "^4.17.12",
     "@types/react-transition-group": "^4.4.12",
