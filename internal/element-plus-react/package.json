@@ -35,15 +35,15 @@
     "@types/react-transition-group": "^4.4.12",
     "@vitejs/plugin-react": "^4.3.4",
     "lodash-es": "^4.17.21",
-    "react": "19.0.0",
-    "react-dom": "19.0.0",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
     "rollup-plugin-copy": "^3.5.0",
     "typescript": "^5.8.2",
     "vite": "^6.2.3"
   },
   "peerDependencies": {
-    "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": "eslint --fix"
